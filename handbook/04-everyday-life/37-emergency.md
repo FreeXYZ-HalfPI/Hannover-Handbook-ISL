@@ -1,0 +1,64 @@
+# ۳۷. امنیت، شماره‌های اضطراری و خدمات شهری
+
+> [!TIP]
+> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+
+## ۱. هدف
+
+شماره‌های اضطراری و مراکز کمک فوری را باید **پیش از** نیاز بدانید. این صفحه را در گوشی خود ذخیره کنید.
+
+## ۲. چه کسی به آن نیاز دارد؟
+
+- **همه.**
+
+## ۳. مراحل انجام کار
+
+| موقعیت | شماره | توضیح |
+|----|----|----|
+| آتش‌سوزی، آمبولانس، خطر جانی | **112** | شماره اضطراری اروپا؛ رایگان و شبانه‌روزی ([hannover.de – Notdienste](https://www.hannover.de/Leben-in-der-Region-Hannover/B%C3%BCrger-Service/Hilfe,-Beratung,-Notdienste/Notdienste-Notfall%C2%ADnummern)) |
+| پلیس | **110** | رایگان ([hannover.de – Notdienste](https://www.hannover.de/Leben-in-der-Region-Hannover/B%C3%BCrger-Service/Hilfe,-Beratung,-Notdienste/Notdienste-Notfall%C2%ADnummern)) |
+| پزشک کشیک (غیرفوری، شب و آخر هفته) | **116117** | [116117.de](https://www.116117.de/) |
+| بحران روحی | **0800 111 0 111** · **0800 111 0 222** · **116 123** | TelefonSeelsorge؛ رایگان، شبانه‌روزی و ناشناس؛ چت و ایمیل در online.telefonseelsorge.de ([TelefonSeelsorge](https://www.telefonseelsorge.de/telefon/)) |
+| داروخانه کشیک | جست‌وجوی آنلاین در aponet.de | [aponet](https://www.aponet.de/notdienstsuche) |
+
+1.  **تماس با 112:** بگویید **کجا** هستید، **چه** اتفاقی افتاده، **چه کسی** تماس می‌گیرد و **چند نفر** آسیب دیده‌اند؛ سپس منتظر پرسش‌های بعدی بمانید ([BBK – Erste Hilfe und Notruf](https://www.bbk.bund.de/DE/Warnung-Vorsorge/Vorsorge/Gesundheit-und-Hygiene/Erste-Hilfe-und-Notruf/erste-hilfe-und-notruf_node.html)؛ [hannover.de – Notdienste](https://www.hannover.de/Leben-in-der-Region-Hannover/B%C3%BCrger-Service/Hilfe,-Beratung,-Notdienste/Notdienste-Notfall%C2%ADnummern)).
+2.  اگر نمی‌توانید صحبت کنید، اپلیکیشن رسمی **nora** امکان تماس اضطراری بدون صحبت را فراهم می‌کند ([BBK](https://www.bbk.bund.de/DE/Warnung-Vorsorge/Vorsorge/Gesundheit-und-Hygiene/Erste-Hilfe-und-Notruf/erste-hilfe-und-notruf_node.html)).
+3.  **گم شدن پاسپورت یا کارت اقامت:** فوراً به Ausländerbehörde اطلاع دهید و در صورت سرقت به پلیس شکایت کنید. پاسپورت را فقط نمایندگی کشور خودتان صادر می‌کند و کارت اقامت جدید را Ausländerbehörde؛ صدور دوباره ممکن است ۴ تا ۸ هفته طول بکشد ([شهر مونیخ – Verlust von Aufenthaltsdokumenten](https://stadt.muenchen.de/service/info/verlust-von-aufenthalts-oder-ausweisdokumenten/10112606/)؛ [شهر ویسبادن](https://www.wiesbaden.de/vv/produkte/33/Verlust-Aufenthaltstitel-Reiseausweis)). ℹ️ روند دقیق در هانوفر را از Ausländerbehörde هانوفر بپرسید. ← [۱۰. اجازه اقامت](../01-arriving-in-hannover/10-residence-permit.md)
+4.  **امور کنسولی دانشجویان ایرانی:** سرکنسولگری‌های ایران در آلمان (از جمله هامبورگ که پیش‌تر نیدرزاکسن را پوشش می‌داد) بسته شده‌اند ([ORF](https://orf.at/stories/3374462/)). ⚠️ پیش از هر اقدام با بخش کنسولی سفارت ایران در برلین تماس بگیرید و وضعیت فعلی را بپرسید.
+5.  **تبعیض یا آزار در دانشگاه** ← [۲۷. مرکز فرصت‌های برابر و تنوع](../03-university-services/27-chancenvielfalt.md)
+
+## ۴. مدارک و هزینه‌ها
+
+| مورد | الزامی / احتمالی | توضیح | منبع |
+|----|----|----|----|
+| تماس با 112 و 110 | — | رایگان | [hannover.de](https://www.hannover.de/Leben-in-der-Region-Hannover/B%C3%BCrger-Service/Hilfe,-Beratung,-Notdienste/Notdienste-Notfall%C2%ADnummern) |
+| گزارش گم‌شدن مدارک | احتمالی | ممکن است هزینه داشته باشد. | [شهر ویسبادن](https://www.wiesbaden.de/vv/produkte/33/Verlust-Aufenthaltstitel-Reiseausweis) |
+
+## ۵. نهاد مسئول
+
+- **پلیس هانوفر:** Polizeidirektion Hannover، Waterloostraße 9, 30169 Hannover · ‎0511 109-0 · [pd-h.polizei-nds.de](https://www.pd-h.polizei-nds.de/) ([hannover.de – Polizeidirektion](https://www.hannover.de/Media/02-GIS-Objekte/Organisationsdatenbank/Redaktion-Hannover.de/A-Z/P/Polizei/Polizeidirektion-Hannover))
+- **فهرست خدمات اضطراری شهر:** [hannover.de – Notdienste & Notfallnummern](https://www.hannover.de/Leben-in-der-Region-Hannover/B%C3%BCrger-Service/Hilfe,-Beratung,-Notdienste/Notdienste-Notfall%C2%ADnummern)
+
+## ۶. منابع و پیوندهای رسمی
+
+همه پیوندهای این صفحه در «تاریخ دسترسی» بررسی شده‌اند و نتیجه هر کدام در ستون آخر آمده است. اگر پیوندی کار نمی‌کند، آن را در صفحه ۵۷ گزارش دهید.
+
+| \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
+|----|----|----|----|----|
+| ۱ | [hannover.de – Notdienste & Notfallnummern](https://www.hannover.de/Leben-in-der-Region-Hannover/B%C3%BCrger-Service/Hilfe,-Beratung,-Notdienste/Notdienste-Notfall%C2%ADnummern) | شهر و منطقه هانوفر | 2026-10-23 | ✅ باز شد |
+| ۲ | [116117.de](https://www.116117.de/) | 116117 | 2026-10-23 | ✅ باز شد |
+| ۳ | [TelefonSeelsorge](https://www.telefonseelsorge.de/telefon/) | TelefonSeelsorge | 2026-10-23 | ✅ باز شد |
+| ۴ | [aponet](https://www.aponet.de/notdienstsuche) | aponet (ABDA) | 2026-10-23 | ✅ باز شد |
+| ۵ | [BBK – Erste Hilfe und Notruf](https://www.bbk.bund.de/DE/Warnung-Vorsorge/Vorsorge/Gesundheit-und-Hygiene/Erste-Hilfe-und-Notruf/erste-hilfe-und-notruf_node.html) | BBK | 2026-10-23 | ✅ باز شد |
+| ۶ | [شهر مونیخ – Verlust von Aufenthaltsdokumenten](https://stadt.muenchen.de/service/info/verlust-von-aufenthalts-oder-ausweisdokumenten/10112606/) | stadt.muenchen.de | 2026-10-23 | ✅ باز شد |
+| ۷ | [شهر ویسبادن](https://www.wiesbaden.de/vv/produkte/33/Verlust-Aufenthaltstitel-Reiseausweis) | wiesbaden.de | 2026-10-23 | ✅ باز شد |
+| ۸ | [ORF](https://orf.at/stories/3374462/) | orf.at | 2026-10-23 | ✅ باز شد |
+| ۹ | [pd-h.polizei-nds.de](https://www.pd-h.polizei-nds.de/) | پلیس نیدرزاکسن | 2026-10-23 | ✅ باز شد |
+| ۱۰ | [hannover.de – Polizeidirektion](https://www.hannover.de/Media/02-GIS-Objekte/Organisationsdatenbank/Redaktion-Hannover.de/A-Z/P/Polizei/Polizeidirektion-Hannover) | شهر و منطقه هانوفر | 2026-10-23 | ✅ باز شد |
+
+## ۷. تجربه دانشجویان (غیررسمی)
+
+> [!NOTE]
+> این بخش برای تجربه‌های شخصی است و قاعده عمومی یا مشاوره حقوقی به شمار نمی‌آید. تجربه خود را با ذکر تاریخ در [صفحه ۵۷](../07-resources/57-contribute-experiences.md) یا از طریق یک Issue در GitHub بفرستید.
+
+- هنوز تجربه‌ای ثبت نشده است.

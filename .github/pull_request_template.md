@@ -1,0 +1,4 @@
+- [ ] Every new or changed fact has an official source link (اولویت: uni-hannover.de، hannover.de، gesetze-im-internet.de، make-it-in-germany.com)
+- [ ] The source table (section ۶) lists the link with its access date (YYYY-MM-DD) and check result
+- [ ] The "تاریخ آخرین بررسی" date at the top of the page is updated
+- [ ] Personal experience, if any, is only in section ۷ and contains no personal data

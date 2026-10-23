@@ -1,0 +1,58 @@
+# ۵۱. رویدادها، شبکه‌سازی و آشنایی با دانشجویان دیگر
+
+> [!TIP]
+> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۶ — جامعه دانشجویی و مشارکت اجتماعی](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+
+## ۱. هدف
+
+پیدا کردن دوست و شبکه حرفه‌ای در ماه‌های اول؛ تنهایی یکی از مشکلات رایج دانشجویان تازه‌وارد است ([ptb](https://www.ptb.uni-hannover.de/en/)).
+
+## ۲. چه کسی به آن نیاز دارد؟
+
+- **همه** دانشجویان، به‌ویژه در ترم اول.
+
+## ۳. مراحل انجام کار
+
+1.  **Erstival:** مراسم مرکزی خوشامدگویی که رئیس دانشگاه از دانشجویان جدید استقبال می‌کند؛ دعوت‌نامه همراه مدارک ثبت‌نام می‌رسد ([LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist)؛ [Erstival](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/erstival)).
+2.  **هفته معارفه (O-Woche)** و **Orientation Days** برای دانشجویان بین‌المللی ([Orientation Days](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/preparation-courses-and-introductory-sessions/orientation-days)).
+3.  **شبکه‌سازی از روزهای اول:** صفحه دانشگاه [Kontakte knüpfen](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/kontakte-knuepfen) ([LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist)).
+4.  **Start Smart:** مجموعه رویدادهای آنلاین برای دانشجویان سال اول کارشناسی و کارشناسی ارشد؛ برخی رویدادها ثبت‌نام لازم دارند ([Start Smart](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/start-smart)).
+5.  **رویدادهای بین‌فرهنگی AStA** ([AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende)) و **Career Dates** برای شبکه حرفه‌ای ([LUH – ZQS](https://www.uni-hannover.de/en/universitaet/organisation/einrichtungen/zentrale-einrichtungen/zqs)). ← [۴۵. خدمات شغلی دانشگاه و فرصت‌های کارآموزی](../05-work-finance-career/45-career-service.md)
+6.  **شبکه‌های اجتماعی دانشگاه:** [Instagram @uni_hannover](https://www.instagram.com/uni_hannover/) و [LinkedIn](https://www.linkedin.com/school/leibniz-universit-t-hannover-germany) ([LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist)).
+7.  **رویدادهای ISL** ← [۴۸. انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر](48-isl.md)
+
+## ۴. مدارک و هزینه‌ها
+
+| مورد | الزامی / احتمالی | توضیح | منبع |
+|----|----|----|----|
+| ثبت‌نام قبلی | احتمالی | برای برخی رویدادهای Start Smart | [LUH](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) |
+
+## ۵. نهاد مسئول
+
+- **رویدادهای معارفه بین‌المللی:** Hochschulbüro für Internationales — incoming-student@uni-hannover.de · ‎+49 511 762 188 99
+- **Start Smart:** مشاوره تحصیلی مرکزی و دفتر امور بین‌الملل ([LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist))
+
+## ۶. منابع و پیوندهای رسمی
+
+همه پیوندهای این صفحه در «تاریخ دسترسی» بررسی شده‌اند و نتیجه هر کدام در ستون آخر آمده است. اگر پیوندی کار نمی‌کند، آن را در صفحه ۵۷ گزارش دهید.
+
+| \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
+|----|----|----|----|----|
+| ۱ | [ptb](https://www.ptb.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
+| ۲ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
+| ۳ | [Erstival](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/erstival) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
+| ۴ | [Orientation Days](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/preparation-courses-and-introductory-sessions/orientation-days) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
+| ۵ | [Kontakte knüpfen](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/kontakte-knuepfen) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
+| ۶ | [Start Smart](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/start-smart) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
+| ۷ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-10-23 | ✅ باز شد |
+| ۸ | [LUH – ZQS](https://www.uni-hannover.de/en/universitaet/organisation/einrichtungen/zentrale-einrichtungen/zqs) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
+| ۹ | [Instagram @uni_hannover](https://www.instagram.com/uni_hannover/) | instagram.com | 2026-10-23 | ✅ باز شد |
+| ۱۰ | [LinkedIn](https://www.linkedin.com/school/leibniz-universit-t-hannover-germany) | linkedin.com | 2026-10-23 | ✅ باز شد |
+| ۱۱ | [Veranstaltungskalender](https://www.hannover.de/Veranstaltungskalender) | شهر و منطقه هانوفر | 2026-10-23 | ✅ باز شد |
+
+## ۷. تجربه دانشجویان (غیررسمی)
+
+> [!NOTE]
+> این بخش برای تجربه‌های شخصی است و قاعده عمومی یا مشاوره حقوقی به شمار نمی‌آید. تجربه خود را با ذکر تاریخ در [صفحه ۵۷](../07-resources/57-contribute-experiences.md) یا از طریق یک Issue در GitHub بفرستید.
+
+- هنوز تجربه‌ای ثبت نشده است.

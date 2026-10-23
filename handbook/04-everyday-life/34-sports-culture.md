@@ -1,0 +1,58 @@
+# ۳۴. تفریح، ورزش، فرهنگ و زندگی اجتماعی
+
+> [!TIP]
+> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+
+## ۱. هدف
+
+راه‌هایی برای ورزش، فرهنگ و دوست‌یابی در هانوفر؛ از ورزش دانشگاهی تا تئاتر و اپرا با بلیت دانشجویی.
+
+## ۲. چه کسی به آن نیاز دارد؟
+
+- **همه** دانشجویان.
+
+## ۳. مراحل انجام کار
+
+1.  **ورزش دانشگاهی (Hochschulsport):** حدود ۱۰۰ رشته ورزشی در صدها دوره؛ ثبت‌نام کمی پیش از شروع ترم باز می‌شود و دوره‌های پرطرفدار زود پر می‌شوند ([LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist)؛ [Hochschulsport – Sports programs](https://www.hochschulsport-hannover.de/en/sports-programs/)).
+2.  دانشجویان LUH و دانشگاه‌های همکار با **نرخ دانشجویی** شرکت می‌کنند ([Hochschulsport](https://www.hochschulsport-hannover.de/en/university-sports-department/about-us)). LeibnizCard همان کارت ورزش شماست ([LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist)).
+3.  **تئاتر و اپرا:** دانشجویان LUH با «Theaterflatrate» می‌توانند به Staatstheater Hannover بروند؛ سهم آن (Kulturticket، ۲ یورو) در هزینه ترم پرداخت شده است ([Studentenwerk – Save money](https://www.studentenwerk-hannover.de/en/money/save-money)؛ [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung)). جزئیات در [staatstheater-hannover.de](https://www.staatstheater-hannover.de/).
+4.  **تخفیف دانشجویی** برای سینما و موزه با گواهی اشتغال به تحصیل ([LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist)). ← [۳۱. خرید روزمره، سوپرمارکت‌ها و فروشگاه‌های ارزان](31-shopping.md)
+5.  **شهر و دانشگاه:** [Campus und Stadt](https://www.uni-hannover.de/en/universitaet/campus-und-stadt) و رویدادهای شهر در [تقویم رویدادهای hannover.de](https://www.hannover.de/Veranstaltungskalender).
+6.  **دوست‌یابی:** Study Buddy و گروه‌های دانشجویی ← [۴۹. انجمن‌های دانشجویی بین‌المللی](../06-student-community/49-international-groups.md)، [۵۱. رویدادها، شبکه‌سازی و آشنایی با دانشجویان دیگر](../06-student-community/51-events-networking.md)
+
+## ۴. مدارک و هزینه‌ها
+
+| مورد | الزامی / احتمالی | توضیح | منبع |
+|----|----|----|----|
+| LeibnizCard | الزامی | برای ورزش دانشگاهی | [LUH](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) |
+| شهریه دوره‌های ورزشی | احتمالی | با نرخ دانشجویی؛ مبلغ هر دوره در صفحه همان دوره آمده است. | [Hochschulsport](https://www.hochschulsport-hannover.de/en/university-sports-department/about-us) |
+| Theaterflatrate | — | از قبل در هزینه ترم پرداخت شده است. | [Studentenwerk](https://www.studentenwerk-hannover.de/en/money/save-money) |
+
+## ۵. نهاد مسئول
+
+- **نام رسمی:** Zentrale Einrichtung für Hochschulsport Hannover، ورزش دانشگاهی
+- **نشانی:** Am Moritzwinkel 6, 30167 Hannover (SportCAMPUS)
+- **منبع:** [Hochschulsport](https://www.hochschulsport-hannover.de/en/university-sports-department/about-us)
+
+## ۶. منابع و پیوندهای رسمی
+
+همه پیوندهای این صفحه در «تاریخ دسترسی» بررسی شده‌اند و نتیجه هر کدام در ستون آخر آمده است. اگر پیوندی کار نمی‌کند، آن را در صفحه ۵۷ گزارش دهید.
+
+| \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
+|----|----|----|----|----|
+| ۱ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
+| ۲ | [Hochschulsport – Sports programs](https://www.hochschulsport-hannover.de/en/sports-programs/) | hochschulsport-hannover.de | 2026-10-23 | ✅ باز شد |
+| ۳ | [Hochschulsport](https://www.hochschulsport-hannover.de/en/university-sports-department/about-us) | hochschulsport-hannover.de | 2026-10-23 | ✅ باز شد |
+| ۴ | [Studentenwerk – Save money](https://www.studentenwerk-hannover.de/en/money/save-money) | Studentenwerk Hannover | 2026-10-23 | ✅ باز شد |
+| ۵ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
+| ۶ | [staatstheater-hannover.de](https://www.staatstheater-hannover.de/) | staatstheater-hannover.de | 2026-10-23 | ✅ باز شد |
+| ۷ | [Campus und Stadt](https://www.uni-hannover.de/en/universitaet/campus-und-stadt) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
+| ۸ | [تقویم رویدادهای hannover.de](https://www.hannover.de/Veranstaltungskalender) | شهر و منطقه هانوفر | 2026-10-23 | ✅ باز شد |
+| ۹ | [visit-hannover.com](https://www.visit-hannover.com/) | visit-hannover.com | 2026-10-23 | ✅ باز شد |
+
+## ۷. تجربه دانشجویان (غیررسمی)
+
+> [!NOTE]
+> این بخش برای تجربه‌های شخصی است و قاعده عمومی یا مشاوره حقوقی به شمار نمی‌آید. تجربه خود را با ذکر تاریخ در [صفحه ۵۷](../07-resources/57-contribute-experiences.md) یا از طریق یک Issue در GitHub بفرستید.
+
+- هنوز تجربه‌ای ثبت نشده است.
