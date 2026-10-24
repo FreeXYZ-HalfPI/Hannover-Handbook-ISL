@@ -1,7 +1,7 @@
 # ۳۴. تفریح، ورزش، فرهنگ و زندگی اجتماعی
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -19,6 +19,7 @@
 4.  **تخفیف دانشجویی** برای سینما و موزه با گواهی اشتغال به تحصیل ([LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist)). ← [۳۱. خرید روزمره، سوپرمارکت‌ها و فروشگاه‌های ارزان](31-shopping.md)
 5.  **شهر و دانشگاه:** [Campus und Stadt](https://www.uni-hannover.de/en/universitaet/campus-und-stadt) و رویدادهای شهر در [تقویم رویدادهای hannover.de](https://www.hannover.de/Veranstaltungskalender).
 6.  **دوست‌یابی:** Study Buddy و گروه‌های دانشجویی ← [۴۹. انجمن‌های دانشجویی بین‌المللی](../06-student-community/49-international-groups.md)، [۵۱. رویدادها، شبکه‌سازی و آشنایی با دانشجویان دیگر](../06-student-community/51-events-networking.md)
+7.  **گرفتن بلیت Flatrate:** بلیت‌های رایگان Flatrate از **سه روز پیش از اجرا** و تا وقتی جا باشد در فروشگاه اینترنتی تئاتر عرضه می‌شوند. افراد زیر ۳۰ سال، بسته به اجرا، تا ۳۰٪ تخفیف هم دارند ([Staatstheater – Kartenservice](https://staatstheater-hannover.de/de_DE/kartenservice)).
 
 ## ۴. مدارک و هزینه‌ها
 
@@ -49,10 +50,11 @@
 | ۷ | [Campus und Stadt](https://www.uni-hannover.de/en/universitaet/campus-und-stadt) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
 | ۸ | [تقویم رویدادهای hannover.de](https://www.hannover.de/Veranstaltungskalender) | شهر و منطقه هانوفر | 2026-10-23 | ✅ باز شد |
 | ۹ | [visit-hannover.com](https://www.visit-hannover.com/) | visit-hannover.com | 2026-10-23 | ✅ باز شد |
+| ۱۰ | [Staatstheater – Kartenservice](https://staatstheater-hannover.de/de_DE/kartenservice) | Staatstheater Hannover | 2026-10-25 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 
 > [!NOTE]
 > این بخش برای تجربه‌های شخصی است و قاعده عمومی یا مشاوره حقوقی به شمار نمی‌آید. تجربه خود را با ذکر تاریخ در [صفحه ۵۷](../07-resources/57-contribute-experiences.md) یا از طریق یک Issue در GitHub بفرستید.
 
-- هنوز تجربه‌ای ثبت نشده است.
+- **کانال ISL:** Hochschulsport، سینمای دانشجویی (UniKino)، کنسرت‌های رایگان فضای باز تابستان (Maschpark، Welfengarten)، Maschseefest و جشن سالانه Hochschulball (پیش‌فروش در نوامبر؛ بلیت‌ها در چند ساعت تمام می‌شوند) از پرتکرارترین پیشنهادهای فرهنگی کانال بودند. ← [۵۹. تقویم سالانه دانشجو](../07-resources/59-annual-calendar.md)

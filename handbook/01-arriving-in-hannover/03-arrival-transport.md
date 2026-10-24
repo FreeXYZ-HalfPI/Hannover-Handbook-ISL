@@ -1,7 +1,7 @@
 # ۳. ورود به هانوفر و رفت‌وآمد اولیه
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -19,6 +19,7 @@
 4.  **دانشگاه:** ساختمان اصلی (Welfenschloss) در Welfengarten 1, 30167 Hannover قرار دارد ([LUH – ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter)). مسیر با حمل‌ونقل عمومی: [راهنمای مسیر دانشگاه](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/wegweiser/anfahrtsbeschreibung). ← [۱۴. آشنایی با دانشگاه لایبنیتس](../02-starting-your-studies/14-campus-buildings.md)
 5.  برای پیدا کردن ساختمان‌ها از [Standortfinder](https://standortfinder.uni-hannover.de/) استفاده کنید ([LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist)).
 6.  **اگر هنوز خانه ندارید:** Studentenwerk گزینه‌های موقتی مانند Jugendherberge Hannover، Naturfreundehaus و Bed'nBudget را معرفی می‌کند ([Studentenwerk – Housing search](https://www.studentenwerk-hannover.de/en/wohnen/wohnungssuche)). ← [۴. پیدا کردن محل اقامت و قرارداد اجاره](04-housing.md)
+7.  **پول نقد در فرودگاه:** اگر از کشوری بیرون از اتحادیه اروپا (مثلاً ایران یا ترکیه) می‌آیید و **۱۰٬۰۰۰ یورو یا بیشتر** پول نقد یا معادل آن همراه دارید، باید آن را **کتبی** به گمرک اعلام کنید ([Zoll – Cash](https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Restrictions/Cash/cash_node.html)). ← [۲. پیش از سفر و ویزا](02-before-arrival-visa.md)
 
 ## ۴. مدارک و هزینه‌ها
 
@@ -27,6 +28,7 @@
 | بلیت تک‌سفره GVH | احتمالی | فقط پیش از فعال‌شدن بلیت ترم؛ فرودگاه در منطقه B؛ قیمت روز در ÜSTRA | [ÜSTRA](https://www.uestra.de/en/tickets-prices/tickets-and-subscriptions/) |
 | Deutschlandsemesterticket | الزامی (در هزینه ترم) | ۲۲۶٫۸۰ یورو از هزینه ترم زمستان ۲۰۲۶/۲۷ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) |
 | اقامت موقت | احتمالی | هاستل و مانند آن | [Studentenwerk](https://www.studentenwerk-hannover.de/en/wohnen/wohnungssuche) |
+| اعلام پول نقد به گمرک | احتمالی | فقط برای ۱۰٬۰۰۰ یورو یا بیشتر هنگام ورود از بیرون اتحادیه اروپا؛ رایگان | [Zoll – Cash](https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Restrictions/Cash/cash_node.html) |
 
 ## ۵. نهاد مسئول
 
@@ -49,6 +51,7 @@
 | ۸ | [Studentenwerk – Housing search](https://www.studentenwerk-hannover.de/en/wohnen/wohnungssuche) | Studentenwerk Hannover | 2026-10-23 | ✅ باز شد |
 | ۹ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
 | ۱۰ | [uestra.de (GVH)](https://www.uestra.de/) | ÜSTRA | 2026-10-23 | ✅ باز شد |
+| ۱۱ | [Zoll – Cash](https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Restrictions/Cash/cash_node.html) | گمرک آلمان (Zoll) | 2026-10-25 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

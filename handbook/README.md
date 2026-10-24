@@ -136,6 +136,8 @@
 - [۵۵. فهرست پیوندهای رسمی و راه‌های تماس](07-resources/55-contacts.md)
 - [۵۶. پرسش‌های پرتکرار دانشجویان تازه‌وارد](07-resources/56-faq.md)
 - [۵۷. پیشنهادها و تجربه‌های دانشجویان](07-resources/57-contribute-experiences.md)
+- [۵۸. مسائل پرتکرار دانشجویان](07-resources/58-telegram-insights.md)
+- [۵۹. تقویم سالانه دانشجو](07-resources/59-annual-calendar.md)
 
 ## مشارکت و نگهداری
 

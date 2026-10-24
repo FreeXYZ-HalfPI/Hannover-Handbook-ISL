@@ -1,7 +1,7 @@
 # ۵. ثبت محل سکونت — Anmeldung / Bürgeramt
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -22,6 +22,7 @@
 6.  اگر در **منطقه هانوفر** (بیرون از شهر، مثلاً Garbsen) زندگی می‌کنید، به Bürgeramt یا Einwohnermeldeamt همان شهر مراجعه کنید ([LUH](https://www.uni-hannover.de/formularsammlung/formularsammlung-hi/terminanfrage-anmeldung-bei-der-stadt-hannover-buergeramt)؛ [Studentenwerk](https://www.studentenwerk-hannover.de/en/international-students/first-steps-in-germany)).
 7.  اعلام دین در فرم اختیاری است؛ اما بسته به دینی که اعلام می‌کنید، ممکن است بعداً از حقوق شما **مالیات کلیسا (Kirchensteuer)** کسر شود ([LUH – Entry and Residence](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt)).
 8.  گواهی ثبت را نگه دارید؛ برای بانک و کارت کتابخانه TIB لازم است ([LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist)). ← [۶. افتتاح حساب بانکی](06-bank-account.md)
+9.  **صاحبخانه هم وظیفه دارد:** Wohnungsgeber باید ظرف دو هفته پس از نقل‌مکان، سکونت شما را کتبی یا الکترونیکی تأیید کند ([§ 19 BMG](https://www.gesetze-im-internet.de/bmg/__19.html)). ندادن تأییدیه یا ثبت‌نکردن به‌موقع تخلف است و جریمه آن تا ۱٬۰۰۰ یورو است ([§ 54 BMG](https://www.gesetze-im-internet.de/bmg/__54.html)). ← [۴. پیدا کردن خانه](04-housing.md)
 
 **صفحه‌های مرتبط:** [۴۷. پایان تحصیل و خروج از آلمان](../05-work-finance-career/47-leaving-germany.md)
 
@@ -60,10 +61,13 @@
 | ۹ | [LUH – Entry and Residence](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
 | ۱۰ | [hannover.gov.de – Meldebescheinigung](https://hannover.gov.de/buergerservice/dienstleistungen/meldebescheinigung-900000026-0.html?myMedium=1) | شهر هانوفر | 2026-10-23 | ✅ باز شد |
 | ۱۱ | [درخواست نوبت گروهی (انگلیسی)](https://www.uni-hannover.de/en/formularsammlung/formularsammlung-hi/date-request-registration-with-the-city-of-hannover-buergeramt) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
+| ۱۲ | [§ 17 BMG](https://www.gesetze-im-internet.de/bmg/__17.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
+| ۱۳ | [§ 19 BMG](https://www.gesetze-im-internet.de/bmg/__19.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
+| ۱۴ | [§ 54 BMG](https://www.gesetze-im-internet.de/bmg/__54.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 
 > [!NOTE]
 > این بخش برای تجربه‌های شخصی است و قاعده عمومی یا مشاوره حقوقی به شمار نمی‌آید. تجربه خود را با ذکر تاریخ در [صفحه ۵۷](../07-resources/57-contribute-experiences.md) یا از طریق یک Issue در GitHub بفرستید.
 
-- هنوز تجربه‌ای ثبت نشده است.
+- **ترتیبی که کانال ISL برای هفته‌های اول پیشنهاد کرده بود (۲۰۲۴):** ۱. Bürgeramt با Wohnungsgeberbestätigung و پاسپورت؛ ۲. نوبت بانک با گواهی ثبت، گواهی اشتغال به تحصیل و پاسپورت؛ ۳. درخواست اقامت از Ausländerbehörde با فایل PDF همین مدارک و ویزا. ← [۱۰. اجازه اقامت](10-residence-permit.md)
