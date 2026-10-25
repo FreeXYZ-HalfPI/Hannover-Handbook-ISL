@@ -17,3 +17,11 @@
 - [۳۷. امنیت، شماره‌های اضطراری و خدمات شهری](37-emergency.md) — شماره‌های اضطراری، گم شدن مدارک و پلیس
 - [۳۸. گواهینامه رانندگی](38-driving-licence.md) — اعتبار گواهینامه ایرانی و تبدیل آن
 - [۳۹. سفر در اروپا با اجازه اقامت](39-travel-schengen.md) — قاعده ۹۰ روز در ۱۸۰ روز در حوزه شینگن
+
+---
+
+> تهیه و تنظیم: **انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)**
+>
+> *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)*
+>
+> *Iranian Student Association of Leibniz University Hannover (ISL)*

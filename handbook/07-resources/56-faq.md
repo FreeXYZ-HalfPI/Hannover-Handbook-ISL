@@ -101,3 +101,10 @@
 | ۱۶ | [§ 19 BMG](https://www.gesetze-im-internet.de/bmg/__19.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
 | ۱۷ | [Zoll – Cash](https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Restrictions/Cash/cash_node.html) | گمرک آلمان (Zoll) | 2026-10-25 | ✅ باز شد |
 
+---
+
+> تهیه و تنظیم: **انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)**
+>
+> *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)*
+>
+> *Iranian Student Association of Leibniz University Hannover (ISL)*

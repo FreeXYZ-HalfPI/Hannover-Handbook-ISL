@@ -16,3 +16,11 @@
 - [۱۸. امتحانات، مقررات آموزشی و پشتیبانی تحصیلی](18-exams.md) — ثبت‌نام امتحان و اداره امتحانات
 - [۱۹. مرخصی تحصیلی، تغییر رشته و ترک تحصیل](19-leave-change-withdrawal.md) — Beurlaubung، تغییر رشته و Exmatrikulation
 - [۲۰. انجمن دانشجویی رشته](20-fachschaft.md) — انجمن دانشجویی رشته
+
+---
+
+> تهیه و تنظیم: **انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)**
+>
+> *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)*
+>
+> *Iranian Student Association of Leibniz University Hannover (ISL)*

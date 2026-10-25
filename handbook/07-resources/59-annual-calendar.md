@@ -83,3 +83,11 @@
 > این بخش برای تجربه‌های شخصی است و قاعده عمومی یا مشاوره حقوقی به شمار نمی‌آید. تجربه خود را با ذکر تاریخ در [صفحه ۵۷](57-contribute-experiences.md) یا از طریق یک Issue در GitHub بفرستید.
 
 - **روز آخر مهلت کار نکنید:** پرداخت هزینه ترم تا یک هفته طول می‌کشد تا ثبت شود، و QIS در روزهای آخر شلوغ است. یادآوری‌های کانال معمولاً یک هفته پیش از پایان مهلت منتشر می‌شدند.
+
+---
+
+> تهیه و تنظیم: **انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)**
+>
+> *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)*
+>
+> *Iranian Student Association of Leibniz University Hannover (ISL)*

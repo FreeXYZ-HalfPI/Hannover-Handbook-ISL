@@ -22,7 +22,7 @@ CSS = """
 @page {
   size: A4; margin: 18mm 16mm 20mm 16mm;
   @bottom-center { content: counter(page, persian); font-family: 'Vazirmatn', sans-serif; font-size: 9pt; color: #6b7280; }
-  @top-right { content: 'کتابچه راهنمای زندگی و تحصیل در هانوفر — ISL'; font-family: 'Vazirmatn', sans-serif; font-size: 8pt; color: #9ca3af; }
+  @top-right { content: 'کتابچه راهنمای زندگی و تحصیل در هانوفر — انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)'; font-family: 'Vazirmatn', sans-serif; font-size: 8pt; color: #9ca3af; }
 }
 @page cover { margin: 0; @bottom-center { content: none; } @top-right { content: none; } }
 html { direction: rtl; }
@@ -49,6 +49,7 @@ td.nw { white-space: nowrap; direction: ltr; }
 .box.note { background: #eff6ff; border-color: #3b82f6; }
 .box.warning, .box.important, .box.caution { background: #fffbeb; border-color: #f59e0b; }
 .box p { margin: 1pt 0; }
+img { max-width: 100%; height: auto; display: block; margin: 6pt auto; }
 .en-sub { display: block; font-size: 13pt; font-weight: 400; color: #4b5563; text-align: right; }
 .cover { page: cover; height: 297mm; box-sizing: border-box; padding: 60mm 22mm 0; background: linear-gradient(160deg, #1e3a8a 0%, #2563eb 100%); color: #fff; }
 .cover h1 { color: #fff; font-size: 30pt; line-height: 1.4; margin: 0 0 10pt; }
@@ -62,7 +63,9 @@ COVER = """
   <h1>کتابچه راهنمای زندگی و تحصیل در هانوفر</h1>
   <div class="en">Living in Hannover — A Practical Handbook</div>
   <div class="org">برای دانشجویان دانشگاه لایبنیتس هانوفر<br>
-  Iranian Students Association of Leibniz University Hannover (ISL)</div>
+  تهیه و تنظیم: <b>انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)</b><br>
+  <span dir="ltr">Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)</span><br>
+  <span dir="ltr">Iranian Student Association of Leibniz University Hannover (ISL)</span></div>
   <div class="meta">نسخه PDF — ساخته‌شده در {built}<br>
   نسخه زنده و به‌روز: github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL<br>
   این متن راهنمای عمومی است و جایگزین مشاوره حقوقی، مالیاتی یا پزشکی نیست. مجوز: GNU GPL v3.</div>
@@ -73,7 +76,7 @@ COVER = """
 def pages():
     """Root index, then each section's README followed by its numbered pages."""
     yield "root", HANDBOOK / "README.md"
-    for section in sorted(p for p in HANDBOOK.iterdir() if p.is_dir()):
+    for section in sorted(p for p in HANDBOOK.iterdir() if p.is_dir() and (p / "README.md").exists()):
         yield "sec", section / "README.md"
         for page in sorted(section.glob("[0-9][0-9]-*.md")):
             yield "topic", page
@@ -96,6 +99,11 @@ def render(kind, path):
         target = (path.parent / m.group(1)).resolve()
         return f'href="#{anchor(target)}"' if target.is_relative_to(HANDBOOK) and target.exists() else m.group(0)
     html = re.sub(r'href="([^":#]+\.md)"', link, html)
+    # Images are referenced relative to the page; the book is assembled elsewhere.
+    def img(m):
+        target = (path.parent / m.group(1)).resolve()
+        return f'src="{target.as_uri()}"' if target.exists() else m.group(0)
+    html = re.sub(r'src="([^":#]+)"', img, html)
     html = re.sub(r"<td>(\d{4}-\d{2}-\d{2})</td>", r'<td class="nw">\1</td>', html)
     if kind == "sec":
         html = re.sub(r"<h1([^>]*)>([^<(]+)\(([^)<]+)\)", r'<h1\1>\2<br><span class="en-sub" dir="ltr">\3</span>', html, count=1)

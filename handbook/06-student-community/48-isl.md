@@ -5,7 +5,7 @@
 
 ## ۱. هدف
 
-معرفی **Iranian Students Association of Leibniz University Hannover (ISL)**، انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر، و این‌که چطور با آن در ارتباط باشید، کمک بگیرید یا عضو فعال شوید.
+معرفی **Iranian Student Association of Leibniz University Hannover (ISL)**، انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر، و این‌که چطور با آن در ارتباط باشید، کمک بگیرید یا عضو فعال شوید.
 
 ## ۲. چه کسی به آن نیاز دارد؟
 
@@ -23,6 +23,7 @@
 7.  **رویدادهای همیشگی:** جشن **نوروز** (شب آخر سال، حدود ۲۰ مارس)، **شب یلدا** (۲۱ دسامبر، با ثبت‌نام در سایت International Office)، دورهمی و BBQ آشنایی شروع ترم، گروه موسیقی «دیدار»، کارگاه رقص ایرانی، تیم دوچرخه Stadtradeln و حضور در International Day دانشگاه. ← [۵۹. تقویم سالانه دانشجو](../07-resources/59-annual-calendar.md)
 8.  **ثبت رسمی گروه در دانشگاه:** فهرست گروه‌های دانشجویی دانشگاه در [Studentische Vereinigungen](https://www.uni-hannover.de/en/studium/im-studium/campusleben-und-engagement/gruppen-selbstverwaltung/studentische-vereinigungen) آمده است؛ AStA از گروه‌های دانشجویی بین‌المللی پشتیبانی می‌کند ([AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende)). ← [۴۹. انجمن‌های دانشجویی بین‌المللی](49-international-groups.md)
 9.  **همین کتابچه** پروژه ISL است. برای اصلاح یا افزودن تجربه به [۵۷. پیشنهادها و تجربه‌های دانشجویان](../07-resources/57-contribute-experiences.md) بروید. مسائلی که دانشجویان در کانال بیشتر از همه مطرح کرده‌اند در [۵۸. مسائل پرتکرار دانشجویان](../07-resources/58-telegram-insights.md) آمده است.
+10. **اساسنامه انجمن** به فارسی، آلمانی (ملاک) و انگلیسی ← [۶۵. اساسنامه](../08-association/65-statute.md)
 
 ## ۴. مدارک و هزینه‌ها
 
@@ -58,3 +59,11 @@
 
 - **کانال ISL (۲۰۲۳ تا ۲۰۲۶):** حدود ۵۰۰ پست اطلاع‌رسانی؛ موضوع‌های اصلی مسکن، مهلت‌ها، رویدادهای International Office و جشن‌های ایرانی بودند. ← [۵۸. مسائل پرتکرار دانشجویان](../07-resources/58-telegram-insights.md)
 - **ادامه کار پس از فارغ‌التحصیلی:** بنیان‌گذاران تأکید کرده بودند که بدون ساختار رسمی، فعالیت‌ها با رفتن افراد از بین می‌رود؛ دلیل اصلی ثبت انجمن همین بود.
+
+---
+
+> تهیه و تنظیم: **انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)**
+>
+> *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)*
+>
+> *Iranian Student Association of Leibniz University Hannover (ISL)*

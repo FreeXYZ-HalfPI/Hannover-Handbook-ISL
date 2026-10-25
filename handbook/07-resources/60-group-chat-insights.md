@@ -99,7 +99,7 @@
 
 ## ۵. نهاد مسئول
 
-- **نام رسمی:** Iranian Students Association of Leibniz University Hannover (ISL) — تهیه‌کننده این تحلیل
+- **نام رسمی:** Iranian Student Association of Leibniz University Hannover (ISL) — تهیه‌کننده این تحلیل
 - **داده:** خروجی ناشناس‌شده گروه تلگرامی «دانشجویان ایرانی هانوفر» (۲۰۲۲ تا ۲۰۲۶)؛ منتشر نمی‌شود.
 - **راه تماس:** Issue در مخزن GitHub کتابچه ← [۵۷. پیشنهادها و تجربه‌ها](57-contribute-experiences.md)
 
@@ -129,3 +129,11 @@
 
 - **نکته‌ای که اعضای باتجربه گروه بارها تکرار کردند:** «جزئیات قوانین، مبلغ‌ها و تجربه‌ها مدام عوض می‌شوند؛ کلیات مسیر روشن است، اما هر عدد را از منبع رسمی بررسی کنید.» این صفحه هم بر همین اساس نوشته شده است.
 - **ترتیب کارهای اول که گروه پیشنهاد می‌کرد:** خانه با امکان Anmeldung ← Anmeldung ← حساب بانکی و حساب مسدودی ← بیمه ← درخواست اجازه اقامت. ← [۵۴. چک‌لیست](54-checklist.md)
+
+---
+
+> تهیه و تنظیم: **انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)**
+>
+> *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)*
+>
+> *Iranian Student Association of Leibniz University Hannover (ISL)*

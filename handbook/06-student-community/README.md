@@ -12,3 +12,11 @@ ISL، انجمن‌های دانشجویی، فعالیت داوطلبانه و 
 - [۵۰. فعالیت‌های داوطلبانه و مشارکت در دانشگاه](50-volunteering.md) — داوطلبی در دانشگاه و شهر
 - [۵۱. رویدادها، شبکه‌سازی و آشنایی با دانشجویان دیگر](51-events-networking.md) — Erstival، O-Woche، Start Smart و شبکه‌سازی
 - [۵۲. مشارکت دانشجویی و نمایندگی در نهادهای دانشگاه](52-student-representation.md) — StuRa، AStA، Fachschaftها و انتخابات
+
+---
+
+> تهیه و تنظیم: **انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)**
+>
+> *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)*
+>
+> *Iranian Student Association of Leibniz University Hannover (ISL)*

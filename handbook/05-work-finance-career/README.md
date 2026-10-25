@@ -15,3 +15,11 @@
 - [۴۵. خدمات شغلی دانشگاه و فرصت‌های کارآموزی](45-career-service.md) — Career Service، کارآموزی و Career Dates
 - [۴۶. پس از فارغ‌التحصیلی](46-after-graduation.md) — اقامت جست‌وجوی کار، کارت آبی و اقامت دائم
 - [۴۷. پایان تحصیل و خروج از آلمان](47-leaving-germany.md) — Abmeldung، فسخ قراردادها و بستن حساب‌ها
+
+---
+
+> تهیه و تنظیم: **انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)**
+>
+> *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)*
+>
+> *Iranian Student Association of Leibniz University Hannover (ISL)*

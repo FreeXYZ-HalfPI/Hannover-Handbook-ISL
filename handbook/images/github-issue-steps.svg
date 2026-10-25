@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" font-family="Vazirmatn, Tahoma, sans-serif" font-size="14">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect width="760" height="210" fill="#ffffff"/>
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#065f46" direction="rtl">گزارش با Issue — پنج قدم</text>
+  <!-- boxes right to left -->
+  <g>
+    <rect x="610" y="60" width="130" height="90" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+    <text x="675" y="92" text-anchor="middle" font-weight="700" fill="#065f46">۱</text>
+    <text x="675" y="116" text-anchor="middle" fill="#111827" direction="rtl">ورود به GitHub</text>
+    <text x="675" y="136" text-anchor="middle" fill="#475569" font-size="12">Sign in</text>
+  </g>
+  <path d="M610 105 L582 105" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <g>
+    <rect x="460" y="60" width="120" height="90" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+    <text x="520" y="92" text-anchor="middle" font-weight="700" fill="#065f46">۲</text>
+    <text x="520" y="116" text-anchor="middle" fill="#111827" direction="rtl">زبانه Issues</text>
+    <text x="520" y="136" text-anchor="middle" fill="#475569" font-size="12">New issue</text>
+  </g>
+  <path d="M460 105 L432 105" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <g>
+    <rect x="310" y="60" width="120" height="90" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+    <text x="370" y="92" text-anchor="middle" font-weight="700" fill="#065f46">۳</text>
+    <text x="370" y="116" text-anchor="middle" fill="#111827" direction="rtl">انتخاب قالب</text>
+    <text x="370" y="136" text-anchor="middle" fill="#475569" font-size="12">Get started</text>
+  </g>
+  <path d="M310 105 L282 105" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <g>
+    <rect x="160" y="60" width="120" height="90" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+    <text x="220" y="92" text-anchor="middle" font-weight="700" fill="#065f46">۴</text>
+    <text x="220" y="116" text-anchor="middle" fill="#111827" direction="rtl">نوشتن مشکل</text>
+    <text x="220" y="136" text-anchor="middle" fill="#475569" font-size="12" direction="rtl">صفحه + منبع</text>
+  </g>
+  <path d="M160 105 L132 105" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <g>
+    <rect x="20" y="60" width="110" height="90" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+    <text x="75" y="92" text-anchor="middle" font-weight="700" fill="#065f46">۵</text>
+    <text x="75" y="116" text-anchor="middle" fill="#111827" direction="rtl">ارسال</text>
+    <text x="75" y="136" text-anchor="middle" fill="#475569" font-size="12">Submit</text>
+  </g>
+  <text x="380" y="188" text-anchor="middle" fill="#475569" font-size="13" direction="rtl">بدون نیاز به دانستن Git؛ فقط یک حساب رایگان GitHub</text>
+</svg>

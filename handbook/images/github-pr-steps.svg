@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" font-family="Vazirmatn, Tahoma, sans-serif" font-size="14">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect width="760" height="360" fill="#ffffff"/>
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#1e40af" direction="rtl">ویرایش مستقیم در مرورگر — Pull Request</text>
+
+  <!-- row 1 (right to left): 1,2,3 -->
+  <rect x="520" y="55" width="210" height="80" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="625" y="84" text-anchor="middle" font-weight="700" fill="#1e40af" direction="rtl">۱. صفحه را باز کنید</text>
+  <text x="625" y="110" text-anchor="middle" fill="#475569" font-size="12" direction="rtl">مثلاً handbook/…/10-residence-permit.md</text>
+  <path d="M520 95 L482 95" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="275" y="55" width="205" height="80" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="377" y="84" text-anchor="middle" font-weight="700" fill="#1e40af" direction="rtl">۲. روی مداد ✏️ بزنید</text>
+  <text x="377" y="110" text-anchor="middle" fill="#475569" font-size="12">Edit this file → Fork</text>
+  <path d="M275 95 L237 95" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="30" y="55" width="205" height="80" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="132" y="84" text-anchor="middle" font-weight="700" fill="#1e40af" direction="rtl">۳. متن را اصلاح کنید</text>
+  <text x="132" y="110" text-anchor="middle" fill="#475569" font-size="12" direction="rtl">منبع رسمی + تاریخ دسترسی</text>
+
+  <!-- down arrow -->
+  <path d="M132 135 L132 172" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- row 2 (left to right): 4,5,6 -->
+  <rect x="30" y="175" width="205" height="80" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="132" y="204" text-anchor="middle" font-weight="700" fill="#1e40af" direction="rtl">۴. ثبت تغییر</text>
+  <text x="132" y="230" text-anchor="middle" fill="#475569" font-size="12">Commit changes → Propose changes</text>
+  <path d="M235 215 L273 215" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="275" y="175" width="205" height="80" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="377" y="204" text-anchor="middle" font-weight="700" fill="#1e40af" direction="rtl">۵. درخواست ادغام</text>
+  <text x="377" y="230" text-anchor="middle" fill="#475569" font-size="12">Create pull request</text>
+  <path d="M480 215 L518 215" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="520" y="175" width="210" height="80" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="625" y="204" text-anchor="middle" font-weight="700" fill="#065f46" direction="rtl">۶. بازبینی و ادغام</text>
+  <text x="625" y="230" text-anchor="middle" fill="#475569" font-size="12" direction="rtl">تیم ISL → Merge</text>
+
+  <text x="380" y="300" text-anchor="middle" fill="#111827" direction="rtl">در قدم ۲ GitHub خودش یک کپی (Fork) از مخزن برای شما می‌سازد؛</text>
+  <text x="380" y="325" text-anchor="middle" fill="#111827" direction="rtl">متن اصلی تا وقتی تیم ISL تأیید نکند تغییر نمی‌کند.</text>
+</svg>

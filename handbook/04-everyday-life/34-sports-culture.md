@@ -58,3 +58,11 @@
 > این بخش برای تجربه‌های شخصی است و قاعده عمومی یا مشاوره حقوقی به شمار نمی‌آید. تجربه خود را با ذکر تاریخ در [صفحه ۵۷](../07-resources/57-contribute-experiences.md) یا از طریق یک Issue در GitHub بفرستید.
 
 - **کانال ISL:** Hochschulsport، سینمای دانشجویی (UniKino)، کنسرت‌های رایگان فضای باز تابستان (Maschpark، Welfengarten)، Maschseefest و جشن سالانه Hochschulball (پیش‌فروش در نوامبر؛ بلیت‌ها در چند ساعت تمام می‌شوند) از پرتکرارترین پیشنهادهای فرهنگی کانال بودند. ← [۵۹. تقویم سالانه دانشجو](../07-resources/59-annual-calendar.md)
+
+---
+
+> تهیه و تنظیم: **انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)**
+>
+> *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)*
+>
+> *Iranian Student Association of Leibniz University Hannover (ISL)*

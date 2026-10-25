@@ -2,6 +2,7 @@
 
 Thank you for helping new students in Hannover! Short version in English, full rules in Persian below.
 
+- **New to GitHub?** Follow the illustrated step-by-step guide: [handbook/07-resources/64-github-guide.md](handbook/07-resources/64-github-guide.md)
 - **Small fix** (a number, a deadline, a broken link): open the page on GitHub, click ✏️ *Edit*, and propose the change as a pull request. Add the official source and today's access date.
 - **Not sure / no time to edit?** Open an [issue](../../issues/new/choose) and describe the problem.
 - **New page:** copy [TEMPLATE.md](TEMPLATE.md) into the right section folder and add it to that section's `README.md` and to [handbook/README.md](handbook/README.md).
@@ -23,8 +24,9 @@ Thank you for helping new students in Hannover! Short version in English, full r
 3. **تاریخ دسترسی:** هر منبع در جدول بخش ۶ صفحه با «تاریخ دسترسی» (به شکل `YYYY-MM-DD`) و «نتیجه بررسی» ثبت می‌شود: `✅ باز شد` یا `❌ ...` با توضیح. اگر پیوندی را بررسی کردید، تاریخ آن را به‌روز کنید.
 4. **نشانه‌ها:** ⚠️ یعنی اطلاعات نیازمند تأیید یا تکمیل است؛ ℹ️ یعنی نکته عمومی. هشدارهای مهم (مثلاً «مشاوره حقوقی نیست») در کادر `> [!WARNING]` و تاریخ بررسی در کادر `> [!TIP]` بالای صفحه می‌آیند.
 5. **تجربه شخصی** را از اطلاعات رسمی جدا نگه دارید و فقط در بخش ۷ با تاریخ بنویسید. اطلاعات شخصی (شماره پاسپورت، نشانی دقیق و …) ننویسید.
-6. **زبان:** فارسی معیار با نیم‌فاصله درست؛ اصطلاح آلمانی در اولین کاربرد داخل پرانتز؛ نام انجمن همه‌جا: Iranian Students Association of Leibniz University Hannover (ISL).
-7. **پیوند به صفحه‌های دیگر** با مسیر نسبی، مثلاً `[۱۰. اجازه اقامت](../01-arriving-in-hannover/10-residence-permit.md)`.
+6. **زبان:** فارسی معیار با نیم‌فاصله درست؛ اصطلاح آلمانی در اولین کاربرد داخل پرانتز؛ نام انجمن همه‌جا: «انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)»، به آلمانی Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL) و به انگلیسی Iranian Student Association of Leibniz University Hannover (ISL).
+7. **لحن انسانی:** طوری بنویسید که برای یک دوست تازه‌وارد توضیح می‌دهید: جمله‌های کوتاه، فعل روشن، بدون اصطلاح اداری بی‌دلیل. اول بگویید «چه کار کنم»، بعد «چرا».
+8. **پیوند به صفحه‌های دیگر** با مسیر نسبی، مثلاً `[۱۰. اجازه اقامت](../01-arriving-in-hannover/10-residence-permit.md)`.
 
 ## بررسی و ساخت PDF
 

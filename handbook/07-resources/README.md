@@ -17,3 +17,13 @@
 - [۶۰. پرسش‌ها و راه‌حل‌های گروه گفت‌وگوی دانشجویان](60-group-chat-insights.md) — تحلیل ناشناس ۲۳٬۶۸۸ پیام گروه (۲۰۲۲ تا ۲۰۲۶)
 - [۶۱. امور کنسولی ایران، مدارک، ترجمه رسمی و کپی برابر اصل](61-consular-documents.md) — پاسپورت، میخک، لگالیزه، Beglaubigung
 - [۶۲. حقوق مصرف‌کننده، کلاه‌برداری و کمک حقوقی رایگان](62-consumer-rights-legal-help.md) — حق انصراف، Mahnbescheid، Legal Clinic
+- [۶۳. پزشکان فارسی‌زبان و انگلیسی‌زبان و قواعد نانوشته پزشکی و دندان‌پزشکی](63-persian-speaking-doctors.md) — فهرست از ثبت رسمی 116117، قانون شش‌ماهه دندان
+- [۶۴. راهنمای GitHub و مشارکت در این کتابچه](64-github-guide.md) — Issue و Pull Request، قدم‌به‌قدم با شکل
+
+---
+
+> تهیه و تنظیم: **انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)**
+>
+> *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)*
+>
+> *Iranian Student Association of Leibniz University Hannover (ISL)*

@@ -18,3 +18,11 @@
 - [۹. شماره مالیاتی](09-tax-id-broadcasting-fee.md) — Steuer-ID و عوارض رادیو و تلویزیون
 - [۱۰. اجازه اقامت](10-residence-permit.md) — اجازه اقامت تحصیلی، هزینه‌ها و Fiktionsbescheinigung
 - [۱۱. خانواده](11-family-reunification.md) — آمدن همسر و فرزند؛ درخواست از ایران از طریق IOM
+
+---
+
+> تهیه و تنظیم: **انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)**
+>
+> *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)*
+>
+> *Iranian Student Association of Leibniz University Hannover (ISL)*

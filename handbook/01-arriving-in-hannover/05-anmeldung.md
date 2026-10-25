@@ -71,3 +71,11 @@
 > این بخش برای تجربه‌های شخصی است و قاعده عمومی یا مشاوره حقوقی به شمار نمی‌آید. تجربه خود را با ذکر تاریخ در [صفحه ۵۷](../07-resources/57-contribute-experiences.md) یا از طریق یک Issue در GitHub بفرستید.
 
 - **ترتیبی که کانال ISL برای هفته‌های اول پیشنهاد کرده بود (۲۰۲۴):** ۱. Bürgeramt با Wohnungsgeberbestätigung و پاسپورت؛ ۲. نوبت بانک با گواهی ثبت، گواهی اشتغال به تحصیل و پاسپورت؛ ۳. درخواست اقامت از Ausländerbehörde با فایل PDF همین مدارک و ویزا. ← [۱۰. اجازه اقامت](10-residence-permit.md)
+
+---
+
+> تهیه و تنظیم: **انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)**
+>
+> *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)*
+>
+> *Iranian Student Association of Leibniz University Hannover (ISL)*

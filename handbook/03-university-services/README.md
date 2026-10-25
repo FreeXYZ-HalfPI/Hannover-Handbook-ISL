@@ -16,3 +16,11 @@
 - [۲۷. مرکز فرصت‌های برابر و تنوع](27-chancenvielfalt.md) — برابری فرصت‌ها، تبعیض و تحصیل با فرزند
 - [۲۸. غذاخوری‌های دانشجویی](28-mensa.md) — غذاخوری‌ها، شارژ کارت و قیمت‌ها
 - [۲۹. مشاوره تحصیلی، روانی، اجتماعی و مالی](29-counselling.md) — مشاوره تحصیلی، روان‌شناختی، اجتماعی و مالی
+
+---
+
+> تهیه و تنظیم: **انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)**
+>
+> *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)*
+>
+> *Iranian Student Association of Leibniz University Hannover (ISL)*

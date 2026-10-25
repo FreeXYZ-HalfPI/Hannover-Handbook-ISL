@@ -62,3 +62,11 @@
 
 - **روزهای اعتصاب (کانال ISL، ۲۰۲۵ و ۲۰۲۶):** وقتی فقط ÜSTRA یا regiobus اعتصاب داشتند، S-Bahn و قطارهای منطقه‌ای (DB) معمولاً کار می‌کردند. دانشجویان با دوچرخه، S-Bahn یا هم‌مسیری با دوستان به دانشگاه رسیدند.
 - **دوچرخه دست دوم و تعمیر:** فروش دوچرخه دانشگاه و کارگاه تعمیر رایگان (فقط هزینه قطعه) چند بار در کانال معرفی شد. ← [۲۴. انجمن عمومی دانشجویان](../03-university-services/24-asta.md)
+
+---
+
+> تهیه و تنظیم: **انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)**
+>
+> *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)*
+>
+> *Iranian Student Association of Leibniz University Hannover (ISL)*

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" font-family="Vazirmatn, Tahoma, sans-serif" font-size="15">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect width="760" height="330" fill="#ffffff"/>
+  <text x="380" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#1e3a8a" direction="rtl">دو راه برای کمک به کتابچه</text>
+
+  <!-- start -->
+  <rect x="290" y="52" width="180" height="50" rx="10" fill="#eef2ff" stroke="#1e3a8a" stroke-width="2"/>
+  <text x="380" y="83" text-anchor="middle" fill="#111827" direction="rtl">اشتباه یا کمبودی دیدید</text>
+
+  <!-- left: issue -->
+  <path d="M330 102 L180 140" stroke="#475569" stroke-width="2" marker-end="url(#a)" fill="none"/>
+  <rect x="40" y="142" width="280" height="64" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="180" y="168" text-anchor="middle" font-weight="700" fill="#065f46" direction="rtl">راه ساده: Issue</text>
+  <text x="180" y="192" text-anchor="middle" fill="#111827" direction="rtl">فقط مشکل را بنویسید (۵ دقیقه)</text>
+  <path d="M180 206 L180 240" stroke="#475569" stroke-width="2" marker-end="url(#a)" fill="none"/>
+  <rect x="40" y="242" width="280" height="64" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="180" y="268" text-anchor="middle" fill="#111827" direction="rtl">تیم ISL بررسی و صفحه را</text>
+  <text x="180" y="292" text-anchor="middle" fill="#111827" direction="rtl">اصلاح می‌کند</text>
+
+  <!-- right: pull request -->
+  <path d="M430 102 L580 140" stroke="#475569" stroke-width="2" marker-end="url(#a)" fill="none"/>
+  <rect x="440" y="142" width="280" height="64" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="580" y="168" text-anchor="middle" font-weight="700" fill="#1e40af" direction="rtl">راه مستقیم: Pull Request</text>
+  <text x="580" y="192" text-anchor="middle" fill="#111827" direction="rtl">خودتان متن را ویرایش کنید</text>
+  <path d="M580 206 L580 240" stroke="#475569" stroke-width="2" marker-end="url(#a)" fill="none"/>
+  <rect x="440" y="242" width="280" height="64" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="580" y="268" text-anchor="middle" fill="#111827" direction="rtl">تیم ISL بازبینی و تغییر شما را</text>
+  <text x="580" y="292" text-anchor="middle" fill="#111827" direction="rtl">ادغام (Merge) می‌کند</text>
+</svg>

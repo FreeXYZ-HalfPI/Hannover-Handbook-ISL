@@ -103,3 +103,11 @@
 | ۱۶ | [hannover.de](https://www.hannover.de/) | شهر و منطقه هانوفر | 2026-10-23 | ✅ باز شد |
 | ۱۷ | [studentenwerk-hannover.de](https://www.studentenwerk-hannover.de/) | Studentenwerk Hannover | 2026-10-23 | ✅ باز شد |
 | ۱۸ | [asta-hannover.de](https://www.asta-hannover.de/) | AStA Hannover | 2026-10-23 | ✅ باز شد |
+
+---
+
+> تهیه و تنظیم: **انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL)**
+>
+> *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)*
+>
+> *Iranian Student Association of Leibniz University Hannover (ISL)*
