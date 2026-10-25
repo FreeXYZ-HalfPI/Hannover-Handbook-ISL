@@ -22,7 +22,7 @@ A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz 
 | [۴ — زندگی روزمره در هانوفر](handbook/04-everyday-life/README.md) | ۳۰–۳۹ |
 | [۵ — کار، امور مالی و آینده شغلی](handbook/05-work-finance-career/README.md) | ۴۰–۴۷ |
 | [۶ — جامعه دانشجویی و مشارکت اجتماعی](handbook/06-student-community/README.md) | ۴۸–۵۲ |
-| [۷ — منابع و پیوست‌ها](handbook/07-resources/README.md) | ۵۳–۵۹ |
+| [۷ — منابع و پیوست‌ها](handbook/07-resources/README.md) | ۵۳–۶۲ |
 
 ## مشارکت
 

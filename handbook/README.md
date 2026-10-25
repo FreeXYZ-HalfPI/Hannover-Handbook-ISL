@@ -1,7 +1,7 @@
 # Living in Hannover - A practical Handbook
 
 > [!TIP]
-> **کتابچه راهنمای زندگی و تحصیل در هانوفر** · تهیه‌شده توسط **Iranian Students Association of Leibniz University Hannover (ISL)** · تاریخ آخرین بررسی کل کتابچه: 2026-10-23
+> **کتابچه راهنمای زندگی و تحصیل در هانوفر** · تهیه‌شده توسط **Iranian Students Association of Leibniz University Hannover (ISL)** · تاریخ آخرین بررسی کل کتابچه: 2026-10-25
 
 ## این کتابچه چیست؟
 
@@ -17,6 +17,8 @@
 - **یک اصطلاح آلمانی را نمی‌فهمید؟** ← [۵۳. واژه‌نامه فارسی–آلمانی اصطلاحات اداری و دانشگاهی](07-resources/53-glossary.md)
 - **پرسش سریع دارید؟** ← [۵۶. پرسش‌های پرتکرار دانشجویان تازه‌وارد](07-resources/56-faq.md)
 - **تحصیلتان تمام می‌شود؟** ← [۴۶. پس از فارغ‌التحصیلی](05-work-finance-career/46-after-graduation.md)، [۴۷. پایان تحصیل و خروج از آلمان](05-work-finance-career/47-leaving-germany.md)
+- **پاسپورت ایرانی‌تان رو به انقضاست یا ترجمه رسمی لازم دارید؟** ← [۶۱. امور کنسولی و مدارک](07-resources/61-consular-documents.md)
+- **قراردادی امضا کرده‌اید که پشیمانید، یا کلاه‌برداری شده است؟** ← [۶۲. حقوق مصرف‌کننده و کمک حقوقی](07-resources/62-consumer-rights-legal-help.md)
 - **در وضعیت اضطراری هستید؟** ← [۳۷. امنیت، شماره‌های اضطراری و خدمات شهری](04-everyday-life/37-emergency.md) (آمبولانس 112، پلیس 110)
 
 ## ساختار هر صفحه
@@ -138,6 +140,9 @@
 - [۵۷. پیشنهادها و تجربه‌های دانشجویان](07-resources/57-contribute-experiences.md)
 - [۵۸. مسائل پرتکرار دانشجویان](07-resources/58-telegram-insights.md)
 - [۵۹. تقویم سالانه دانشجو](07-resources/59-annual-calendar.md)
+- [۶۰. پرسش‌ها و راه‌حل‌های گروه گفت‌وگوی دانشجویان](07-resources/60-group-chat-insights.md)
+- [۶۱. امور کنسولی ایران، مدارک، ترجمه رسمی و کپی برابر اصل](07-resources/61-consular-documents.md)
+- [۶۲. حقوق مصرف‌کننده، کلاه‌برداری و کمک حقوقی رایگان](07-resources/62-consumer-rights-legal-help.md)
 
 ## مشارکت و نگهداری
 

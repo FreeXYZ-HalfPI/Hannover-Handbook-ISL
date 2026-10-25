@@ -53,6 +53,22 @@
 
 **مهلت‌های مهم سال را کجا ببینم؟** ← [۵۹. تقویم سالانه دانشجو](59-annual-calendar.md) · مسائل پرتکرار ← [۵۸](58-telegram-insights.md)
 
+**بانک برایم حساب باز نمی‌کند.** شعبه یا بانک دیگری را امتحان کنید؛ هر مصرف‌کننده‌ای که به‌طور قانونی در اتحادیه اروپا اقامت دارد حق حساب پایه (Basiskonto) دارد و بانک باید ظرف ده روز کاری پاسخ دهد ([§ 31 ZKG](https://www.gesetze-im-internet.de/zkg/__31.html)). ← [۶. حساب بانکی](../01-arriving-in-hannover/06-bank-account.md)
+
+**قراردادی آنلاین یا بیرون از فروشگاه امضا کرده‌ام و پشیمانم.** معمولاً ۱۴ روز حق انصراف دارید و لازم نیست دلیلی بیاورید ([§ 355 BGB](https://www.gesetze-im-internet.de/bgb/__355.html)). ← [۶۲. حقوق مصرف‌کننده و کمک حقوقی](62-consumer-rights-legal-help.md)
+
+**مشاوره حقوقی رایگان کجاست؟** Legal Clinic دانشکده حقوق برای دانشجویان LUH رایگان است ([Legal Clinic](https://www.jura.uni-hannover.de/de/legalclinic)). ← [۶۲](62-consumer-rights-legal-help.md)
+
+**کپی برابر اصل مدارک دانشگاه را کجا بگیرم؟** در Beglaubigungsstelle دانشگاه، رایگان و با نوبت ([LUH](https://www.uni-hannover.de/universitaet/campus-stadt/beglaubigungsstelle)). ← [۶۱. امور کنسولی و مدارک](61-consular-documents.md)
+
+**پاسپورت ایرانی‌ام رو به انقضاست.** پیش از درخواست تمدید اقامت آن را تمدید کنید؛ درخواست از طریق سامانه میخک و مراجعه حضوری به سفارت ایران است. ← [۶۱](61-consular-documents.md)
+
+**می‌خواهم پدر و مادرم را برای دیدار دعوت کنم.** تعهدنامه (Verpflichtungserklärung) در Ausländerbehörde، ۲۹ یورو ([شهر هانوفر](https://hannover.gov.de/buergerservice/dienstleistungen/verpflichtungserklaerung-abgeben-1322-0.html?myMedium=1)). ← [۱۱. خانواده](../01-arriving-in-hannover/11-family-reunification.md)
+
+**۳۰ ساله می‌شوم؛ بیمه دانشجویی‌ام چه می‌شود؟** بیمه اجباری دانشجویی حداکثر تا پایان ۳۰ سالگی است ([§ 5 SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html)). از صندوق بیمه زودتر بپرسید. ← [۷. بیمه درمانی](../01-arriving-in-hannover/07-health-insurance.md)
+
+**دیر به دکتر رسیدم؛ گواهی بیماری عقب‌تر می‌دهند؟** فقط استثنائاً و معمولاً تا سه روز. ← [۳۳. پزشک](../04-everyday-life/33-doctor-pharmacy.md)
+
 ## ۴. مدارک و هزینه‌ها
 
 - در صفحه هر موضوع آمده است.
