@@ -150,7 +150,7 @@
 - [۵۷. پیشنهادها و تجربه‌های دانشجویان](07-resources/57-contribute-experiences.md)
 - [۵۸. مسائل پرتکرار دانشجویان](07-resources/58-telegram-insights.md)
 - [۵۹. تقویم سالانه دانشجو](07-resources/59-annual-calendar.md)
-- [۶۰. پرسش‌ها و راه‌حل‌های گروه گفت‌وگوی دانشجویان](07-resources/60-group-chat-insights.md)
+- [۶۰. پرسش‌ها و راه‌حل‌های پرتکرار — تجربه دانشجویی](07-resources/60-student-experience.md)
 - [۶۱. امور کنسولی ایران، مدارک، ترجمه رسمی و کپی برابر اصل](07-resources/61-consular-documents.md)
 - [۶۲. حقوق مصرف‌کننده، کلاه‌برداری و کمک حقوقی رایگان](07-resources/62-consumer-rights-legal-help.md)
 - [۶۳. پزشکان فارسی‌زبان و انگلیسی‌زبان و قواعد نانوشته پزشکی و دندان‌پزشکی](07-resources/63-persian-speaking-doctors.md)
