@@ -33,6 +33,7 @@ Thank you for helping new students in Hannover! Short version in English, full r
 ```bash
 bash tools/check_links.sh          # وضعیت همه پیوندهای بیرونی
 python3 tools/build_pdf.py         # ساخت pdf/ISL-Handbook-Living-in-Hannover.pdf
+python3 tools/build_search.py      # ساخت دوباره نمایه جست‌وجو (search/search-index.js) برای هر دو کتابچه
 ```
 
 برخی سایت‌ها (مثلاً make-it-in-germany.com و LinkedIn) درخواست خودکار را مسدود می‌کنند؛ این پیوندها را در مرورگر باز کنید.
