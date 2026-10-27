@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyleft 🄯 2026 ISL and contributors
 """Convert a Confluence export (isl-handbook-export-*.html) into the handbook/ Markdown tree.
 
 Usage: python3 tools/confluence_to_markdown.py EXPORT.html

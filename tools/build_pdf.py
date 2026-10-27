@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyleft 🄯 2026 ISL and contributors
 """Build the handbook PDF from the Markdown files in handbook/.
 
 Usage: python3 tools/build_pdf.py [OUTPUT.pdf]
@@ -71,7 +73,7 @@ COVER = """
   <span dir="ltr">Iranian Student Association of Leibniz University Hannover (ISL)</span></div>
   <div class="meta">نسخه PDF — ساخته‌شده در {built}<br>
   نسخه زنده و به‌روز: github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL<br>
-  این متن راهنمای عمومی است و جایگزین مشاوره حقوقی، مالیاتی یا پزشکی نیست. مجوز: GNU GPL v3.</div>
+  این متن راهنمای عمومی است و جایگزین مشاوره حقوقی، مالیاتی یا پزشکی نیست. کپی‌لفت 🄯 ۲۰۲۶ ISL و مشارکت‌کنندگان — آزاد برای استفاده، پخش و تغییر، با همین مجوز (GNU GPL نسخه ۳ یا بالاتر).</div>
 </div>
 """
 
