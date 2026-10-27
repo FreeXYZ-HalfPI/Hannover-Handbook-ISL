@@ -33,6 +33,7 @@ Thank you for helping new students in Hannover! Short version in English, full r
 ```bash
 bash tools/check_links.sh          # وضعیت همه پیوندهای بیرونی
 python3 tools/build_pdf.py         # ساخت pdf/ISL-Handbook-Living-in-Hannover.pdf
+python3 tools/disclaimer.py        # به‌روزرسانی سلب مسئولیت و تاریخ آخرین به‌روزرسانی بالای هر صفحه
 python3 tools/build_search.py      # ساخت دوباره نمایه جست‌وجو (search/search-index.js) برای هر دو کتابچه
 ```
 
@@ -43,3 +44,7 @@ python3 tools/build_search.py      # ساخت دوباره نمایه جست‌�
 مقررات اقامت، بیمه، مالیات و کار زود تغییر می‌کنند. هر صفحه را دست‌کم هر ترم یک بار بازبینی کنید و «تاریخ آخرین بررسی» را در کادر بالای صفحه به‌روز کنید.
 
 </div>
+
+## سلب مسئولیت و فهرست تغییرات
+
+بالای هر صفحه جعبه سلب مسئولیت را `tools/disclaimer.py` می‌سازد (بین `<!-- disclaimer:start -->` و `<!-- disclaimer:end -->`)؛ آن را دستی ویرایش نکنید. پس از هر تغییر مهم یک خط به [CHANGELOG.md](CHANGELOG.md) اضافه کنید.

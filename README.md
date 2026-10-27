@@ -6,6 +6,22 @@ A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz 
 
 📖 **Start reading:** [handbook/README.md](handbook/README.md) · 📥 **Download the whole handbook as one PDF:** [ISL-Handbook-Living-in-Hannover.pdf](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/raw/main/pdf/ISL-Handbook-Living-in-Hannover.pdf) · 🤝 **How to contribute (step by step):** [GitHub guide](handbook/07-resources/64-github-guide.md) · 🔎 **Search both handbooks (Persian + English):** [search/index.html](search/index.html) (download the repository and open it in your browser) or `python3 tools/search.py your words`
 
+
+> [!CAUTION]
+> ### ⚠️ Guidance based on students' experience — not law, not official, legal or medical advice
+>
+> **Rules, amounts and deadlines can change at any time.** The Iranian Student Association of Leibniz University Hannover (ISL) and the authors accept **no responsibility** for the accuracy or currency of this handbook. Always check with the responsible official office.
+>
+> ### ⚠️ <span dir="rtl">این کتابچه فقط راهنما و حاصل تجربه دانشجویان است — نه قانون و نه مشاوره رسمی، حقوقی یا پزشکی</span>
+>
+> <span dir="rtl">**قوانین، مبالغ و مهلت‌ها ممکن است هر زمان تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان **هیچ مسئولیتی** در قبال درستی یا به‌روز بودن مطالب ندارند. همیشه از نهاد رسمی مسئول بپرسید.</span>
+>
+> ### 🗓️ Last updated: 2026-10-27
+>
+> ### <span dir="rtl">🗓️ آخرین به‌روزرسانی: ⁦2026-10-27⁩</span>
+>
+> Follow changes · پیگیری تغییرات: [CHANGELOG.md](CHANGELOG.md) · **Watch** this repository on GitHub · [ISL Telegram channel](https://t.me/hannover_iranian_students)
+
 ---
 
 <div dir="rtl">

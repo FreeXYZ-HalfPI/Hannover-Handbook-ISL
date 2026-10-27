@@ -47,7 +47,10 @@ td.nw { white-space: nowrap; direction: ltr; }
 .box { border-radius: 4pt; padding: 6pt 10pt; margin: 6pt 0; border-right: 4pt solid; break-inside: avoid; }
 .box.tip { background: #ecfdf5; border-color: #10b981; }
 .box.note { background: #eff6ff; border-color: #3b82f6; }
-.box.warning, .box.important, .box.caution { background: #fffbeb; border-color: #f59e0b; }
+.box.warning, .box.important { background: #fffbeb; border-color: #f59e0b; }
+.box.caution { background: #fef2f2; border-color: #dc2626; }
+.box h3 { margin: 2pt 0 3pt; font-size: 12.5pt; color: #991b1b; }
+.box.warning h3 { color: #92400e; }
 .box p { margin: 1pt 0; }
 img { max-width: 100%; height: auto; display: block; margin: 6pt auto; }
 .en-sub { display: block; font-size: 13pt; font-weight: 400; color: #4b5563; text-align: right; }
