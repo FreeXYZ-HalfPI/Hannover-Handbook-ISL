@@ -6,11 +6,13 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی: ⁦2026-10-25⁩
+> ### 🗓️ آخرین به‌روزرسانی: ⁦2026-10-29⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
 > کپی‌لفت 🄯 ISL و مشارکت‌کنندگان — آزاد برای استفاده، پخش و تغییر، به شرط انتشار با همین مجوز ([GNU GPL نسخه ۳ یا بالاتر](../LICENSE))
+>
+> 💬 درباره این صفحه: [🐞 گزارش خطا یا پیوند خراب](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/issues/new?template=broken-link-or-error.md&title=%5Bhandbook/README.md%5D%20) · [💡 پیشنهاد یا ایده](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/issues/new?template=idea.md&title=%5Bhandbook/README.md%5D%20) · [✍️ ثبت تجربه](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/issues/new?template=experience.md&title=%5Bhandbook/README.md%5D%20) · [✏️ ویرایش مستقیم](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/edit/main/handbook/README.md)
 <!-- disclaimer:end -->
 
 > [!TIP]
@@ -36,12 +38,13 @@
 - **دنبال یک شماره تلفن یا نشانی هستید؟** ← [۵۵. فهرست پیوندهای رسمی و راه‌های تماس](07-resources/55-contacts.md)
 - **یک اصطلاح آلمانی را نمی‌فهمید؟** ← [۵۳. واژه‌نامه فارسی–آلمانی اصطلاحات اداری و دانشگاهی](07-resources/53-glossary.md)
 - **دنبال موضوع خاصی هستید؟** ← [🔎 جست‌وجو در هر دو کتابچه](../search/index.html) (فایل را در مرورگر باز کنید) یا در ترمینال: `python3 tools/search.py کلمه‌ها`
+- **می‌خواهید با آلمانی‌ها آشنا شوید و آلمانی حرف بزنید؟** ← [۶۷. احساس تعلق در هانوفر](06-student-community/67-belonging-in-hannover.md)، [کافه زبان در صفحه ۳۵](04-everyday-life/35-learning-german.md)
 - **پرسش سریع دارید؟** ← [۵۶. پرسش‌های پرتکرار دانشجویان تازه‌وارد](07-resources/56-faq.md)
 - **تحصیلتان تمام می‌شود؟** ← [۴۶. پس از فارغ‌التحصیلی](05-work-finance-career/46-after-graduation.md)، [۴۷. پایان تحصیل و خروج از آلمان](05-work-finance-career/47-leaving-germany.md)
 - **پاسپورت ایرانی‌تان رو به انقضاست یا ترجمه رسمی لازم دارید؟** ← [۶۱. امور کنسولی و مدارک](07-resources/61-consular-documents.md)
 - **قراردادی امضا کرده‌اید که پشیمانید، یا کلاه‌برداری شده است؟** ← [۶۲. حقوق مصرف‌کننده و کمک حقوقی](07-resources/62-consumer-rights-legal-help.md)
 - **پزشک فارسی‌زبان یا انگلیسی‌زبان می‌خواهید؟** ← [۶۳. پزشکان فارسی‌زبان و قواعد پزشکی و دندان‌پزشکی](07-resources/63-persian-speaking-doctors.md)
-- **می‌خواهید اشتباهی را گزارش کنید یا کمک کنید؟** ← [۶۴. راهنمای GitHub و مشارکت](07-resources/64-github-guide.md)
+- **می‌خواهید اشتباهی را گزارش کنید، ایده‌ای بدهید یا کمک کنید؟** ← بالای هر صفحه دکمه‌های «🐞 گزارش خطا»، «💡 پیشنهاد یا ایده»، «✍️ ثبت تجربه» و «✏️ ویرایش مستقیم» هست؛ راهنمای کامل: [۶۴. راهنمای GitHub و مشارکت](07-resources/64-github-guide.md)
 - **کل کتابچه را برای خواندن بدون اینترنت می‌خواهید؟** ← [۶۶. دریافت PDF](09-download/66-download-pdf.md)
 - **در وضعیت اضطراری هستید؟** ← [۳۷. امنیت، شماره‌های اضطراری و خدمات شهری](04-everyday-life/37-emergency.md) (آمبولانس 112، پلیس 110)
 
@@ -152,6 +155,7 @@
 - [۵۰. فعالیت‌های داوطلبانه و مشارکت در دانشگاه](06-student-community/50-volunteering.md)
 - [۵۱. رویدادها، شبکه‌سازی و آشنایی با دانشجویان دیگر](06-student-community/51-events-networking.md)
 - [۵۲. مشارکت دانشجویی و نمایندگی در نهادهای دانشگاه](06-student-community/52-student-representation.md)
+- [۶۷. احساس تعلق در هانوفر — فرهنگ، آشنایی با مردم و داوطلبی](06-student-community/67-belonging-in-hannover.md)
 
 ### [بخش ۷ — منابع و پیوست‌ها](07-resources/README.md)
 

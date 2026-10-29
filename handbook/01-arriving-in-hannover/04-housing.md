@@ -6,15 +6,17 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-25⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-29⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
 > کپی‌لفت 🄯 ISL و مشارکت‌کنندگان — آزاد برای استفاده، پخش و تغییر، به شرط انتشار با همین مجوز ([GNU GPL نسخه ۳ یا بالاتر](../../LICENSE))
+>
+> 💬 درباره این صفحه: [🐞 گزارش خطا یا پیوند خراب](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/issues/new?template=broken-link-or-error.md&title=%5Bhandbook/01-arriving-in-hannover/04-housing.md%5D%20) · [💡 پیشنهاد یا ایده](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/issues/new?template=idea.md&title=%5Bhandbook/01-arriving-in-hannover/04-housing.md%5D%20) · [✍️ ثبت تجربه](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/issues/new?template=experience.md&title=%5Bhandbook/01-arriving-in-hannover/04-housing.md%5D%20) · [✏️ ویرایش مستقیم](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/edit/main/handbook/01-arriving-in-hannover/04-housing.md)
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-29 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -45,6 +47,40 @@
 13. **اجاره از مستأجر (Untermiete):** کسی که خودش مستأجر است فقط با **اجازه صاحبخانه** می‌تواند خانه یا اتاق را به شما اجاره دهد ([§ 540 BGB](https://www.gesetze-im-internet.de/bgb/__540.html)). مدرک این اجازه را بخواهید و بپرسید آیا امکان Anmeldung هست. ← [۵. ثبت محل سکونت](05-anmeldung.md)
 14. **پیش از قرارداد کتبی و دیدن خانه یا دریافت کلید، ودیعه یا «پول رزرو» نفرستید.** ← [۶۲. حقوق مصرف‌کننده و کمک حقوقی](../07-resources/62-consumer-rights-legal-help.md)
 
+### قیمت واقعی، ودیعه و مذاکره
+
+15. **قیمت واقعی یک اتاق WG:** طبق گزارش مسکن دانشجویی MLP و مؤسسه اقتصاد آلمان (IW) برای نیمه اول ۲۰۲۶، در هانوفر یک اتاق WG نمونه (۲۰ متر مربع) به‌طور میانگین **حدود ۴۶۱ یورو اجاره گرم** (۳۸۵ یورو سرد) و یک آپارتمان کوچک نمونه (۳۰ متر مربع) **حدود ۵۰۵ یورو گرم** (۳۹۲ یورو سرد) آگهی شده است ([MLP Studentenwohnreport 2026, Tabelle](https://www.iwkoeln.de/fileadmin/user_upload/Studien/Gutachten/PDF/2026/MLP_Studentenwohnreport_2026.pdf)). این‌ها قیمت **آگهی‌ها** هستند، نه قراردادهای قدیمی؛ پس برای WG بودجه‌ای حدود ۴۰۰ تا ۵۰۰ یورو در ماه واقع‌بینانه است. اتاق خوابگاه Studentenwerk (۲۴۰ تا ۵۰۰ یورو) معمولاً ارزان‌تر است. «اجاره گرم» (Warmmiete) یعنی با هزینه‌های جانبی مثل گرمایش و آب؛ «اجاره سرد» (Kaltmiete) بدون آن‌ها. همیشه بپرسید اینترنت، برق و Rundfunkbeitrag جزو مبلغ هست یا نه. ← [۹. عوارض رادیو و تلویزیون](09-tax-id-broadcasting-fee.md)
+16. **ودیعه (Kaution) در خوابگاه Studentenwerk:** مبلغ دقیق در قرارداد هر خوابگاه نوشته می‌شود. ودیعه **همراه اولین اجاره با برداشت مستقیم (Lastschrift)** از حساب شما برداشته می‌شود و **اتاق را فقط پس از پرداخت کامل ودیعه تحویل می‌دهند**؛ پس پیش از اسباب‌کشی حساب بانکی آلمانی داشته باشید. ودیعه بهره ندارد و حداکثر **شش ماه پس از پایان قرارداد** برگردانده می‌شود؛ خسارت بیش از استهلاک معمولی، وسایل یا کلید گم‌شده از آن کم می‌شود ([Studentenwerk – Allgemeine Mietbedingungen](https://www.studentenwerk-hannover.de/fileadmin/user_upload/Downloads/2_Wohnen/2024-10_AMB_alle_WH.pdf)، بند ۵). ← [۶. حساب بانکی](06-bank-account.md)
+17. **ایرادهای اتاق را ظرف هفت روز کتبی گزارش دهید:** در خوابگاه‌های Studentenwerk اگر ایرادها را ظرف **هفت روز پس از ورود** کتبی اعلام نکنید، یعنی وضعیت اتاق را پذیرفته‌اید ([Studentenwerk – Allgemeine Mietbedingungen](https://www.studentenwerk-hannover.de/fileadmin/user_upload/Downloads/2_Wohnen/2024-10_AMB_alle_WH.pdf)، بخش «Mängel der Mietsache»). روز اول از همه‌جا عکس با تاریخ بگیرید و برای خانه خصوصی هم صورت‌جلسه تحویل (Übergabeprotokoll) بخواهید؛ این کار هنگام پس گرفتن ودیعه کمک زیادی می‌کند. ℹ️
+18. **ودیعه در خانه خصوصی:** قانون فقط سقف را تعیین می‌کند (سه برابر اجاره سرد، در سه قسط؛ بند ۹ بالا). ℹ️ **تجربه دانشجویان:** در خانه‌ها و WGهای خصوصی ودیعه اغلب حدود **دو برابر اجاره** بود و در خوابگاه Studentenwerk حدود **یک برابر اجاره یا کمی بیشتر**. ودیعه را فقط به حساب بانکی و با رسید بپردازید، نه نقد بدون رسید.
+19. **روزهای معارفه (Orientation Days) دانشگاه را از دست ندهید:** دفتر بین‌الملل پیش از هر ترم برای همه دانشجویان بین‌المللی تازه‌وارد برنامه معارفه دارد؛ از جمله جلسه‌های آنلاین درباره ثبت‌نام، بیمه، **مسکن**، امور مالی و اقامت، تور دانشگاه و شهر، و حتی نوبت گروهی برای **ثبت محل سکونت در Bürgeramt** (در ترم زمستانی ۲۰۲۶: ۱۳ اکتبر). ثبت‌نام با فرم همان صفحه است و کسانی که دیر می‌رسند جلسه جبرانی (Late-Arrival Session) دارند ([LUH – Orientation Days](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/preparation-courses-and-introductory-sessions/orientation-days)). ← [۵۱. رویدادها و شبکه‌سازی](../06-student-community/51-events-networking.md)
+
+### ترفندهای پیدا کردن خانه و مذاکره (تجربه دانشجویان)
+
+20. **از چند راه هم‌زمان جلو بروید:** ℹ️
+    - **Studentenwerk:** درخواست را در پورتال ثبت کنید و جداگانه به **مسئول هر خوابگاه** که می‌خواهید ایمیل کوتاه بزنید: تاریخ ورود، رشته، مدت اقامت و فوریت خود را بنویسید. هر چند هفته یک بار پیگیری مؤدبانه کنید.
+    - **دفتر بین‌الملل (Welcome Centre):** فهرست خوابگاه‌های خصوصی و پیشنهادهای اسکان موقت را بخواهید و در Orientation Days درباره مسکن بپرسید.
+    - **آگهی‌ها:** هر روز صبح wg-gesucht.de و بورس مسکن Studentenwerk را ببینید؛ آگهی‌های خوب در چند ساعت پر می‌شوند.
+21. **پیام اول را درست بنویسید:** کوتاه، به آلمانی (حتی ساده) و شخصی: خودتان را معرفی کنید (نام، رشته، دانشگاه)، از کی و تا کی اتاق را می‌خواهید، و **در همان پیام اول بپرسید آیا Anmeldung ممکن است**. پیام‌های کپی‌شده و بی‌نام کمتر جواب می‌گیرند. ℹ️
+22. **پوشه مدارک آماده داشته باشید:** نامه پذیرش یا گواهی ثبت‌نام، کپی پاسپورت و ویزا، مدرک تأمین مالی (حساب مسدودی یا بورسیه) و اگر دارید نامه کارفرما. دانشجوی تازه‌وارد معمولاً گزارش اعتباری SCHUFA ندارد؛ به‌جای آن مدرک حساب مسدودی را نشان دهید. ℹ️
+23. **در بازدید یا «WG-Casting»:** سر وقت بروید، درباره خودتان و برنامه روزانه‌تان صادقانه حرف بزنید و این‌ها را بپرسید: چه کسی قرارداد می‌دهد (صاحبخانه یا مستأجر اصلی)، Anmeldung، مبلغ و روش پرداخت ودیعه، و چه هزینه‌هایی جزو اجاره است. پیش از امضا متن قرارداد را با فرصت بخوانید و از ترجمه کمک بگیرید. (بندهای ۱۳ و ۱۴ بالا) ℹ️
+24. **چه وقت چه بگویید:** اول مطمئن شوید Anmeldung و قرارداد کتبی هست؛ بعد درباره قیمت یا تاریخ ورود صحبت کنید. چانه زدن بر سر اجاره در آلمان رایج نیست، ولی درباره **تاریخ شروع، مدت قرارداد، خرید وسایل نفر قبلی (Ablöse)** و قسطی دادن ودیعه می‌شود مؤدبانه صحبت کرد. ℹ️
+
+### فهرست محل‌های اقامت (با کمک شما به‌روز می‌شود)
+
+| نام | نوع | منبع | آخرین بررسی |
+|----|----|----|----|
+| ۲۰ خوابگاه Studentenwerk Hannover | خوابگاه دانشجویی دولتی | [Studentenwerk – Wohnhäuser](https://www.studentenwerk-hannover.de/wohnen/wohnhaeuser/) | 2026-10-29 |
+| Student One | خوابگاه خصوصی | [LUH – Housing](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/housing) | 2026-10-29 |
+| THE FIZZ | خوابگاه خصوصی | [LUH – Housing](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/housing) | 2026-10-29 |
+| i Live | خوابگاه خصوصی | [LUH – Housing](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/housing) | 2026-10-29 |
+| Imvio | خوابگاه خصوصی | [LUH – Housing](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/housing) | 2026-10-29 |
+| C5 | خوابگاه خصوصی | [LUH – Housing](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/housing) | 2026-10-29 |
+| بورس مسکن Studentenwerk | آگهی اتاق و WG | [Studentenwerk – Housing search](https://www.studentenwerk-hannover.de/en/wohnen/wohnungssuche) | 2026-10-29 |
+| wg-gesucht.de | آگهی WG و Zwischenmiete (غیررسمی) | [LUH – Housing](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/housing) | 2026-10-29 |
+
+ℹ️ **این فهرست را با هم به‌روز نگه داریم:** اگر خوابگاه، سایت یا گروهی می‌شناسید که در فهرست نیست، یا قیمت و شرایطی عوض شده است، با دکمه «پیشنهاد یا ایده» بالای همین صفحه خبر دهید (نام، نوع، پیوند رسمی و تاریخ). ISL هیچ خوابگاه یا صاحبخانه‌ای را توصیه یا تضمین نمی‌کند.
+
 ## ۴. مدارک و هزینه‌ها
 
 | مورد | الزامی / احتمالی | توضیح | منبع |
@@ -53,6 +89,8 @@
 | اجاره خوابگاه خصوصی | — | ۵۰۰ تا ۷۰۰ یورو | [LUH](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/housing) |
 | گواهی ثبت‌نام دانشگاه | الزامی (برای خوابگاه Studentenwerk) | — | [LUH](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/housing) |
 | ودیعه (Kaution) | احتمالی | حداکثر سه برابر اجاره بدون هزینه‌های جانبی؛ قابل پرداخت در سه قسط | [§ 551 BGB](https://www.gesetze-im-internet.de/bgb/__551.html) |
+| اتاق WG در بازار آزاد | — | میانگین آگهی‌ها نیمه اول ۲۰۲۶: حدود ۴۶۱ یورو گرم برای ۲۰ متر مربع | [MLP Studentenwohnreport 2026](https://www.iwkoeln.de/fileadmin/user_upload/Studien/Gutachten/PDF/2026/MLP_Studentenwohnreport_2026.pdf) |
+| ودیعه خوابگاه Studentenwerk | الزامی | مبلغ در قرارداد؛ همراه اولین اجاره با Lastschrift؛ حداکثر ۶ ماه پس از پایان قرارداد برمی‌گردد | [Studentenwerk – AMB](https://www.studentenwerk-hannover.de/fileadmin/user_upload/Downloads/2_Wohnen/2024-10_AMB_alle_WH.pdf) |
 | Wohnungsgeberbestätigung | الزامی | از صاحبخانه | [فرم رسمی شهر](https://hannover.gov.de/medien/dokumente/wohnungsgeberbestaetigung.pdf) |
 
 ## ۵. نهاد مسئول
@@ -78,6 +116,9 @@
 | ۸ | [§ 19 BMG](https://www.gesetze-im-internet.de/bmg/__19.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
 | ۹ | [§ 54 BMG](https://www.gesetze-im-internet.de/bmg/__54.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
 | ۱۰ | [§ 540 BGB](https://www.gesetze-im-internet.de/bgb/__540.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
+| ۱۱ | [MLP Studentenwohnreport 2026 (PDF)](https://www.iwkoeln.de/fileadmin/user_upload/Studien/Gutachten/PDF/2026/MLP_Studentenwohnreport_2026.pdf) | MLP SE و مؤسسه اقتصاد آلمان (IW Köln) | 2026-10-29 | ✅ باز شد |
+| ۱۲ | [Studentenwerk – Allgemeine Mietbedingungen (PDF)](https://www.studentenwerk-hannover.de/fileadmin/user_upload/Downloads/2_Wohnen/2024-10_AMB_alle_WH.pdf) | Studentenwerk Hannover | 2026-10-29 | ✅ باز شد |
+| ۱۳ | [LUH – Orientation Days](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/preparation-courses-and-introductory-sessions/orientation-days) | دانشگاه لایبنیتس هانوفر | 2026-10-29 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

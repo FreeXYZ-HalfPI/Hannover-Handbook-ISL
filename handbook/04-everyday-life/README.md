@@ -6,11 +6,13 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی: ⁦2026-10-25⁩
+> ### 🗓️ آخرین به‌روزرسانی: ⁦2026-10-29⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
 > کپی‌لفت 🄯 ISL و مشارکت‌کنندگان — آزاد برای استفاده، پخش و تغییر، به شرط انتشار با همین مجوز ([GNU GPL نسخه ۳ یا بالاتر](../../LICENSE))
+>
+> 💬 درباره این صفحه: [🐞 گزارش خطا یا پیوند خراب](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/issues/new?template=broken-link-or-error.md&title=%5Bhandbook/04-everyday-life/README.md%5D%20) · [💡 پیشنهاد یا ایده](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/issues/new?template=idea.md&title=%5Bhandbook/04-everyday-life/README.md%5D%20) · [✍️ ثبت تجربه](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/issues/new?template=experience.md&title=%5Bhandbook/04-everyday-life/README.md%5D%20) · [✏️ ویرایش مستقیم](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/edit/main/handbook/04-everyday-life/README.md)
 <!-- disclaimer:end -->
 
 > [!TIP]

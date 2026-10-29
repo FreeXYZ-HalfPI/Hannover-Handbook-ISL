@@ -39,7 +39,7 @@ A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz 
 | [۳ — خدمات و نهادهای دانشگاه](handbook/03-university-services/README.md) | ۲۱–۲۹ |
 | [۴ — زندگی روزمره در هانوفر](handbook/04-everyday-life/README.md) | ۳۰–۳۹ |
 | [۵ — کار، امور مالی و آینده شغلی](handbook/05-work-finance-career/README.md) | ۴۰–۴۷ |
-| [۶ — جامعه دانشجویی و مشارکت اجتماعی](handbook/06-student-community/README.md) | ۴۸–۵۲ |
+| [۶ — جامعه دانشجویی و مشارکت اجتماعی](handbook/06-student-community/README.md) | ۴۸–۵۲، ۶۷ |
 | [۷ — منابع و پیوست‌ها](handbook/07-resources/README.md) | ۵۳–۶۴ |
 | [۸ — انجمن و اساسنامه](handbook/08-association/README.md) | ۶۵ |
 | [۹ — دریافت کتابچه (PDF)](handbook/09-download/README.md) | ۶۶ |
