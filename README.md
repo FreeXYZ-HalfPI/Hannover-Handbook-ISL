@@ -4,7 +4,7 @@
 
 A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz University Hannover (LUH): from applying while still in Iran, to arriving in Hannover, studying, working, and staying after graduation. Prepared and maintained by the **Iranian Student Association of Leibniz University Hannover (ISL)** — *Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL)* — and open to everyone's contributions.
 
-📖 **Start reading:** [handbook/README.md](handbook/README.md) · 🏷️ **Latest release (PDF):** [v1.0.0](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/releases/latest) · 📥 **Download the whole handbook as one PDF:** [ISL-Handbook-Living-in-Hannover.pdf](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/raw/main/pdf/ISL-Handbook-Living-in-Hannover.pdf) · 🤝 **How to contribute (step by step):** [GitHub guide](handbook/07-resources/64-github-guide.md) · 🔎 **Search both handbooks (Persian + English):** [search/index.html](search/index.html) (download the repository and open it in your browser) or `python3 tools/search.py your words`
+🌐 **Read online:** [freexyz-halfpi.github.io/Hannover-Handbook-ISL](https://freexyz-halfpi.github.io/Hannover-Handbook-ISL/) · 📖 **Start reading on GitHub:** [handbook/README.md](handbook/README.md) · 🏷️ **Latest release (PDF):** [v1.0.0](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/releases/latest) · 📥 **Download the whole handbook as one PDF:** [ISL-Handbook-Living-in-Hannover.pdf](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/raw/main/pdf/ISL-Handbook-Living-in-Hannover.pdf) · 🤝 **How to contribute (step by step):** [GitHub guide](handbook/07-resources/64-github-guide.md) · 🔎 **Search both handbooks (Persian + English):** [search/index.html](search/index.html) (download the repository and open it in your browser) or `python3 tools/search.py your words`
 
 
 > [!CAUTION]
@@ -69,11 +69,16 @@ A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz 
 | `tools/build_search.py` | Rebuilds `search/search-index.js` from both handbooks (the sibling repository is included when it is checked out next to this one) |
 | `tools/search.py` | The same search in the terminal: `python3 tools/search.py residence permit` |
 | `TEMPLATE.md` | Template for new pages |
+| `mkdocs.yml`, `requirements-site.txt` | The website (MkDocs Material), built from `handbook/` |
+| `tools/mkdocs_hooks.py` | Adapts the GitHub Markdown for the website: alerts, collapsed disclaimer, links outside `handbook/` |
+| `handbook/assets/site.css` | Website styles |
+| `.github/workflows/` | **Website** (build on every PR, publish on `main`), **Link check** (every Monday, opens an issue), **Release PDF** (attaches the PDF to each release) |
 
 ```bash
 python3 tools/build_pdf.py
 bash tools/check_links.sh
 python3 tools/build_search.py
+pip install -r requirements-site.txt && mkdocs serve   # preview the website at http://127.0.0.1:8000
 ```
 
 ## License — Copyleft 🄯
