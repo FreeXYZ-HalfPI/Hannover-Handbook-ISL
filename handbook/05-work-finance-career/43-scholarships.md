@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-23⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -63,12 +63,12 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۲ | [Finanzielle Beihilfen für internationale Studierende](https://www.uni-hannover.de/studium/finanzierung-foerderung/finanzielle-beihilfen-fuer-internationale-studierende) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۳ | [LUH – Deutschlandstipendium](https://www.uni-hannover.de/universitaet/aktuelles/online-aktuell/details/news/bewerbungsphase-fuer-deutschlandstipendien-laeuft-1) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۴ | [Scholarship Deutschlandstipendium](https://www.uni-hannover.de/en/studium/finanzierung-foerderung/deutschlandstipendium) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
+| ۱ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۲ | [Finanzielle Beihilfen für internationale Studierende](https://www.uni-hannover.de/studium/finanzierung-foerderung/finanzielle-beihilfen-fuer-internationale-studierende) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۳ | [LUH – Deutschlandstipendium](https://www.uni-hannover.de/universitaet/aktuelles/online-aktuell/details/news/bewerbungsphase-fuer-deutschlandstipendien-laeuft-1) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۴ | [Scholarship Deutschlandstipendium](https://www.uni-hannover.de/en/studium/finanzierung-foerderung/deutschlandstipendium) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
 | ۵ | [daad.de](https://www.daad.de/) | DAAD | 2026-10-23 | ✅ باز شد |
-| ۶ | [BAföG FAQ](https://www.studentenwerk-hannover.de/geld/alles-zum-bafoeg/bafoeg-faq) | Studentenwerk Hannover | 2026-10-23 | ✅ باز شد |
+| ۶ | [BAföG FAQ](https://www.studentenwerk-hannover.de/geld/alles-zum-bafoeg/bafoeg-faq) | Studentenwerk Hannover | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

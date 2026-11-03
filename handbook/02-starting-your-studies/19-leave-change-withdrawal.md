@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-23⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -69,14 +69,14 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH – Beurlaubung](https://www.uni-hannover.de/studium/im-studium/studienorganisation/studierendenstatus/beurlaubung) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۲ | [LUH – Studiengangs- und Fachwechsel](https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung/studiengangs-und-fachwechsel) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۳ | [anwalt-diedrich.de – § 16b AufenthG](https://www.anwalt-diedrich.de/16b-aufenthg/) | anwalt-diedrich.de | 2026-10-23 | ✅ باز شد |
-| ۴ | [§ 16b AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-23 | ✅ باز شد |
-| ۵ | [LUH – Exmatrikulation](https://www.uni-hannover.de/studium/im-studium/studienorganisation/studierendenstatus/exmatrikulation) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۶ | [Studien(fehl)start](https://www.uni-hannover.de/studium/im-studium/start-ins-studium/studienfehlstart) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۷ | [Academic Leave of Absence (EN)](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/student-status/beurlaubung) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۸ | [Immatrikulationsordnung LUH](https://www.uni-hannover.de/fileadmin/luh/content/i-amt/antraege/gesetze/Immatrikulationsordnung_der_Gottfried_Wilhelm_Leibniz_Universitaet_Hannover.pdf) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
+| ۱ | [LUH – Beurlaubung](https://www.uni-hannover.de/studium/im-studium/studienorganisation/studierendenstatus/beurlaubung) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۲ | [LUH – Studiengangs- und Fachwechsel](https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung/studiengangs-und-fachwechsel) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۳ | [anwalt-diedrich.de – § 16b AufenthG](https://www.anwalt-diedrich.de/16b-aufenthg/) | anwalt-diedrich.de | 2026-11-03 | ✅ باز شد |
+| ۴ | [§ 16b AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۵ | [LUH – Exmatrikulation](https://www.uni-hannover.de/studium/im-studium/studienorganisation/studierendenstatus/exmatrikulation) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۶ | [Studien(fehl)start](https://www.uni-hannover.de/studium/im-studium/start-ins-studium/studienfehlstart) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۷ | [Academic Leave of Absence (EN)](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/student-status/beurlaubung) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۸ | [Immatrikulationsordnung LUH](https://www.uni-hannover.de/fileadmin/luh/content/i-amt/antraege/gesetze/Immatrikulationsordnung_der_Gottfried_Wilhelm_Leibniz_Universitaet_Hannover.pdf) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

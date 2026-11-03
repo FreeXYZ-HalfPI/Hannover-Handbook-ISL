@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-25⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -56,17 +56,17 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [Hannover Airport – Transport & Directions](https://www.hannover-airport.de/en/traffic-connection/transport-directions/) | فرودگاه هانوفر | 2026-10-23 | ✅ باز شد |
-| ۲ | [ÜSTRA – Tickets and subscriptions](https://www.uestra.de/en/tickets-prices/tickets-and-subscriptions/) | ÜSTRA | 2026-10-23 | ✅ باز شد |
-| ۳ | [AStA – Semesterticket](https://www.asta-hannover.de/semesterticket) | AStA Hannover | 2026-10-23 | ✅ باز شد |
-| ۴ | [LUH – ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۵ | [راهنمای مسیر دانشگاه](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/wegweiser/anfahrtsbeschreibung) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۶ | [Standortfinder](https://standortfinder.uni-hannover.de/) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۷ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۸ | [Studentenwerk – Housing search](https://www.studentenwerk-hannover.de/en/wohnen/wohnungssuche) | Studentenwerk Hannover | 2026-10-23 | ✅ باز شد |
-| ۹ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۱۰ | [uestra.de (GVH)](https://www.uestra.de/) | ÜSTRA | 2026-10-23 | ✅ باز شد |
-| ۱۱ | [Zoll – Cash](https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Restrictions/Cash/cash_node.html) | گمرک آلمان (Zoll) | 2026-10-25 | ✅ باز شد |
+| ۱ | [Hannover Airport – Transport & Directions](https://www.hannover-airport.de/en/traffic-connection/transport-directions/) | فرودگاه هانوفر | 2026-11-03 | ✅ باز شد |
+| ۲ | [ÜSTRA – Tickets and subscriptions](https://www.uestra.de/en/tickets-prices/tickets-and-subscriptions/) | ÜSTRA | 2026-11-03 | ✅ باز شد |
+| ۳ | [AStA – Semesterticket](https://www.asta-hannover.de/semesterticket) | AStA Hannover | 2026-11-03 | ✅ باز شد |
+| ۴ | [LUH – ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۵ | [راهنمای مسیر دانشگاه](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/wegweiser/anfahrtsbeschreibung) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۶ | [Standortfinder](https://standortfinder.uni-hannover.de/) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۷ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۸ | [Studentenwerk – Housing search](https://www.studentenwerk-hannover.de/en/wohnen/wohnungssuche) | Studentenwerk Hannover | 2026-11-03 | ✅ باز شد |
+| ۹ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۱۰ | [uestra.de (GVH)](https://www.uestra.de/) | ÜSTRA | 2026-11-03 | ✅ باز شد |
+| ۱۱ | [Zoll – Cash](https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Restrictions/Cash/cash_node.html) | گمرک آلمان (Zoll) | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

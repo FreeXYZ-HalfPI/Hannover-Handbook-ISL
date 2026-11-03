@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-25⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -61,13 +61,13 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [Make it in Germany – Spouses joining non-EU citizens](https://www.make-it-in-germany.com/en/visa-recognition/family-reunification/spouses-joining-non-eu-citizens) | Make it in Germany – دولت فدرال | 2026-10-23 | ✅ باز شد |
-| ۲ | [§ 30 Abs. 1 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__30.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-23 | ✅ باز شد |
-| ۳ | [Make it in Germany – Family reunification](https://www.make-it-in-germany.com/en/visa-recognition/family-reunification) | Make it in Germany – دولت فدرال | 2026-10-23 | ✅ باز شد |
-| ۴ | [سفارت آلمان در تهران – وضعیت کاری](https://teheran.diplo.de/ir-de/2752046-2752046) | وزارت امور خارجه آلمان | 2026-10-23 | ✅ باز شد |
-| ۵ | [سفارت آلمان در تهران – ویزای ملی](https://teheran.diplo.de/ir-de/02-service/2403868-2403868) | وزارت امور خارجه آلمان | 2026-10-23 | ✅ باز شد |
-| ۶ | [Studieren mit Kind](https://www.chancenvielfalt.uni-hannover.de/familienservice/studieren-mit-kind) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۷ | [Verpflichtungserklärung abgeben](https://hannover.gov.de/buergerservice/dienstleistungen/verpflichtungserklaerung-abgeben-1322-0.html?myMedium=1) | شهر هانوفر | 2026-10-25 | ✅ باز شد |
+| ۱ | [Make it in Germany – Spouses joining non-EU citizens](https://www.make-it-in-germany.com/en/visa-recognition/family-reunification/spouses-joining-non-eu-citizens) | Make it in Germany – دولت فدرال | 2026-11-03 | ✅ باز شد |
+| ۲ | [§ 30 Abs. 1 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__30.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۳ | [Make it in Germany – Family reunification](https://www.make-it-in-germany.com/en/visa-recognition/family-reunification) | Make it in Germany – دولت فدرال | 2026-11-03 | ✅ باز شد |
+| ۴ | [سفارت آلمان در تهران – وضعیت کاری](https://teheran.diplo.de/ir-de/2752046-2752046) | وزارت امور خارجه آلمان | 2026-11-03 | ✅ باز شد |
+| ۵ | [سفارت آلمان در تهران – ویزای ملی](https://teheran.diplo.de/ir-de/02-service/2403868-2403868) | وزارت امور خارجه آلمان | 2026-11-03 | ✅ باز شد |
+| ۶ | [Studieren mit Kind](https://www.chancenvielfalt.uni-hannover.de/familienservice/studieren-mit-kind) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۷ | [Verpflichtungserklärung abgeben](https://hannover.gov.de/buergerservice/dienstleistungen/verpflichtungserklaerung-abgeben-1322-0.html?myMedium=1) | شهر هانوفر | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

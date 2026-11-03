@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-23⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -68,16 +68,16 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [§ 16b Abs. 3 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-23 | ✅ باز شد |
-| ۲ | [Arbeiten während des Studiums](https://www.make-it-in-germany.com/de/studium-ausbildung/studieren-in-deutschland/arbeit) | Make it in Germany – دولت فدرال | 2026-10-23 | ✅ باز شد |
-| ۳ | [BA – Fachliche Weisungen (PDF)](https://www.arbeitsagentur.de/datei/dok_ba033210.pdf) | اداره کار فدرال | 2026-10-23 | ✅ باز شد |
-| ۴ | [صفحه فرصت‌های شغلی دانشگاه](https://www.uni-hannover.de/en/universitaet/stellenangebote-arbeit-an-der-uni) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۵ | [Deutsche Rentenversicherung](https://www.deutsche-rentenversicherung.de/DRV/DE/Experten/Arbeitgeber-und-Steuerberater/summa-summarum/Lexikon/W/werkstudentenprivileg.html) | Deutsche Rentenversicherung | 2026-10-23 | ✅ باز شد |
-| ۶ | [iww.de](https://www.iww.de/pp/recht/geringfuegige-beschaeftigung-minijob-2026-hoeherer-verdienst-neue-regeln-und-was-sonst-zu-beachten-ist-f171358) | iww.de | 2026-10-23 | ✅ باز شد |
-| ۷ | [finanz.de](https://www.finanz.de/news/artikel-10559/) | finanz.de | 2026-10-23 | ✅ باز شد |
-| ۸ | [Deutsche Rentenversicherung](https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2024/240312-versicherungsnummernachweis) | Deutsche Rentenversicherung | 2026-10-23 | ✅ باز شد |
-| ۹ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-10-23 | ✅ باز شد |
-| ۱۰ | [Minijob-Zentrale](https://www.minijob-zentrale.de/) | minijob-zentrale.de | 2026-10-23 | ✅ باز شد |
+| ۱ | [§ 16b Abs. 3 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۲ | [Arbeiten während des Studiums](https://www.make-it-in-germany.com/de/studium-ausbildung/studieren-in-deutschland/arbeit) | Make it in Germany – دولت فدرال | 2026-11-03 | ✅ باز شد |
+| ۳ | [BA – Fachliche Weisungen (PDF)](https://www.arbeitsagentur.de/datei/dok_ba033210.pdf) | اداره کار فدرال | 2026-11-03 | ✅ باز شد |
+| ۴ | [صفحه فرصت‌های شغلی دانشگاه](https://www.uni-hannover.de/en/universitaet/stellenangebote-arbeit-an-der-uni) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۵ | [Deutsche Rentenversicherung](https://www.deutsche-rentenversicherung.de/DRV/DE/Experten/Arbeitgeber-und-Steuerberater/summa-summarum/Lexikon/W/werkstudentenprivileg.html) | Deutsche Rentenversicherung | 2026-11-03 | ✅ باز شد |
+| ۶ | [iww.de](https://www.iww.de/pp/recht/geringfuegige-beschaeftigung-minijob-2026-hoeherer-verdienst-neue-regeln-und-was-sonst-zu-beachten-ist-f171358) | iww.de | 2026-11-03 | ✅ باز شد |
+| ۷ | [finanz.de](https://www.finanz.de/news/artikel-10559/) | finanz.de | 2026-11-03 | ✅ باز شد |
+| ۸ | [Deutsche Rentenversicherung](https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2024/240312-versicherungsnummernachweis) | Deutsche Rentenversicherung | 2026-11-03 | ✅ باز شد |
+| ۹ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-11-03 | ✅ باز شد |
+| ۱۰ | [Minijob-Zentrale](https://www.minijob-zentrale.de/) | minijob-zentrale.de | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

@@ -16,9 +16,9 @@ A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz 
 >
 > <span dir="rtl">**قوانین، مبالغ و مهلت‌ها ممکن است هر زمان تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان **هیچ مسئولیتی** در قبال درستی یا به‌روز بودن مطالب ندارند. همیشه از نهاد رسمی مسئول بپرسید.</span>
 >
-> ### 🗓️ Last updated: 2026-10-27
+> ### 🗓️ Last updated: 2026-11-03
 >
-> ### <span dir="rtl">🗓️ آخرین به‌روزرسانی: ⁦2026-10-27⁩</span>
+> ### <span dir="rtl">🗓️ آخرین به‌روزرسانی: ⁦2026-11-03⁩</span>
 >
 > Follow changes · پیگیری تغییرات: [CHANGELOG.md](CHANGELOG.md) · **Watch** this repository on GitHub · [ISL Telegram channel](https://t.me/hannover_iranian_students)
 

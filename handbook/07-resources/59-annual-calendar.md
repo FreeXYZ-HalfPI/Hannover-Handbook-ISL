@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-25⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -83,14 +83,14 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۲ | [Prüfungsinfos & Fachberatung](https://www.uni-hannover.de/en/studium/im-studium/pruefungsinfos-fachberatung) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۳ | [AStA – Semesterticket](https://www.asta-hannover.de/semesterticket) | AStA Hannover | 2026-10-23 | ✅ باز شد |
-| ۴ | [BBK – Bundesweiter Warntag](https://www.bbk.bund.de/DE/Warnung-Vorsorge/Bundesweiter-Warntag/bundesweiter-warntag_node.html) | BBK | 2026-10-25 | ✅ باز شد |
-| ۵ | [NFeiertagsG § 2](https://umwelt-online.de/recht/arbeitss/arbeitsrecht/laender/nds/feiertg.htm) | متن قانون (بازنشر umwelt-online) | 2026-10-25 | ✅ باز شد |
-| ۶ | [پیش‌نویس قانون Reformationstag](https://www.niedersachsen.de/download/128351/Entwurf_eines_Gesetzes_zur_Aenderung_des_Niedersaechsischen_Gesetzes_ueber_die_Feiertage.pdf) | دولت نیدرزاکسن | 2026-10-25 | ✅ باز شد |
-| ۷ | [wahl.uni-hannover.de](https://wahl.uni-hannover.de/) | دانشگاه لایبنیتس هانوفر | 2026-10-25 | ✅ باز شد |
-| ۸ | [کانال تلگرام ISL](https://t.me/hannover_iranian_students) — یادآوری‌های ۲۰۲۳ تا ۲۰۲۶ | ISL | 2026-10-25 | ✅ باز شد |
+| ۱ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۲ | [Prüfungsinfos & Fachberatung](https://www.uni-hannover.de/en/studium/im-studium/pruefungsinfos-fachberatung) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۳ | [AStA – Semesterticket](https://www.asta-hannover.de/semesterticket) | AStA Hannover | 2026-11-03 | ✅ باز شد |
+| ۴ | [BBK – Bundesweiter Warntag](https://www.bbk.bund.de/DE/Warnung-Vorsorge/Bundesweiter-Warntag/bundesweiter-warntag_node.html) | BBK | 2026-11-03 | ✅ باز شد |
+| ۵ | [NFeiertagsG § 2](https://umwelt-online.de/recht/arbeitss/arbeitsrecht/laender/nds/feiertg.htm) | متن قانون (بازنشر umwelt-online) | 2026-11-03 | ✅ باز شد |
+| ۶ | [پیش‌نویس قانون Reformationstag](https://www.niedersachsen.de/download/128351/Entwurf_eines_Gesetzes_zur_Aenderung_des_Niedersaechsischen_Gesetzes_ueber_die_Feiertage.pdf) | دولت نیدرزاکسن | 2026-11-03 | ✅ باز شد |
+| ۷ | [wahl.uni-hannover.de](https://wahl.uni-hannover.de/) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۸ | [کانال تلگرام ISL](https://t.me/hannover_iranian_students) — یادآوری‌های ۲۰۲۳ تا ۲۰۲۶ | ISL | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

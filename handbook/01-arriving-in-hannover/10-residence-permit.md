@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-25⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -81,20 +81,20 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [First Steps – Residence permit](https://www.studentenwerk-hannover.de/en/international-students/first-steps-in-germany) | Studentenwerk Hannover | 2026-10-23 | ✅ باز شد |
-| ۲ | [LUH – Entry and Residence](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۳ | [hannover.de](https://www.hannover.de/Wirtschaft-Wissenschaft/Arbeit/Vereinbarkeit-von-Familie-und-Beruf/Unternehmen/Personal-und-Mitarbeitervermittlung/Kundenservice-f%C3%BCr-Fachkr%C3%A4fte,-Studierende-und-Selbstst%C3%A4ndige-sowie-deren-Familienangeh%C3%B6rige) | شهر و منطقه هانوفر | 2026-10-23 | ✅ باز شد |
-| ۴ | [Erteilung oder Verlängerung einer Aufenthaltserlaubnis](https://hannover.gov.de/portal/seiten/erteilung-oder-verlaengerung-einer-aufenthaltserlaubnis-oder-blauen-karte-eu-1141-30810.html?rubrik=1001) | شهر هانوفر | 2026-10-23 | ✅ باز شد |
-| ۵ | [§ 81 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__81.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-23 | ✅ باز شد |
-| ۶ | [سفارت آلمان در ایتالیا](https://italien.diplo.de/it-de/service/visa-aktuell/2586756-2586756) | وزارت امور خارجه آلمان | 2026-10-23 | ✅ باز شد |
-| ۷ | [§ 45 AufenthV](https://www.gesetze-im-internet.de/aufenthv/__45.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-23 | ✅ باز شد |
-| ۸ | [§ 45a AufenthV](https://www.gesetze-im-internet.de/aufenthv/__45a.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-23 | ✅ باز شد |
-| ۹ | [Ausländerbehörde der Region Hannover – Termine & Kontakt](https://www.hannover.de/Leben-in-der-Region-Hannover/B%C3%BCrger-Service/Ausl%C3%A4nder%C2%ADangelegen%C2%ADheiten/Ausl%C3%A4nderbeh%C3%B6rden/Ausl%C3%A4nderbeh%C3%B6rde-der-Region-Hannover/Termine-Kontaktformular) | شهر و منطقه هانوفر | 2026-10-23 | ✅ باز شد |
-| ۱۰ | [LUH](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/internationale-erstsemesterstudierende) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۱۱ | [BAMF](https://www.bamf.de/) | BAMF | 2026-10-23 | ✅ باز شد |
-| ۱۲ | [Aufenthaltserlaubnis zum Zwecke des Studiums – Online-Antrag](https://hannover.gov.de/buergerservice/dienstleistungen/aufenthaltserlaubnis-zum-zwecke-des-studiums-und-fuer-studienvorbereitende-massnahmen-1347-0.html?myMedium=1) | شهر هانوفر | 2026-10-25 | ✅ باز شد |
-| ۱۳ | [§ 16b AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
-| ۱۴ | [§ 82 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__82.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
+| ۱ | [First Steps – Residence permit](https://www.studentenwerk-hannover.de/en/international-students/first-steps-in-germany) | Studentenwerk Hannover | 2026-11-03 | ✅ باز شد |
+| ۲ | [LUH – Entry and Residence](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۳ | [hannover.de](https://www.hannover.de/Wirtschaft-Wissenschaft/Arbeit/Vereinbarkeit-von-Familie-und-Beruf/Unternehmen/Personal-und-Mitarbeitervermittlung/Kundenservice-f%C3%BCr-Fachkr%C3%A4fte,-Studierende-und-Selbstst%C3%A4ndige-sowie-deren-Familienangeh%C3%B6rige) | شهر و منطقه هانوفر | 2026-11-03 | ✅ باز شد |
+| ۴ | [Erteilung oder Verlängerung einer Aufenthaltserlaubnis](https://hannover.gov.de/portal/seiten/erteilung-oder-verlaengerung-einer-aufenthaltserlaubnis-oder-blauen-karte-eu-1141-30810.html?rubrik=1001) | شهر هانوفر | 2026-11-03 | ✅ باز شد |
+| ۵ | [§ 81 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__81.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۶ | [سفارت آلمان در ایتالیا](https://italien.diplo.de/it-de/service/visa-aktuell/2586756-2586756) | وزارت امور خارجه آلمان | 2026-11-03 | ✅ باز شد |
+| ۷ | [§ 45 AufenthV](https://www.gesetze-im-internet.de/aufenthv/__45.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۸ | [§ 45a AufenthV](https://www.gesetze-im-internet.de/aufenthv/__45a.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۹ | [Ausländerbehörde der Region Hannover – Termine & Kontakt](https://www.hannover.de/Leben-in-der-Region-Hannover/B%C3%BCrger-Service/Ausl%C3%A4nder%C2%ADangelegen%C2%ADheiten/Ausl%C3%A4nderbeh%C3%B6rden/Ausl%C3%A4nderbeh%C3%B6rde-der-Region-Hannover/Termine-Kontaktformular) | شهر و منطقه هانوفر | 2026-11-03 | ✅ باز شد |
+| ۱۰ | [LUH](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/internationale-erstsemesterstudierende) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۱۱ | [BAMF](https://www.bamf.de/) | BAMF | 2026-11-03 | ✅ باز شد |
+| ۱۲ | [Aufenthaltserlaubnis zum Zwecke des Studiums – Online-Antrag](https://hannover.gov.de/buergerservice/dienstleistungen/aufenthaltserlaubnis-zum-zwecke-des-studiums-und-fuer-studienvorbereitende-massnahmen-1347-0.html?myMedium=1) | شهر هانوفر | 2026-11-03 | ✅ باز شد |
+| ۱۳ | [§ 16b AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۱۴ | [§ 82 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__82.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
 | ۱۵ | چک‌لیست «Studium / Studienvorbereitung»، فرم Sperrkonto و ارائه «Residence in Germany during your studies» (۲۶.۰۳.۲۰۲۵) | Willkommensservice شهر هانوفر؛ در کانال ISL منتشر شده | 2026-10-25 | 📄 سند PDF، بدون پیوند عمومی |
 
 ## ۷. تجربه دانشجویان (غیررسمی)

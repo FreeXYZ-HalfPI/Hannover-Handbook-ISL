@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-23⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -58,14 +58,14 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH – ZQS](https://www.uni-hannover.de/en/universitaet/organisation/einrichtungen/zentrale-einrichtungen/zqs) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۲ | [ZQS – Key Competencies](https://www.zqs.uni-hannover.de/en/kc) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۳ | [Berufsorientierung & Praktika](https://www.uni-hannover.de/studium/im-studium/praktikum-beruf) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۴ | [§ 20 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__20.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-23 | ✅ باز شد |
-| ۵ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۶ | [ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۷ | [Career Service](https://www.zqs.uni-hannover.de/en/kc/career-service) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۸ | [Career Guidance, Internships, and Transition into Employment](https://www.uni-hannover.de/en/studium/im-studium/career-guidance-internships-transition-into-employment) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
+| ۱ | [LUH – ZQS](https://www.uni-hannover.de/en/universitaet/organisation/einrichtungen/zentrale-einrichtungen/zqs) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۲ | [ZQS – Key Competencies](https://www.zqs.uni-hannover.de/en/kc) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۳ | [Berufsorientierung & Praktika](https://www.uni-hannover.de/studium/im-studium/praktikum-beruf) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۴ | [§ 20 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__20.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۵ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۶ | [ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۷ | [Career Service](https://www.zqs.uni-hannover.de/en/kc/career-service) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۸ | [Career Guidance, Internships, and Transition into Employment](https://www.uni-hannover.de/en/studium/im-studium/career-guidance-internships-transition-into-employment) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

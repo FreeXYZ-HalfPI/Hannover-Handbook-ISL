@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-25⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -57,14 +57,14 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۲ | [Studentenwerk](https://www.studentenwerk-hannover.de/en/international-students/first-steps-in-germany) | Studentenwerk Hannover | 2026-10-23 | ✅ باز شد |
-| ۳ | [Prüfungsinfos & Fachberatung](https://www.uni-hannover.de/en/studium/im-studium/pruefungsinfos-fachberatung) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۴ | [LUH – ZQS](https://www.uni-hannover.de/en/universitaet/organisation/einrichtungen/zentrale-einrichtungen/zqs) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۵ | [ptb](https://www.ptb.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۶ | [LUH – ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۷ | [Examinations Office](https://www.uni-hannover.de/en/universitaet/organisation/dezernate/dezernat-6/sg-62-examinations-office) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۸ | [Semester dates](https://www.uni-hannover.de/en/studium/semestertermine) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
+| ۱ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۲ | [Studentenwerk](https://www.studentenwerk-hannover.de/en/international-students/first-steps-in-germany) | Studentenwerk Hannover | 2026-11-03 | ✅ باز شد |
+| ۳ | [Prüfungsinfos & Fachberatung](https://www.uni-hannover.de/en/studium/im-studium/pruefungsinfos-fachberatung) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۴ | [LUH – ZQS](https://www.uni-hannover.de/en/universitaet/organisation/einrichtungen/zentrale-einrichtungen/zqs) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۵ | [ptb](https://www.ptb.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۶ | [LUH – ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۷ | [Examinations Office](https://www.uni-hannover.de/en/universitaet/organisation/dezernate/dezernat-6/sg-62-examinations-office) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۸ | [Semester dates](https://www.uni-hannover.de/en/studium/semestertermine) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-23⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -58,17 +58,17 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH – Campus & Stadt](https://www.uni-hannover.de/universitaet/campus-stadt/) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۲ | [دانشکده علوم طبیعی – Campusbereiche](https://www.naturwissenschaften.uni-hannover.de/fakultaet/campusbereiche) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۳ | [LUH – ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۴ | [info.cafm.uni-hannover.de](https://info.cafm.uni-hannover.de/building/1101) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۵ | [LUH – Einschreibung](https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung/nach-der-bewerbung/einschreibung) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۶ | [Standortfinder](https://standortfinder.uni-hannover.de/map.php) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۷ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۸ | [TIB Reader Registration](https://reg.lbs.tib.eu/registration/tib/edit.php?lang=en) | کتابخانه TIB | 2026-10-23 | ✅ باز شد |
-| ۹ | [Standortfinder](https://standortfinder.uni-hannover.de/) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۱۰ | [Directions](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/wegweiser/anfahrtsbeschreibung) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۱۱ | [TIB](https://www.tib.eu/en/) | کتابخانه TIB | 2026-10-23 | ✅ باز شد |
+| ۱ | [LUH – Campus & Stadt](https://www.uni-hannover.de/universitaet/campus-stadt/) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۲ | [دانشکده علوم طبیعی – Campusbereiche](https://www.naturwissenschaften.uni-hannover.de/fakultaet/campusbereiche) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۳ | [LUH – ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۴ | [info.cafm.uni-hannover.de](https://info.cafm.uni-hannover.de/building/1101) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۵ | [LUH – Einschreibung](https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung/nach-der-bewerbung/einschreibung) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۶ | [Standortfinder](https://standortfinder.uni-hannover.de/map.php) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۷ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۸ | [TIB Reader Registration](https://reg.lbs.tib.eu/registration/tib/edit.php?lang=en) | کتابخانه TIB | 2026-11-03 | ✅ باز شد |
+| ۹ | [Standortfinder](https://standortfinder.uni-hannover.de/) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۱۰ | [Directions](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/wegweiser/anfahrtsbeschreibung) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۱۱ | [TIB](https://www.tib.eu/en/) | کتابخانه TIB | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-25⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -117,17 +117,17 @@
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
 | ۱ | تجربه دانشجویی | — | 2026-10-25 | — |
-| ۲ | [§ 81 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__81.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-23 | ✅ باز شد |
-| ۳ | [Aufenthaltserlaubnis zum Zwecke des Studiums](https://hannover.gov.de/buergerservice/dienstleistungen/aufenthaltserlaubnis-zum-zwecke-des-studiums-und-fuer-studienvorbereitende-massnahmen-1347-0.html?myMedium=1) | شهر هانوفر | 2026-10-25 | ✅ باز شد |
-| ۴ | [§ 31 ZKG](https://www.gesetze-im-internet.de/zkg/__31.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
-| ۵ | [§ 540 BGB](https://www.gesetze-im-internet.de/bgb/__540.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
-| ۶ | [§ 355 BGB](https://www.gesetze-im-internet.de/bgb/__355.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
-| ۷ | [§ 5 SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
-| ۸ | [§ 5 GOZ](https://www.gesetze-im-internet.de/goz_1987/__5.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
-| ۹ | [Anmeldung einer Wohnung](https://hannover.gov.de/buergerservice/dienstleistungen/anmeldung-einer-wohnung-zuzug-nach-hannover-900000016-0.html?myMedium=1) | شهر هانوفر | 2026-10-23 | ✅ باز شد |
-| ۱۰ | [LUH – Beglaubigungsstelle](https://www.uni-hannover.de/universitaet/campus-stadt/beglaubigungsstelle) | دانشگاه لایبنیتس هانوفر | 2026-10-25 | ✅ باز شد |
-| ۱۱ | [Verpflichtungserklärung abgeben](https://hannover.gov.de/buergerservice/dienstleistungen/verpflichtungserklaerung-abgeben-1322-0.html?myMedium=1) | شهر هانوفر | 2026-10-25 | ✅ باز شد |
-| ۱۲ | [§ 8 BAföG](https://www.gesetze-im-internet.de/baf_g/__8.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
+| ۲ | [§ 81 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__81.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۳ | [Aufenthaltserlaubnis zum Zwecke des Studiums](https://hannover.gov.de/buergerservice/dienstleistungen/aufenthaltserlaubnis-zum-zwecke-des-studiums-und-fuer-studienvorbereitende-massnahmen-1347-0.html?myMedium=1) | شهر هانوفر | 2026-11-03 | ✅ باز شد |
+| ۴ | [§ 31 ZKG](https://www.gesetze-im-internet.de/zkg/__31.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۵ | [§ 540 BGB](https://www.gesetze-im-internet.de/bgb/__540.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۶ | [§ 355 BGB](https://www.gesetze-im-internet.de/bgb/__355.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۷ | [§ 5 SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۸ | [§ 5 GOZ](https://www.gesetze-im-internet.de/goz_1987/__5.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۹ | [Anmeldung einer Wohnung](https://hannover.gov.de/buergerservice/dienstleistungen/anmeldung-einer-wohnung-zuzug-nach-hannover-900000016-0.html?myMedium=1) | شهر هانوفر | 2026-11-03 | ✅ باز شد |
+| ۱۰ | [LUH – Beglaubigungsstelle](https://www.uni-hannover.de/universitaet/campus-stadt/beglaubigungsstelle) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۱۱ | [Verpflichtungserklärung abgeben](https://hannover.gov.de/buergerservice/dienstleistungen/verpflichtungserklaerung-abgeben-1322-0.html?myMedium=1) | شهر هانوفر | 2026-11-03 | ✅ باز شد |
+| ۱۲ | [§ 8 BAföG](https://www.gesetze-im-internet.de/baf_g/__8.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

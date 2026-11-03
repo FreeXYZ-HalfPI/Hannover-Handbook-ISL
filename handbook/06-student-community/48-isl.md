@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-25⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -61,10 +61,10 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [Studentische Vereinigungen](https://www.uni-hannover.de/en/studium/im-studium/campusleben-und-engagement/gruppen-selbstverwaltung/studentische-vereinigungen) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۲ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-10-23 | ✅ باز شد |
-| ۳ | [کانال تلگرام ISL](https://t.me/hannover_iranian_students) | ISL | 2026-10-25 | ✅ باز شد |
-| ۴ | [اینستاگرام](https://www.instagram.com/hannover_iranian_students/) | ISL | 2026-10-25 | ✅ باز شد |
+| ۱ | [Studentische Vereinigungen](https://www.uni-hannover.de/en/studium/im-studium/campusleben-und-engagement/gruppen-selbstverwaltung/studentische-vereinigungen) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۲ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-11-03 | ✅ باز شد |
+| ۳ | [کانال تلگرام ISL](https://t.me/hannover_iranian_students) | ISL | 2026-11-03 | ✅ باز شد |
+| ۴ | [اینستاگرام](https://www.instagram.com/hannover_iranian_students/) | ISL | 2026-11-03 | ✅ باز شد |
 | ۵ | اساسنامه ISL (فارسی، آلمانی و انگلیسی؛ اکتبر ۲۰۲۶) | ISL | 2026-10-25 | 📄 سند PDF؛ در کانال ISL منتشر شده |
 
 ## ۷. تجربه دانشجویان (غیررسمی)

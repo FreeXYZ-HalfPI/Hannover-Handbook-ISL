@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-23⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -68,17 +68,17 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [Entry and Residence Requirements](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۲ | [سفارت آلمان در تهران – ویزای ملی](https://teheran.diplo.de/ir-de/02-service/2403868-2403868) | وزارت امور خارجه آلمان | 2026-10-23 | ✅ باز شد |
-| ۳ | [سفارت آلمان در تهران – وضعیت کاری](https://teheran.diplo.de/ir-de/2752046-2752046) | وزارت امور خارجه آلمان | 2026-10-23 | ✅ باز شد |
-| ۴ | [Auswärtiges Amt – Managua](https://managua.diplo.de/ni-de/service/05-visaeinreise/sperrkonto-2163974) | وزارت امور خارجه آلمان | 2026-10-23 | ✅ باز شد |
-| ۵ | [EasyStartLUH](https://go.lu-h.de/EasyStartLUH) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۶ | [سفارت آلمان در ایتالیا](https://italien.diplo.de/it-de/service/visa-aktuell/2586756-2586756) | وزارت امور خارجه آلمان | 2026-10-23 | ✅ باز شد |
-| ۷ | [fintiba](https://www.fintiba.com/germany/visa/requirements-for-iranian-students) | fintiba.com | 2026-10-23 | ✅ باز شد |
-| ۸ | [فهرست نمایندگی‌های آلمان](https://www.auswaertiges-amt.de/de/ReiseUndSicherheit/deutsche-auslandsvertretungen/03-webseitenav) | وزارت امور خارجه آلمان | 2026-10-23 | ✅ باز شد |
-| ۹ | [LUH](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/internationale-erstsemesterstudierende) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۱۰ | [Merkblatt Studium – سفارت تهران](https://teheran.diplo.de/ir-de/02-service/merkblatt-studium-2492580) | وزارت امور خارجه آلمان | 2026-10-23 | ✅ باز شد |
-| ۱۱ | [Visa-Navigator](https://digital.diplo.de/navigator/de/visa) | وزارت امور خارجه آلمان | 2026-10-23 | ✅ باز شد |
+| ۱ | [Entry and Residence Requirements](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۲ | [سفارت آلمان در تهران – ویزای ملی](https://teheran.diplo.de/ir-de/02-service/2403868-2403868) | وزارت امور خارجه آلمان | 2026-11-03 | ✅ باز شد |
+| ۳ | [سفارت آلمان در تهران – وضعیت کاری](https://teheran.diplo.de/ir-de/2752046-2752046) | وزارت امور خارجه آلمان | 2026-11-03 | ✅ باز شد |
+| ۴ | [Auswärtiges Amt – Managua](https://managua.diplo.de/ni-de/service/05-visaeinreise/sperrkonto-2163974) | وزارت امور خارجه آلمان | 2026-11-03 | ✅ باز شد |
+| ۵ | [EasyStartLUH](https://go.lu-h.de/EasyStartLUH) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۶ | [سفارت آلمان در ایتالیا](https://italien.diplo.de/it-de/service/visa-aktuell/2586756-2586756) | وزارت امور خارجه آلمان | 2026-11-03 | ✅ باز شد |
+| ۷ | [fintiba](https://www.fintiba.com/germany/visa/requirements-for-iranian-students) | fintiba.com | 2026-11-03 | ✅ باز شد |
+| ۸ | [فهرست نمایندگی‌های آلمان](https://www.auswaertiges-amt.de/de/ReiseUndSicherheit/deutsche-auslandsvertretungen/03-webseitenav) | وزارت امور خارجه آلمان | 2026-11-03 | ✅ باز شد |
+| ۹ | [LUH](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/internationale-erstsemesterstudierende) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۱۰ | [Merkblatt Studium – سفارت تهران](https://teheran.diplo.de/ir-de/02-service/merkblatt-studium-2492580) | وزارت امور خارجه آلمان | 2026-11-03 | ✅ باز شد |
+| ۱۱ | [Visa-Navigator](https://digital.diplo.de/navigator/de/visa) | وزارت امور خارجه آلمان | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

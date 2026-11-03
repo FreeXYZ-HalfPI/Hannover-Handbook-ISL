@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-25⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -114,14 +114,14 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [کانال تلگرام دانشجویان ایرانی هانوفر](https://t.me/hannover_iranian_students) — خروجی کامل ۲۰۲۳ تا ۲۰۲۶ | ISL | 2026-10-25 | ✅ باز شد |
-| ۲ | [§ 17 BMG](https://www.gesetze-im-internet.de/bmg/__17.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
-| ۳ | [§ 19 BMG](https://www.gesetze-im-internet.de/bmg/__19.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
-| ۴ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۵ | [Aufenthaltserlaubnis zum Zwecke des Studiums](https://hannover.gov.de/buergerservice/dienstleistungen/aufenthaltserlaubnis-zum-zwecke-des-studiums-und-fuer-studienvorbereitende-massnahmen-1347-0.html?myMedium=1) | شهر هانوفر | 2026-10-25 | ✅ باز شد |
-| ۶ | [§ 10 ZAG](https://www.gesetze-im-internet.de/zag_2018/__10.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
-| ۷ | [§ 63 ZAG](https://www.gesetze-im-internet.de/zag_2018/__63.html) | متن قانون – وزارت دادگستری فدرال | 2026-10-25 | ✅ باز شد |
-| ۸ | [Zoll – Cash](https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Restrictions/Cash/cash_node.html) | گمرک آلمان (Zoll) | 2026-10-25 | ✅ باز شد |
+| ۱ | [کانال تلگرام دانشجویان ایرانی هانوفر](https://t.me/hannover_iranian_students) — خروجی کامل ۲۰۲۳ تا ۲۰۲۶ | ISL | 2026-11-03 | ✅ باز شد |
+| ۲ | [§ 17 BMG](https://www.gesetze-im-internet.de/bmg/__17.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۳ | [§ 19 BMG](https://www.gesetze-im-internet.de/bmg/__19.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۴ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۵ | [Aufenthaltserlaubnis zum Zwecke des Studiums](https://hannover.gov.de/buergerservice/dienstleistungen/aufenthaltserlaubnis-zum-zwecke-des-studiums-und-fuer-studienvorbereitende-massnahmen-1347-0.html?myMedium=1) | شهر هانوفر | 2026-11-03 | ✅ باز شد |
+| ۶ | [§ 10 ZAG](https://www.gesetze-im-internet.de/zag_2018/__10.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۷ | [§ 63 ZAG](https://www.gesetze-im-internet.de/zag_2018/__63.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۸ | [Zoll – Cash](https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Restrictions/Cash/cash_node.html) | گمرک آلمان (Zoll) | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-25⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -75,18 +75,18 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [ZQS – Career Service](https://www.zqs.uni-hannover.de/en/kc/career-service) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۲ | [Individual Advice](https://www.zqs.uni-hannover.de/en/kc/career-guidance-and-service/individual-advice) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۳ | [Internationals welcome – Students](https://www.zqs.uni-hannover.de/en/kc/career-service/internationals-welcome/students) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۴ | [LUH – ZQS](https://www.uni-hannover.de/en/universitaet/organisation/einrichtungen/zentrale-einrichtungen/zqs) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۵ | [ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۶ | [ZQS – Team and contact](https://www.zqs.uni-hannover.de/en/about-us/team-and-contact/) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۷ | [Career Guidance, Internships, and Transition into Employment](https://www.uni-hannover.de/en/studium/im-studium/career-guidance-internships-transition-into-employment) | دانشگاه لایبنیتس هانوفر | 2026-10-23 | ✅ باز شد |
-| ۸ | [jobicco Uni Hannover](https://jobicco.uni-hannover.de/) | Stellenticket GmbH با همکاری LUH | 2026-10-25 | ✅ باز شد |
-| ۹ | [Stellenticket LUH](https://stellenticket.uni-hannover.de/en/) | Stellenticket GmbH با همکاری Career Service | 2026-10-25 | ✅ باز شد |
-| ۱۰ | [Jobsuche](https://www.arbeitsagentur.de/jobsuche/) | Bundesagentur für Arbeit | 2026-10-25 | ✅ باز شد |
-| ۱۱ | [Agentur für Arbeit Hannover – Studium](https://www.arbeitsagentur.de/vor-ort/hannover/studium) | Bundesagentur für Arbeit | 2026-10-25 | ✅ باز شد |
-| ۱۲ | [IHK Hannover – Anerkennung ausländischer Abschlüsse](https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/fachkraefte/anerkennung-auslaendischer-abschluesse2) | IHK Hannover | 2026-10-25 | ✅ باز شد |
+| ۱ | [ZQS – Career Service](https://www.zqs.uni-hannover.de/en/kc/career-service) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۲ | [Individual Advice](https://www.zqs.uni-hannover.de/en/kc/career-guidance-and-service/individual-advice) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۳ | [Internationals welcome – Students](https://www.zqs.uni-hannover.de/en/kc/career-service/internationals-welcome/students) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۴ | [LUH – ZQS](https://www.uni-hannover.de/en/universitaet/organisation/einrichtungen/zentrale-einrichtungen/zqs) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۵ | [ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۶ | [ZQS – Team and contact](https://www.zqs.uni-hannover.de/en/about-us/team-and-contact/) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۷ | [Career Guidance, Internships, and Transition into Employment](https://www.uni-hannover.de/en/studium/im-studium/career-guidance-internships-transition-into-employment) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۸ | [jobicco Uni Hannover](https://jobicco.uni-hannover.de/) | Stellenticket GmbH با همکاری LUH | 2026-11-03 | ✅ باز شد |
+| ۹ | [Stellenticket LUH](https://stellenticket.uni-hannover.de/en/) | Stellenticket GmbH با همکاری Career Service | 2026-11-03 | ✅ باز شد |
+| ۱۰ | [Jobsuche](https://www.arbeitsagentur.de/jobsuche/) | Bundesagentur für Arbeit | 2026-11-03 | ✅ باز شد |
+| ۱۱ | [Agentur für Arbeit Hannover – Studium](https://www.arbeitsagentur.de/vor-ort/hannover/studium) | Bundesagentur für Arbeit | 2026-11-03 | ✅ باز شد |
+| ۱۲ | [IHK Hannover – Anerkennung ausländischer Abschlüsse](https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/fachkraefte/anerkennung-auslaendischer-abschluesse2) | IHK Hannover | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 
