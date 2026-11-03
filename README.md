@@ -6,14 +6,16 @@ A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz 
 
 🌐 **Read online:** [freexyz-halfpi.github.io/Hannover-Handbook-ISL](https://freexyz-halfpi.github.io/Hannover-Handbook-ISL/) 
 
-· 📖 **Start reading on GitHub:** [handbook/README.md](handbook/README.md) 
+📖 **Start reading on GitHub:** [handbook/README.md](handbook/README.md) 
 
-· 🏷️ **Latest release (PDF):** [v1.0.0](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/releases/latest) 
+🏷️ **Latest release (PDF):** [v1.0.0](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/releases/latest) 
 
-· 📥 **Download the whole handbook as one PDF:** [ISL-Handbook-Living-in-Hannover.pdf]
-(https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/raw/main/pdf/ISL-Handbook-Living-in-Hannover.pdf) · 🤝 **How to contribute (step by step):** [GitHub guide](handbook/07-resources/64-github-guide.md) 
+📥 **Download the whole handbook as one PDF:** [ISL-Handbook-Living-in-Hannover.pdf]
+(https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/raw/main/pdf/ISL-Handbook-Living-in-Hannover.pdf) 
 
-· 🔎 **Search both handbooks (Persian + English):** [search/index.html](search/index.html) (download the repository and open it in your browser) or `python3 tools/search.py your words`
+🤝 **How to contribute (step by step):** [GitHub guide](handbook/07-resources/64-github-guide.md) 
+
+🔎 **Search both handbooks (Persian + English):** [search/index.html](search/index.html) (download the repository and open it in your browser) or `python3 tools/search.py your words`
 
 
 > [!CAUTION]
