@@ -45,7 +45,7 @@
 ## ۵. نهاد مسئول
 
 - **حمایت از مصرف‌کننده:** Verbraucherzentrale Niedersachsen، Beratungsstelle Hannover — Landschaftstraße 3, 30159 Hannover (ورودی از Georgsplatz) · ‎0511 91196-0 ([Verbraucherzentrale](https://www.verbraucherzentrale-niedersachsen.de/beratungsstellen/beratungsstelle-hannover-121455?page=1))
-- **نهاد ناظر مخابرات:** Bundesnetzagentur — [bundesnetzagentur.de](https://www.bundesnetzagentur.de/)
+- **نهاد ناظر مخابرات:** Bundesnetzagentur — [bundesnetzagentur.de](https://www.bundesnetzagentur.de/DE/Home/home_node.html)
 
 ## ۶. منابع و پیوندهای رسمی
 
@@ -58,7 +58,7 @@
 | ۳ | [Bundesnetzagentur – Vertrag](https://www.bundesnetzagentur.de/DE/Vportal/TK/InternetTelefon/Vertrag/start.html) | Bundesnetzagentur | 2026-11-03 | ✅ باز شد |
 | ۴ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
 | ۵ | [Verbraucherzentrale – Beratungsstelle Hannover](https://www.verbraucherzentrale-niedersachsen.de/beratungsstellen/beratungsstelle-hannover-121455?page=1) | Verbraucherzentrale Niedersachsen | 2026-11-03 | ✅ باز شد |
-| ۶ | [bundesnetzagentur.de](https://www.bundesnetzagentur.de/) | Bundesnetzagentur | 2026-11-03 | ✅ باز شد |
+| ۶ | [bundesnetzagentur.de](https://www.bundesnetzagentur.de/DE/Home/home_node.html) | Bundesnetzagentur | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

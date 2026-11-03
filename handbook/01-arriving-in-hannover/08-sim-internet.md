@@ -46,7 +46,7 @@
 
 - **اینترنت دانشگاه:** Leibniz Universität IT Services (LUIS) — [luis.uni-hannover.de](https://www.luis.uni-hannover.de/)
 - **اپراتور تلفن:** اپراتور انتخابی شما؛ ISL هیچ اپراتوری را به‌طور رسمی توصیه نمی‌کند.
-- **نهاد ناظر:** Bundesnetzagentur — [bundesnetzagentur.de](https://www.bundesnetzagentur.de/)
+- **نهاد ناظر:** Bundesnetzagentur — [bundesnetzagentur.de](https://www.bundesnetzagentur.de/DE/Home/home_node.html)
 
 ## ۶. منابع و پیوندهای رسمی
 
@@ -59,7 +59,7 @@
 | ۳ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
 | ۴ | [LUH – Housing](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/housing) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
 | ۵ | [luis.uni-hannover.de](https://www.luis.uni-hannover.de/) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
-| ۶ | [bundesnetzagentur.de](https://www.bundesnetzagentur.de/) | Bundesnetzagentur | 2026-11-03 | ✅ باز شد |
+| ۶ | [bundesnetzagentur.de](https://www.bundesnetzagentur.de/DE/Home/home_node.html) | Bundesnetzagentur | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 
