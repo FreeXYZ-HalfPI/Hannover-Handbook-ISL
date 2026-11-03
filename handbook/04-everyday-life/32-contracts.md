@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-03 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -58,7 +58,7 @@
 | ۳ | [Bundesnetzagentur – Vertrag](https://www.bundesnetzagentur.de/DE/Vportal/TK/InternetTelefon/Vertrag/start.html) | Bundesnetzagentur | 2026-11-03 | ✅ باز شد |
 | ۴ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
 | ۵ | [Verbraucherzentrale – Beratungsstelle Hannover](https://www.verbraucherzentrale-niedersachsen.de/beratungsstellen/beratungsstelle-hannover-121455?page=1) | Verbraucherzentrale Niedersachsen | 2026-11-03 | ✅ باز شد |
-| ۶ | [bundesnetzagentur.de](https://www.bundesnetzagentur.de/) | Bundesnetzagentur | 2026-10-23 | ✅ باز شد |
+| ۶ | [bundesnetzagentur.de](https://www.bundesnetzagentur.de/) | Bundesnetzagentur | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

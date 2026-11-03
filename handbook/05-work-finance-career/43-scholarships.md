@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۵ — کار، امور مالی و آینده شغلی](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-03 · **بخش:** [بخش ۵ — کار، امور مالی و آینده شغلی](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -67,7 +67,7 @@
 | ۲ | [Finanzielle Beihilfen für internationale Studierende](https://www.uni-hannover.de/studium/finanzierung-foerderung/finanzielle-beihilfen-fuer-internationale-studierende) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
 | ۳ | [LUH – Deutschlandstipendium](https://www.uni-hannover.de/universitaet/aktuelles/online-aktuell/details/news/bewerbungsphase-fuer-deutschlandstipendien-laeuft-1) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
 | ۴ | [Scholarship Deutschlandstipendium](https://www.uni-hannover.de/en/studium/finanzierung-foerderung/deutschlandstipendium) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
-| ۵ | [daad.de](https://www.daad.de/) | DAAD | 2026-10-23 | ✅ باز شد |
+| ۵ | [daad.de](https://www.daad.de/) | DAAD | 2026-11-03 | ✅ باز شد |
 | ۶ | [BAföG FAQ](https://www.studentenwerk-hannover.de/geld/alles-zum-bafoeg/bafoeg-faq) | Studentenwerk Hannover | 2026-11-03 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
