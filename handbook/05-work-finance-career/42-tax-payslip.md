@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -19,7 +19,7 @@
 > این صفحه اطلاعات عمومی است و مشاوره مالیاتی به شمار نمی‌آید.
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-03 · **بخش:** [بخش ۵ — کار، امور مالی و آینده شغلی](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۵ — کار، امور مالی و آینده شغلی](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -57,10 +57,10 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [Die wichtigsten steuerlichen Änderungen 2026](https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-5-wichtigste-steuerliche-aenderungen-2026.html) | وزارت دارایی فدرال | 2026-11-03 | ✅ باز شد |
-| ۲ | [DRV – Werkstudentenprivileg](https://www.deutsche-rentenversicherung.de/DRV/DE/Experten/Arbeitgeber-und-Steuerberater/summa-summarum/Lexikon/W/werkstudentenprivileg.html) | Deutsche Rentenversicherung | 2026-11-03 | ✅ باز شد |
-| ۳ | [elster.de](https://www.elster.de/) | ELSTER | 2026-11-03 | ✅ باز شد |
-| ۴ | [LUH – Entry and Residence](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۱ | [Die wichtigsten steuerlichen Änderungen 2026](https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-5-wichtigste-steuerliche-aenderungen-2026.html) | وزارت دارایی فدرال | 2026-11-08 | ✅ باز شد |
+| ۲ | [DRV – Werkstudentenprivileg](https://www.deutsche-rentenversicherung.de/DRV/DE/Experten/Arbeitgeber-und-Steuerberater/summa-summarum/Lexikon/W/werkstudentenprivileg.html) | Deutsche Rentenversicherung | 2026-11-08 | ✅ باز شد |
+| ۳ | [elster.de](https://www.elster.de/) | ELSTER | 2026-11-08 | ✅ باز شد |
+| ۴ | [LUH – Entry and Residence](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

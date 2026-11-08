@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-03 · **بخش:** [بخش ۷ — منابع و پیوست‌ها](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۷ — منابع و پیوست‌ها](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -98,23 +98,23 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [Studentenwerk](https://www.studentenwerk-hannover.de/en/international-students/first-steps-in-germany) | Studentenwerk Hannover | 2026-11-03 | ✅ باز شد |
-| ۲ | [hannover.gov.de](https://hannover.gov.de/buergerservice/dienstleistungen/anmeldung-einer-wohnung-zuzug-nach-hannover-900000016-0.html?myMedium=1) | شهر هانوفر | 2026-11-03 | ✅ باز شد |
-| ۳ | [سفارت آلمان در تهران](https://teheran.diplo.de/ir-de/02-service/2403868-2403868) | وزارت امور خارجه آلمان | 2026-11-03 | ✅ باز شد |
-| ۴ | [LUH](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
-| ۵ | [LUH – Studienkosten](https://www.uni-hannover.de/studium/finanzierung-foerderung/studienkosten) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
-| ۶ | [BARMER](https://www.barmer.de/unsere-leistungen/beitraege-tarife/krankenversicherung-studierende) | BARMER (صندوق بیمه) | 2026-11-03 | ✅ باز شد |
-| ۷ | [§ 16b AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
-| ۸ | [§ 81 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__81.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
-| ۹ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
-| ۱۰ | [AStA](https://www.asta-hannover.de/semesterticket) | AStA Hannover | 2026-11-03 | ✅ باز شد |
-| ۱۱ | [ptb](https://www.ptb.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
-| ۱۲ | [§ 29 FeV](https://www.gesetze-im-internet.de/fev_2010/__29.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
-| ۱۳ | [سفارت آلمان در تهران](https://teheran.diplo.de/ir-de/2752046-2752046) | وزارت امور خارجه آلمان | 2026-11-03 | ✅ باز شد |
-| ۱۴ | [§ 20 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__20.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
-| ۱۵ | [Auswärtiges Amt](https://www.auswaertiges-amt.de/de/service/visa-und-aufenthalt/schengen-207786) | وزارت امور خارجه آلمان | 2026-11-03 | ✅ باز شد |
-| ۱۶ | [§ 19 BMG](https://www.gesetze-im-internet.de/bmg/__19.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
-| ۱۷ | [Zoll – Cash](https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Restrictions/Cash/cash_node.html) | گمرک آلمان (Zoll) | 2026-11-03 | ✅ باز شد |
+| ۱ | [Studentenwerk](https://www.studentenwerk-hannover.de/en/international-students/first-steps-in-germany) | Studentenwerk Hannover | 2026-11-08 | ✅ باز شد |
+| ۲ | [hannover.gov.de](https://hannover.gov.de/buergerservice/dienstleistungen/anmeldung-einer-wohnung-zuzug-nach-hannover-900000016-0.html?myMedium=1) | شهر هانوفر | 2026-11-08 | ✅ باز شد |
+| ۳ | [سفارت آلمان در تهران](https://teheran.diplo.de/ir-de/02-service/2403868-2403868) | وزارت امور خارجه آلمان | 2026-11-08 | ✅ باز شد |
+| ۴ | [LUH](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
+| ۵ | [LUH – Studienkosten](https://www.uni-hannover.de/studium/finanzierung-foerderung/studienkosten) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
+| ۶ | [BARMER](https://www.barmer.de/unsere-leistungen/beitraege-tarife/krankenversicherung-studierende) | BARMER (صندوق بیمه) | 2026-11-08 | ✅ باز شد |
+| ۷ | [§ 16b AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-08 | ✅ باز شد |
+| ۸ | [§ 81 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__81.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-08 | ✅ باز شد |
+| ۹ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
+| ۱۰ | [AStA](https://www.asta-hannover.de/semesterticket) | AStA Hannover | 2026-11-08 | ✅ باز شد |
+| ۱۱ | [ptb](https://www.ptb.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
+| ۱۲ | [§ 29 FeV](https://www.gesetze-im-internet.de/fev_2010/__29.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-08 | ✅ باز شد |
+| ۱۳ | [سفارت آلمان در تهران](https://teheran.diplo.de/ir-de/2752046-2752046) | وزارت امور خارجه آلمان | 2026-11-08 | ✅ باز شد |
+| ۱۴ | [§ 20 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__20.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-08 | ✅ باز شد |
+| ۱۵ | [Auswärtiges Amt](https://www.auswaertiges-amt.de/de/service/visa-und-aufenthalt/schengen-207786) | وزارت امور خارجه آلمان | 2026-11-08 | ✅ باز شد |
+| ۱۶ | [§ 19 BMG](https://www.gesetze-im-internet.de/bmg/__19.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-08 | ✅ باز شد |
+| ۱۷ | [Zoll – Cash](https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Restrictions/Cash/cash_node.html) | گمرک آلمان (Zoll) | 2026-11-08 | ✅ باز شد |
 
 ---
 

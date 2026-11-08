@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-03 · **بخش:** [بخش ۳ — خدمات و نهادهای دانشگاه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۳ — خدمات و نهادهای دانشگاه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -58,13 +58,13 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [llc.uni-hannover.de](https://www.llc.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
-| ۲ | [LLC – German courses](https://www.llc.uni-hannover.de/en/language-courses/german) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
-| ۳ | [Language course registration](https://www.llc.uni-hannover.de/en/language-courses/language-course-registration) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
-| ۴ | [Tandem offers](https://www.llc.uni-hannover.de/en/language-courses/tandem-learning/tandem-learning-offers) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
-| ۵ | [Guidelines for courses and fee regulation](https://www.llc.uni-hannover.de/en/leibniz-language-centre/guidelines-for-courses-and-fee-regulation) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
-| ۶ | [LLC – Contact](https://www.llc.uni-hannover.de/en/leibniz-language-centre/contactdirectionsoffice-hours) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
-| ۷ | [Accepted language certificates at LUH](https://www.llc.uni-hannover.de/en/language-examinations/accepted-language-certificates-at-the-luh) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۱ | [llc.uni-hannover.de](https://www.llc.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
+| ۲ | [LLC – German courses](https://www.llc.uni-hannover.de/en/language-courses/german) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
+| ۳ | [Language course registration](https://www.llc.uni-hannover.de/en/language-courses/language-course-registration) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
+| ۴ | [Tandem offers](https://www.llc.uni-hannover.de/en/language-courses/tandem-learning/tandem-learning-offers) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
+| ۵ | [Guidelines for courses and fee regulation](https://www.llc.uni-hannover.de/en/leibniz-language-centre/guidelines-for-courses-and-fee-regulation) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
+| ۶ | [LLC – Contact](https://www.llc.uni-hannover.de/en/leibniz-language-centre/contactdirectionsoffice-hours) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
+| ۷ | [Accepted language certificates at LUH](https://www.llc.uni-hannover.de/en/language-examinations/accepted-language-certificates-at-the-luh) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

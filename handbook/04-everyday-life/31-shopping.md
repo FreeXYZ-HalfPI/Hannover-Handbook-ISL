@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-03 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -57,13 +57,13 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
-| ۲ | [hannover.de – Hausmarke](https://www.hannover.de/Wirtschaft-Wissenschaft/Wissenschaft/Studieren-in-Hannover/Hausmarke) | شهر و منطقه هانوفر | 2026-11-03 | ✅ باز شد |
-| ۳ | [Studentenwerk – Save money](https://www.studentenwerk-hannover.de/en/money/save-money) | Studentenwerk Hannover | 2026-11-03 | ✅ باز شد |
-| ۴ | [BMUKN – Einweg und Mehrweg](https://www.bundesumweltministerium.de/faqs/einweg-und-mehrweg) | وزارت محیط زیست فدرال | 2026-11-03 | ✅ باز شد |
-| ۵ | [Verbraucherzentrale](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/abfall/fragen-und-antworten-alles-zum-einwegpfand-und-dosenpfand-11505) | Verbraucherzentrale | 2026-11-03 | ✅ باز شد |
-| ۶ | [IHK Braunschweig – NLöffVZG](https://www.ihk.de/braunschweig/branchen/handel/einzelhandel/durchfuehrung-verkaufsoffener-sonntage-4500236) | ihk.de | 2026-11-03 | ✅ باز شد |
-| ۷ | [Geld sparen](https://www.studentenwerk-hannover.de/en/geld/geld-sparen) | Studentenwerk Hannover | 2026-11-03 | ✅ باز شد |
+| ۱ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
+| ۲ | [hannover.de – Hausmarke](https://www.hannover.de/Wirtschaft-Wissenschaft/Wissenschaft/Studieren-in-Hannover/Hausmarke) | شهر و منطقه هانوفر | 2026-11-08 | ✅ باز شد |
+| ۳ | [Studentenwerk – Save money](https://www.studentenwerk-hannover.de/en/money/save-money) | Studentenwerk Hannover | 2026-11-08 | ✅ باز شد |
+| ۴ | [BMUKN – Einweg und Mehrweg](https://www.bundesumweltministerium.de/faqs/einweg-und-mehrweg) | وزارت محیط زیست فدرال | 2026-11-08 | ✅ باز شد |
+| ۵ | [Verbraucherzentrale](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/abfall/fragen-und-antworten-alles-zum-einwegpfand-und-dosenpfand-11505) | Verbraucherzentrale | 2026-11-08 | ✅ باز شد |
+| ۶ | [IHK Braunschweig – NLöffVZG](https://www.ihk.de/braunschweig/branchen/handel/einzelhandel/durchfuehrung-verkaufsoffener-sonntage-4500236) | ihk.de | 2026-11-08 | ✅ باز شد |
+| ۷ | [Geld sparen](https://www.studentenwerk-hannover.de/en/geld/geld-sparen) | Studentenwerk Hannover | 2026-11-08 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

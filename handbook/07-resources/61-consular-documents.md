@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -19,7 +19,7 @@
 > این صفحه اطلاعات عمومی است و مشاوره حقوقی به شمار نمی‌آید. مقررات گذرنامه و نظام وظیفه ایران را فقط نهادهای رسمی ایران تعیین می‌کنند و ممکن است بدون اطلاع قبلی تغییر کنند.
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-03 · **بخش:** [بخش ۷ — منابع و پیوست‌ها](README.md) · **تاریخ دسترسی به منابع:** 2026-10-25 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۷ — منابع و پیوست‌ها](README.md) · **تاریخ دسترسی به منابع:** 2026-10-25 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -78,11 +78,11 @@
 |----|----|----|----|----|
 | ۱ | [سامانه میخک](https://mikhak.mfa.gov.ir/) | وزارت امور خارجه ایران | 2026-10-25 | ❌ از آلمان باز نشد (تغییر مسیر پی‌درپی) |
 | ۲ | [سفارت ایران در برلین](https://berlin.mfa.ir/) | وزارت امور خارجه ایران | 2026-10-25 | ❌ از آلمان باز نشد (تغییر مسیر پی‌درپی) |
-| ۳ | [§ 56 AufenthV](https://www.gesetze-im-internet.de/aufenthv/__56.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
-| ۴ | [justiz-dolmetscher.de](https://www.justiz-dolmetscher.de/) | دادگستری ایالت‌های آلمان | 2026-11-03 | ✅ باز شد |
-| ۵ | [OLG Köln – Hinweise Iran](https://www.olg-koeln.nrw.de/aufgaben/justizverwaltung/organisation_verwaltung/dez_7/laender/laender_i/iran.pdf) | دادگاه عالی ایالتی کلن | 2026-11-03 | ✅ باز شد (سند PDF، ۲۰۱۹) |
-| ۶ | [ZAB – Zeugnisbewertung](https://zab.kmk.org/de/zeugnisbewertung/antrag) | ZAB / KMK | 2026-11-03 | ✅ باز شد |
-| ۷ | [LUH – Beglaubigungsstelle](https://www.uni-hannover.de/universitaet/campus-stadt/beglaubigungsstelle) | دانشگاه لایبنیتس هانوفر | 2026-11-03 | ✅ باز شد |
+| ۳ | [§ 56 AufenthV](https://www.gesetze-im-internet.de/aufenthv/__56.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-08 | ✅ باز شد |
+| ۴ | [justiz-dolmetscher.de](https://www.justiz-dolmetscher.de/) | دادگستری ایالت‌های آلمان | 2026-11-08 | ✅ باز شد |
+| ۵ | [OLG Köln – Hinweise Iran](https://www.olg-koeln.nrw.de/aufgaben/justizverwaltung/organisation_verwaltung/dez_7/laender/laender_i/iran.pdf) | دادگاه عالی ایالتی کلن | 2026-11-08 | ✅ باز شد (سند PDF، ۲۰۱۹) |
+| ۶ | [ZAB – Zeugnisbewertung](https://zab.kmk.org/de/zeugnisbewertung/antrag) | ZAB / KMK | 2026-11-08 | ✅ باز شد |
+| ۷ | [LUH – Beglaubigungsstelle](https://www.uni-hannover.de/universitaet/campus-stadt/beglaubigungsstelle) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-03⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -21,7 +21,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-03 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -68,20 +68,20 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [hannover.de – Notdienste & Notfallnummern](https://www.hannover.de/Leben-in-der-Region-Hannover/B%C3%BCrger-Service/Hilfe,-Beratung,-Notdienste/Notdienste-Notfall%C2%ADnummern) | شهر و منطقه هانوفر | 2026-11-03 | ✅ باز شد |
-| ۲ | [116117.de](https://www.116117.de/) | 116117 | 2026-11-03 | ✅ باز شد |
-| ۳ | [TelefonSeelsorge](https://www.telefonseelsorge.de/telefon/) | TelefonSeelsorge | 2026-11-03 | ✅ باز شد |
-| ۴ | [aponet](https://www.aponet.de/notdienstsuche) | aponet (ABDA) | 2026-11-03 | ✅ باز شد |
-| ۵ | [BBK – Erste Hilfe und Notruf](https://www.bbk.bund.de/DE/Warnung-Vorsorge/Vorsorge/Gesundheit-und-Hygiene/Erste-Hilfe-und-Notruf/erste-hilfe-und-notruf_node.html) | BBK | 2026-11-03 | ✅ باز شد |
-| ۶ | [شهر مونیخ – Verlust von Aufenthaltsdokumenten](https://stadt.muenchen.de/service/info/verlust-von-aufenthalts-oder-ausweisdokumenten/10112606/) | stadt.muenchen.de | 2026-11-03 | ✅ باز شد |
-| ۷ | [شهر ویسبادن](https://www.wiesbaden.de/vv/produkte/33/Verlust-Aufenthaltstitel-Reiseausweis) | wiesbaden.de | 2026-11-03 | ✅ باز شد |
-| ۸ | [ORF](https://orf.at/stories/3374462/) | orf.at | 2026-11-03 | ✅ باز شد |
-| ۹ | [pd-h.polizei-nds.de](https://www.pd-h.polizei-nds.de/) | پلیس نیدرزاکسن | 2026-11-03 | ✅ باز شد |
-| ۱۰ | [hannover.de – Polizeidirektion](https://www.hannover.de/Media/02-GIS-Objekte/Organisationsdatenbank/Redaktion-Hannover.de/A-Z/P/Polizei/Polizeidirektion-Hannover) | شهر و منطقه هانوفر | 2026-11-03 | ✅ باز شد |
-| ۱۱ | [BBK – NINA](https://www.bbk.bund.de/DE/Warnung-Vorsorge/Warn-App-NINA/warn-app-nina_node.html) | BBK | 2026-11-03 | ✅ باز شد |
-| ۱۲ | [BBK – Bundesweiter Warntag](https://www.bbk.bund.de/DE/Warnung-Vorsorge/Bundesweiter-Warntag/bundesweiter-warntag_node.html) | BBK | 2026-11-03 | ✅ باز شد |
-| ۱۳ | [Feuerwehr Hannover](https://www.feuerwehr-hannover.de/) | شهر هانوفر – آتش‌نشانی | 2026-11-03 | ✅ باز شد |
-| ۱۴ | [DWD – Warnungen](https://www.dwd.de/DE/wetter/warnungen/warnWetter_node.html) | سازمان هواشناسی آلمان (DWD) | 2026-11-03 | ✅ باز شد |
+| ۱ | [hannover.de – Notdienste & Notfallnummern](https://www.hannover.de/Leben-in-der-Region-Hannover/B%C3%BCrger-Service/Hilfe,-Beratung,-Notdienste/Notdienste-Notfall%C2%ADnummern) | شهر و منطقه هانوفر | 2026-11-08 | ✅ باز شد |
+| ۲ | [116117.de](https://www.116117.de/) | 116117 | 2026-11-08 | ✅ باز شد |
+| ۳ | [TelefonSeelsorge](https://www.telefonseelsorge.de/telefon/) | TelefonSeelsorge | 2026-11-08 | ✅ باز شد |
+| ۴ | [aponet](https://www.aponet.de/notdienstsuche) | aponet (ABDA) | 2026-11-08 | ✅ باز شد |
+| ۵ | [BBK – Erste Hilfe und Notruf](https://www.bbk.bund.de/DE/Warnung-Vorsorge/Vorsorge/Gesundheit-und-Hygiene/Erste-Hilfe-und-Notruf/erste-hilfe-und-notruf_node.html) | BBK | 2026-11-08 | ✅ باز شد |
+| ۶ | [شهر مونیخ – Verlust von Aufenthaltsdokumenten](https://stadt.muenchen.de/service/info/verlust-von-aufenthalts-oder-ausweisdokumenten/10112606/) | stadt.muenchen.de | 2026-11-08 | ✅ باز شد |
+| ۷ | [شهر ویسبادن](https://www.wiesbaden.de/vv/produkte/33/Verlust-Aufenthaltstitel-Reiseausweis) | wiesbaden.de | 2026-11-08 | ✅ باز شد |
+| ۸ | [ORF](https://orf.at/stories/3374462/) | orf.at | 2026-11-08 | ✅ باز شد |
+| ۹ | [pd-h.polizei-nds.de](https://www.pd-h.polizei-nds.de/) | پلیس نیدرزاکسن | 2026-11-08 | ✅ باز شد |
+| ۱۰ | [hannover.de – Polizeidirektion](https://www.hannover.de/Media/02-GIS-Objekte/Organisationsdatenbank/Redaktion-Hannover.de/A-Z/P/Polizei/Polizeidirektion-Hannover) | شهر و منطقه هانوفر | 2026-11-08 | ✅ باز شد |
+| ۱۱ | [BBK – NINA](https://www.bbk.bund.de/DE/Warnung-Vorsorge/Warn-App-NINA/warn-app-nina_node.html) | BBK | 2026-11-08 | ✅ باز شد |
+| ۱۲ | [BBK – Bundesweiter Warntag](https://www.bbk.bund.de/DE/Warnung-Vorsorge/Bundesweiter-Warntag/bundesweiter-warntag_node.html) | BBK | 2026-11-08 | ✅ باز شد |
+| ۱۳ | [Feuerwehr Hannover](https://www.feuerwehr-hannover.de/) | شهر هانوفر – آتش‌نشانی | 2026-11-08 | ✅ باز شد |
+| ۱۴ | [DWD – Warnungen](https://www.dwd.de/DE/wetter/warnungen/warnWetter_node.html) | سازمان هواشناسی آلمان (DWD) | 2026-11-08 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

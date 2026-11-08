@@ -10,8 +10,7 @@ A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz 
 
 🏷️ **Latest release (PDF):** [v1.0.0](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/releases/latest) 
 
-📥 **Download the whole handbook as one PDF:** [ISL-Handbook-Living-in-Hannover.pdf]
-(https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/raw/main/pdf/ISL-Handbook-Living-in-Hannover.pdf) 
+📥 **Download the whole handbook as one PDF:** [ISL-Handbook-Living-in-Hannover.pdf](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/raw/main/pdf/ISL-Handbook-Living-in-Hannover.pdf) 
 
 🤝 **How to contribute (step by step):** [GitHub guide](handbook/07-resources/64-github-guide.md) 
 
@@ -27,9 +26,9 @@ A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz 
 >
 > <span dir="rtl">**قوانین، مبالغ و مهلت‌ها ممکن است هر زمان تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان **هیچ مسئولیتی** در قبال درستی یا به‌روز بودن مطالب ندارند. همیشه از نهاد رسمی مسئول بپرسید.</span>
 >
-> ### 🗓️ Last updated: 2026-11-03
+> ### 🗓️ Last updated: 2026-11-08
 >
-> ### <span dir="rtl">🗓️ آخرین به‌روزرسانی: ⁦2026-11-03⁩</span>
+> ### <span dir="rtl">🗓️ آخرین به‌روزرسانی: ⁦2026-11-08⁩</span>
 >
 > Follow changes · پیگیری تغییرات: [CHANGELOG.md](CHANGELOG.md) · **Watch** this repository on GitHub · [ISL Telegram channel](https://t.me/hannover_iranian_students)
 
