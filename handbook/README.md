@@ -78,6 +78,7 @@
 
 *Arriving in Hannover & First Steps*
 
+- [۰. چک‌لیست ۱۴ روز اول در هانوفر](01-arriving-in-hannover/00-first-14-days-checklist.md)
 - [۱. درخواست پذیرش، uni-assist و ارزشیابی مدارک](01-arriving-in-hannover/01-application-uni-assist.md)
 - [۲. قبل از ورود به هانوفر — مدارک، محل اقامت و آمادگی‌های ضروری](01-arriving-in-hannover/02-before-arrival-visa.md)
 - [۳. ورود به هانوفر و رفت‌وآمد اولیه](01-arriving-in-hannover/03-arrival-transport.md)

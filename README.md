@@ -44,7 +44,7 @@ A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz 
 
 | بخش | صفحه‌ها |
 |---|---|
-| [۱ — ورود به هانوفر و کارهای اولیه](handbook/01-arriving-in-hannover/README.md) | ۱–۱۱ |
+| [۱ — ورود به هانوفر و کارهای اولیه](handbook/01-arriving-in-hannover/README.md) | ۰–۱۱ |
 | [۲ — شروع تحصیل در دانشگاه لایبنیتس](handbook/02-starting-your-studies/README.md) | ۱۲–۲۰ |
 | [۳ — خدمات و نهادهای دانشگاه](handbook/03-university-services/README.md) | ۲۱–۲۹ |
 | [۴ — زندگی روزمره در هانوفر](handbook/04-everyday-life/README.md) | ۳۰–۳۹ |
