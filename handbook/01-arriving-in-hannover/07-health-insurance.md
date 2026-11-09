@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-10⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -21,7 +21,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -67,18 +67,18 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [Studentenwerk Hannover](https://www.studentenwerk-hannover.de/en/international-students/first-steps-in-germany) | Studentenwerk Hannover | 2026-11-08 | ✅ باز شد |
-| ۲ | [LUH – Entry and Residence](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۳ | [gesetzlichekrankenkassen.de](https://www.gesetzlichekrankenkassen.de/kassenbeitraege/studenten) | gesetzlichekrankenkassen.de | 2026-11-08 | ✅ باز شد |
-| ۴ | [LUH – Einschreibung](https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung/nach-der-bewerbung/einschreibung) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۵ | [TK](https://www.tk.de/vertriebspartner/faq/beitragsuebersicht/studenten-und-fachschueler/was-muessen-studierende-beachten-2065514) | TK (صندوق بیمه) | 2026-11-08 | ✅ باز شد |
-| ۶ | [AOK](https://www.aok.de/pp/rechengroessen/kostenueberblick-studentischen-krankenversicherung/) | AOK (صندوق بیمه) | 2026-11-08 | ✅ باز شد |
-| ۷ | [BARMER](https://www.barmer.de/unsere-leistungen/beitraege-tarife/krankenversicherung-studierende) | BARMER (صندوق بیمه) | 2026-11-08 | ✅ باز شد |
-| ۸ | [صفحه مشاوره](https://www.studentenwerk-hannover.de/geld/alles-zum-bafoeg/bafoeg-faq) | Studentenwerk Hannover | 2026-11-08 | ✅ باز شد |
-| ۹ | [Krankenversicherung – LUH](https://www.uni-hannover.de/studium/im-studium/studienorganisation/krankenversicherung) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۱۰ | [Beitrag Studierende](https://www.tk.de/techniker/versicherung/gut-versichert-in-jeder-lebenslage/versichert-als-studierende/beitrag-studierende-2131472) | TK (صندوق بیمه) | 2026-11-08 | ✅ باز شد |
-| ۱۱ | [Health insurance](https://www.euraxess.de/germany/information-assistance/social-security-and-optional-insurances/health-insurance) | euraxess.de | 2026-11-08 | ✅ باز شد |
-| ۱۲ | [§ 5 SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
+| ۱ | [Studentenwerk Hannover](https://www.studentenwerk-hannover.de/en/international-students/first-steps-in-germany) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
+| ۲ | [LUH – Entry and Residence](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۳ | [gesetzlichekrankenkassen.de](https://www.gesetzlichekrankenkassen.de/kassenbeitraege/studenten) | gesetzlichekrankenkassen.de | 2026-11-10 | ✅ باز شد |
+| ۴ | [LUH – Einschreibung](https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung/nach-der-bewerbung/einschreibung) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۵ | [TK](https://www.tk.de/vertriebspartner/faq/beitragsuebersicht/studenten-und-fachschueler/was-muessen-studierende-beachten-2065514) | TK (صندوق بیمه) | 2026-11-10 | ✅ باز شد |
+| ۶ | [AOK](https://www.aok.de/pp/rechengroessen/kostenueberblick-studentischen-krankenversicherung/) | AOK (صندوق بیمه) | 2026-11-10 | ✅ باز شد |
+| ۷ | [BARMER](https://www.barmer.de/unsere-leistungen/beitraege-tarife/krankenversicherung-studierende) | BARMER (صندوق بیمه) | 2026-11-10 | ✅ باز شد |
+| ۸ | [صفحه مشاوره](https://www.studentenwerk-hannover.de/geld/alles-zum-bafoeg/bafoeg-faq) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
+| ۹ | [Krankenversicherung – LUH](https://www.uni-hannover.de/studium/im-studium/studienorganisation/krankenversicherung) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۱۰ | [Beitrag Studierende](https://www.tk.de/techniker/versicherung/gut-versichert-in-jeder-lebenslage/versichert-als-studierende/beitrag-studierende-2131472) | TK (صندوق بیمه) | 2026-11-10 | ✅ باز شد |
+| ۱۱ | [Health insurance](https://www.euraxess.de/germany/information-assistance/social-security-and-optional-insurances/health-insurance) | euraxess.de | 2026-11-10 | ✅ باز شد |
+| ۱۲ | [§ 5 SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

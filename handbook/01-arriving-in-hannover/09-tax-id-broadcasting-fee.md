@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-10⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -80,19 +80,19 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [Steuerliche Identifikationsnummer](https://www.bzst.de/DE/Privatpersonen/SteuerlicheIdentifikationsnummer/steuerlicheidentifikationsnummer_node.html) | اداره مرکزی مالیات فدرال (BZSt) | 2026-11-08 | ✅ باز شد |
-| ۲ | [Entry and Residence – After arrival](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۳ | [BZSt – FAQ](https://www.bzst.de/DE/Privatpersonen/SteuerlicheIdentifikationsnummer/FAQ/faq_node.html) | اداره مرکزی مالیات فدرال (BZSt) | 2026-11-08 | ✅ باز شد |
-| ۴ | [Rundfunkbeitrag – Studierende](https://www.rundfunkbeitrag.de/buergerinnen-und-buerger/informationen/informationen-fuer-studierende) | Beitragsservice | 2026-11-08 | ✅ باز شد |
-| ۵ | [betanet](https://www.betanet.de/rundfunkbeitrag-befreiung-ermaessigung.html) | betanet.de | 2026-11-08 | ✅ باز شد |
-| ۶ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۷ | [Rundfunkbeitrag – Students and Apprentices](https://www.rundfunkbeitrag.de/welcome/english/students-and-apprentices) | Beitragsservice | 2026-11-08 | ✅ باز شد |
-| ۸ | [rundfunkbeitrag.de](https://www.rundfunkbeitrag.de/) | Beitragsservice | 2026-11-08 | ✅ باز شد |
-| ۹ | [BZSt – Finanzamtsuche](https://www.bzst.de/DE/Service/Behoerdenwegweiser/Finanzamtsuche/GemFa/finanzamtsuche_node.html) | اداره مرکزی مالیات فدرال (BZSt) | 2026-11-08 | ✅ باز شد |
-| ۱۰ | [LStN – Finanzämter](https://www.lstn.niedersachsen.de/steuer/finanzaemter/) | اداره مالیات ایالت نیدرزاکسن | 2026-11-08 | ✅ باز شد |
-| ۱۱ | [§ 138 AO](https://www.gesetze-im-internet.de/ao_1977/__138.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-08 | ✅ باز شد |
-| ۱۲ | [DRV – Versicherungsnummernachweis](https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2024/240312-versicherungsnummernachweis.html) | Deutsche Rentenversicherung | 2026-11-08 | ✅ باز شد |
-| ۱۳ | [DRV – Beratungsstellen Niedersachsen](https://www.deutsche-rentenversicherung.de/BraunschweigHannover/DE/Beratung-und-Kontakt/AuB-Stellen/AuB-Niedersachsen) | Deutsche Rentenversicherung Braunschweig-Hannover | 2026-11-08 | ✅ باز شد |
+| ۱ | [Steuerliche Identifikationsnummer](https://www.bzst.de/DE/Privatpersonen/SteuerlicheIdentifikationsnummer/steuerlicheidentifikationsnummer_node.html) | اداره مرکزی مالیات فدرال (BZSt) | 2026-11-10 | ✅ باز شد |
+| ۲ | [Entry and Residence – After arrival](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۳ | [BZSt – FAQ](https://www.bzst.de/DE/Privatpersonen/SteuerlicheIdentifikationsnummer/FAQ/faq_node.html) | اداره مرکزی مالیات فدرال (BZSt) | 2026-11-10 | ✅ باز شد |
+| ۴ | [Rundfunkbeitrag – Studierende](https://www.rundfunkbeitrag.de/buergerinnen-und-buerger/informationen/informationen-fuer-studierende) | Beitragsservice | 2026-11-10 | ✅ باز شد |
+| ۵ | [betanet](https://www.betanet.de/rundfunkbeitrag-befreiung-ermaessigung.html) | betanet.de | 2026-11-10 | ✅ باز شد |
+| ۶ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۷ | [Rundfunkbeitrag – Students and Apprentices](https://www.rundfunkbeitrag.de/welcome/english/students-and-apprentices) | Beitragsservice | 2026-11-10 | ✅ باز شد |
+| ۸ | [rundfunkbeitrag.de](https://www.rundfunkbeitrag.de/) | Beitragsservice | 2026-11-10 | ✅ باز شد |
+| ۹ | [BZSt – Finanzamtsuche](https://www.bzst.de/DE/Service/Behoerdenwegweiser/Finanzamtsuche/GemFa/finanzamtsuche_node.html) | اداره مرکزی مالیات فدرال (BZSt) | 2026-11-10 | ✅ باز شد |
+| ۱۰ | [LStN – Finanzämter](https://www.lstn.niedersachsen.de/steuer/finanzaemter/) | اداره مالیات ایالت نیدرزاکسن | 2026-11-10 | ✅ باز شد |
+| ۱۱ | [§ 138 AO](https://www.gesetze-im-internet.de/ao_1977/__138.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
+| ۱۲ | [DRV – Versicherungsnummernachweis](https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2024/240312-versicherungsnummernachweis.html) | Deutsche Rentenversicherung | 2026-11-10 | ✅ باز شد |
+| ۱۳ | [DRV – Beratungsstellen Niedersachsen](https://www.deutsche-rentenversicherung.de/BraunschweigHannover/DE/Beratung-und-Kontakt/AuB-Stellen/AuB-Niedersachsen) | Deutsche Rentenversicherung Braunschweig-Hannover | 2026-11-10 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

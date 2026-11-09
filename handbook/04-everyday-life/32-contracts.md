@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-10⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -53,12 +53,12 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH – Housing](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/housing) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۲ | [Kundenrechte für Telefon-, Handy- und Internetverträge](https://www.verbraucherzentrale.de/wissen/digitale-welt/mobilfunk-und-festnetz/wichtige-kundenrechte-fuer-telefon-handy-und-internetvertraege-65879) | Verbraucherzentrale | 2026-11-08 | ✅ باز شد |
-| ۳ | [Bundesnetzagentur – Vertrag](https://www.bundesnetzagentur.de/DE/Vportal/TK/InternetTelefon/Vertrag/start.html) | Bundesnetzagentur | 2026-11-08 | ✅ باز شد |
-| ۴ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۵ | [Verbraucherzentrale – Beratungsstelle Hannover](https://www.verbraucherzentrale-niedersachsen.de/beratungsstellen/beratungsstelle-hannover-121455?page=1) | Verbraucherzentrale Niedersachsen | 2026-11-08 | ✅ باز شد |
-| ۶ | [bundesnetzagentur.de](https://www.bundesnetzagentur.de/DE/Home/home_node.html) | Bundesnetzagentur | 2026-11-08 | ✅ باز شد |
+| ۱ | [LUH – Housing](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/housing) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۲ | [Kundenrechte für Telefon-, Handy- und Internetverträge](https://www.verbraucherzentrale.de/wissen/digitale-welt/mobilfunk-und-festnetz/wichtige-kundenrechte-fuer-telefon-handy-und-internetvertraege-65879) | Verbraucherzentrale | 2026-11-10 | ✅ باز شد |
+| ۳ | [Bundesnetzagentur – Vertrag](https://www.bundesnetzagentur.de/DE/Vportal/TK/InternetTelefon/Vertrag/start.html) | Bundesnetzagentur | 2026-11-10 | ✅ باز شد |
+| ۴ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۵ | [Verbraucherzentrale – Beratungsstelle Hannover](https://www.verbraucherzentrale-niedersachsen.de/beratungsstellen/beratungsstelle-hannover-121455?page=1) | Verbraucherzentrale Niedersachsen | 2026-11-10 | ✅ باز شد |
+| ۶ | [bundesnetzagentur.de](https://www.bundesnetzagentur.de/DE/Home/home_node.html) | Bundesnetzagentur | 2026-11-10 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

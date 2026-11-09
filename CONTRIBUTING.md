@@ -5,6 +5,7 @@ Thank you for helping new students in Hannover! Short version in English, full r
 - **New to GitHub?** Follow the illustrated step-by-step guide: [handbook/07-resources/64-github-guide.md](handbook/07-resources/64-github-guide.md)
 - **Small fix** (a number, a deadline, a broken link): open the page on GitHub, click ✏️ *Edit*, and propose the change as a pull request. Add the official source and today's access date.
 - **Not sure / no time to edit?** Open an [issue](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/issues/new/choose) and describe the problem.
+- **Where to help most:** see the goals and open work in [ROADMAP.md](ROADMAP.md) (and issues labelled `needs-verification`).
 - **New page:** copy [TEMPLATE.md](TEMPLATE.md) into the right section folder and add it to that section's `README.md` and to [handbook/README.md](handbook/README.md).
 
 ---

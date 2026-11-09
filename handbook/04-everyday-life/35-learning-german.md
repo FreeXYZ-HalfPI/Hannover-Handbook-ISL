@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-10⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -80,23 +80,23 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH – Sprachnachweise](https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/sprachnachweise) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۲ | [LLC – German courses](https://www.llc.uni-hannover.de/en/language-courses/german) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۳ | [LLC – Tandem](https://www.llc.uni-hannover.de/en/language-courses/tandem-learning/tandem-learning-offers) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۴ | [LLC](https://www.llc.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۵ | [LUH](https://www.uni-hannover.de/en/studium/im-studium/international/internationale-studierende/betreuungsangebote/study-buddy) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۶ | [vhs-hannover.de](https://www.vhs-hannover.de/) | vhs-hannover.de | 2026-11-08 | ✅ باز شد |
-| ۷ | [LLC](https://www.llc.uni-hannover.de/en/leibniz-language-centre/guidelines-for-courses-and-fee-regulation) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۸ | [LLC – Contact](https://www.llc.uni-hannover.de/en/leibniz-language-centre/contactdirectionsoffice-hours) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۹ | [Hochschullexikon](https://www.studieren-in-niedersachsen.de/hochschullexikon.html) | studieren-in-niedersachsen.de | 2026-11-08 | ✅ باز شد |
-| ۱۰ | [VHS Hannover – Deutschkurse](https://www.vhs-hannover.de/vhs-programm/deutsch-integration/deutschkurse) | Volkshochschule Hannover | 2026-11-08 | ✅ باز شد |
-| ۱۱ | [VHS Hannover – Deutschberatung](https://www.vhs-hannover.de/vhs-programm/deutsch-integration/deutschberatung-1) | Volkshochschule Hannover | 2026-11-08 | ✅ باز شد |
-| ۱۲ | [Linksammlung Online-Sprachlernangebote Deutsch (PDF)](https://www.arbeitsagentur.de/vor-ort/datei/linksammlung-online-sprachlernangebote-deutsch_ba232254.pdf) | Bundesagentur für Arbeit | 2026-11-08 | ✅ باز شد |
-| ۱۳ | [Offenes Sprachcafé – KroKuS](https://www.hannover.de/Kultur-Freizeit/Freizeit-Sport/Freizeiteinrichtungen/Freizeitheime-Stadtteilzentren/Stadtteilzentrum-KroKuS/Erwachsene-Familie/Kurse-und-st%C3%A4ndige-Angebote/Offenes-Sprachcaf%C3%A9) | شهر هانوفر | 2026-11-08 | ✅ باز شد |
-| ۱۴ | [Sprachcafé DaF – Freizeitheim Vahrenwald](https://www.hannover.de/Kultur-Freizeit/Freizeit-Sport/Freizeiteinrichtungen/Freizeitheime-Stadtteilzentren/Freizeitheim-Vahrenwald/Angebote/Offene-Gruppen/Sprachcafe-DaF-alle-Level-%7C-English-Translation) | شهر هانوفر | 2026-11-08 | ✅ باز شد |
-| ۱۵ | [Gesprächskreis Deutsch – Stadtbibliothek](https://www.hannover.de/Leben-in-der-Region-Hannover/Bildung/Bibliotheken-Archive/Stadtbibliothek-Hannover/Veranstaltungen/Gespr%C3%A4chskreis-Deutsch-f%C3%BCr-Migrantinnen-und-Migranten) | شهر هانوفر | 2026-11-08 | ✅ باز شد |
-| ۱۶ | [Freizeitheime und Stadtteilzentren](https://www.hannover.de/Kultur-Freizeit/Freizeit-Sport/Freizeiteinrichtungen/Freizeitheime-Stadtteilzentren) | شهر هانوفر | 2026-11-08 | ✅ باز شد |
-| ۱۷ | [Veranstaltungskalender](https://www.hannover.de/Veranstaltungskalender) | شهر هانوفر | 2026-11-08 | ✅ باز شد |
+| ۱ | [LUH – Sprachnachweise](https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/sprachnachweise) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۲ | [LLC – German courses](https://www.llc.uni-hannover.de/en/language-courses/german) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۳ | [LLC – Tandem](https://www.llc.uni-hannover.de/en/language-courses/tandem-learning/tandem-learning-offers) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۴ | [LLC](https://www.llc.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۵ | [LUH](https://www.uni-hannover.de/en/studium/im-studium/international/internationale-studierende/betreuungsangebote/study-buddy) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۶ | [vhs-hannover.de](https://www.vhs-hannover.de/) | vhs-hannover.de | 2026-11-10 | ✅ باز شد |
+| ۷ | [LLC](https://www.llc.uni-hannover.de/en/leibniz-language-centre/guidelines-for-courses-and-fee-regulation) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۸ | [LLC – Contact](https://www.llc.uni-hannover.de/en/leibniz-language-centre/contactdirectionsoffice-hours) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۹ | [Hochschullexikon](https://www.studieren-in-niedersachsen.de/hochschullexikon.html) | studieren-in-niedersachsen.de | 2026-11-10 | ✅ باز شد |
+| ۱۰ | [VHS Hannover – Deutschkurse](https://www.vhs-hannover.de/vhs-programm/deutsch-integration/deutschkurse) | Volkshochschule Hannover | 2026-11-10 | ✅ باز شد |
+| ۱۱ | [VHS Hannover – Deutschberatung](https://www.vhs-hannover.de/vhs-programm/deutsch-integration/deutschberatung-1) | Volkshochschule Hannover | 2026-11-10 | ✅ باز شد |
+| ۱۲ | [Linksammlung Online-Sprachlernangebote Deutsch (PDF)](https://www.arbeitsagentur.de/vor-ort/datei/linksammlung-online-sprachlernangebote-deutsch_ba232254.pdf) | Bundesagentur für Arbeit | 2026-11-10 | ✅ باز شد |
+| ۱۳ | [Offenes Sprachcafé – KroKuS](https://www.hannover.de/Kultur-Freizeit/Freizeit-Sport/Freizeiteinrichtungen/Freizeitheime-Stadtteilzentren/Stadtteilzentrum-KroKuS/Erwachsene-Familie/Kurse-und-st%C3%A4ndige-Angebote/Offenes-Sprachcaf%C3%A9) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
+| ۱۴ | [Sprachcafé DaF – Freizeitheim Vahrenwald](https://www.hannover.de/Kultur-Freizeit/Freizeit-Sport/Freizeiteinrichtungen/Freizeitheime-Stadtteilzentren/Freizeitheim-Vahrenwald/Angebote/Offene-Gruppen/Sprachcafe-DaF-alle-Level-%7C-English-Translation) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
+| ۱۵ | [Gesprächskreis Deutsch – Stadtbibliothek](https://www.hannover.de/Leben-in-der-Region-Hannover/Bildung/Bibliotheken-Archive/Stadtbibliothek-Hannover/Veranstaltungen/Gespr%C3%A4chskreis-Deutsch-f%C3%BCr-Migrantinnen-und-Migranten) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
+| ۱۶ | [Freizeitheime und Stadtteilzentren](https://www.hannover.de/Kultur-Freizeit/Freizeit-Sport/Freizeiteinrichtungen/Freizeitheime-Stadtteilzentren) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
+| ۱۷ | [Veranstaltungskalender](https://www.hannover.de/Veranstaltungskalender) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

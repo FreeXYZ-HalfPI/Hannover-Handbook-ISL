@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-10⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -24,7 +24,7 @@
 > این فهرست از **ثبت رسمی پزشکان طرف قرارداد بیمه دولتی** گرفته شده است و توصیه پزشکی نیست. ISL هیچ پزشکی را پیشنهاد یا تأیید نمی‌کند. اطلاعات زبان را خود مطب‌ها اعلام کرده‌اند؛ پیش از رفتن تلفن کنید و بپرسید آیا بیمار تازه می‌پذیرند.
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۷ — منابع و پیوست‌ها](README.md) · **تاریخ دسترسی به منابع:** 2026-10-25 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۷ — منابع و پیوست‌ها](README.md) · **تاریخ دسترسی به منابع:** 2026-10-25 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -158,12 +158,12 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [116117 – Arzt- und Psychotherapeutensuche](https://arztsuche.116117.de/) | Kassenärztliche Bundesvereinigung | 2026-11-08 | ✅ باز شد؛ فیلتر Persisch/Farsi و Englisch بررسی شد |
-| ۲ | [KZVN – Zahnarztsuche](https://www.kzvn.de/patienten/zahnarztsuche/) | KZV Niedersachsen | 2026-11-08 | ✅ باز شد |
-| ۳ | [Welche Zahnvorsorge zahlt die Krankenkasse?](https://www.verbraucherzentrale.de/wissen/gesundheit-pflege/krankenversicherung/welche-zahnvorsorge-zahlt-die-krankenkasse-12913) | Verbraucherzentrale | 2026-11-08 | ✅ باز شد |
-| ۴ | [Kassenleistungen der Zahnmedizin](https://www.verbraucherzentrale.de/kassenleistungen-der-zahnmedizin) | Verbraucherzentrale | 2026-11-08 | ✅ باز شد |
-| ۵ | [§ 55 SGB V](https://www.gesetze-im-internet.de/sgb_5/__55.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
-| ۶ | [§ 5 GOZ](https://www.gesetze-im-internet.de/goz_1987/__5.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-08 | ✅ باز شد |
+| ۱ | [116117 – Arzt- und Psychotherapeutensuche](https://arztsuche.116117.de/) | Kassenärztliche Bundesvereinigung | 2026-11-10 | ✅ باز شد؛ فیلتر Persisch/Farsi و Englisch بررسی شد |
+| ۲ | [KZVN – Zahnarztsuche](https://www.kzvn.de/patienten/zahnarztsuche/) | KZV Niedersachsen | 2026-11-10 | ✅ باز شد |
+| ۳ | [Welche Zahnvorsorge zahlt die Krankenkasse?](https://www.verbraucherzentrale.de/wissen/gesundheit-pflege/krankenversicherung/welche-zahnvorsorge-zahlt-die-krankenkasse-12913) | Verbraucherzentrale | 2026-11-10 | ✅ باز شد |
+| ۴ | [Kassenleistungen der Zahnmedizin](https://www.verbraucherzentrale.de/kassenleistungen-der-zahnmedizin) | Verbraucherzentrale | 2026-11-10 | ✅ باز شد |
+| ۵ | [§ 55 SGB V](https://www.gesetze-im-internet.de/sgb_5/__55.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
+| ۶ | [§ 5 GOZ](https://www.gesetze-im-internet.de/goz_1987/__5.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

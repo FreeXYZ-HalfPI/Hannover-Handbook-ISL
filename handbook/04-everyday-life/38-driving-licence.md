@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-10⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -58,10 +58,10 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [§ 29 FeV](https://www.gesetze-im-internet.de/fev_2010/__29.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-08 | ✅ باز شد |
-| ۲ | [Umschreibung einer sonstigen ausländischen Fahrerlaubnis](https://hannover.gov.de/buergerservice/dienstleistungen/fahrerlaubnis-umschreibung-einer-sonstigen-auslaendischen-fahrerlaubnis-drittstaaten--900000272-0.html?myMedium=1) | شهر هانوفر | 2026-11-08 | ✅ باز شد |
-| ۳ | [hannover.de – Ausländischer Führerschein](https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/Fahrerlaubnis%C2%AD%C2%ADbeh%C3%B6rde-Region-Hannover/Ausl%C3%A4ndischer-F%C3%BChrerschein) | شهر و منطقه هانوفر | 2026-11-08 | ✅ باز شد |
-| ۴ | [hannover.gov.de – Fahrerlaubnisbehörde](https://hannover.gov.de/buergerservice/verwaltung/32-12-fahrerlaubnisbehoerde-900000753-30810.html) | شهر هانوفر | 2026-11-08 | ✅ باز شد |
+| ۱ | [§ 29 FeV](https://www.gesetze-im-internet.de/fev_2010/__29.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
+| ۲ | [Umschreibung einer sonstigen ausländischen Fahrerlaubnis](https://hannover.gov.de/buergerservice/dienstleistungen/fahrerlaubnis-umschreibung-einer-sonstigen-auslaendischen-fahrerlaubnis-drittstaaten--900000272-0.html?myMedium=1) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
+| ۳ | [hannover.de – Ausländischer Führerschein](https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/Fahrerlaubnis%C2%AD%C2%ADbeh%C3%B6rde-Region-Hannover/Ausl%C3%A4ndischer-F%C3%BChrerschein) | شهر و منطقه هانوفر | 2026-11-10 | ✅ باز شد |
+| ۴ | [hannover.gov.de – Fahrerlaubnisbehörde](https://hannover.gov.de/buergerservice/verwaltung/32-12-fahrerlaubnisbehoerde-900000753-30810.html) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

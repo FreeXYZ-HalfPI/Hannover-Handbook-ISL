@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-10⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۳ — خدمات و نهادهای دانشگاه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۳ — خدمات و نهادهای دانشگاه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -53,12 +53,12 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH – ZQS](https://www.uni-hannover.de/en/universitaet/organisation/einrichtungen/zentrale-einrichtungen/zqs) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۲ | [ZQS – Key Competencies](https://www.zqs.uni-hannover.de/en/kc) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۳ | [LUH – ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۴ | [ZQS – Team and contact](https://www.zqs.uni-hannover.de/en/about-us/team-and-contact/) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۵ | [zqs.uni-hannover.de](https://www.zqs.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۶ | [Career Service](https://www.zqs.uni-hannover.de/en/kc/career-service) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
+| ۱ | [LUH – ZQS](https://www.uni-hannover.de/en/universitaet/organisation/einrichtungen/zentrale-einrichtungen/zqs) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۲ | [ZQS – Key Competencies](https://www.zqs.uni-hannover.de/en/kc) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۳ | [LUH – ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۴ | [ZQS – Team and contact](https://www.zqs.uni-hannover.de/en/about-us/team-and-contact/) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۵ | [zqs.uni-hannover.de](https://www.zqs.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۶ | [Career Service](https://www.zqs.uni-hannover.de/en/kc/career-service) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

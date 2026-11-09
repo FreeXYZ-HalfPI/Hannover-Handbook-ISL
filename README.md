@@ -58,6 +58,8 @@ A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz 
 
 همه می‌توانند کمک کنند: اصلاح یک عدد یا مهلت، گزارش پیوند خراب، افزودن تجربه شخصی یا نوشتن صفحه تازه. اگر تا حالا با GitHub کار نکرده‌اید، [راهنمای قدم‌به‌قدم با شکل](handbook/07-resources/64-github-guide.md) را ببینید؛ قواعد نگارش در [CONTRIBUTING.md](CONTRIBUTING.md) آمده است. قاعده اصلی: **هر ادعا باید منبع رسمی داشته باشد و هر منبع تاریخ دسترسی.**
 
+🎯 **اهداف و وضعیت امروز:** [ROADMAP.md](ROADMAP.md) — شاخص‌ها، کارهای باز و راه‌های کمک.
+
 </div>
 
 > [!WARNING]

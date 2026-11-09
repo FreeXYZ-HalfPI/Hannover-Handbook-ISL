@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-10⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۵ — کار، امور مالی و آینده شغلی](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۵ — کار، امور مالی و آینده شغلی](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -56,11 +56,11 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [§ 17 BMG](https://www.gesetze-im-internet.de/bmg/__17.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-03 | ✅ باز شد |
-| ۲ | [Abmeldung einer Wohnung: Wegzug aus Hannover](https://hannover.gov.de/buergerservice/dienstleistungen/abmeldung-einer-wohnung-wegzug-aus-hannover-900000020-0.html?myMedium=1) | شهر هانوفر | 2026-11-08 | ✅ باز شد |
-| ۳ | [Rundfunkbeitrag – Abmelden](https://www.rundfunkbeitrag.de/buergerinnen-und-buerger/formulare/abmelden) | Beitragsservice | 2026-11-08 | ✅ باز شد |
-| ۴ | [Verbraucherzentrale](https://www.verbraucherzentrale.de/wissen/digitale-welt/mobilfunk-und-festnetz/wichtige-kundenrechte-fuer-telefon-handy-und-internetvertraege-65879) | Verbraucherzentrale | 2026-11-08 | ✅ باز شد |
-| ۵ | [rundfunkbeitrag.de](https://www.rundfunkbeitrag.de/) | Beitragsservice | 2026-11-08 | ✅ باز شد |
+| ۱ | [§ 17 BMG](https://www.gesetze-im-internet.de/bmg/__17.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
+| ۲ | [Abmeldung einer Wohnung: Wegzug aus Hannover](https://hannover.gov.de/buergerservice/dienstleistungen/abmeldung-einer-wohnung-wegzug-aus-hannover-900000020-0.html?myMedium=1) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
+| ۳ | [Rundfunkbeitrag – Abmelden](https://www.rundfunkbeitrag.de/buergerinnen-und-buerger/formulare/abmelden) | Beitragsservice | 2026-11-10 | ✅ باز شد |
+| ۴ | [Verbraucherzentrale](https://www.verbraucherzentrale.de/wissen/digitale-welt/mobilfunk-und-festnetz/wichtige-kundenrechte-fuer-telefon-handy-und-internetvertraege-65879) | Verbraucherzentrale | 2026-11-10 | ✅ باز شد |
+| ۵ | [rundfunkbeitrag.de](https://www.rundfunkbeitrag.de/) | Beitragsservice | 2026-11-10 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

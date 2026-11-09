@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-10⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -21,7 +21,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -65,12 +65,12 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [116117.de](https://www.116117.de/) | 116117 | 2026-11-08 | ✅ باز شد |
-| ۲ | [aponet – Notdienstsuche](https://www.aponet.de/notdienstsuche) | aponet (ABDA) | 2026-11-08 | ✅ باز شد |
-| ۳ | [وزارت بهداشت فدرال – Zuzahlungsregelungen GKV](https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/A/Arzneimittelversorgung/Zuzahlungsregelungen_GKV.pdf) | وزارت بهداشت فدرال | 2026-11-08 | ✅ باز شد |
-| ۴ | [ptb](https://www.ptb.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
+| ۱ | [116117.de](https://www.116117.de/) | 116117 | 2026-11-10 | ✅ باز شد |
+| ۲ | [aponet – Notdienstsuche](https://www.aponet.de/notdienstsuche) | aponet (ABDA) | 2026-11-10 | ✅ باز شد |
+| ۳ | [وزارت بهداشت فدرال – Zuzahlungsregelungen GKV](https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/A/Arzneimittelversorgung/Zuzahlungsregelungen_GKV.pdf) | وزارت بهداشت فدرال | 2026-11-10 | ✅ باز شد |
+| ۴ | [ptb](https://www.ptb.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
 | ۵ | [G-BA – AU-Richtlinie, Tragende Gründe 2015 (PDF)](https://www.g-ba.de/downloads/40-268-3628/2015-12-17_AU-RL_AU-Bescheinigung_Nahtlosigkeit_TrG.pdf) | Gemeinsamer Bundesausschuss | 2026-10-25 | ⚠️ متن کامل بررسی نشد؛ قاعده سه‌روزه در منابع ثانویه تأیید شد |
-| ۶ | [§ 5 GOZ](https://www.gesetze-im-internet.de/goz_1987/__5.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-08 | ✅ باز شد |
+| ۶ | [§ 5 GOZ](https://www.gesetze-im-internet.de/goz_1987/__5.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

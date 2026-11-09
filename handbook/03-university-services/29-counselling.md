@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-10⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -24,7 +24,7 @@
 > **در وضعیت اضطراری** (خطر جانی یا افکار خودکشی) فوراً با **112** تماس بگیرید. خط کمک تلفنی بحران (TelefonSeelsorge) رایگان و شبانه‌روزی است: **0800 111 0 111**، **0800 111 0 222** یا **116 123** ([TelefonSeelsorge](https://www.telefonseelsorge.de/telefon/)). ← [۳۷. امنیت، شماره‌های اضطراری و خدمات شهری](../04-everyday-life/37-emergency.md)
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۳ — خدمات و نهادهای دانشگاه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۳ — خدمات و نهادهای دانشگاه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -68,15 +68,15 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [TelefonSeelsorge](https://www.telefonseelsorge.de/telefon/) | TelefonSeelsorge | 2026-11-08 | ✅ باز شد |
-| ۲ | [LUH – ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۳ | [ptb.uni-hannover.de](https://www.ptb.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۴ | [TiHo – ptb](https://www.tiho-hannover.de/en/studies-education/general-information-for-students/counselling-and-support-services/psychological-therapeutic-counselling) | tiho-hannover.de | 2026-11-08 | ✅ باز شد |
-| ۵ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۶ | [Finanzielle Beihilfen für internationale Studierende](https://www.uni-hannover.de/studium/finanzierung-foerderung/finanzielle-beihilfen-fuer-internationale-studierende) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۷ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-11-08 | ✅ باز شد |
-| ۸ | [MHH – ptb](https://www.mhh.de/en/medical-studies/-z/ptb) | mhh.de | 2026-11-08 | ✅ باز شد |
-| ۹ | [Zentrale Studienberatung](https://www.uni-hannover.de/en/universitaet/organisation/dezernate/department-6/zsb) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
+| ۱ | [TelefonSeelsorge](https://www.telefonseelsorge.de/telefon/) | TelefonSeelsorge | 2026-11-10 | ✅ باز شد |
+| ۲ | [LUH – ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۳ | [ptb.uni-hannover.de](https://www.ptb.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۴ | [TiHo – ptb](https://www.tiho-hannover.de/en/studies-education/general-information-for-students/counselling-and-support-services/psychological-therapeutic-counselling) | tiho-hannover.de | 2026-11-10 | ✅ باز شد |
+| ۵ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۶ | [Finanzielle Beihilfen für internationale Studierende](https://www.uni-hannover.de/studium/finanzierung-foerderung/finanzielle-beihilfen-fuer-internationale-studierende) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۷ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-11-10 | ✅ باز شد |
+| ۸ | [MHH – ptb](https://www.mhh.de/en/medical-studies/-z/ptb) | mhh.de | 2026-11-10 | ✅ باز شد |
+| ۹ | [Zentrale Studienberatung](https://www.uni-hannover.de/en/universitaet/organisation/dezernate/department-6/zsb) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

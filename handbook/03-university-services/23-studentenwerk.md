@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-10⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۳ — خدمات و نهادهای دانشگاه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۳ — خدمات و نهادهای دانشگاه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -54,15 +54,15 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۲ | [LUH – Housing](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/housing) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۳ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۴ | [stwh-portal.de](https://stwh-portal.de/terminreservierung-soziales/) | Studentenwerk Hannover | 2026-11-08 | ✅ باز شد |
-| ۵ | [Studentenwerk – Housing search](https://www.studentenwerk-hannover.de/en/wohnen/wohnungssuche) | Studentenwerk Hannover | 2026-11-08 | ✅ باز شد |
-| ۶ | [First Steps in Germany](https://www.studentenwerk-hannover.de/en/international-students/first-steps-in-germany) | Studentenwerk Hannover | 2026-11-08 | ✅ باز شد |
-| ۷ | [Geld sparen](https://www.studentenwerk-hannover.de/en/geld/geld-sparen) | Studentenwerk Hannover | 2026-11-08 | ✅ باز شد |
-| ۸ | [studentenwerk-hannover.de](https://www.studentenwerk-hannover.de/en/) | Studentenwerk Hannover | 2026-11-08 | ✅ باز شد |
-| ۹ | [BAföG FAQ](https://www.studentenwerk-hannover.de/geld/alles-zum-bafoeg/bafoeg-faq) | Studentenwerk Hannover | 2026-11-08 | ✅ باز شد |
+| ۱ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۲ | [LUH – Housing](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/housing) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۳ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۴ | [stwh-portal.de](https://stwh-portal.de/terminreservierung-soziales/) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
+| ۵ | [Studentenwerk – Housing search](https://www.studentenwerk-hannover.de/en/wohnen/wohnungssuche) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
+| ۶ | [First Steps in Germany](https://www.studentenwerk-hannover.de/en/international-students/first-steps-in-germany) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
+| ۷ | [Geld sparen](https://www.studentenwerk-hannover.de/en/geld/geld-sparen) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
+| ۸ | [studentenwerk-hannover.de](https://www.studentenwerk-hannover.de/en/) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
+| ۹ | [BAföG FAQ](https://www.studentenwerk-hannover.de/geld/alles-zum-bafoeg/bafoeg-faq) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

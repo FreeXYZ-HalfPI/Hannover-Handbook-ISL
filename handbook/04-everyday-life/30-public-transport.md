@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-08⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-10⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-08 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -33,7 +33,7 @@
 3.  **بدون گوشی هوشمند:** فرم درخواست کارت چیپ‌دار را با موضوع «Chipkarte» به semesterticket@asta-hannover.de بفرستید ([AStA](https://www.asta-hannover.de/semesterticket)).
 4.  **شروع اعتبار:** ۱ اکتبر (ترم زمستان) و ۱ آوریل (ترم تابستان) ([AStA](https://www.asta-hannover.de/semesterticket)).
 5.  **اگر در بازرسی بلیت «gesperrt» (مسدود) نشان داده شد:** بلیت را مستقیماً از پرتال RIDE باز کنید؛ نسخه Wallet ممکن است قدیمی باشد. اگر جریمه شدید، با موضوع «Bescheinigung Semesterticket» به AStA ایمیل بزنید ([AStA](https://www.asta-hannover.de/semesterticket)).
-6.  **بازپرداخت یا معافیت:** برای اقامت بیش از ۱۲۰ روز پیاپی بیرون از محدوده بلیت، یا ترم خارج از کشور یا کارآموزی اجباری در خارج، درخواست بازپرداخت را همراه مدرک (مثلاً Learning Agreement) حداکثر **یک ماه پس از شروع کلاس‌ها** به AStA بدهید ([AStA – Ordnung Semesterticketausfallfonds](https://staff.asta-hannover.de/beta/assets/SemTicketAusfall_Ordnung.pdf)؛ [AStA – Semester ticket](https://www.asta-hannover.de/en/translate-to-english-semesterticket)). ⚠️ فرم بازپرداخت دیگر به‌صورت آنلاین در دسترس نیست؛ آن را از mobilitaet@asta-hannover.de بخواهید. صندوق سختی (Semesterticketausfallfonds) برای موارد خاص، مانند دانشجویان بین‌المللی بدون اجازه کار یا با اجازه کار محدود، وجود دارد ([AStA – پرتال درخواست صندوق سختی](https://staff.asta-hannover.de/)). ⚠️ این فرم‌ها مربوط به سال‌های ۲۰۱۷ تا ۲۰۲۱ هستند؛ شرایط فعلی را از mobilitaet@asta-hannover.de بپرسید.
+6.  **بازپرداخت یا معافیت:** برای اقامت بیش از ۱۲۰ روز پیاپی بیرون از محدوده بلیت، یا ترم خارج از کشور یا کارآموزی اجباری در خارج، درخواست بازپرداخت را همراه مدرک (مثلاً Learning Agreement) حداکثر **یک ماه پس از شروع کلاس‌ها** به AStA بدهید ([AStA – Ordnung Semesterticketausfallfonds](https://staff.asta-hannover.de/beta/assets/SemTicketAusfall_Ordnung.pdf)؛ [AStA – Semester ticket](https://www.asta-hannover.de/en/semester-ticket)). ⚠️ فرم بازپرداخت دیگر به‌صورت آنلاین در دسترس نیست؛ آن را از mobilitaet@asta-hannover.de بخواهید. صندوق سختی (Semesterticketausfallfonds) برای موارد خاص، مانند دانشجویان بین‌المللی بدون اجازه کار یا با اجازه کار محدود، وجود دارد ([AStA – پرتال درخواست صندوق سختی](https://staff.asta-hannover.de/)). ⚠️ این فرم‌ها مربوط به سال‌های ۲۰۱۷ تا ۲۰۲۱ هستند؛ شرایط فعلی را از mobilitaet@asta-hannover.de بپرسید.
 7.  **حمل‌ونقل محلی هانوفر:** شبکه GVH (تراموا، اتوبوس و S-Bahn) — [uestra.de (GVH)](https://www.uestra.de/).
 8.  **دوچرخه:** AStA کارگاه دوچرخه (Fahrradwerkstatt) دارد و بخش کوچکی از هزینه ترم (۱٫۱۱ یورو) به آن تعلق می‌گیرد ([LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung)؛ [AStA – Fahrradwerkstatt](https://www.asta-hannover.de/angebote-beratung/fahrradwerkstaette)).
 9.  **فعال‌سازی هر ترم:** بلیت هر ترم از نو صادر می‌شود؛ از ۱ اکتبر یا ۱ آوریل دوباره وارد RIDE شوید و بلیت تازه را دانلود یا به Wallet اضافه کنید ([AStA](https://www.asta-hannover.de/semesterticket)). یادآوری آن در کانال دانشجویان هر ترم تکرار می‌شود. ← [۵۹. تقویم سالانه دانشجو](../07-resources/59-annual-calendar.md)
@@ -62,13 +62,13 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [AStA – Semesterticket](https://www.asta-hannover.de/semesterticket) | AStA Hannover | 2026-11-08 | ✅ باز شد |
-| ۲ | [AStA – Ordnung Semesterticketausfallfonds](https://staff.asta-hannover.de/beta/assets/SemTicketAusfall_Ordnung.pdf) | AStA Hannover | 2026-11-08 | ✅ باز شد |
-| ۳ | [AStA – Semester ticket](https://www.asta-hannover.de/en/semester-ticket) | AStA Hannover | 2026-11-08 | ✅ باز شد (نشانی قبلی ۴۰۴ می‌داد) |
-| ۴ | [AStA – پرتال درخواست صندوق سختی](https://staff.asta-hannover.de/) | AStA Hannover | 2026-11-08 | ✅ باز شد |
-| ۵ | [uestra.de (GVH)](https://www.uestra.de/) | ÜSTRA | 2026-11-08 | ✅ باز شد |
-| ۶ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-08 | ✅ باز شد |
-| ۷ | [AStA – Fahrradwerkstatt](https://www.asta-hannover.de/angebote-beratung/fahrradwerkstaette) | AStA Hannover | 2026-11-08 | ✅ باز شد |
+| ۱ | [AStA – Semesterticket](https://www.asta-hannover.de/semesterticket) | AStA Hannover | 2026-11-10 | ✅ باز شد |
+| ۲ | [AStA – Ordnung Semesterticketausfallfonds](https://staff.asta-hannover.de/beta/assets/SemTicketAusfall_Ordnung.pdf) | AStA Hannover | 2026-11-10 | ✅ باز شد |
+| ۳ | [AStA – Semester ticket](https://www.asta-hannover.de/en/semester-ticket) | AStA Hannover | 2026-11-10 | ✅ باز شد (نشانی قبلی ۴۰۴ می‌داد) |
+| ۴ | [AStA – پرتال درخواست صندوق سختی](https://staff.asta-hannover.de/) | AStA Hannover | 2026-11-10 | ✅ باز شد |
+| ۵ | [uestra.de (GVH)](https://www.uestra.de/) | ÜSTRA | 2026-11-10 | ✅ باز شد |
+| ۶ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۷ | [AStA – Fahrradwerkstatt](https://www.asta-hannover.de/angebote-beratung/fahrradwerkstaette) | AStA Hannover | 2026-11-10 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 
