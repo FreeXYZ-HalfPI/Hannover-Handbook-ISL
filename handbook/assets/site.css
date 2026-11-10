@@ -10,3 +10,7 @@
 
 /* The disclaimer box on top of every page: keep its title readable when collapsed. */
 .md-typeset details.isl-disclaimer > summary { font-weight: 700; }
+
+/* Comment box under «تجربه دانشجویان». */
+.isl-comments { margin-top: 1.5rem; padding: 0.8rem 1rem; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 0.4rem; }
+.isl-comments .utterances { max-width: 100%; direction: ltr; }

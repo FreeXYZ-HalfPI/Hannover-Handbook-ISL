@@ -6,6 +6,7 @@ Thank you for helping new students in Hannover! Short version in English, full r
 - **Small fix** (a number, a deadline, a broken link): open the page on GitHub, click ✏️ *Edit*, and propose the change as a pull request. Add the official source and today's access date.
 - **Not sure / no time to edit?** Open an [issue](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/issues/new/choose) and describe the problem.
 - **Where to help most:** see the goals and open work in [ROADMAP.md](ROADMAP.md) (and issues labelled `needs-verification`).
+- **Comment box on the website:** under *۷. تجربه دانشجویان (غیررسمی)* every page of the [website](https://freexyz-halfpi.github.io/Hannover-Handbook-ISL/) has a comment box (utterances). Comments are stored as issue comments in this repository (label `💬 comments`). It needs the [utterances app](https://github.com/apps/utterances) installed on the repository; the box itself is added by `tools/mkdocs_hooks.py` and `handbook/assets/comments.js`.
 - **New page:** copy [TEMPLATE.md](TEMPLATE.md) into the right section folder and add it to that section's `README.md` and to [handbook/README.md](handbook/README.md).
 
 ---

@@ -10,6 +10,9 @@ The files stay written for GitHub; only the built site changes:
   GitHub; the Handbook Searcher is copied into the site under searcher/.
 - Section titles in the navigation come from each section's README heading;
   the start page is called «صفحه اصلی».
+- Under «۷. تجربه دانشجویان (غیررسمی)» on every page a comment box is added
+  (utterances, assets/comments.js): each comment is stored as a GitHub issue
+  comment in this repository, so feedback stays there and reaches the team.
 """
 import posixpath
 import re
@@ -95,6 +98,31 @@ def on_page_markdown(markdown, page, config, files, **kwargs):
     markdown = DISCLAIMER.sub(_disclaimer, markdown)
     markdown = ALERT.sub(lambda m: _admonition(m.group(1), m.group(2)), markdown)
     return LINK.sub(_outside_link(page, config), markdown)
+
+
+EXPERIENCES = re.compile(r'<h2 id="[^"]*">\s*۷\.\s*تجربه دانشجویان.*?</h2>', re.S)
+
+COMMENTS = """
+<div class="isl-comments" id="isl-comments" data-repo="{repo}">
+<p><strong>💬 تجربه یا نظر شما</strong></p>
+<p>تجربه، نکته یا اصلاحیه‌تان درباره این صفحه را همین‌جا بنویسید. نظر شما به‌صورت یک نظر در <a href="{github}/issues?q=is%3Aissue+label%3A%22%F0%9F%92%AC+comments%22">Issueهای مخزن</a> ثبت می‌شود و تیم ISL آن را می‌بیند. برای نوشتن باید با حساب GitHub وارد شوید؛ اگر حساب ندارید از <a href="{form}">فرم ثبت تجربه</a> استفاده کنید.</p>
+<p><em>این بخش غیررسمی است: هر نظر تجربه یک نفر است، نه قانون و نه مشاوره رسمی. تاریخ و منبع را بنویسید و اطلاعات شخصی (آدرس، شماره پرونده، پاسپورت) را نگذارید.</em></p>
+<div class="isl-comments-box"></div>
+<noscript><p>برای دیدن و نوشتن نظرها جاوااسکریپت لازم است؛ یا از <a href="{form}">فرم ثبت تجربه</a> استفاده کنید.</p></noscript>
+</div>
+"""
+
+
+def on_page_content(html, page, config, files, **kwargs):
+    """Put the comment box at the end of the «تجربه دانشجویان» section."""
+    heading = EXPERIENCES.search(html)
+    if not heading:
+        return html
+    nxt = html.find("<h2", heading.end())
+    cut = len(html) if nxt == -1 else nxt
+    form = f"{GITHUB}/issues/new?template=experience.md&title=%5Bhandbook/{page.file.src_uri}%5D%20"
+    box = COMMENTS.format(repo=GITHUB.split("github.com/")[1], github=GITHUB, form=form)
+    return html[:cut] + box + html[cut:]
 
 
 def on_nav(nav, config, files, **kwargs):
