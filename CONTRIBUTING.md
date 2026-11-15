@@ -35,7 +35,7 @@ Thank you for helping new students in Hannover! Short version in English, full r
 
 ```bash
 bash tools/check_links.sh          # وضعیت همه پیوندهای بیرونی
-python3 tools/build_pdf.py         # ساخت pdf/ISL-Handbook-Living-in-Hannover.pdf
+python3 tools/build_pdf.py         # ساخت pdf/ISL-Handbook-Living-in-Hannover.pdf (در Git ثبت نمی‌شود؛ PDF هر نسخه در Releases است)
 python3 tools/disclaimer.py        # به‌روزرسانی سلب مسئولیت و تاریخ آخرین به‌روزرسانی بالای هر صفحه
 python3 tools/build_search.py      # ساخت دوباره نمایه جست‌وجو (search/search-index.js) برای هر دو کتابچه
 ```
@@ -63,3 +63,11 @@ python3 tools/build_search.py      # ساخت دوباره نمایه جست‌�
 ## مجوز مشارکت‌ها
 
 با فرستادن Issue یا Pull Request می‌پذیرید که مشارکت شما با همان مجوز کپی‌لفت این مخزن (**GNU GPL نسخه ۳ یا بالاتر**) منتشر شود. فقط متنی بفرستید که خودتان نوشته‌اید یا اجازه انتشار آزادش را دارید؛ از سایت‌های دیگر متن کپی نکنید، خلاصه بنویسید و منبع را پیوند دهید.
+
+## Cutting a release (maintainers)
+
+1. Update the CHANGELOG and run `python3 tools/build_pdf.py`.
+2. Create a **draft** release with the PDF attached, then publish it:
+   `gh release create vX.Y.Z --draft --target main --notes-file NOTES.md pdf/<name>.pdf`, then publish the draft on GitHub.
+   (Immutable releases cannot receive files after publishing, and a tag name used by one can never be reused.)
+3. The links on the website and in the README use `releases/latest/download/<name>.pdf`; it can take a few minutes until GitHub serves the new file.

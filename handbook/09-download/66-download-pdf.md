@@ -29,9 +29,9 @@
 ## ۳. دریافت
 
 > [!IMPORTANT]
-> 📥 **[دریافت PDF کامل کتابچه](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/raw/main/pdf/ISL-Handbook-Living-in-Hannover.pdf)** · *Download the full handbook (PDF)*
+> 📥 **[دریافت PDF کامل کتابچه](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/releases/latest/download/ISL-Handbook-Living-in-Hannover.pdf)** · *Download the full handbook (PDF)*
 
-- **پیوند مستقیم در مخزن:** [pdf/ISL-Handbook-Living-in-Hannover.pdf](../../pdf/ISL-Handbook-Living-in-Hannover.pdf)
+- **همه نسخه‌ها:** [Releases در GitHub](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/releases) — هر نسخه PDF مخصوص خودش را دارد
 - **همیشه به‌روزترین نسخه:** نسخه آنلاین در GitHub زودتر از PDF به‌روز می‌شود: [github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL). تاریخ ساخت هر PDF روی جلد آن آمده است.
 - **فرستادن به دیگران:** پیوند بالا را بفرستید، نه فایل قدیمی را؛ مقررات زود عوض می‌شوند.
 - **ساختن PDF از متن:** `python3 tools/build_pdf.py` ← [README مخزن](../../README.md)

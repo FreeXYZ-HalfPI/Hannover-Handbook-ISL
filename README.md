@@ -10,7 +10,7 @@ A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz 
 
 🏷️ **Latest release (PDF):** [v1.0.0](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/releases/latest) 
 
-📥 **Download the whole handbook as one PDF:** [ISL-Handbook-Living-in-Hannover.pdf](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/raw/main/pdf/ISL-Handbook-Living-in-Hannover.pdf) 
+📥 **Download the whole handbook as one PDF:** [ISL-Handbook-Living-in-Hannover.pdf](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/releases/latest/download/ISL-Handbook-Living-in-Hannover.pdf) 
 
 🤝 **How to contribute (step by step):** [GitHub guide](handbook/07-resources/64-github-guide.md) 
 
@@ -72,7 +72,7 @@ A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz 
 | Path | Content |
 |---|---|
 | `handbook/` | The handbook: one Markdown file per topic, one folder per section |
-| `pdf/` | The printable PDF, built from `handbook/` |
+| `pdf/` | Where `tools/build_pdf.py` writes the PDF; the file is not committed — download it from [Releases](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/releases) |
 | `handbook/images/` | Diagrams used in the handbook (SVG) |
 | `tools/build_pdf.py` | Builds the PDF (needs pandoc ≥ 3.1 and Chrome/Chromium; Vazirmatn font recommended) |
 | `tools/check_links.sh` | Checks every external link in `handbook/` and reports its HTTP status |
