@@ -14,6 +14,7 @@ The files stay written for GitHub; only the built site changes:
   (utterances, assets/comments.js): each comment is stored as a GitHub issue
   comment in this repository, so feedback stays there and reaches the team.
 """
+import json
 import posixpath
 import re
 import shutil
@@ -208,6 +209,27 @@ def on_nav(nav, config, files, **kwargs):
     return nav
 
 
+DIGITS = str.maketrans("۰۱۲۳۴۵۶۷۸۹٠١٢٣٤٥٦٧٨٩", "01234567890123456789")
+ARABIC = str.maketrans({"ي": "ی", "ك": "ک"})
+DIACRITICS = re.compile("[\u064b-\u0652]")
+
+
+def _normalise(text):
+    """Same rules as assets/search-fa.js, which applies them to what the reader types."""
+    return DIACRITICS.sub("", text.translate(DIGITS).translate(ARABIC))
+
+
 def on_post_build(config, **kwargs):
-    """The offline Handbook Searcher (search/) is served at searcher/ on the site."""
+    """The offline Handbook Searcher (search/) is served at searcher/ on the site;
+    the site search index gets Persian digits, Arabic letters and diacritics normalised."""
     shutil.copytree(ROOT / "search", Path(config["site_dir"]) / "searcher", dirs_exist_ok=True)
+    index = Path(config["site_dir"]) / "search" / "search_index.json"
+    if not index.exists():
+        print("WARNING: search_index.json not found; Persian normalisation skipped")
+        return
+    data = json.loads(index.read_text(encoding="utf-8"))
+    for doc in data["docs"]:
+        doc["title"] = _normalise(doc["title"])
+        doc["text"] = _normalise(doc["text"])
+    # ASCII-escaped like the search plugin writes it: servers that omit the charset still decode it.
+    index.write_text(json.dumps(data, ensure_ascii=True, separators=(",", ":")), encoding="utf-8")
