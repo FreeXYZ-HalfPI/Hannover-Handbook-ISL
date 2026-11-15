@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-23⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-15⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -19,7 +19,7 @@
 > برای دانشجویان غیراروپایی، مرخصی تحصیلی، تغییر رشته یا ترک تحصیل ممکن است روی اجازه اقامت اثر بگذارد. پیش از هر اقدام با Ausländerbehörde و دفتر امور بین‌الملل مشورت کنید. این صفحه مشاوره حقوقی به شمار نمی‌آید.
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۲ — شروع تحصیل در دانشگاه لایبنیتس](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-15 · **بخش:** [بخش ۲ — شروع تحصیل در دانشگاه لایبنیتس](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -41,7 +41,7 @@
 **تغییر رشته (Studiengangwechsel)**
 
 1.  برای رشته جدید باید **دوباره در مهلت‌های عادی** درخواست بدهید؛ تا وقتی در رشته جدید پذیرش نگرفته‌اید، در رشته قبلی ثبت‌نام می‌مانید ([LUH – Studiengangs- und Fachwechsel](https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung/studiengangs-und-fachwechsel)).
-2.  **اقامت:** اجازه اقامت تحصیلی برای رشته مشخصی صادر می‌شود؛ تغییر رشته معمولاً «تغییر هدف اقامت» حساب می‌شود و به تأیید Ausländerbehörde نیاز دارد ([anwalt-diedrich.de – § 16b AufenthG](https://www.anwalt-diedrich.de/16b-aufenthg/) — منبع غیررسمی). ⚠️ متن [§ 16b AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html) این موضوع را صریح تنظیم نکرده است؛ حتماً از Ausländerbehörde بپرسید. ← [۱۰. اجازه اقامت](../01-arriving-in-hannover/10-residence-permit.md)
+2.  **اقامت:** اجازه اقامت تحصیلی برای رشته مشخصی صادر می‌شود. ⚠️ اینکه تغییر رشته به تأیید Ausländerbehörde نیاز دارد یا نه، نه در متن [§ 16b AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html) و نه در صفحه شهر هانوفر درباره اجازه اقامت تحصیلی ([شهر هانوفر](https://hannover.gov.de/buergerservice/dienstleistungen/aufenthaltserlaubnis-zum-zwecke-des-studiums-und-fuer-studienvorbereitende-massnahmen-1347-0.html?myMedium=1)) آمده است؛ پیش از تغییر رشته از Willkommensservice اداره اتباع خارجی (تلفن ‎+49 511 168-32330) بپرسید. ← [۱۰. اجازه اقامت](../01-arriving-in-hannover/10-residence-permit.md)
 
 **لغو ثبت‌نام (Exmatrikulation)**
 
@@ -71,7 +71,7 @@
 |----|----|----|----|----|
 | ۱ | [LUH – Beurlaubung](https://www.uni-hannover.de/studium/im-studium/studienorganisation/studierendenstatus/beurlaubung) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
 | ۲ | [LUH – Studiengangs- und Fachwechsel](https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung/studiengangs-und-fachwechsel) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۳ | [anwalt-diedrich.de – § 16b AufenthG](https://www.anwalt-diedrich.de/16b-aufenthg/) | anwalt-diedrich.de | 2026-11-10 | ✅ باز شد |
+| ۳ | [شهر هانوفر – اجازه اقامت تحصیلی](https://hannover.gov.de/buergerservice/dienstleistungen/aufenthaltserlaubnis-zum-zwecke-des-studiums-und-fuer-studienvorbereitende-massnahmen-1347-0.html?myMedium=1) | شهر هانوفر | 2026-11-15 | ✅ باز شد (به تغییر رشته اشاره‌ای ندارد) |
 | ۴ | [§ 16b AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
 | ۵ | [LUH – Exmatrikulation](https://www.uni-hannover.de/studium/im-studium/studienorganisation/studierendenstatus/exmatrikulation) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
 | ۶ | [Studien(fehl)start](https://www.uni-hannover.de/studium/im-studium/start-ins-studium/studienfehlstart) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |

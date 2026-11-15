@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-23⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-15⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -19,7 +19,7 @@
 > این صفحه اطلاعات عمومی است و مشاوره حقوقی یا مالیاتی به شمار نمی‌آید. قواعد کار برای دانشجویان غیراروپایی به نوع اجازه اقامت بستگی دارد؛ پیش از شروع کار با Ausländerbehörde هماهنگ کنید.
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۵ — کار، امور مالی و آینده شغلی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-15 · **بخش:** [بخش ۵ — کار، امور مالی و آینده شغلی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -39,7 +39,7 @@
 
 - **HiWi (studentische Hilfskraft):** دستیار دانشجویی در مؤسسه‌های دانشگاه؛ آگهی‌ها در سایت مؤسسه‌ها و [صفحه فرصت‌های شغلی دانشگاه](https://www.uni-hannover.de/en/universitaet/stellenangebote-arbeit-an-der-uni).
 - **Werkstudent:** کار مرتبط با رشته در شرکت‌ها، معمولاً حداکثر ۲۰ ساعت در هفته در طول ترم.
-- **Minijob:** درآمد حداکثر **۶۰۳ یورو در ماه** در سال ۲۰۲۶ (۷٬۲۳۶ یورو در سال) ([Deutsche Rentenversicherung](https://www.deutsche-rentenversicherung.de/DRV/DE/Experten/Arbeitgeber-und-Steuerberater/summa-summarum/Lexikon/W/werkstudentenprivileg.html)؛ [iww.de](https://www.iww.de/pp/recht/geringfuegige-beschaeftigung-minijob-2026-hoeherer-verdienst-neue-regeln-und-was-sonst-zu-beachten-ist-f171358)).
+- **Minijob:** درآمد حداکثر **۶۰۳ یورو در ماه** در سال ۲۰۲۶ (۷٬۲۳۶ یورو در سال) ([Deutsche Rentenversicherung](https://www.deutsche-rentenversicherung.de/DRV/DE/Experten/Arbeitgeber-und-Steuerberater/summa-summarum/Lexikon/W/werkstudentenprivileg.html)؛ [Minijob-Zentrale](https://www.minijob-zentrale.de/DE/die-minijobs/minijob-mit-verdienstgrenze)).
 
 1.  **حداقل دستمزد:** ۱۳٫۹۰ یورو در ساعت در ۲۰۲۶ و ۱۴٫۶۰ یورو از ۱ ژانویه ۲۰۲۷ ([finanz.de](https://www.finanz.de/news/artikel-10559/) — منبع غیررسمی).
 2.  **شماره بیمه اجتماعی (Sozialversicherungsnummer):** با نخستین کارِ مشمول بیمه، به‌صورت خودکار و رایگان صادر و برایتان فرستاده می‌شود ([Deutsche Rentenversicherung](https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2024/240312-versicherungsnummernachweis)).
@@ -73,7 +73,7 @@
 | ۳ | [BA – Fachliche Weisungen (PDF)](https://www.arbeitsagentur.de/datei/dok_ba033210.pdf) | اداره کار فدرال | 2026-11-10 | ✅ باز شد |
 | ۴ | [صفحه فرصت‌های شغلی دانشگاه](https://www.uni-hannover.de/en/universitaet/stellenangebote-arbeit-an-der-uni) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
 | ۵ | [Deutsche Rentenversicherung](https://www.deutsche-rentenversicherung.de/DRV/DE/Experten/Arbeitgeber-und-Steuerberater/summa-summarum/Lexikon/W/werkstudentenprivileg.html) | Deutsche Rentenversicherung | 2026-11-10 | ✅ باز شد |
-| ۶ | [iww.de](https://www.iww.de/pp/recht/geringfuegige-beschaeftigung-minijob-2026-hoeherer-verdienst-neue-regeln-und-was-sonst-zu-beachten-ist-f171358) | iww.de | 2026-11-10 | ✅ باز شد |
+| ۶ | [Minijob-Zentrale – Minijob mit Verdienstgrenze](https://www.minijob-zentrale.de/DE/die-minijobs/minijob-mit-verdienstgrenze) | Minijob-Zentrale (Deutsche Rentenversicherung Knappschaft-Bahn-See) | 2026-11-15 | ✅ باز شد (۶۰۳ یورو در ماه و ۷٬۲۳۶ یورو در سال)
 | ۷ | [finanz.de](https://www.finanz.de/news/artikel-10559/) | finanz.de | 2026-11-10 | ✅ باز شد |
 | ۸ | [Deutsche Rentenversicherung](https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2024/240312-versicherungsnummernachweis) | Deutsche Rentenversicherung | 2026-11-10 | ✅ باز شد |
 | ۹ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-11-10 | ✅ باز شد |
