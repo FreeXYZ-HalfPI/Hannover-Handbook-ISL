@@ -76,7 +76,8 @@ A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz 
 | `handbook/images/` | Diagrams used in the handbook (SVG) |
 | `tools/build_pdf.py` | Builds the PDF (needs pandoc ≥ 3.1 and Chrome/Chromium; Vazirmatn font recommended) |
 | `tools/check_links.sh` | Checks every external link in `handbook/` and reports its HTTP status |
-| `tools/refresh.py` | Re-checks all links, sets the access and review dates of sources that answer 200, refreshes the page boxes; `--build` also rebuilds the search index and PDF |
+| `tools/refresh.py` | Re-checks all links, sets the access date of sources that answer 200 (never the review date, which a person sets after re-reading a page), refreshes the page boxes; `--build` also rebuilds the search index and PDF |
+| `tools/reviewers.py` | Rebuilds REVIEWERS.md (page, last review date, open ⚠️ items, reviewer) and keeps typed names |
 | `tools/confluence_to_markdown.py` | One-off importer used to move the handbook from Confluence |
 | `search/index.html` | **Handbook Searcher** — searches both handbooks (English and Persian) in your browser, offline; open the file or serve the folder |
 | `tools/build_search.py` | Rebuilds `search/search-index.js` from both handbooks (the sibling repository is included when it is checked out next to this one) |
