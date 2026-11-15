@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-29⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-15⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-29 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-15 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -32,7 +32,7 @@
 2.  **تاندم:** با یک آلمانی‌زبان که زبان شما را یاد می‌گیرد تمرین کنید ([LLC – Tandem](https://www.llc.uni-hannover.de/en/language-courses/tandem-learning/tandem-learning-offers)).
 3.  **یادگیری خودگردان (SDL)** در LLC ([LLC](https://www.llc.uni-hannover.de/en/)).
 4.  **Study Buddy** برای تبادل فرهنگی ([LUH](https://www.uni-hannover.de/en/studium/im-studium/international/internationale-studierende/betreuungsangebote/study-buddy)).
-5.  **دانشگاه آزاد مردمی (Volkshochschule Hannover):** دوره‌های آلمانی و دوره‌های ادغام (Integrationskurs) بیرون از دانشگاه؛ مشاوره آموزش آلمانی بدون نوبت، پنجشنبه‌ها ۱۴ تا ۱۶ ([VHS Hannover – Deutschberatung](https://www.vhs-hannover.de/vhs-programm/deutsch-integration/deutschberatung-1)). برنامه دوره‌ها: [vhs-hannover.de](https://www.vhs-hannover.de/).
+5.  **دانشگاه آزاد مردمی (Volkshochschule Hannover):** دوره‌های آلمانی و دوره‌های ادغام (Integrationskurs) بیرون از دانشگاه؛ مشاوره آموزش آلمانی بدون نوبت، پنجشنبه‌ها ۱۴ تا ۱۶ ([VHS Hannover – Deutschberatung](https://www.vhs-hannover.de/vhs-programm/deutsch-integration/deutschberatung-1)). برنامه دوره‌ها: [vhs-hannover.de](https://www.vhs-hannover.de/). ⚠️ سایت VHS در تاریخ ۲۰۲۶-۱۱-۱۵ در دسترس نبود (خطای ۵۰۴)؛ این اطلاعات در ۲۰۲۶-۱۱-۱۰ بررسی شده‌اند، پیش از مراجعه تأیید کنید.
 6.  **دوره‌های آلمانی VHS:** فهرست دوره‌ها و دوره‌های محله‌ای در [VHS Hannover – Deutschkurse](https://www.vhs-hannover.de/vhs-programm/deutsch-integration/deutschkurse).
 7.  **یادگیری رایگان آنلاین:** اداره کار فدرال فهرستی از سایت‌ها و اپ‌های رایگان یادگیری آلمانی منتشر کرده است، از جمله دوره‌های Deutsche Welle از A1 تا C1 ([Bundesagentur für Arbeit – Linksammlung Deutsch lernen (PDF)](https://www.arbeitsagentur.de/vor-ort/datei/linksammlung-online-sprachlernangebote-deutsch_ba232254.pdf)).
 
@@ -85,12 +85,12 @@
 | ۳ | [LLC – Tandem](https://www.llc.uni-hannover.de/en/language-courses/tandem-learning/tandem-learning-offers) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
 | ۴ | [LLC](https://www.llc.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
 | ۵ | [LUH](https://www.uni-hannover.de/en/studium/im-studium/international/internationale-studierende/betreuungsangebote/study-buddy) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۶ | [vhs-hannover.de](https://www.vhs-hannover.de/) | vhs-hannover.de | 2026-11-10 | ✅ باز شد |
+| ۶ | [vhs-hannover.de](https://www.vhs-hannover.de/) | vhs-hannover.de | 2026-11-15 | ⚠️ خطای سرور (HTTP 504) در تاریخ بررسی؛ سایت VHS در دسترس نبود، بعداً دوباره بررسی شود |
 | ۷ | [LLC](https://www.llc.uni-hannover.de/en/leibniz-language-centre/guidelines-for-courses-and-fee-regulation) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
 | ۸ | [LLC – Contact](https://www.llc.uni-hannover.de/en/leibniz-language-centre/contactdirectionsoffice-hours) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
 | ۹ | [Hochschullexikon](https://www.studieren-in-niedersachsen.de/hochschullexikon.html) | studieren-in-niedersachsen.de | 2026-11-10 | ✅ باز شد |
-| ۱۰ | [VHS Hannover – Deutschkurse](https://www.vhs-hannover.de/vhs-programm/deutsch-integration/deutschkurse) | Volkshochschule Hannover | 2026-11-10 | ✅ باز شد |
-| ۱۱ | [VHS Hannover – Deutschberatung](https://www.vhs-hannover.de/vhs-programm/deutsch-integration/deutschberatung-1) | Volkshochschule Hannover | 2026-11-10 | ✅ باز شد |
+| ۱۰ | [VHS Hannover – Deutschkurse](https://www.vhs-hannover.de/vhs-programm/deutsch-integration/deutschkurse) | Volkshochschule Hannover | 2026-11-15 | ⚠️ خطای سرور (HTTP 504) در تاریخ بررسی؛ سایت VHS در دسترس نبود، بعداً دوباره بررسی شود |
+| ۱۱ | [VHS Hannover – Deutschberatung](https://www.vhs-hannover.de/vhs-programm/deutsch-integration/deutschberatung-1) | Volkshochschule Hannover | 2026-11-15 | ⚠️ خطای سرور (HTTP 504) در تاریخ بررسی؛ سایت VHS در دسترس نبود، بعداً دوباره بررسی شود |
 | ۱۲ | [Linksammlung Online-Sprachlernangebote Deutsch (PDF)](https://www.arbeitsagentur.de/vor-ort/datei/linksammlung-online-sprachlernangebote-deutsch_ba232254.pdf) | Bundesagentur für Arbeit | 2026-11-10 | ✅ باز شد |
 | ۱۳ | [Offenes Sprachcafé – KroKuS](https://www.hannover.de/Kultur-Freizeit/Freizeit-Sport/Freizeiteinrichtungen/Freizeitheime-Stadtteilzentren/Stadtteilzentrum-KroKuS/Erwachsene-Familie/Kurse-und-st%C3%A4ndige-Angebote/Offenes-Sprachcaf%C3%A9) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
 | ۱۴ | [Sprachcafé DaF – Freizeitheim Vahrenwald](https://www.hannover.de/Kultur-Freizeit/Freizeit-Sport/Freizeiteinrichtungen/Freizeitheime-Stadtteilzentren/Freizeitheim-Vahrenwald/Angebote/Offene-Gruppen/Sprachcafe-DaF-alle-Level-%7C-English-Translation) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
