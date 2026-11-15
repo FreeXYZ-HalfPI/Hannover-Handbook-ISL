@@ -94,9 +94,67 @@ def _outside_link(page, config):
     return fix
 
 
+# --- Look and feel: home page hero, section cards, compact page header -------------
+HERO = {'pdf': 'ISL-Handbook-Living-in-Hannover.pdf', 'home_start': '07-resources/54-checklist/', 'eyebrow': 'دانشگاه لایبنیتس هانوفر · انجمن دانشجویان ایرانی (ISL)', 'title': 'کتابچه راهنمای زندگی و تحصیل در هانوفر', 'sub': 'Living in Hannover — A Practical Handbook', 'lead': 'راهنمای عملی و قدم\u200cبه\u200cقدم برای دانشجویان تازه\u200cوارد: هر کار اداری به ترتیب، با منبع رسمی و تاریخ بررسی.', 'start': 'از کجا شروع کنم؟', 'pdf_label': '📥 دانلود PDF', 'pages': 'صفحه', 'sections': 'بخش', 'free': 'رایگان و کپی\u200cلفت', 'pagesword': 'صفحه', 'digits': True, 'cards_title': 'بخش\u200cها'}
+ICONS = {"01": "🧳", "02": "🎓", "03": "🏛️", "04": "🏠", "05": "💼", "06": "🤝", "07": "📚", "08": "🏷️", "09": "📥"}
+_cards = []
+
+
+def _num(n):
+    text = str(n)
+    return text.translate(str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")) if HERO["digits"] else text
+
+
+META_KEYS = ("**تاریخ آخرین بررسی:**", "**Last reviewed:**")
+LEGEND = re.compile(r" · (\*\*(?:راهنما|Key):\*\*.*)$")
+
+
+def _meta_alert(kind, body):
+    """The 'last reviewed / section / key' tip on every page becomes a quiet one-line header."""
+    if kind != "TIP":
+        return None
+    lines = [re.sub(r"^> ?", "", line).strip() for line in body.rstrip("\n").split("\n")]
+    text = " ".join(line for line in lines if line)
+    if not text.startswith(META_KEYS):
+        return None
+    text = re.sub(r"(\d{4})-(\d{2})-(\d{2})", "\\1\u2011\\2\u2011\\3", text)  # dates must not break at the hyphens
+    legend = LEGEND.search(text)
+    meta = text[: legend.start()] if legend else text
+    out = meta + "\n{: .isl-meta }\n\n"
+    if legend:
+        out += legend.group(1) + "\n{: .isl-legend }\n\n"
+    return out
+
+
+def _hero():
+    pdf = f"{GITHUB}/raw/main/pdf/{HERO['pdf']}"
+    pages = sum(c[2] for c in _cards)
+    cards = "".join(
+        f'<a class="isl-card" href="{url}"><span class="isl-card__icon">{icon}</span>'
+        f'<span class="isl-card__title">{title}</span>'
+        f'<span class="isl-card__meta">{_num(count)} {HERO["pagesword"]}</span></a>'
+        for title, url, count, icon in _cards
+    )
+    return (
+        '<section class="isl-hero">'
+        f'<p class="isl-hero__eyebrow">{HERO["eyebrow"]}</p>'
+        f'<h1>{HERO["title"]}</h1>'
+        f'<p class="isl-hero__sub" dir="ltr">{HERO["sub"]}</p>'
+        f'<p class="isl-hero__lead">{HERO["lead"]}</p>'
+        '<p class="isl-hero__actions">'
+        f'<a class="md-button" href="{HERO["home_start"]}">{HERO["start"]}</a> '
+        f'<a class="md-button md-button--ghost" href="{pdf}">{HERO["pdf_label"]}</a></p>'
+        f'<p class="isl-hero__stats"><span><strong>{_num(pages)}</strong> {HERO["pages"]}</span>'
+        f'<span><strong>{_num(len(_cards))}</strong> {HERO["sections"]}</span>'
+        f'<span>{HERO["free"]}</span></p></section>'
+        f'<h2 class="isl-cards-title" id="sections">{HERO["cards_title"]}</h2>'
+        f'<div class="isl-cards">{cards}</div>'
+    )
+
+
 def on_page_markdown(markdown, page, config, files, **kwargs):
     markdown = DISCLAIMER.sub(_disclaimer, markdown)
-    markdown = ALERT.sub(lambda m: _admonition(m.group(1), m.group(2)), markdown)
+    markdown = ALERT.sub(lambda m: _meta_alert(m.group(1), m.group(2)) or _admonition(m.group(1), m.group(2)), markdown)
     return LINK.sub(_outside_link(page, config), markdown)
 
 
@@ -115,6 +173,8 @@ COMMENTS = """
 
 def on_page_content(html, page, config, files, **kwargs):
     """Put the comment box at the end of the «تجربه دانشجویان» section."""
+    if page.file.src_uri == "README.md":
+        html = re.sub(r"<h1[^>]*>.*?</h1>", lambda m: _hero(), html, count=1, flags=re.S)
     heading = EXPERIENCES.search(html)
     if not heading:
         return html
@@ -136,10 +196,14 @@ def on_nav(nav, config, files, **kwargs):
         index = next((c for c in item.children if c.is_page and c.file.src_uri.endswith("README.md")), None)
         if index is None:
             continue
+        folder = index.file.src_uri.split("/")[0][:2]
+        count = len([c for c in item.children if c.is_page and not c.file.src_uri.endswith("README.md")])
+        _cards.append([item.title, index.url, count, ICONS.get(folder, "📄")])
         first = (docs / index.file.src_uri).read_text(encoding="utf-8").split("\n", 1)[0]
         title = re.sub(r"\s*\(.*\)\s*$", "", first.lstrip("# ").strip())
         if title:
             item.title = title
+            _cards[-1][0] = title
     return nav
 
 
