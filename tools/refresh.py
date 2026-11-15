@@ -7,11 +7,14 @@ Usage: python3 tools/refresh.py [--build]
 1. Runs tools/check_links.sh, which writes link-report.tsv.
 2. Sets the access date ("تاریخ دسترسی" / "Accessed") to today on every
    source row marked ✅ whose links all answered 200 in step 1.
-3. Sets the page's review date (the "تاریخ آخرین بررسی" / "Last reviewed"
-   line) to today on every page whose rows changed.
-4. Runs tools/disclaimer.py, so the box at the top of each page and the
-   section and index dates follow the review dates.
+3. Sets the "تاریخ دسترسی به منابع" (sources accessed) line at the top of each
+   page to the newest access date in that page's source table.
+4. Runs tools/disclaimer.py (box, section and index dates).
 5. With --build: rebuilds search/search-index.js and the PDF.
+
+The review date ("تاریخ آخرین بررسی" / "Last reviewed") is NOT touched here:
+it records when a person last checked the page's content, and a link that
+answers 200 does not prove that. Change it by hand when you re-read a page.
 
 Rows that do not answer 200 keep their old date and status, so a broken
 link is never marked as checked.
@@ -26,7 +29,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TODAY = datetime.date.today().isoformat()
 DATE = r"\d{4}-\d{2}-\d{2}"
 # The review date line in each page: Persian (ISL) or English (International Students).
-REVIEW = re.compile(r"((?:تاریخ آخرین بررسی:\*\*|\*\*Last reviewed:\*\*)\s*)(" + DATE + ")")
+ACCESSED = re.compile(r"(تاریخ دسترسی به منابع:\*\*\s*)(" + DATE + ")")
 URL = re.compile(r"https?://[^)\s|\"<>]+")
 ACCESS = re.compile(DATE)
 
@@ -64,12 +67,14 @@ def refresh_pages(ok):
             new, did = update_row(line, ok)
             lines.append(new)
             touched |= did
-        if not touched:
-            continue
         body = "\n".join(lines)
-        body = REVIEW.sub(lambda m: m.group(1) + TODAY, body, count=1)
-        page.write_text(body, encoding="utf-8")
-        changed += 1
+        dates = [d for line in lines if line.startswith("|") and ("✅" in line or "❌" in line) and "http" in line for d in ACCESS.findall(line)]
+        if dates:
+            newest = max(dates)
+            body = ACCESSED.sub(lambda m: m.group(1) + newest, body, count=1)
+        if body != text:
+            page.write_text(body, encoding="utf-8")
+        changed += touched
     return changed
 
 

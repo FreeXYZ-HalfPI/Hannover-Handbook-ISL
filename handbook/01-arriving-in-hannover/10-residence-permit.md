@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-10⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-25⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -19,7 +19,7 @@
 > این صفحه اطلاعات عمومی است و مشاوره حقوقی به شمار نمی‌آید. مقررات اقامت تغییر می‌کند؛ پیش از هر اقدام با اداره اتباع خارجی (Ausländerbehörde) هماهنگ کنید.
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -91,7 +91,7 @@
 | ۸ | [§ 45a AufenthV](https://www.gesetze-im-internet.de/aufenthv/__45a.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
 | ۹ | [Ausländerbehörde der Region Hannover – Termine & Kontakt](https://www.hannover.de/Leben-in-der-Region-Hannover/B%C3%BCrger-Service/Ausl%C3%A4nder%C2%ADangelegen%C2%ADheiten/Ausl%C3%A4nderbeh%C3%B6rden/Ausl%C3%A4nderbeh%C3%B6rde-der-Region-Hannover/Termine-Kontaktformular) | شهر و منطقه هانوفر | 2026-11-10 | ✅ باز شد |
 | ۱۰ | [LUH](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/internationale-erstsemesterstudierende) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۱۱ | [BAMF](https://www.bamf.de/) | BAMF | 2026-11-10 | ✅ باز شد |
+| ۱۱ | [BAMF](https://www.bamf.de/DE/Startseite/startseite_node.html) | BAMF | 2026-11-10 | ✅ باز شد |
 | ۱۲ | [Aufenthaltserlaubnis zum Zwecke des Studiums – Online-Antrag](https://hannover.gov.de/buergerservice/dienstleistungen/aufenthaltserlaubnis-zum-zwecke-des-studiums-und-fuer-studienvorbereitende-massnahmen-1347-0.html?myMedium=1) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
 | ۱۳ | [§ 16b AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
 | ۱۴ | [§ 82 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__82.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |

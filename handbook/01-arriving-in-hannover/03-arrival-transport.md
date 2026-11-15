@@ -6,7 +6,7 @@
 >
 > **قوانین، مبالغ، مهلت‌ها و روندهای اداری ممکن است هر زمان و بدون اطلاع قبلی تغییر کنند.** انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر (ISL) و نویسندگان این کتابچه **هیچ مسئولیتی** در قبال درستی، کامل بودن یا به‌روز بودن مطالب و پیامد استفاده از آن‌ها ندارند. پیش از هر اقدام، اطلاعات را از نهاد رسمی مسئول بپرسید؛ ملاک نهایی همیشه همان نهاد است.
 >
-> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-11-10⁩
+> ### 🗓️ آخرین به‌روزرسانی این صفحه: ⁦2026-10-25⁩
 >
 > از تغییرات بعدی باخبر شوید: [فهرست تغییرات (CHANGELOG)](../../CHANGELOG.md) · در GitHub روی **Watch** بزنید · [کانال تلگرام ISL](https://t.me/hannover_iranian_students)
 >
@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-10-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -28,7 +28,7 @@
 
 ## ۳. مراحل انجام کار
 
-1.  **از فرودگاه هانوفر (HAJ):** قطار شهری **S5** فرودگاه را در حدود ۱۷ تا ۲۰ دقیقه و هر ۳۰ دقیقه یک بار به ایستگاه مرکزی (Hannover Hauptbahnhof) می‌رساند و و ایستگاه آن در زیرزمین ترمینال C است ([Hannover Airport – Transport & Directions](https://www.hannover-airport.de/en/traffic-connection/transport-directions/)).
+1.  **از فرودگاه هانوفر (HAJ):** قطار شهری **S5** فرودگاه را در حدود ۱۷ تا ۲۰ دقیقه و هر ۳۰ دقیقه یک بار به ایستگاه مرکزی (Hannover Hauptbahnhof) می‌رساند و ایستگاه آن در زیرزمین ترمینال C است ([Hannover Airport – Transport & Directions](https://www.hannover-airport.de/en/traffic-connection/transport-directions/)).
 2.  **منطقه تعرفه:** فرودگاه در **منطقه B** شبکه ÜSTRA/GVH قرار دارد ([ÜSTRA – Tickets and subscriptions](https://www.uestra.de/en/tickets-prices/tickets-and-subscriptions/)). ⚠️ قیمت بلیت در صفحه ÜSTRA در تاریخ دسترسی قابل خواندن نبود؛ قیمت روز را همان‌جا یا از خط خدمات ‎+49 511 1668-0 بپرسید.
 3.  **بلیت ترم (Deutschlandsemesterticket)** از روز اول ترم فعال می‌شود: ۱ اکتبر برای ترم زمستان و ۱ آوریل برای ترم تابستان ([AStA – Semesterticket](https://www.asta-hannover.de/semesterticket)). اگر زودتر می‌رسید، باید بلیت جداگانه بخرید. ← [۳۰. حمل‌ونقل عمومی، Deutschlandticket و دوچرخه](../04-everyday-life/30-public-transport.md)
 4.  **دانشگاه:** ساختمان اصلی (Welfenschloss) در Welfengarten 1, 30167 Hannover قرار دارد ([LUH – ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter)). مسیر با حمل‌ونقل عمومی: [راهنمای مسیر دانشگاه](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/wegweiser/anfahrtsbeschreibung). ← [۱۴. آشنایی با دانشگاه لایبنیتس](../02-starting-your-studies/14-campus-buildings.md)
