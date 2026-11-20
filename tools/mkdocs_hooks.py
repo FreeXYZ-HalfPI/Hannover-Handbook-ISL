@@ -127,33 +127,119 @@ def _meta_alert(kind, body):
     return out
 
 
+STAGES = [
+    ("🧳", "قبل و بعد از رسیدن", ["01"]),
+    ("🎓", "دانشگاه", ["02", "03"]),
+    ("🏠", "زندگی در هانوفر", ["04", "06"]),
+    ("💼", "کار و آینده", ["05"]),
+    ("📚", "مرجع و دانلود", ["07", "08", "09"]),
+]
+SITUATIONS = [
+    ("🛫", "هنوز درخواست پذیرش نداده‌ام", "01-arriving-in-hannover/01-application-uni-assist/"),
+    ("📄", "پذیرش دارم و هنوز در ایران‌ام", "01-arriving-in-hannover/02-before-arrival-visa/"),
+    ("📍", "تازه به هانوفر رسیده‌ام", "07-resources/54-checklist/"),
+    ("🎓", "تحصیلم دارد تمام می‌شود", "05-work-finance-career/46-after-graduation/"),
+    ("🚑", "وضعیت اضطراری", "04-everyday-life/37-emergency/"),
+]
+FIRST_WEEK = [
+    ("تأییدیه صاحبخانه بگیرید", "Wohnungsgeberbestätigung", "01-arriving-in-hannover/05-anmeldung/"),
+    ("نوبت بگیرید و Anmeldung کنید", "حداکثر دو هفته پس از نقل‌مکان", "01-arriving-in-hannover/05-anmeldung/"),
+    ("سیم‌کارت بخرید", "تا بانک و ادارات بتوانند تماس بگیرند", "01-arriving-in-hannover/08-sim-internet/"),
+    ("بیمه درمانی را ثبت کنید", "بیمه دولتی و ارسال M10", "01-arriving-in-hannover/07-health-insurance/"),
+    ("ثبت‌نام نهایی دانشگاه", "Immatrikulation", "02-starting-your-studies/12-admission-enrolment/"),
+]
+SEARCH_BTN = ('<button type="button" class="isl-search-btn" data-isl-search>'
+              '<span class="isl-search-btn__icon" aria-hidden="true">🔍</span>'
+              '<span class="isl-search-btn__text">جست‌وجو در کتابچه<span class="isl-search-btn__hint"> — مثلاً «بیمه»، «Anmeldung»، «سیم‌کارت»</span></span></button>')
+_tree = {}
+
+
+def _short(title):
+    """Page title for the tree: without the German/English tail after a dash."""
+    return re.split(r"\s+[—–]\s+", title, maxsplit=1)[0].strip()
+
+
+def _tree_html():
+    by_folder = {c[4]: c for c in _cards}
+    branches = ""
+    for icon, label, folders in STAGES:
+        sections = ""
+        for f in folders:
+            if f not in by_folder:
+                continue
+            title, url, count, sicon, _ = by_folder[f]
+            title = re.sub(r"^بخش\s*\S+\s*[—–-]\s*", "", title)
+            items = "".join(f'<li><a href="{u}">{t}</a></li>' for t, u in _tree.get(f, []))
+            sections += (f'<li><details><summary><span class="isl-tree__icon">{sicon}</span>'
+                         f'<a class="isl-tree__sec" href="{url}">{title}</a></summary>'
+                         f'<ul class="isl-tree__pages">{items}</ul></details></li>')
+        branches += (f'<li class="isl-tree__stage"><span class="isl-tree__label">{icon} {label}</span>'
+                     f'<ul>{sections}</ul></li>')
+    return (
+        '<h2 class="isl-block-title" id="map">🗺️ نقشه کتابچه</h2>'
+        '<p class="isl-block-note">هر شاخه را باز کنید؛ لازم نیست همه را بخوانید. فقط همان‌جا بروید که الان به آن نیاز دارید.</p>'
+        f'<nav class="isl-tree" aria-label="نقشه کتابچه"><div class="isl-tree__root">📖 کتابچه</div><ul>{branches}</ul></nav>'
+    )
+
+
 def _hero():
     pdf = f"{GITHUB}/releases/latest/download/{HERO['pdf']}"
-    pages = sum(c[2] for c in _cards)
-    cards = "".join(
-        f'<a class="isl-card" href="{url}"><span class="isl-card__icon">{icon}</span>'
-        f'<span class="isl-card__title">{title}</span>'
-        f'<span class="isl-card__meta">{_num(count)} {HERO["pagesword"]}</span></a>'
-        for title, url, count, icon in _cards
+    week = "".join(
+        f'<li><a class="isl-step" href="{u}"><span class="isl-step__n">{_num(i)}</span>'
+        f'<span class="isl-step__body"><strong>{t}</strong><small>{d}</small></span></a></li>'
+        for i, (t, d, u) in enumerate(FIRST_WEEK, 1)
     )
+    chips = "".join(f'<a class="isl-chip" href="{u}"><span aria-hidden="true">{i}</span> {t}</a>' for i, t, u in SITUATIONS)
     return (
         '<section class="isl-hero">'
         f'<p class="isl-hero__eyebrow">{HERO["eyebrow"]}</p>'
         f'<h1>{HERO["title"]}</h1>'
         f'<p class="isl-hero__sub" dir="ltr">{HERO["sub"]}</p>'
-        f'<p class="isl-hero__lead">{HERO["lead"]}</p>'
+        '<p class="isl-hero__lead">نگران نباشید؛ لازم نیست همه‌چیز را همین حالا بدانید. '
+        'اینجا هر کار اداری قدم‌به‌قدم و به ترتیب آمده است — هر بار فقط یک قدم.</p>'
+        f'{SEARCH_BTN}'
         '<p class="isl-hero__actions">'
         f'<a class="md-button" href="{HERO["home_start"]}">{HERO["start"]}</a> '
         f'<a class="md-button md-button--ghost" href="{pdf}">{HERO["pdf_label"]}</a></p>'
-        f'<p class="isl-hero__stats"><span><strong>{_num(pages)}</strong> {HERO["pages"]}</span>'
-        f'<span><strong>{_num(len(_cards))}</strong> {HERO["sections"]}</span>'
-        f'<span>{HERO["free"]}</span></p></section>'
-        f'<h2 class="isl-cards-title" id="sections">{HERO["cards_title"]}</h2>'
-        f'<div class="isl-cards">{cards}</div>'
+        '</section>'
+        '<h2 class="isl-block-title" id="situation">📍 الان در کدام مرحله‌اید؟</h2>'
+        f'<div class="isl-chips">{chips}</div>'
+        '<h2 class="isl-block-title" id="first-week">🚀 هفته اول: فقط این ۵ کار</h2>'
+        '<p class="isl-block-note">بقیه کارها بعداً می‌رسند. همین پنج‌تا را که انجام دهید، شروع خوبی دارید.</p>'
+        f'<ol class="isl-steps">{week}</ol>'
+        + _tree_html()
     )
 
 
+def _calm_home(html):
+    """Home page: the long book index repeats the map above it, and the long start list is folded."""
+    index = re.search(r'<h2 id="[^"]*">\s*فهرست کتابچه.*?</h2>', html, re.S)
+    if index:
+        nxt = html.find("<h2", index.end())
+        html = html[: index.start()] + (html[nxt:] if nxt != -1 else "")
+    start = re.search(r'(<h2 id="[^"]*">\s*از کجا شروع کنم.*?</h2>)\s*(<ul>.*?</ul>)', html, re.S)
+    if start:
+        folded = f'{start.group(1)}<details class="isl-more"><summary>همه موقعیت‌ها و میان‌برها</summary>{start.group(2)}</details>'
+        html = html[: start.start()] + folded + html[start.end():]
+    return html
+
+
+def _page_toc(html, page):
+    """A folded «in this page» list on top (the side column is hidden: one navigation is enough)."""
+    top = page.toc.items[0].children if page.toc.items and page.toc.items[0].level == 1 else page.toc.items
+    if len(top) < 4:
+        return html
+    links = "".join(f'<li><a href="{t.url}">{t.title}</a></li>' for t in top)
+    box = f'<details class="isl-pagetoc"><summary>در این صفحه</summary><ol>{links}</ol></details>'
+    first = html.find("<h2")
+    return html if first == -1 else html[:first] + box + html[first:]
+
+
 def on_page_markdown(markdown, page, config, files, **kwargs):
+    # one navigation is enough: the right-hand «on this page» column is replaced by a folded list
+    hide = list(page.meta.get("hide", []))
+    hide += [h for h in ("toc",) + (("navigation",) if page.file.src_uri == "README.md" else ()) if h not in hide]
+    page.meta["hide"] = hide
     markdown = DISCLAIMER.sub(_disclaimer, markdown)
     markdown = ALERT.sub(lambda m: _meta_alert(m.group(1), m.group(2)) or _admonition(m.group(1), m.group(2)), markdown)
     return LINK.sub(_outside_link(page, config), markdown)
@@ -177,6 +263,9 @@ def on_page_content(html, page, config, files, **kwargs):
     """Put the comment box at the end of the «تجربه دانشجویان» section."""
     if page.file.src_uri == "README.md":
         html = re.sub(r"<h1[^>]*>.*?</h1>", lambda m: _hero(), html, count=1, flags=re.S)
+        html = _calm_home(html)
+    else:
+        html = _page_toc(html, page)
     heading = EXPERIENCES.search(html)
     if not heading:
         return html
@@ -190,6 +279,8 @@ def on_page_content(html, page, config, files, **kwargs):
 def on_nav(nav, config, files, **kwargs):
     """Name each section after its README heading, without the English part in brackets."""
     docs = Path(config["docs_dir"])
+    _cards.clear()
+    _tree.clear()
     for item in nav.items:
         if item.is_page and item.file.src_uri == "README.md":
             item.title = "صفحه اصلی"
@@ -200,7 +291,12 @@ def on_nav(nav, config, files, **kwargs):
             continue
         folder = index.file.src_uri.split("/")[0][:2]
         count = len([c for c in item.children if c.is_page and not c.file.src_uri.endswith("README.md")])
-        _cards.append([item.title, index.url, count, ICONS.get(folder, "📄")])
+        _cards.append([item.title, index.url, count, ICONS.get(folder, "📄"), folder])
+        _tree[folder] = []
+        for child in item.children:
+            if child.is_page and not child.file.src_uri.endswith("README.md"):
+                head = (docs / child.file.src_uri).read_text(encoding="utf-8").split("\n", 1)[0]
+                _tree[folder].append((_short(head.lstrip("# ").strip()), child.url))
         first = (docs / index.file.src_uri).read_text(encoding="utf-8").split("\n", 1)[0]
         title = re.sub(r"\s*\(.*\)\s*$", "", first.lstrip("# ").strip())
         if title:

@@ -19,6 +19,7 @@ site_dir: site
 
 theme:
   name: material
+  custom_dir: overrides
   language: fa
   direction: rtl
   font:
@@ -60,6 +61,7 @@ extra_css:
 
 extra_javascript:
   - assets/search-fa.js
+  - assets/ui.js
   - assets/comments.js
 
 extra:
