@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۳ — خدمات و نهادهای دانشگاه](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۳ — خدمات و نهادهای دانشگاه](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -57,13 +57,13 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۲ | [Studentenwerk – Canteen-FAQ](https://www.studentenwerk-hannover.de/en/food/canteen-faq) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
-| ۳ | [Canteens & Cafeterias](https://www.studentenwerk-hannover.de/en/food/canteens-cafeterias) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
-| ۴ | [Opening times at a glance](https://www.studentenwerk-hannover.de/en/food/opening-times-at-a-glance) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
-| ۵ | [LUH – Finanzielle Beihilfen](https://www.uni-hannover.de/studium/finanzierung-foerderung/finanzielle-beihilfen-fuer-internationale-studierende) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۶ | [Studentenwerk](https://www.studentenwerk-hannover.de/unternehmen/news/detail/niedersachsen-menue-studi-preis-im-speiseplan) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
-| ۷ | [Studentenwerk – 5 Mensa-Tipps](https://www.studentenwerk-hannover.de/unternehmen/news/detail/5-mensa-tipps) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
+| ۱ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۲ | [Studentenwerk – Canteen-FAQ](https://www.studentenwerk-hannover.de/en/food/canteen-faq) | Studentenwerk Hannover | 2026-11-23 | ✅ باز شد |
+| ۳ | [Canteens & Cafeterias](https://www.studentenwerk-hannover.de/en/food/canteens-cafeterias) | Studentenwerk Hannover | 2026-11-23 | ✅ باز شد |
+| ۴ | [Opening times at a glance](https://www.studentenwerk-hannover.de/en/food/opening-times-at-a-glance) | Studentenwerk Hannover | 2026-11-23 | ✅ باز شد |
+| ۵ | [LUH – Finanzielle Beihilfen](https://www.uni-hannover.de/studium/finanzierung-foerderung/finanzielle-beihilfen-fuer-internationale-studierende) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۶ | [Studentenwerk](https://www.studentenwerk-hannover.de/unternehmen/news/detail/niedersachsen-menue-studi-preis-im-speiseplan) | Studentenwerk Hannover | 2026-11-23 | ✅ باز شد |
+| ۷ | [Studentenwerk – 5 Mensa-Tipps](https://www.studentenwerk-hannover.de/unternehmen/news/detail/5-mensa-tipps) | Studentenwerk Hannover | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -63,14 +63,14 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [hannover.de – Gelbe Tonne](https://www.hannover.de/Service/Presse-Medien/Hannover.de/Aktuelles/Service-2022/Aha-f%C3%BChrt-Gelbe-Tonne-ein) | شهر و منطقه هانوفر | 2026-11-10 | ✅ باز شد |
-| ۲ | [hannover.de – Gelber Sack](https://www.hannover.de/Leben-in-der-Region-Hannover/Umwelt-Nachhaltigkeit/Abfall-Bodenschutz/Abfallentsorgung-und-%C3%BCberwachung/Entsorgung-von-Leichtverpackungen-Gelber-Sack) | شهر و منطقه هانوفر | 2026-11-10 | ✅ باز شد |
-| ۳ | [hannover.de](https://www.hannover.de/Service/Presse-Medien/Hannover.de/Aktuelles/Service-2025/Gelbe-Tonne,-Rest%C2%ADm%C3%BCll%C2%ADtonne-und-Alt%C2%ADpapier%C2%ADtonne) | شهر و منطقه هانوفر | 2026-11-10 | ✅ باز شد |
-| ۴ | [aha – Altglas](https://www.aha-region.de/abfaelle-und-wertstoffe/altglas) | aha | 2026-11-10 | ✅ باز شد |
-| ۵ | [aha – Sperrabfallabholung](https://www.aha-region.de/abfaelle-und-wertstoffe/sperrabfaelle/sperrabfallabholung) | aha | 2026-11-10 | ✅ باز شد |
-| ۶ | [aha-region.de](https://www.aha-region.de/) | aha | 2026-11-10 | ✅ باز شد |
-| ۷ | [Abfallentsorgung](https://www.hannover.de/Leben-in-der-Region-Hannover/Umwelt-Nachhaltigkeit/Abfall-Bodenschutz/Abfallentsorgung-und-%C3%BCberwachung) | شهر و منطقه هانوفر | 2026-11-10 | ✅ باز شد |
-| ۸ | [aha-Alltagsguide (PDF)](https://www.aha-region.de/fileadmin/Download/Infomaterialien/aha-Alltagsguide_2024.pdf) | aha | 2026-11-10 | ✅ باز شد |
+| ۱ | [hannover.de – Gelbe Tonne](https://www.hannover.de/Service/Presse-Medien/Hannover.de/Aktuelles/Service-2022/Aha-f%C3%BChrt-Gelbe-Tonne-ein) | شهر و منطقه هانوفر | 2026-11-23 | ✅ باز شد |
+| ۲ | [hannover.de – Gelber Sack](https://www.hannover.de/Leben-in-der-Region-Hannover/Umwelt-Nachhaltigkeit/Abfall-Bodenschutz/Abfallentsorgung-und-%C3%BCberwachung/Entsorgung-von-Leichtverpackungen-Gelber-Sack) | شهر و منطقه هانوفر | 2026-11-23 | ✅ باز شد |
+| ۳ | [hannover.de](https://www.hannover.de/Service/Presse-Medien/Hannover.de/Aktuelles/Service-2025/Gelbe-Tonne,-Rest%C2%ADm%C3%BCll%C2%ADtonne-und-Alt%C2%ADpapier%C2%ADtonne) | شهر و منطقه هانوفر | 2026-11-23 | ✅ باز شد |
+| ۴ | [aha – Altglas](https://www.aha-region.de/abfaelle-und-wertstoffe/altglas) | aha | 2026-11-23 | ✅ باز شد |
+| ۵ | [aha – Sperrabfallabholung](https://www.aha-region.de/abfaelle-und-wertstoffe/sperrabfaelle/sperrabfallabholung) | aha | 2026-11-23 | ✅ باز شد |
+| ۶ | [aha-region.de](https://www.aha-region.de/) | aha | 2026-11-23 | ✅ باز شد |
+| ۷ | [Abfallentsorgung](https://www.hannover.de/Leben-in-der-Region-Hannover/Umwelt-Nachhaltigkeit/Abfall-Bodenschutz/Abfallentsorgung-und-%C3%BCberwachung) | شهر و منطقه هانوفر | 2026-11-23 | ✅ باز شد |
+| ۸ | [aha-Alltagsguide (PDF)](https://www.aha-region.de/fileadmin/Download/Infomaterialien/aha-Alltagsguide_2024.pdf) | aha | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

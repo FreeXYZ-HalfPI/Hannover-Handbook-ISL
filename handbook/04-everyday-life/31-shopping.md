@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -57,13 +57,13 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۲ | [hannover.de – Hausmarke](https://www.hannover.de/Wirtschaft-Wissenschaft/Wissenschaft/Studieren-in-Hannover/Hausmarke) | شهر و منطقه هانوفر | 2026-11-10 | ✅ باز شد |
-| ۳ | [Studentenwerk – Save money](https://www.studentenwerk-hannover.de/en/money/save-money) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
-| ۴ | [BMUKN – Einweg und Mehrweg](https://www.bundesumweltministerium.de/faqs/einweg-und-mehrweg) | وزارت محیط زیست فدرال | 2026-11-10 | ✅ باز شد |
-| ۵ | [Verbraucherzentrale](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/abfall/fragen-und-antworten-alles-zum-einwegpfand-und-dosenpfand-11505) | Verbraucherzentrale | 2026-11-10 | ✅ باز شد |
-| ۶ | [IHK Braunschweig – NLöffVZG](https://www.ihk.de/braunschweig/branchen/handel/einzelhandel/durchfuehrung-verkaufsoffener-sonntage-4500236) | ihk.de | 2026-11-10 | ✅ باز شد |
-| ۷ | [Geld sparen](https://www.studentenwerk-hannover.de/en/geld/geld-sparen) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
+| ۱ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۲ | [hannover.de – Hausmarke](https://www.hannover.de/Wirtschaft-Wissenschaft/Wissenschaft/Studieren-in-Hannover/Hausmarke) | شهر و منطقه هانوفر | 2026-11-23 | ✅ باز شد |
+| ۳ | [Studentenwerk – Save money](https://www.studentenwerk-hannover.de/en/money/save-money) | Studentenwerk Hannover | 2026-11-23 | ✅ باز شد |
+| ۴ | [BMUKN – Einweg und Mehrweg](https://www.bundesumweltministerium.de/faqs/einweg-und-mehrweg) | وزارت محیط زیست فدرال | 2026-11-23 | ✅ باز شد |
+| ۵ | [Verbraucherzentrale](https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/abfall/fragen-und-antworten-alles-zum-einwegpfand-und-dosenpfand-11505) | Verbraucherzentrale | 2026-11-23 | ✅ باز شد |
+| ۶ | [IHK Braunschweig – NLöffVZG](https://www.ihk.de/braunschweig/branchen/handel/einzelhandel/durchfuehrung-verkaufsoffener-sonntage-4500236) | ihk.de | 2026-11-23 | ✅ باز شد |
+| ۷ | [Geld sparen](https://www.studentenwerk-hannover.de/en/geld/geld-sparen) | Studentenwerk Hannover | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

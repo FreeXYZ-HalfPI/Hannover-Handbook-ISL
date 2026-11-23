@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۳ — خدمات و نهادهای دانشگاه](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۳ — خدمات و نهادهای دانشگاه](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -54,13 +54,13 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [ChancenVielfalt – Beratung](https://www.chancenvielfalt.uni-hannover.de/de/beratung) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۲ | [Diskriminierungsschutz](https://www.chancenvielfalt.uni-hannover.de/beratung/diskriminierungsschutz) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۳ | [Studieren mit Kind](https://www.chancenvielfalt.uni-hannover.de/familienservice/studieren-mit-kind) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۴ | [Verweisberatung](https://www.chancenvielfalt.uni-hannover.de/beratung/verweisberatung) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۵ | [Inklusiv studieren](https://www.uni-hannover.de/studium/beratung-hilfe/inklusiv-studieren) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۶ | [chancenvielfalt.uni-hannover.de](https://www.chancenvielfalt.uni-hannover.de/) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۷ | [Angebote für Studierende](https://www.chancenvielfalt.uni-hannover.de/angebote/angebote-fuer-studierende) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۱ | [ChancenVielfalt – Beratung](https://www.chancenvielfalt.uni-hannover.de/de/beratung) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۲ | [Diskriminierungsschutz](https://www.chancenvielfalt.uni-hannover.de/beratung/diskriminierungsschutz) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۳ | [Studieren mit Kind](https://www.chancenvielfalt.uni-hannover.de/familienservice/studieren-mit-kind) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۴ | [Verweisberatung](https://www.chancenvielfalt.uni-hannover.de/beratung/verweisberatung) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۵ | [Inklusiv studieren](https://www.uni-hannover.de/studium/beratung-hilfe/inklusiv-studieren) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۶ | [chancenvielfalt.uni-hannover.de](https://www.chancenvielfalt.uni-hannover.de/) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۷ | [Angebote für Studierende](https://www.chancenvielfalt.uni-hannover.de/angebote/angebote-fuer-studierende) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

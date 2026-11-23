@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -58,10 +58,10 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [§ 29 FeV](https://www.gesetze-im-internet.de/fev_2010/__29.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
-| ۲ | [Umschreibung einer sonstigen ausländischen Fahrerlaubnis](https://hannover.gov.de/buergerservice/dienstleistungen/fahrerlaubnis-umschreibung-einer-sonstigen-auslaendischen-fahrerlaubnis-drittstaaten--900000272-0.html?myMedium=1) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
-| ۳ | [hannover.de – Ausländischer Führerschein](https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/Fahrerlaubnis%C2%AD%C2%ADbeh%C3%B6rde-Region-Hannover/Ausl%C3%A4ndischer-F%C3%BChrerschein) | شهر و منطقه هانوفر | 2026-11-10 | ✅ باز شد |
-| ۴ | [hannover.gov.de – Fahrerlaubnisbehörde](https://hannover.gov.de/buergerservice/verwaltung/32-12-fahrerlaubnisbehoerde-900000753-30810.html) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
+| ۱ | [§ 29 FeV](https://www.gesetze-im-internet.de/fev_2010/__29.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
+| ۲ | [Umschreibung einer sonstigen ausländischen Fahrerlaubnis](https://hannover.gov.de/buergerservice/dienstleistungen/fahrerlaubnis-umschreibung-einer-sonstigen-auslaendischen-fahrerlaubnis-drittstaaten--900000272-0.html?myMedium=1) | شهر هانوفر | 2026-11-23 | ✅ باز شد |
+| ۳ | [hannover.de – Ausländischer Führerschein](https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/Fahrerlaubnis%C2%AD%C2%ADbeh%C3%B6rde-Region-Hannover/Ausl%C3%A4ndischer-F%C3%BChrerschein) | شهر و منطقه هانوفر | 2026-11-23 | ✅ باز شد |
+| ۴ | [hannover.gov.de – Fahrerlaubnisbehörde](https://hannover.gov.de/buergerservice/verwaltung/32-12-fahrerlaubnisbehoerde-900000753-30810.html) | شهر هانوفر | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

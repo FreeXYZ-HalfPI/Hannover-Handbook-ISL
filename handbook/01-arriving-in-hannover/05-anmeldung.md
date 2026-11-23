@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -65,20 +65,20 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [Studentenwerk Hannover](https://www.studentenwerk-hannover.de/en/international-students/first-steps-in-germany) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
-| ۲ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۳ | [hannover.gov.de – Anmeldung einer Wohnung](https://hannover.gov.de/buergerservice/dienstleistungen/anmeldung-einer-wohnung-zuzug-nach-hannover-900000016-0.html?myMedium=1) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
-| ۴ | [PDF](https://hannover.gov.de/medien/dokumente/wohnungsgeberbestaetigung.pdf) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
-| ۵ | [hannover.de – Bürgeramt Aegi](https://www.hannover.de/Leben-in-der-Region-Hannover/B%C3%BCrger-Service/B%C3%BCrger-Service-in-der-Landeshauptstadt-Hannover/B%C3%BCrger%C3%A4mter-der-Landeshauptstadt/B%C3%BCrger%C3%A4mter-in-Hannover/B%C3%BCrgeramt-Aegi-ehemals-Mitte) | شهر و منطقه هانوفر | 2026-11-10 | ✅ باز شد |
-| ۶ | [termin.hannover.gov.de/buergeramt](https://termin.hannover.gov.de/buergeramt) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
-| ۷ | [LUH – Terminanfrage Bürgeramt](https://www.uni-hannover.de/formularsammlung/formularsammlung-hi/terminanfrage-anmeldung-bei-der-stadt-hannover-buergeramt) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۸ | [hannover.gov.de – Elektronische Wohnsitzanmeldung](https://hannover.gov.de/buergerservice/online/angebot/elektronische-wohnsitzanmeldung-1131-30810.html) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
-| ۹ | [LUH – Entry and Residence](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۱۰ | [hannover.gov.de – Meldebescheinigung](https://hannover.gov.de/buergerservice/dienstleistungen/meldebescheinigung-900000026-0.html?myMedium=1) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
-| ۱۱ | [درخواست نوبت گروهی (انگلیسی)](https://www.uni-hannover.de/en/formularsammlung/formularsammlung-hi/date-request-registration-with-the-city-of-hannover-buergeramt) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۱۲ | [§ 17 BMG](https://www.gesetze-im-internet.de/bmg/__17.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
-| ۱۳ | [§ 19 BMG](https://www.gesetze-im-internet.de/bmg/__19.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
-| ۱۴ | [§ 54 BMG](https://www.gesetze-im-internet.de/bmg/__54.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
+| ۱ | [Studentenwerk Hannover](https://www.studentenwerk-hannover.de/en/international-students/first-steps-in-germany) | Studentenwerk Hannover | 2026-11-23 | ✅ باز شد |
+| ۲ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۳ | [hannover.gov.de – Anmeldung einer Wohnung](https://hannover.gov.de/buergerservice/dienstleistungen/anmeldung-einer-wohnung-zuzug-nach-hannover-900000016-0.html?myMedium=1) | شهر هانوفر | 2026-11-23 | ✅ باز شد |
+| ۴ | [PDF](https://hannover.gov.de/medien/dokumente/wohnungsgeberbestaetigung.pdf) | شهر هانوفر | 2026-11-23 | ✅ باز شد |
+| ۵ | [hannover.de – Bürgeramt Aegi](https://www.hannover.de/Leben-in-der-Region-Hannover/B%C3%BCrger-Service/B%C3%BCrger-Service-in-der-Landeshauptstadt-Hannover/B%C3%BCrger%C3%A4mter-der-Landeshauptstadt/B%C3%BCrger%C3%A4mter-in-Hannover/B%C3%BCrgeramt-Aegi-ehemals-Mitte) | شهر و منطقه هانوفر | 2026-11-23 | ✅ باز شد |
+| ۶ | [termin.hannover.gov.de/buergeramt](https://termin.hannover.gov.de/buergeramt) | شهر هانوفر | 2026-11-23 | ✅ باز شد |
+| ۷ | [LUH – Terminanfrage Bürgeramt](https://www.uni-hannover.de/formularsammlung/formularsammlung-hi/terminanfrage-anmeldung-bei-der-stadt-hannover-buergeramt) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۸ | [hannover.gov.de – Elektronische Wohnsitzanmeldung](https://hannover.gov.de/buergerservice/online/angebot/elektronische-wohnsitzanmeldung-1131-30810.html) | شهر هانوفر | 2026-11-23 | ✅ باز شد |
+| ۹ | [LUH – Entry and Residence](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۱۰ | [hannover.gov.de – Meldebescheinigung](https://hannover.gov.de/buergerservice/dienstleistungen/meldebescheinigung-900000026-0.html?myMedium=1) | شهر هانوفر | 2026-11-23 | ✅ باز شد |
+| ۱۱ | [درخواست نوبت گروهی (انگلیسی)](https://www.uni-hannover.de/en/formularsammlung/formularsammlung-hi/date-request-registration-with-the-city-of-hannover-buergeramt) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۱۲ | [§ 17 BMG](https://www.gesetze-im-internet.de/bmg/__17.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
+| ۱۳ | [§ 19 BMG](https://www.gesetze-im-internet.de/bmg/__19.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
+| ۱۴ | [§ 54 BMG](https://www.gesetze-im-internet.de/bmg/__54.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 
