@@ -193,7 +193,19 @@
 
   /* The shortest piece of the page (a paragraph, list item or table cell) that contains
      the searched words, cut down to the sentence around them. */
-  function sentenceWith(item, best, query, persian) {
+  /* Links and e-mail addresses are no text to read: «Termin» inside
+     «Terminvergabe@hannover-stadt.de» says nothing about Termin. */
+  function withoutAddresses(text) {
+    return text.replace(/\S+@\S+|https?:\/\/\S+|www\.\S+|\b[\w.-]+\.(?:de|com|org|net|eu|info)\b\S*/gi, " ")
+      .replace(/\(\s*\)|\s+(?=[،؛.:)])/g, "").replace(/\s{2,}/g, " ").trim();
+  }
+  /* Mostly Persian: at least 60 % of the letters (for a reader who typed in Persian). */
+  function mostlyPersian(text) {
+    var fa = (text.match(/[\u0600-\u06FF]/g) || []).length, latin = (text.match(/[A-Za-zÄÖÜäöüß]/g) || []).length;
+    return fa > 0 && fa >= 0.6 * (fa + latin);
+  }
+
+  function sentenceWith(item, best, query, persian, reader) {
     var words = queryWords(query).map(function (w) { return w.toLowerCase(); });
     var phrase = query.replace(/\s+/g, " ").trim().toLowerCase();
     var articles = [best.querySelector("article")];
@@ -202,13 +214,15 @@
       var pieces = articles[i].querySelectorAll("p, li, td");
       for (var j = 0; j < pieces.length; j++) {
         if (pieces[j].classList.contains("md-search-result__terms") || pieces[j].querySelector("li, p")) continue;
-        var raw = pieces[j].textContent.replace(/\s+/g, " ").trim();
+        var raw = withoutAddresses(pieces[j].textContent.replace(/\s+/g, " ").trim());
         if (!containsQuery(raw, query)) continue;
         if (persian) raw = withoutLatin(raw);
         var sentences = raw.split(/(?<=[.!?؟؛])\s+/);
         var hit = sentences.filter(function (x) { return containsQuery(x, query); })[0] || raw;
         hit = hit.replace(/^\s*(?:\[\s?\]|[\d۰-۹]+[.)]|[آ-ی]{1,3}\))\s*/, "").replace(/\s*←.*$/, "").trim();
         if (squash(hit).length < squash(query).length + 8) continue;  /* just the word itself says nothing */
+        /* the reader typed in Persian: a line that is mostly German or English does not help */
+        if (reader && !mostlyPersian(hit)) continue;
         if (hit.length > 150) hit = around(hit, hit.toLowerCase().indexOf(words[0]));
         return el("span", "isl-hit__summary isl-hit__context", hit);
       }
@@ -244,7 +258,7 @@
        every result visibly answers the search. */
     var key = new URL(page.getAttribute("href"), location.href).pathname.slice(siteRoot().pathname.length);
     /* A German word typed in Persian letters stays visible in Latin letters in the sentence. */
-    var context = containsQuery(title, query) ? null : sentenceWith(item, best, query, persian && !changed);
+    var context = containsQuery(title, query) ? null : sentenceWith(item, best, query, persian && !changed, persian);
     if (context === "covers" && summaries[key]) {
       text.appendChild(el("span", "isl-hit__summary", faDigits(summaries[key]).replace(/[.。]\s*$/, "") +
         (persian ? "؛ از جمله درباره «" + typed + (changed ? " (" + query + ")" : "") + "»." : " — «" + query.trim() + "»")));
