@@ -403,26 +403,18 @@
     }
     result.parentNode.insertBefore(loading, result);
     var wrap = result.closest(".md-search__inner") || document.body, timer = null;
-    /* The wait is shown once, when results first come: after that they follow every
-       letter at once, so the reader sees where the word is going before it is finished. */
-    var shown = false, last = "";
-    input().addEventListener("input", function () {
-      var now = input().value.trim(), before = last;
-      last = now;
-      if (!now) {
-        clearTimeout(timer); timer = null; shown = false;
-        wrap.classList.remove("isl-searching", "isl-reveal");
-        return;
-      }
-      /* the same search going on (a letter added or taken away): results follow every letter;
-         a new one (the text replaced, or a suggestion chosen) waits again */
-      if (shown && (now.indexOf(before) === 0 || (before.indexOf(now) === 0 && before.length - now.length <= 1))) return;
-      shown = false;
-      if (timer) return;   /* already waiting: the results come 1.1 s after the first letter */
-      wrap.classList.remove("isl-reveal");
+    /* Typing: the results follow every letter at once, so the reader sees where the word is
+       going before it is finished (no wait, nothing that flickers). A whole phrase put in at
+       once (a suggestion clicked, text pasted, a word filled in by the keyboard) gets the
+       short wait and the results come in one by one. */
+    input().addEventListener("input", function (event) {
+      clearTimeout(timer); timer = null;
+      wrap.classList.remove("isl-searching", "isl-reveal");
+      var whole = !event.inputType || /FromPaste|FromDrop|Replacement|FromYank/.test(event.inputType);
+      if (!input().value.trim() || !whole) return;
       wrap.classList.add("isl-searching");
       timer = setTimeout(function () {
-        timer = null; shown = true;
+        timer = null;
         wrap.classList.remove("isl-searching");
         void wrap.offsetWidth;  /* restart the reveal animation */
         wrap.classList.add("isl-reveal");
