@@ -55,9 +55,11 @@ theme:
 
 hooks:
   - tools/mkdocs_hooks.py
+  - tools/search_hooks.py
 
 extra_css:
   - assets/site.css
+  - assets/search.css
 
 extra_javascript:
   - assets/search-fa.js

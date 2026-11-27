@@ -1,0 +1,79 @@
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+/* Copyleft 🄯 2026 ISL and contributors — loaded after site.css */
+/* ===== Search (2026-11): one search box in the header; on wide screens it grows in
+   place and the results drop down under it. Phones keep the theme's full-screen search.
+   Extra pieces (suggestions, title list) come from ui.js. */
+/* Results: a plain list of titles (ui.js) */
+.md-search-result__list { padding: 0.35rem 0.5rem 0.5rem; }
+.md-search-result .md-search-result__item { margin: 0; padding: 0; border: 0; box-shadow: none; }
+/* A very faint line between results, inset from the edges */
+.md-search-result .md-search-result__item + .md-search-result__item::before {
+  content: ""; display: block; height: 1px; margin: 0.15rem 0.9rem;
+  background: color-mix(in srgb, var(--md-default-fg-color) 7%, transparent);
+}
+.md-search-result .isl-hit {
+  display: flex; align-items: center; gap: 0.8rem; padding: 0.7rem 0.9rem; border-radius: 0.6rem;
+  color: var(--md-default-fg-color); text-decoration: none; box-shadow: none;
+}
+.isl-hit__text { flex: 1; display: flex; flex-direction: column; gap: 0.1rem; }
+.isl-hit__title { font-size: 0.8rem; font-weight: 600; line-height: 1.6; }
+.isl-hit__summary { color: var(--md-default-fg-color--light); font-size: 0.68rem; line-height: 1.7; }
+.md-search-result .isl-hit:is(:hover, :focus) { background: color-mix(in srgb, var(--md-accent-fg-color) 9%, transparent); outline: 0; }
+/* A person: name and role, then «call» and «map» buttons */
+.md-search-result .isl-person { display: block; }
+.md-search-result .isl-person__main { display: block; color: inherit; text-decoration: none; box-shadow: none; }
+.isl-person__actions { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.45rem; }
+.md-search-result .isl-action {
+  display: inline-flex; align-items: center; gap: 0.35rem; min-height: 2rem; padding: 0.2rem 0.7rem;
+  border: 1px solid var(--md-default-fg-color--lightest); border-radius: 2rem;
+  color: var(--md-default-fg-color--light); font-size: 0.66rem; text-decoration: none; box-shadow: none;
+}
+.md-search-result .isl-action svg { width: 0.85rem; height: 0.85rem; fill: currentColor; }
+.md-search-result .isl-action bdi { direction: ltr; unicode-bidi: isolate; }
+.md-search-result .isl-action:is(:hover, :focus) { border-color: var(--md-accent-fg-color); color: var(--md-accent-fg-color); outline: 0; }
+.md-search-result .isl-person:has(.isl-person__main:is(:hover, :focus)) { background: color-mix(in srgb, var(--md-accent-fg-color) 9%, transparent); }
+.isl-suggest { display: none; padding: 0.9rem 1rem 1rem; }
+.md-search__inner:has(.md-search__input:placeholder-shown) .isl-suggest { display: block; }
+.md-search__inner:has(.md-search__input:placeholder-shown) .md-search-result__meta { display: none; }
+.isl-suggest__title { margin: 0 0 0.6rem; color: var(--md-default-fg-color--light); font-size: 0.68rem; font-weight: 700; }
+.isl-suggest__chips { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.isl-suggest__chip {
+  min-height: 2.2rem; padding: 0.3rem 0.85rem; border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 2rem; background: var(--md-default-bg-color); color: var(--md-default-fg-color);
+  font: inherit; font-size: 0.72rem; cursor: pointer;
+}
+.isl-suggest__chip:hover, .isl-suggest__chip:focus-visible {
+  border-color: var(--md-accent-fg-color); outline: 0;
+  background: color-mix(in srgb, var(--md-accent-fg-color) 10%, transparent);
+}
+.isl-suggest__more { margin: 0.9rem 0 0; font-size: 0.68rem; }
+.isl-suggest__more a { color: var(--md-typeset-a-color); }
+
+@media screen and (min-width: 60em) {
+  /* Closed: a calm search box */
+  .md-search__inner { width: 15rem; }
+  .md-search__form { position: relative; height: 1.8rem; border-radius: 0.5rem; background: rgba(255, 255, 255, 0.16); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25); }
+  .md-search__form:hover { background: rgba(255, 255, 255, 0.24); }
+  .md-search__input { font-size: 0.75rem; }
+
+  /* Open: the header box itself grows, and the results drop down right under it */
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__inner { width: min(36rem, 52vw); }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__overlay { background-color: rgba(10, 20, 35, 0.35); }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__form {
+    border-radius: 0.5rem 0.5rem 0 0; background: var(--md-default-bg-color);
+    box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.25);
+  }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__input { font-size: 0.8rem; }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__input::placeholder { color: var(--md-default-fg-color--lighter); }
+  .md-search__output { top: 1.9rem; }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__output {
+    border-radius: 0 0 0.7rem 0.7rem; background: var(--md-default-bg-color);
+    box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, 0.3), 0 0 0 1px var(--md-default-fg-color--lightest);
+  }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__scrollwrap { width: auto; max-height: min(65vh, 36rem); }
+
+  .md-search-result__meta { padding-inline: 1rem; background: none; border-bottom: 1px solid var(--md-default-fg-color--lightest); font-size: 0.62rem; }
+
+  /* The header box is always visible here, so no floating button */
+  .isl-fab { display: none; }
+}
