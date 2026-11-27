@@ -401,7 +401,7 @@
         wrap.classList.remove("isl-searching");
         void wrap.offsetWidth;  /* restart the reveal animation */
         wrap.classList.add("isl-reveal");
-      }, 550);
+      }, 1100);
     });
 
     var list = document.querySelector(".md-search-result__list");
