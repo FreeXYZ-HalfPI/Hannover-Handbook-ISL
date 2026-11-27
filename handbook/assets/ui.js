@@ -397,35 +397,21 @@
     }
     result.parentNode.insertBefore(loading, result);
     var wrap = result.closest(".md-search__inner") || document.body, timer = null;
-    /* Words already searched in this visit (across pages) show their results at once: no
-       loading and no one-by-one reveal the second time. */
-    var SEEN_KEY = "isl-search-seen", seen = {};
-    try { seen = JSON.parse(sessionStorage.getItem(SEEN_KEY) || "{}") || {}; } catch (e) { seen = {}; }
-    function seenKey(q) { return q.trim().replace(/\s+/g, " ").replace(/\u200c/g, ""); }
-    function remember(q) {
-      seen[q] = 1;
-      try { sessionStorage.setItem(SEEN_KEY, JSON.stringify(seen)); } catch (e) { /* storage blocked: memory only */ }
-    }
     /* The wait is shown once, when results first come: after that they follow every
        letter at once, so the reader sees where the word is going before it is finished. */
-    var shown = false;
+    var shown = false, last = "";
     input().addEventListener("input", function () {
-      var q = seenKey(input().value);
-      if (!q) {
+      var now = input().value.trim(), before = last;
+      last = now;
+      if (!now) {
         clearTimeout(timer); timer = null; shown = false;
         wrap.classList.remove("isl-searching", "isl-reveal");
         return;
       }
-      /* the first letters of a word searched before count too, so retyping it never flashes */
-      var known = Object.keys(seen).some(function (w) { return w.indexOf(q) === 0; });
-      if (shown || known) {
-        clearTimeout(timer); timer = null;
-        wrap.classList.remove("isl-searching");
-        if (!shown) wrap.classList.remove("isl-reveal");
-        shown = true;
-        remember(q);
-        return;
-      }
+      /* the same search going on (a letter added or taken away): results follow every letter;
+         a new one (the text replaced, or a suggestion chosen) waits again */
+      if (shown && (now.indexOf(before) === 0 || (before.indexOf(now) === 0 && before.length - now.length <= 1))) return;
+      shown = false;
       if (timer) return;   /* already waiting: the results come 1.1 s after the first letter */
       wrap.classList.remove("isl-reveal");
       wrap.classList.add("isl-searching");
@@ -434,7 +420,6 @@
         wrap.classList.remove("isl-searching");
         void wrap.offsetWidth;  /* restart the reveal animation */
         wrap.classList.add("isl-reveal");
-        remember(seenKey(input().value));
       }, 1100);
     });
 
