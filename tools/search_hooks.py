@@ -9,7 +9,8 @@
   role, phone and link, for the results list (assets/ui.js);
 - writes assets/search-words.json (every Persian word on the site) and
   assets/search-german-auto.json (every German word on the site, how often it appears,
-  and its spelling in Persian letters), for assets/search-fa.js."""
+  and its spelling in Persian letters), and assets/search-guess.json (the words a reader
+  may be on the way to while typing), for assets/search-fa.js."""
 import html as htmllib
 import json
 import re
@@ -212,6 +213,79 @@ def german_words(docs):
     return out
 
 
+
+# -- Guesses for an unfinished word ------------------------------------------------------
+# «کر» → «کرانک» (Krank), «بی» → «بیمه», «پارت» → «پارتنر» (searched as «همسر»): every word a
+# reader may be on the way to, with what to search for it and how much the site has on it.
+# Sources: the needs in assets/search-intents.json (with their English and colloquial
+# words), the hand-written German list, the words of page titles and the German words of
+# the site. Written to assets/search-guess.json as [key, shown, search, weight, kind]:
+# kind w = search the word itself, g = a German word, c = the need's own search.
+STOP = set("""و در از به با برای که این آن یا تا را های ها هم بر پس قبل بعد اول دوم سوم کردن شدن کنید کند شود
+بخش صفحه نکات نکته چطور چه کجا کی آیا همه هر یک دو سه چند بین روی زیر درباره""".split())
+PERSIAN = re.compile(r"[\u0600-\u06FF]")
+
+
+def guesses(docs, config):
+    pages = {}
+    for doc in docs:
+        pages.setdefault(doc["location"].split("#")[0], []).append(TAGS.sub(" ", doc["title"] + " " + doc["text"]))
+    texts = [" ".join(t) for t in pages.values()]
+    lower = [t.lower() for t in texts]
+    folded = [fold(t) for t in texts]
+    tokens = [set(fold(w) for w in re.split(r"[^\u0600-\u06FF]+", t) if w) for t in texts]
+    latin = [set(re.findall(r"[a-zäöüß]+", t)) for t in lower]
+
+    def pages_with(term, whole=False):
+        if PERSIAN.search(term):
+            f = fold(term)
+            return sum(1 for i in range(len(texts)) if (f in tokens[i] if whole else f in folded[i]))
+        t = term.lower()
+        return sum(1 for i in range(len(texts)) if (t in latin[i] if whole else t in lower[i]))
+
+    def key(word):
+        return fold(word) if PERSIAN.search(word) else word.lower()
+
+    out = []
+    docs_dir = Path(config["docs_dir"]) / "assets"
+    intents = json.loads((docs_dir / "search-intents.json").read_text(encoding="utf-8"))["intents"]
+    for need in intents:
+        search = need.get("search")
+        weight = 1000 + pages_with(search) if search else 1000
+        for word in need["words"]:
+            on_site = pages_with(word, whole=" " not in word) > 0
+            if on_site and not PERSIAN.search(word):
+                continue                      # German on the site: the search finds it as it is
+            if on_site or not search:
+                out.append([key(word), word, word, weight, "w"])
+            else:
+                out.append([key(word), search, search, weight, "c"])
+    german = json.loads((docs_dir / "search-german.json").read_text(encoding="utf-8"))
+    for word, spellings in german.items():
+        if word.startswith("_"):
+            continue
+        weight = 1000 + pages_with(word)      # «Krank» counts Krankenkasse, Krankschreibung...
+        for spelling in spellings:
+            out.append([key(spelling), spelling, word, weight, "g"])
+    seen = set()
+    for page in docs:
+        if "#" in page["location"]:
+            continue
+        for word in re.split(r"[^\u0600-\u06FF]+", htmllib.unescape(page["title"])):
+            if len(word) >= 3 and word not in STOP and word not in seen:
+                seen.add(word)
+                out.append([key(word), word, word, pages_with(word, whole=True), "w"])
+    for word, times, spelling in german_words(docs):
+        out.append([key(spelling), word, word, pages_with(word), "g"])
+    out.sort(key=lambda row: -row[3])
+    keep, keys = [], set()
+    for row in out:
+        if row[0] and row[0] not in keys:
+            keys.add(row[0])
+            keep.append(row)
+    return keep
+
+
 def on_post_build(config, **kwargs):
     missing = [latin for latin in PEOPLE_FA if latin not in _people]
     if missing:
@@ -229,6 +303,8 @@ def on_post_build(config, **kwargs):
         json.dumps(titles, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     vocab = Path(config["site_dir"]) / "assets" / "search-words.json"
     vocab.write_text(json.dumps(site_words(data["docs"]), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    (Path(config["site_dir"]) / "assets" / "search-guess.json").write_text(
+        json.dumps(guesses(data["docs"], config), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     (Path(config["site_dir"]) / "assets" / "search-german-auto.json").write_text(
         json.dumps(german_words(data["docs"]), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     # ASCII-escaped like the search plugin writes it: servers that omit the charset still decode it.

@@ -281,8 +281,12 @@
   function matchIntent(typed, query) {
     var a = squash(typed), b = squash(query);
     if (!a) return null;
+    /* what was typed first («پارتنر» is a need of its own), then what is searched for it («همسر») */
     for (var i = 0; i < intents.length; i++) {
-      if (intents[i].words.some(function (w) { var k = squash(w); return k === a || k === b; })) return intents[i];
+      if (intents[i].words.some(function (w) { return squash(w) === a; })) return intents[i];
+    }
+    for (var n = 0; n < intents.length; n++) {
+      if (intents[n].words.some(function (w) { return squash(w) === b; })) return intents[n];
     }
     /* still typing: «مری» is on its way to «مریض» */
     if (a.length < 3 || !window.islStartOfSiteWord || !window.islStartOfSiteWord(typed.trim())) return null;
@@ -353,6 +357,8 @@
     });
     var meta = document.querySelector(".md-search-result__meta");
     var label = shown === 1 ? "مرتبط‌ترین نتیجه" : faDigits(shown) + " نتیجه مرتبط";
+    /* the word the search took the letters for: «کر» → «۵ نتیجه مرتبط برای «کرانک»» */
+    if (german.shown && squash(german.shown) !== squash(typed)) label += " برای «" + german.shown + "»";
     if (meta && meta.textContent !== label) meta.textContent = label;
   }
 

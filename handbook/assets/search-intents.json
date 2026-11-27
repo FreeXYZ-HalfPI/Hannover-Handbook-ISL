@@ -1,8 +1,9 @@
 {
-  "_comment": "What people are usually looking for when they search a word. «words»: what they type (German, or Persian; German typed in Persian letters is read as German first). «results»: the pages that answer that need, best first, each with one line written for that need. These come first in the results; the search fills up the rest. assets/ui.js reads this file.",
+  "_comment": "What people are usually looking for when they search a word. «words»: what they type (German, English, Persian, colloquial; German typed in Persian letters is read as German first). «search»: what the main results search for when the typed words are not on the site themselves («پارتنر» → همسر). «results»: the pages that answer that need, best first, each with one line written for that need. These come first in the results; the search fills up the rest. assets/ui.js reads this file; tools/search_hooks.py builds the guesses for unfinished words from it.",
   "intents": [
     {
-      "words": ["Krank", "Krankheit", "krankgeschrieben", "Krankschreibung", "Krankmeldung", "Arbeitsunfähigkeitsbescheinigung", "مریض", "مریضی", "بیمار", "بیماری", "سرماخوردگی", "تب", "حالم بد است"],
+      "words": ["Krank", "Krankheit", "krankgeschrieben", "Krankschreibung", "Krankmeldung", "Arbeitsunfähigkeitsbescheinigung", "مریض", "مریضی", "بیمار", "بیماری", "سرماخوردگی", "تب", "حالم بد است", "sick", "ill", "illness", "flu", "fever", "cold", "سیک", "فلو", "آنفولانزا", "سرما خوردگی", "سرما خوردم", "مریضم", "حالم خوب نیست", "سردرد", "دل درد", "درد"],
+      "search": "بیمار",
       "results": [
         ["04-everyday-life/33-doctor-pharmacy/", "مریض شده‌اید؟ پیدا کردن پزشک خانواده، گرفتن نوبت و گواهی بیماری برای کار یا دانشگاه."],
         ["04-everyday-life/37-emergency/", "اگر حالتان خیلی بد است: ۱۱۲ برای اورژانس، و ۱۱۶۱۱۷ برای پزشک کشیک در شب و آخر هفته."],
@@ -11,7 +12,8 @@
       ]
     },
     {
-      "words": ["Arzt", "Hausarzt", "Facharzt", "Praxis", "Ärztin", "دکتر", "پزشک", "مطب", "دکتر ایرانی", "دکتر فارسی زبان", "پزشک ایرانی"],
+      "words": ["Arzt", "Hausarzt", "Facharzt", "Praxis", "Ärztin", "دکتر", "پزشک", "مطب", "دکتر ایرانی", "دکتر فارسی زبان", "پزشک ایرانی", "doctor", "doc", "GP", "physician", "clinic", "داکتر", "داک", "کلینیک", "دکتر عمومی", "پزشک عمومی", "دکتر خانواده", "پزشک خانواده"],
+      "search": "پزشک",
       "results": [
         ["07-resources/63-persian-speaking-doctors/", "فهرست پزشکان فارسی‌زبان هانوفر با نشانی و تلفن."],
         ["04-everyday-life/33-doctor-pharmacy/", "پزشک خانواده را چطور پیدا کنید، نوبت بگیرید و کی به متخصص بروید."],
@@ -19,7 +21,8 @@
       ]
     },
     {
-      "words": ["Zahnarzt", "Zahn", "دندان", "دندانپزشک", "دندان پزشک", "دندون", "دندونپزشک"],
+      "words": ["Zahnarzt", "Zahn", "دندان", "دندانپزشک", "دندان پزشک", "دندون", "دندونپزشک", "dentist", "tooth", "teeth", "دنتیست", "دندون درد", "دندان درد"],
+      "search": "دندانپزشک",
       "results": [
         ["07-resources/63-persian-speaking-doctors/", "دندان‌پزشک پیدا کردن و قواعدی که بیمه دولتی برای دندان دارد."],
         ["01-arriving-in-hannover/07-health-insurance/", "بیمه درمانی چه سهمی از هزینه دندان را می‌پردازد."],
@@ -27,21 +30,24 @@
       ]
     },
     {
-      "words": ["Notfall", "Notaufnahme", "Notdienst", "Polizei", "Feuerwehr", "Notruf", "اورژانس", "آمبولانس", "پلیس", "آتش نشانی", "فوری", "اضطراری", "کمک فوری"],
+      "words": ["Notfall", "Notaufnahme", "Notdienst", "Polizei", "Feuerwehr", "Notruf", "اورژانس", "آمبولانس", "پلیس", "آتش نشانی", "فوری", "اضطراری", "کمک فوری", "emergency", "ambulance", "police", "fire", "help", "ایمرجنسی", "امرجنسی", "هلپ", "کمک", "۱۱۲", "112", "110"],
+      "search": "اضطراری",
       "results": [
         ["04-everyday-life/37-emergency/", "شماره‌های اضطراری آلمان و این‌که در هر خطر به کجا زنگ بزنید."],
         ["04-everyday-life/33-doctor-pharmacy/", "پزشک کشیک و اورژانس بیمارستان برای بیماری‌های فوری."]
       ]
     },
     {
-      "words": ["Apotheke", "Rezept", "Medikament", "داروخانه", "دارو", "نسخه", "قرص"],
+      "words": ["Apotheke", "Rezept", "Medikament", "داروخانه", "دارو", "نسخه", "قرص", "pharmacy", "drugstore", "medicine", "pills", "فارمسی", "دراگ استور", "آپتیک", "داروخونه"],
+      "search": "داروخانه",
       "results": [
         ["04-everyday-life/33-doctor-pharmacy/", "داروخانه چطور کار می‌کند، نسخه پزشک و داروخانه‌های شبانه‌روزی."],
         ["01-arriving-in-hannover/07-health-insurance/", "سهمی از هزینه دارو که خودتان باید بپردازید."]
       ]
     },
     {
-      "words": ["Psychologe", "Psychotherapie", "Beratung", "روانشناس", "روانپزشک", "روان درمانی", "افسردگی", "استرس", "اضطراب", "مشاوره", "تنهایی", "تنها"],
+      "words": ["Psychologe", "Psychotherapie", "Beratung", "روانشناس", "روانپزشک", "روان درمانی", "افسردگی", "استرس", "اضطراب", "مشاوره", "تنهایی", "تنها", "therapist", "therapy", "psychologist", "counseling", "counselling", "mental health", "depression", "anxiety", "stress", "lonely", "homesick", "تراپیست", "تراپی", "سایکولوژیست", "سایکولوژی", "دپرشن", "دپرس", "دپرسیون", "انگزایتی", "روحیه", "دلتنگی", "غربت", "هوم سیک", "افسرده", "ناراحت", "غمگین", "روانی", "سلامت روان"],
+      "search": "مشاوره",
       "results": [
         ["03-university-services/29-counselling/", "مشاوره رایگان دانشگاه برای فشار روحی، درس و مشکلات زندگی."],
         ["07-resources/63-persian-speaking-doctors/", "روان‌پزشک و روان‌درمانگر فارسی‌زبان در هانوفر."],
@@ -49,7 +55,8 @@
       ]
     },
     {
-      "words": ["Termin", "نوبت", "وقت گرفتن", "وقت"],
+      "words": ["Termin", "نوبت", "وقت گرفتن", "وقت", "appointment", "booking", "اپوینتمنت", "اپوینت منت", "رزرو", "رزرو وقت", "نوبت گرفتن"],
+      "search": "Termin",
       "results": [
         ["01-arriving-in-hannover/05-anmeldung/", "نوبت گرفتن برای ثبت محل سکونت، که بیشترین نوبت اداری سال اول است."],
         ["01-arriving-in-hannover/10-residence-permit/", "نوبت اداره اتباع برای کارت اقامت و تمدید آن."],
@@ -57,7 +64,8 @@
       ]
     },
     {
-      "words": ["Wohnung", "Zimmer", "WG", "Miete", "Mietvertrag", "Vermieter", "Kaution", "Nebenkosten", "Wohnheim", "Zwischenmiete", "خانه", "خونه", "اتاق", "اجاره", "خوابگاه", "صاحبخانه", "صاحب خانه", "ودیعه", "مسکن"],
+      "words": ["Wohnung", "Zimmer", "WG", "Miete", "Mietvertrag", "Vermieter", "Kaution", "Nebenkosten", "Wohnheim", "Zwischenmiete", "خانه", "خونه", "اتاق", "اجاره", "خوابگاه", "صاحبخانه", "صاحب خانه", "ودیعه", "مسکن", "apartment", "flat", "room", "rent", "landlord", "dorm", "dormitory", "deposit", "housing", "آپارتمان", "اپارتمان", "فلت", "روم", "رنت", "لندلرد", "دورم", "دیپازیت", "سکونت", "جای خواب", "خونه پیدا کردن", "خانه پیدا کردن", "کرایه", "کرایه خانه", "رهن"],
+      "search": "اجاره",
       "results": [
         ["01-arriving-in-hannover/04-housing/", "کجا اتاق پیدا کنید، چقدر هزینه دارد و پیش از امضای قرارداد به چه دقت کنید."],
         ["03-university-services/23-studentenwerk/", "خوابگاه‌های دانشجویی و درخواست آنلاین برای اتاق."],
@@ -66,7 +74,8 @@
       ]
     },
     {
-      "words": ["Geld", "Kosten", "پول", "هزینه", "هزینه زندگی", "خرج", "مخارج", "پول کم"],
+      "words": ["Geld", "Kosten", "پول", "هزینه", "هزینه زندگی", "خرج", "مخارج", "پول کم", "money", "cost", "costs", "budget", "cheap", "expensive", "بادجت", "گرون", "گرانی", "پول ندارم", "بی پولی", "خرج زندگی"],
+      "search": "هزینه",
       "results": [
         ["01-arriving-in-hannover/02-before-arrival-visa/", "هزینه زندگی ماهانه و مبلغی که باید در حساب مسدودی بگذارید."],
         ["05-work-finance-career/43-scholarships/", "کمک‌هزینه‌ها و کمک مالی اضطراری برای دانشجویان."],
@@ -75,7 +84,8 @@
       ]
     },
     {
-      "words": ["Arbeit", "Job", "Nebenjob", "Werkstudent", "Minijob", "HiWi", "کار", "شغل", "کار پیدا کردن", "استخدام"],
+      "words": ["Arbeit", "Job", "Nebenjob", "Werkstudent", "Minijob", "HiWi", "کار", "شغل", "کار پیدا کردن", "استخدام", "job", "work", "part time", "parttime", "full time", "employment", "internship", "جاب", "پارت تایم", "پارتایم", "فول تایم", "ورک", "ورک پرمیت", "کار پاره وقت", "پاره وقت", "تمام وقت", "کارآموزی", "اینترنشیپ", "اینترن"],
+      "search": "کار دانشجویی",
       "results": [
         ["05-work-finance-career/40-student-jobs/", "چه کاری و چند ساعت در هفته اجازه دارید کار کنید."],
         ["05-work-finance-career/41-job-search-cv/", "کجا دنبال کار بگردید و رزومه آلمانی بنویسید."],
@@ -84,7 +94,8 @@
       ]
     },
     {
-      "words": ["Visum", "Aufenthaltserlaubnis", "Aufenthaltstitel", "Ausländerbehörde", "Fiktionsbescheinigung", "ویزا", "اقامت", "کارت اقامت", "تمدید اقامت", "اداره اتباع", "اداره خارجی ها"],
+      "words": ["Visum", "Aufenthaltserlaubnis", "Aufenthaltstitel", "Ausländerbehörde", "Fiktionsbescheinigung", "ویزا", "اقامت", "کارت اقامت", "تمدید اقامت", "اداره اتباع", "اداره خارجی ها", "visa", "residence permit", "permit", "extension", "immigration", "foreigners office", "رزیدنس پرمیت", "رزیدنس", "پرمیت", "تمدید ویزا", "اکستنشن", "ایمیگریشن", "اقامتم", "تمدید"],
+      "search": "اجازه اقامت",
       "results": [
         ["01-arriving-in-hannover/10-residence-permit/", "گرفتن و تمدید کارت اقامت تحصیلی؛ نوبت، مدارک و هزینه."],
         ["01-arriving-in-hannover/02-before-arrival-visa/", "ویزای تحصیلی و مدارکی که پیش از سفر لازم است."],
@@ -92,7 +103,8 @@
       ]
     },
     {
-      "words": ["Bank", "Girokonto", "Sparkasse", "Konto", "بانک", "حساب", "حساب بانکی", "کارت بانکی"],
+      "words": ["Bank", "Girokonto", "Sparkasse", "Konto", "بانک", "حساب", "حساب بانکی", "کارت بانکی", "bank", "account", "bank account", "iban", "debit card", "credit card", "بنک", "اکانت", "بانک اکانت", "آیبن", "ایبان", "شبا", "کارت اعتباری", "کردیت کارت", "دبیت کارت", "مسترکارت", "ویزا کارت"],
+      "search": "حساب بانکی",
       "results": [
         ["01-arriving-in-hannover/06-bank-account/", "باز کردن حساب بانکی؛ کدام بانک و با چه مدارکی."],
         ["01-arriving-in-hannover/02-before-arrival-visa/", "حساب مسدودی و پولی که هر ماه از آن آزاد می‌شود."],
@@ -100,7 +112,8 @@
       ]
     },
     {
-      "words": ["Sperrkonto", "Blocked account", "حساب مسدودی", "حساب بلوکه", "بلاک اکانت"],
+      "words": ["Sperrkonto", "Blocked account", "حساب مسدودی", "حساب بلوکه", "بلاک اکانت", "blocked account", "expatrio", "fintiba", "اکسپاتریو", "فینتیبا", "بلاکد اکانت", "اکانت مسدود"],
+      "search": "Sperrkonto",
       "results": [
         ["01-arriving-in-hannover/02-before-arrival-visa/", "مبلغ حساب مسدودی و راه باز کردن آن پیش از ویزا."],
         ["01-arriving-in-hannover/06-bank-account/", "پول ماهانه حساب مسدودی چطور به حساب آلمانی‌تان می‌رسد."],
@@ -108,21 +121,24 @@
       ]
     },
     {
-      "words": ["Steuer", "Steuer-ID", "Steuererklärung", "Finanzamt", "Lohnsteuer", "مالیات", "شماره مالیاتی", "اظهارنامه"],
+      "words": ["Steuer", "Steuer-ID", "Steuererklärung", "Finanzamt", "Lohnsteuer", "مالیات", "شماره مالیاتی", "اظهارنامه", "tax", "tax id", "tax return", "تکس", "تکس آیدی", "تکس ریترن", "مالیات بر درآمد", "استرداد مالیات"],
+      "search": "مالیات",
       "results": [
         ["01-arriving-in-hannover/09-tax-id-broadcasting-fee/", "شماره مالیاتی که برای هر کاری لازم است و از کجا می‌رسد."],
         ["05-work-finance-career/42-tax-payslip/", "مالیات حقوق و پس گرفتن مالیات با اظهارنامه."]
       ]
     },
     {
-      "words": ["Rundfunkbeitrag", "GEZ", "تلویزیون", "رادیو", "عوارض تلویزیون"],
+      "words": ["Rundfunkbeitrag", "GEZ", "تلویزیون", "رادیو", "عوارض تلویزیون", "tv fee", "broadcasting fee", "license fee", "gez", "گز", "جی ای زد", "پول تلویزیون", "۱۸ یورو"],
+      "search": "Rundfunkbeitrag",
       "results": [
         ["01-arriving-in-hannover/09-tax-id-broadcasting-fee/", "نامه عوارض رادیو و تلویزیون؛ چه کسی باید بپردازد و چقدر."],
         ["05-work-finance-career/47-leaving-germany/", "لغو عوارض رادیو و تلویزیون پیش از رفتن یا جابه‌جایی."]
       ]
     },
     {
-      "words": ["Deutsch", "Deutschkurs", "Sprachkurs", "Sprache", "آلمانی", "زبان", "کلاس زبان", "زبان آلمانی", "یادگیری زبان"],
+      "words": ["Deutsch", "Deutschkurs", "Sprachkurs", "Sprache", "آلمانی", "زبان", "کلاس زبان", "زبان آلمانی", "یادگیری زبان", "german", "language", "german course", "language course", "دویچ", "جرمن", "لنگویج", "کورس زبان", "کلاس آلمانی", "دوره زبان", "گوته", "goethe", "testdaf", "تست داف", "telc", "تلک"],
+      "search": "زبان آلمانی",
       "results": [
         ["04-everyday-life/35-learning-german/", "کلاس‌ها و فرصت‌های رایگان و ارزان برای یاد گرفتن آلمانی."],
         ["03-university-services/26-language-centre/", "کلاس‌های زبان مرکز زبان دانشگاه و آزمون تعیین سطح."],
@@ -130,7 +146,8 @@
       ]
     },
     {
-      "words": ["Prüfung", "Klausur", "Prüfungsamt", "امتحان", "آزمون", "امتحانات"],
+      "words": ["Prüfung", "Klausur", "Prüfungsamt", "امتحان", "آزمون", "امتحانات", "exam", "exams", "test", "final", "midterm", "اگزم", "فاینال", "میدترم", "پاس کردن", "افتادن", "رد شدن"],
+      "search": "امتحان",
       "results": [
         ["02-starting-your-studies/18-exams/", "ثبت‌نام امتحان، مهلت‌ها و اگر امتحانی را رد شدید."],
         ["02-starting-your-studies/16-study-structure/", "کدام درس‌ها اجباری‌اند و امتحانشان کی است."],
@@ -138,28 +155,32 @@
       ]
     },
     {
-      "words": ["Stipendium", "BAföG", "Förderung", "بورسیه", "کمک هزینه", "کمک مالی", "وام"],
+      "words": ["Stipendium", "BAföG", "Förderung", "بورسیه", "کمک هزینه", "کمک مالی", "وام", "scholarship", "grant", "funding", "loan", "اسکالرشیپ", "فاندینگ", "فاند", "گرنت", "کمک هزینه تحصیلی"],
+      "search": "بورسیه",
       "results": [
         ["05-work-finance-career/43-scholarships/", "بورسیه‌ها و کمک‌هزینه‌هایی که دانشجوی خارجی هم می‌تواند بگیرد."],
         ["03-university-services/29-counselling/", "مشاوره مالی و کمک اضطراری وقتی پول کم آورده‌اید."]
       ]
     },
     {
-      "words": ["Bahn", "Bus", "Ticket", "Semesterticket", "Deutschlandticket", "Fahrrad", "بلیت", "بلیط", "اتوبوس", "قطار", "مترو", "دوچرخه", "رفت و آمد"],
+      "words": ["Bahn", "Bus", "Ticket", "Semesterticket", "Deutschlandticket", "Fahrrad", "بلیت", "بلیط", "اتوبوس", "قطار", "مترو", "دوچرخه", "رفت و آمد", "ticket", "bus", "train", "tram", "metro", "subway", "bike", "transport", "تیکت", "ترن", "ترام", "باس", "بایک", "حمل و نقل", "دویچلند تیکت", "بلیط ترم"],
+      "search": "Deutschlandticket",
       "results": [
         ["04-everyday-life/30-public-transport/", "بلیت ترم شما کجا معتبر است و دوچرخه در شهر."],
         ["01-arriving-in-hannover/03-arrival-transport/", "از فرودگاه و ایستگاه چطور به شهر بیایید."]
       ]
     },
     {
-      "words": ["Handy", "Internet", "WLAN", "SIM", "سیم کارت", "اینترنت", "گوشی", "موبایل", "وای فای"],
+      "words": ["Handy", "Internet", "WLAN", "SIM", "سیم کارت", "اینترنت", "گوشی", "موبایل", "وای فای", "phone", "sim", "sim card", "mobile", "internet", "wifi", "data", "سیم", "فون", "دیتا", "وایفای", "اینترنت ارزان", "خط موبایل", "خط"],
+      "search": "سیم‌کارت",
       "results": [
         ["01-arriving-in-hannover/08-sim-internet/", "سیم‌کارت و اینترنت روزهای اول، بدون قرارداد طولانی."],
         ["04-everyday-life/32-contracts/", "قرارداد اینترنت خانه و تلفن؛ پیش از امضا چه بدانید."]
       ]
     },
     {
-      "words": ["Kündigung", "Vertrag", "kündigen", "فسخ", "قرارداد", "لغو قرارداد", "کنسل", "لغو"],
+      "words": ["Kündigung", "Vertrag", "kündigen", "فسخ", "قرارداد", "لغو قرارداد", "کنسل", "لغو", "cancel", "contract", "cancellation", "کنتراکت", "کانترکت", "کنسل کردن", "کانسل", "قرارداد لغو"],
+      "search": "قرارداد",
       "results": [
         ["04-everyday-life/32-contracts/", "مدت قرارداد و راه درست فسخ آن."],
         ["07-resources/62-consumer-rights-legal-help/", "قرارداد ناخواسته یا تمدید خودکار؛ حقوق شما و کمک رایگان."],
@@ -167,41 +188,47 @@
       ]
     },
     {
-      "words": ["Betrug", "Anwalt", "Rechtsberatung", "Abzocke", "کلاهبرداری", "وکیل", "شکایت", "مشاوره حقوقی", "دزدی"],
+      "words": ["Betrug", "Anwalt", "Rechtsberatung", "Abzocke", "کلاهبرداری", "وکیل", "شکایت", "مشاوره حقوقی", "دزدی", "scam", "fraud", "lawyer", "legal help", "اسکم", "فراد", "لایر", "لویر", "کلاه برداری", "سر کیسه"],
+      "search": "کلاه‌برداری",
       "results": [
         ["07-resources/62-consumer-rights-legal-help/", "کلاه‌برداری‌های رایج، حقوق شما و جاهایی که رایگان کمک حقوقی می‌دهند."],
         ["04-everyday-life/37-emergency/", "پلیس و شماره‌های اضطراری."]
       ]
     },
     {
-      "words": ["Pass", "Reisepass", "Übersetzung", "Beglaubigung", "Botschaft", "Konsulat", "پاسپورت", "گذرنامه", "ترجمه", "ترجمه رسمی", "کپی برابر اصل", "سفارت", "کنسولگری"],
+      "words": ["Pass", "Reisepass", "Übersetzung", "Beglaubigung", "Botschaft", "Konsulat", "پاسپورت", "گذرنامه", "ترجمه", "ترجمه رسمی", "کپی برابر اصل", "سفارت", "کنسولگری", "passport", "translation", "embassy", "consulate", "apostille", "ترنسلیشن", "امبسی", "اپوستیل", "آپوستیل", "دارالترجمه", "سفارت ایران", "کنسولگری ایران"],
+      "search": "ترجمه",
       "results": [
         ["07-resources/61-consular-documents/", "پاسپورت، ترجمه رسمی و کپی برابر اصل؛ کدام کار در آلمان و کدام در ایران."],
         ["01-arriving-in-hannover/10-residence-permit/", "مدارکی که اداره اتباع برای اقامت می‌خواهد."]
       ]
     },
     {
-      "words": ["Familiennachzug", "Familie", "Kind", "Kindergeld", "Kita", "Ehepartner", "همسر", "خانواده", "بچه", "فرزند", "مهدکودک"],
+      "words": ["Familiennachzug", "Familie", "Kind", "Kindergeld", "Kita", "Ehepartner", "همسر", "خانواده", "بچه", "فرزند", "مهدکودک", "family", "wife", "husband", "spouse", "children", "child", "kids", "baby", "kindergarten", "pregnant", "pregnancy", "marriage", "فمیلی", "فامیلی", "زن", "شوهر", "زنم", "شوهرم", "همسرم", "بچه ها", "بچه‌ام", "نوزاد", "بیبی", "بارداری", "حاملگی", "باردار", "ازدواج", "عروسی", "آوردن همسر", "پیوستن خانواده"],
+      "search": "همسر",
       "results": [
         ["01-arriving-in-hannover/11-family-reunification/", "آوردن همسر و فرزند به آلمان؛ شرایط و مراحل."],
         ["03-university-services/27-chancenvielfalt/", "تحصیل با فرزند و کمک‌هایی که دانشگاه می‌دهد."]
       ]
     },
     {
-      "words": ["Führerschein", "Umschreibung", "Auto", "گواهینامه", "رانندگی", "ماشین"],
+      "words": ["Führerschein", "Umschreibung", "Auto", "گواهینامه", "رانندگی", "ماشین", "driving license", "driving licence", "drivers license", "licence", "license", "car", "لایسنس", "درایوینگ لایسنس", "گواهی نامه", "گواهینامه رانندگی"],
+      "search": "گواهینامه",
       "results": [
         ["04-everyday-life/38-driving-licence/", "گواهینامه ایرانی تا کی معتبر است و چطور آلمانی‌اش کنید."]
       ]
     },
     {
-      "words": ["Schengen", "Reise", "Reisen", "سفر", "مسافرت", "شنگن", "سفر به ایران"],
+      "words": ["Schengen", "Reise", "Reisen", "سفر", "مسافرت", "شنگن", "سفر به ایران", "travel", "trip", "vacation", "holiday", "ترول", "تراول", "تعطیلات", "هالیدی", "سفر اروپا", "ویزای شنگن"],
+      "search": "سفر",
       "results": [
         ["04-everyday-life/39-travel-schengen/", "با کارت اقامت به کدام کشورها و چه مدت می‌توانید سفر کنید."],
         ["01-arriving-in-hannover/10-residence-permit/", "پیش از سفر: اعتبار کارت اقامت را بررسی کنید."]
       ]
     },
     {
-      "words": ["Abschluss", "Blaue Karte", "Niederlassungserlaubnis", "فارغ التحصیلی", "پایان تحصیل", "کارت آبی", "اقامت دائم", "بعد از تحصیل"],
+      "words": ["Abschluss", "Blaue Karte", "Niederlassungserlaubnis", "فارغ التحصیلی", "پایان تحصیل", "کارت آبی", "اقامت دائم", "بعد از تحصیل", "graduation", "after graduation", "blue card", "job seeker", "permanent residence", "گرجویشن", "گرادیوشن", "پی آر", "بلو کارت", "جاب سیکر", "جاب سیکینگ"],
+      "search": "فارغ‌التحصیلی",
       "results": [
         ["05-work-finance-career/46-after-graduation/", "ماندن و کار در آلمان پس از فارغ‌التحصیلی، تا اقامت دائم."],
         ["05-work-finance-career/45-career-service/", "کمک دانشگاه برای پیدا کردن اولین کار."],
@@ -209,7 +236,8 @@
       ]
     },
     {
-      "words": ["Immatrikulation", "Einschreibung", "Zulassung", "Bewerbung", "ثبت نام", "ثبت نام دانشگاه", "پذیرش", "اپلای", "درخواست پذیرش"],
+      "words": ["Immatrikulation", "Einschreibung", "Zulassung", "Bewerbung", "ثبت نام", "ثبت نام دانشگاه", "پذیرش", "اپلای", "درخواست پذیرش", "enrollment", "enrolment", "registration", "admission", "apply", "application", "اپلیکیشن", "ادمیشن", "اپلای کردن", "رجیستر", "رجیستریشن", "یونی اسیست", "uni assist"],
+      "search": "ثبت‌نام",
       "results": [
         ["01-arriving-in-hannover/01-application-uni-assist/", "درخواست پذیرش، مهلت‌ها و بررسی مدارک ایرانی."],
         ["02-starting-your-studies/12-admission-enrolment/", "ثبت‌نام نهایی پس از گرفتن پذیرش."],
@@ -217,22 +245,53 @@
       ]
     },
     {
-      "words": ["Mensa", "Essen", "غذا", "ناهار", "رستوران", "غذاخوری", "سلف"],
+      "words": ["Mensa", "Essen", "غذا", "ناهار", "رستوران", "غذاخوری", "سلف", "food", "lunch", "cafeteria", "canteen", "فود", "ناهار دانشگاه", "کافه", "کافه تریا", "سلف دانشگاه", "غذای ارزان"],
+      "search": "Mensa",
       "results": [
         ["03-university-services/28-mensa/", "غذای گرم و ارزان در دانشگاه؛ کجا و چطور پول بدهید."],
         ["04-everyday-life/31-shopping/", "خرید ارزان مواد غذایی برای آشپزی در خانه."]
       ]
     },
     {
-      "words": ["Einkaufen", "Supermarkt", "Pfand", "خرید", "سوپرمارکت", "فروشگاه", "ارزان"],
+      "words": ["Einkaufen", "Supermarkt", "Pfand", "خرید", "سوپرمارکت", "فروشگاه", "ارزان", "shopping", "supermarket", "grocery", "groceries", "شاپینگ", "سوپر", "گروسری", "آلدی", "لیدل", "خرید روزانه"],
+      "search": "سوپرمارکت",
       "results": [
         ["04-everyday-life/31-shopping/", "ارزان‌ترین فروشگاه‌ها، پس گرفتن پول بطری و ساعت کار مغازه‌ها."]
       ]
     },
     {
-      "words": ["Müll", "Mülltrennung", "Sperrmüll", "زباله", "آشغال", "بازیافت"],
+      "words": ["Müll", "Mülltrennung", "Sperrmüll", "زباله", "آشغال", "بازیافت", "trash", "garbage", "recycling", "waste", "ترش", "گاربیج", "ریسایکل", "بطری", "پفاند"],
+      "search": "زباله",
       "results": [
         ["04-everyday-life/36-waste-house-rules/", "تفکیک زباله و قواعد ساختمان."]
+      ]
+    },
+    {
+      "words": ["Versicherung", "Krankenversicherung", "Krankenkasse", "Haftpflichtversicherung", "Haftpflicht", "TK", "AOK", "بیمه", "بیمه درمانی", "بیمه سلامت", "بیمه دانشجویی", "بیمه مسئولیت", "insurance", "health insurance", "liability insurance", "اینشورنس", "اینشورنز", "هلث اینشورنس", "بیمه خصوصی", "بیمه دولتی"],
+      "search": "بیمه",
+      "results": [
+        ["01-arriving-in-hannover/07-health-insurance/", "بیمه درمانی دانشجویی: کدام بیمه را بگیرید، هزینه ماهانه و کارتی که در مطب لازم است."],
+        ["01-arriving-in-hannover/02-before-arrival-visa/", "بیمه‌هایی که پیش از آمدن لازم است، و بیمه مسئولیت که به‌شدت توصیه می‌شود."],
+        ["05-work-finance-career/42-tax-payslip/", "بیمه‌هایی که با کار دانشجویی از حقوقتان کم می‌شود."]
+      ]
+    },
+    {
+      "words": ["Partner", "Partnerin", "Freund", "Freundin", "partner", "girlfriend", "boyfriend", "پارتنر", "پارتنرم", "دوست دختر", "دوست پسر", "دوست‌دختر", "دوست‌پسر", "دوستدختر", "دوستپسر", "گرل فرند", "گرلفرند", "بوی فرند", "بویفرند", "نامزد", "نامزدم", "شریک زندگی", "عشق", "رابطه", "ریلیشن شیپ", "relationship", "dating", "دیت", "دیتینگ", "آوردن پارتنر", "آوردن دوست دختر", "آوردن دوست پسر", "ویزای پارتنر"],
+      "search": "همسر",
+      "results": [
+        ["01-arriving-in-hannover/11-family-reunification/", "آمدن همسر به آلمان؛ این راه برای همسر با سند ازدواج است، نه برای دوست یا نامزد."],
+        ["04-everyday-life/39-travel-schengen/", "سفرهای کوتاه در اروپا با اجازه اقامت و ویزای شنگن."],
+        ["06-student-community/51-events-networking/", "رویدادها و جاهایی برای آشنایی با آدم‌های تازه در هانوفر."]
+      ]
+    },
+    {
+      "words": ["Hochschulsport", "Sport", "Freizeit", "Freunde", "friends", "friend", "sport", "gym", "fitness", "hobby", "party", "events", "fun", "ورزش", "باشگاه", "باشگاه ورزشی", "جیم", "فیتنس", "فوتبال", "والیبال", "استخر", "شنا", "تفریح", "سرگرمی", "دوست", "دوست پیدا کردن", "رفیق", "دورهمی", "مهمونی", "مهمانی", "پارتی", "رویداد", "ایونت", "تنهایی", "تنها هستم", "آشنایی"],
+      "search": "تفریح",
+      "results": [
+        ["04-everyday-life/34-sports-culture/", "ورزش دانشگاه، استخر، برنامه‌های فرهنگی و تفریح در هانوفر."],
+        ["06-student-community/51-events-networking/", "رویدادها و جاهایی برای آشنایی با دانشجویان دیگر."],
+        ["06-student-community/67-belonging-in-hannover/", "احساس تعلق در هانوفر: آشنایی با مردم، فرهنگ و کار داوطلبانه."],
+        ["06-student-community/48-isl/", "انجمن دانشجویان ایرانی دانشگاه و برنامه‌هایش."]
       ]
     }
   ]

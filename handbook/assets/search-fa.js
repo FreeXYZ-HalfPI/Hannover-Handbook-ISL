@@ -72,6 +72,30 @@
 
   /* A spelling written into the hand-made list is meant as German even when the same
      letters are on the site: «ملده» is said for Anmeldung (the site has «ملده ندارد»). */
+  /* Guesses for an unfinished word (tools/search_hooks.py → search-guess.json), most
+     likely first: [key, shown, search, weight, kind]; kind w = the word itself, g = a German
+     word, c = a colloquial or English word, searched as the need it belongs to. */
+  var guessList = [], guessByKey = {};
+  fetchJSON("search-guess.json").then(function (data) {
+    if (!data) return;
+    guessList = data;
+    data.forEach(function (row) { if (!guessByKey[row[0]]) guessByKey[row[0]] = row; });
+  });
+  function guessKey(word) { return /[\u0600-\u06FF]/.test(word) ? fold(word) : word.toLowerCase(); }
+  /* «کر» → کرانک, «بی» → بیمه, «پارتن» → پارتنر: words of the site and German words first;
+     a colloquial word only from the third letter on, when nothing else fits. */
+  function guessFor(word) {
+    var k = guessKey(word), persian = /[\u0600-\u06FF]/.test(k), colloquial = null;
+    if (k.length < (persian ? 2 : 3)) return null;
+    for (var i = 0; i < guessList.length; i++) {
+      var row = guessList[i];
+      if (row[0].indexOf(k) !== 0 || row[0] === k) continue;
+      if (row[4] !== "c") return row;
+      if (!colloquial && k.length >= 3) colloquial = row;
+    }
+    return colloquial;
+  }
+
   function onSite(word) { return siteWords && !chosen[fold(word)] ? siteWords.has(fold(word)) : false; }
   /* The reader is still typing: «بیم» is no word on the site, but the start of «بیمه». */
   function startOfSiteWord(word) {
@@ -109,19 +133,39 @@
   function germanize(query) {
     var words = query.trim().split(/\s+/).filter(Boolean);
     if (!words.length) return { query: query, changed: false };
+    /* a phrase people say, in Persian or English: «دوست دختر», «health insurance» */
+    var phrase = words.length > 1 && guessByKey[guessKey(words.join(" "))];
+    if (phrase && phrase[4] !== "w") return { query: phrase[2], changed: true, shown: phrase[1] };
     if (words.length > 1) {
       var allOnSite = words.every(onSite);
       var whole = !onSite(words.join("")) && lookup(words.join(""), !allOnSite);
       if (whole) return { query: whole, changed: true };
     }
-    var changed = false;
+    var changed = false, shown = null;
     words = words.map(function (w, i) {
-      if (onSite(w)) return w;
-      var g = lookup(w, false) || (i === words.length - 1 && startOfSiteWord(w) ? null : lookup(w, true));
+      var f = fold(w), last = i === words.length - 1;
+      if (chosen[f]) { changed = true; return chosen[f]; }
+      /* a known word: German, or an English or colloquial one («پارتنر» → همسر) */
+      var known = guessByKey[guessKey(w)];
+      if (known && known[4] !== "w") {
+        changed = true;
+        if (known[4] === "c") shown = known[1];
+        return known[2];
+      }
+      if (known || (onSite(w) && (f.length > 3 || !last))) return w;
+      /* still typing: the most likely word it is the start of */
+      var guess = last && guessFor(w);
+      if (guess) {
+        changed = changed || guess[2] !== w;
+        shown = guess[1];
+        return guess[2];
+      }
+      if (onSite(w) || (last && startOfSiteWord(w))) return w;
+      var g = lookup(w, true);
       if (g) { changed = true; return g; }
       return w;
     });
-    return { query: changed ? words.join(" ") : query, changed: changed };
+    return { query: changed ? words.join(" ") : query, changed: changed, shown: shown };
   }
   window.islGermanize = germanize;
   window.islStartOfSiteWord = startOfSiteWord;
