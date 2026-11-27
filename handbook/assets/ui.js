@@ -3,11 +3,10 @@
    (1) every [data-isl-search] button (home page) opens the theme's search,
    (2) a floating «جست‌وجو» button on phones and tablets,
    (3) on wide screens the header box grows in place and the results drop down
-       under it (see search.css): Ctrl+K / ⌘K opens it, suggestions show before anything is typed,
+       under it (see search.css): Ctrl+K / ⌘K opens it (no visible hint), five suggestions show before anything is typed,
        and only the few most relevant results are shown, each kept short. */
 (function () {
-  var SUGGESTIONS = ["بیمه درمانی", "Anmeldung", "حساب بانکی", "سیم‌کارت", "اجازه اقامت",
-                     "خوابگاه", "کار دانشجویی", "Rundfunkbeitrag"];
+  var SUGGESTIONS = ["بیمه درمانی", "Anmeldung", "حساب بانکی", "سیم‌کارت", "اجازه اقامت"];
 
   function input() { return document.querySelector(".md-search__input"); }
 
@@ -144,10 +143,6 @@
 
     input().setAttribute("placeholder", "جست‌وجو در کتابچه…");
 
-    var kbd = el("kbd", "isl-kbd", /Mac|iPhone|iPad/.test(navigator.platform) ? "⌘ K" : "Ctrl K");
-    kbd.setAttribute("aria-hidden", "true");
-    form.appendChild(kbd);
-
     /* Before anything is typed: a few common searches and the search across both handbooks. */
     var box = el("div", "isl-suggest");
     box.appendChild(el("p", "isl-suggest__title", "جست‌وجوهای پرکاربرد"));
@@ -166,12 +161,6 @@
     box.appendChild(more);
     /* Outside .md-search-result: the theme's arrow keys move through every link in there. */
     result.parentNode.insertBefore(box, result);
-
-    /* Keyboard help under the results (wide screens only, see site.css). */
-    var keys = el("div", "isl-keys");
-    keys.setAttribute("aria-hidden", "true");
-    keys.innerHTML = "<span><kbd>↵</kbd> باز کردن</span><span><kbd>↑</kbd><kbd>↓</kbd> جابه‌جایی</span><span><kbd>Esc</kbd> بستن</span>";
-    output.appendChild(keys);
 
     var list = document.querySelector(".md-search-result__list");
     if (list) new MutationObserver(function () { tidyResults(list); }).observe(list, { childList: true });

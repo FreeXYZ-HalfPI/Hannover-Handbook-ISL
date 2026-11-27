@@ -2,8 +2,7 @@
 /* Copyleft 🄯 2026 ISL and contributors — loaded after site.css */
 /* ===== Search (2026-11): one search box in the header; on wide screens it grows in
    place and the results drop down under it. Phones keep the theme's full-screen search.
-   Extra pieces (shortcut hint, suggestions, title list, key help) come from ui.js. */
-.isl-kbd, .isl-keys { display: none; }
+   Extra pieces (suggestions, title list) come from ui.js. */
 /* Results: a plain list of titles (ui.js) */
 .md-search-result__list { padding: 0.35rem 0.5rem 0.5rem; }
 .md-search-result .md-search-result__item { margin: 0; padding: 0; border: 0; box-shadow: none; }
@@ -38,17 +37,11 @@
 .isl-suggest__more a { color: var(--md-typeset-a-color); }
 
 @media screen and (min-width: 60em) {
-  /* Closed: a calm search button with its keyboard shortcut */
+  /* Closed: a calm search box */
   .md-search__inner { width: 15rem; }
   .md-search__form { position: relative; height: 1.8rem; border-radius: 0.5rem; background: rgba(255, 255, 255, 0.16); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25); }
   .md-search__form:hover { background: rgba(255, 255, 255, 0.24); }
   .md-search__input { font-size: 0.75rem; }
-  .isl-kbd {
-    display: block; position: absolute; left: 0.45rem; top: 50%; transform: translateY(-50%);
-    z-index: 2; padding: 0.05rem 0.4rem; border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 0.3rem;
-    color: rgba(255, 255, 255, 0.85); font: 600 0.55rem/1.5 system-ui, sans-serif; direction: ltr; pointer-events: none;
-  }
-  [dir="ltr"] .isl-kbd { left: auto; right: 0.45rem; }
 
   /* Open: the header box itself grows, and the results drop down right under it */
   [data-md-toggle="search"]:checked ~ .md-header .md-search__inner { width: min(36rem, 52vw); }
@@ -58,7 +51,6 @@
     box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.25);
   }
   [data-md-toggle="search"]:checked ~ .md-header .md-search__input { font-size: 0.8rem; }
-  [data-md-toggle="search"]:checked ~ .md-header .isl-kbd { display: none; }
   [data-md-toggle="search"]:checked ~ .md-header .md-search__input::placeholder { color: var(--md-default-fg-color--lighter); }
   .md-search__output { top: 1.9rem; }
   [data-md-toggle="search"]:checked ~ .md-header .md-search__output {
@@ -68,16 +60,6 @@
   [data-md-toggle="search"]:checked ~ .md-header .md-search__scrollwrap { width: auto; max-height: min(65vh, 36rem); }
 
   .md-search-result__meta { padding-inline: 1rem; background: none; border-bottom: 1px solid var(--md-default-fg-color--lightest); font-size: 0.62rem; }
-
-  .isl-keys {
-    display: flex; gap: 1.2rem; padding: 0.55rem 1rem; border-top: 1px solid var(--md-default-fg-color--lightest);
-    background: var(--md-default-fg-color--lightest); color: var(--md-default-fg-color--light); font-size: 0.6rem;
-  }
-  .isl-keys kbd {
-    display: inline-block; min-width: 1.2rem; margin-inline-end: 0.2rem; padding: 0 0.3rem; text-align: center;
-    border: 1px solid var(--md-default-fg-color--lighter); border-radius: 0.25rem; background: var(--md-default-bg-color);
-    font: 0.6rem/1.5 system-ui, sans-serif;
-  }
 
   /* The header box is always visible here, so no floating button */
   .isl-fab { display: none; }
