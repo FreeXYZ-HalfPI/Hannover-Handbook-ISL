@@ -13,6 +13,30 @@
       .replace(/ك/g, "ک")
       .replace(/[ً-ْ]/g, "");
   }
+  /* Compound words and phrases. The index splits words on spaces and on the
+     zero-width non-joiner, so «سیم‌کارت» is two words, «سیم» and «کارت», and the theme
+     shows every page that has just one of them (e.g. «کارت دانشجویی»). When the reader
+     types more than one word, every word must be on the page: «سیم کارت» becomes
+     «+سیم* +کارت*» on its way to the search worker (ui.js then puts pages with the
+     whole phrase first). One word is searched as before. */
+  function requireAll(query) {
+    var words = query.replace(/\u200c/g, " ").trim().split(/\s+/).filter(function (w) {
+      return /[\w\u0600-\u06FF]/.test(w);
+    });
+    if (words.length < 2 || /["+\-~^:*]/.test(query)) return query;
+    return words.map(function (w) { return "+" + w + "*"; }).join(" ");
+  }
+  if (window.Worker && Worker.prototype.postMessage) {
+    var post = Worker.prototype.postMessage;
+    Worker.prototype.postMessage = function (message) {
+      /* type 2 = a search query from the theme (mkdocs-material 9.6) */
+      if (message && message.type === 2 && typeof message.data === "string") {
+        message = { type: 2, data: requireAll(message.data) };
+      }
+      return post.apply(this, [message].concat(Array.prototype.slice.call(arguments, 1)));
+    };
+  }
+
   /* Capture phase: runs before the theme's own input handler reads the value. */
   document.addEventListener("input", function (event) {
     var field = event.target;

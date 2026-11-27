@@ -67,7 +67,8 @@
   }
 
   function cleanTitle(text, persianOnly) {
-    text = text.replace(/\s+/g, " ").trim().replace(/^(?:[\d۰-۹]+\.|[آ-ی]{1,3}\))\s*/, "");
+    text = text.replace(/\s+/g, " ").trim()
+      .replace(/^(?:[\d۰-۹]+\.|[آ-ی]{1,3}\)|بخش\s*[\d۰-۹]+\s*[—–-])\s*/, "");
     if (!persianOnly) return text;
     var parts = text.replace(/\([^)]*\)/g, "").split(/\s+[—–\/]\s+|\s*:\s+/);
     for (var i = 0; i < parts.length; i++) if (PERSIAN.test(parts[i])) return parts[i].trim();
@@ -98,10 +99,32 @@
     item.appendChild(link);
   }
 
+  /* For a query of several words, pages that contain the words together as one phrase
+     («سیم‌کارت», «سیم کارت» or «سیمکارت») come before pages that only contain them apart. */
+  function squash(text) { return text.replace(/[\s\u200c]+/g, "").toLowerCase(); }
+
+  function phraseFirst(items, query) {
+    var words = query.replace(/\u200c/g, " ").trim().split(/\s+/);
+    if (words.length < 2) return items;
+    var phrase = squash(query), together = [], apart = [];
+    items.forEach(function (item) {
+      if (item.dataset.islTidy) together.push(item);
+      else (squash(item.textContent).indexOf(phrase) >= 0 ? together : apart).push(item);
+    });
+    /* Change the list only when needed: every change runs this observer again. */
+    if (together.length && apart.length) apart.forEach(function (item) { item.remove(); });
+    var keep = together.length ? together : apart, list = items[0].parentNode;
+    keep.forEach(function (item, i) {
+      if (list.children[i] !== item) list.insertBefore(item, list.children[i] || null);
+    });
+    return keep;
+  }
+
   function tidyResults(list) {
     var items = list.querySelectorAll(":scope > .md-search-result__item");
     if (!items.length) return;
     var query = (input().value || "").trim();
+    items = phraseFirst(Array.prototype.slice.call(items), query);
     var top = score(items[0]), floor = top >= 100 ? top * 0.1 : top * 0.5, shown = 0;
     items.forEach(function (item) {
       if (item.dataset.islTidy) { shown++; return; }
