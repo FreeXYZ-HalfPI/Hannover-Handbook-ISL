@@ -111,6 +111,8 @@
        spelling that sounds the same («حاوس» for «هاوس») */
     return pick(5, t, strict, false) || (persian ? pick(0, guessKey(word), strict, true) : null);
   }
+  /* Order: words of the site and the hand-written German words; then the words of the
+     needs (colloquial, English: «فیل» → «فیلم»); German words found on the site last. */
   function pick(col, k, strict, soundOnly) {
     var found = null, colloquial = null;
     for (var i = 0; i < guessList.length; i++) {
@@ -121,8 +123,22 @@
       if (row[4] === "a" && !found) found = row;
       if (row[4] === "c" && !colloquial && k.length >= 3) colloquial = row;
     }
-    return found || colloquial;
+    return colloquial || found;
   }
+
+  /* Common Persian words that are not on the site (search-persian.json, from the hazm word
+     list): «فیل» is Persian, never a German or English word in Persian letters. Loaded when
+     the search is first used. */
+  var persianWords = null;
+  document.addEventListener("input", function once(event) {
+    if (!event.target.classList || !event.target.classList.contains("md-search__input")) return;
+    document.removeEventListener("input", once, true);
+    fetchJSON("search-persian.json").then(function (data) {
+      if (data) persianWords = new Set(data);
+      event.target.dispatchEvent(new KeyboardEvent("keyup", { bubbles: true }));   /* search again with it */
+    });
+  }, true);
+  function isPersianWord(word) { return persianWords ? persianWords.has(plain(word)) : false; }
 
   function onSite(word) { return siteWords && !chosen[fold(word)] ? siteWords.has(plain(word)) : false; }
   /* The reader is still typing: «بیم» is no word on the site, but the start of «بیمه». */
@@ -163,10 +179,10 @@
     if (!words.length) return { query: query, changed: false };
     /* a phrase people say, in Persian or English: «دوست دختر», «health insurance» */
     var phrase = words.length > 1 && knownWord(words.join(" "));
-    if (phrase && phrase[4] !== "w") return { query: phrase[2], changed: true, shown: phrase[1] };
+    if (phrase && phrase[4] !== "w") return { query: phrase[2], changed: true, shown: phrase[4] === "c" ? phrase[2] : phrase[1] };
     if (words.length > 1) {
       var allOnSite = words.every(onSite);
-      var whole = !onSite(words.join("")) && lookup(words.join(""), !allOnSite);
+      var whole = !onSite(words.join("")) && !words.every(isPersianWord) && lookup(words.join(""), !allOnSite);
       if (whole) return { query: whole, changed: true };
     }
     var changed = false, shown = null;
@@ -184,7 +200,7 @@
       }
       if (known && known[4] !== "w") {
         changed = true;
-        if (known[4] === "c") shown = known[1];
+        if (known[4] === "c") shown = known[2];   /* «پارتنر» → results for «همسر» */
         return known[2];
       }
       if (known || (onSite(w) && (f.length > 3 || !last))) return w;
@@ -195,7 +211,7 @@
         shown = guess[1];
         return guess[2];
       }
-      if (onSite(w) || (last && startOfSiteWord(w))) return w;
+      if (onSite(w) || isPersianWord(w) || (last && startOfSiteWord(w))) return w;
       var g = lookup(w, true);
       if (g) { changed = true; return g; }
       return w;

@@ -9,10 +9,12 @@
   role, phone and link, for the results list (assets/ui.js);
 - writes assets/search-words.json (every Persian word on the site) and
   assets/search-german-auto.json (every German word on the site, how often it appears,
-  and its spelling in Persian letters), and assets/search-guess.json (the words a reader
-  may be on the way to while typing), for assets/search-fa.js."""
+  and its spelling in Persian letters), assets/search-guess.json (the words a reader
+  may be on the way to while typing) and assets/search-persian.json (common Persian words
+  that are not on the site, from tools/persian-words.tsv), for assets/search-fa.js."""
 import html as htmllib
 import json
+import math
 import re
 from pathlib import Path
 
@@ -134,6 +136,19 @@ def plain(word):
     return re.sub(r"[\u064b-\u0652\u0670\u0640\u200c\s]", "", word).translate(PLAIN)
 
 
+def load_lexicon():
+    """tools/persian-words.tsv (from hazm): real Persian words and how often they are used."""
+    words = {}
+    for line in (ROOT / "tools" / "persian-words.tsv").read_text(encoding="utf-8").splitlines():
+        if line and not line.startswith("#"):
+            word, times = line.split("\t")
+            words[plain(word)] = max(words.get(plain(word), 0), int(times))
+    return words
+
+
+LEXICON = load_lexicon()
+
+
 def site_words(docs):
     """Every Persian word on the site, as written (plain): a word the reader types that is
     on the site is searched as it is, never read as a German word in Persian letters."""
@@ -238,6 +253,13 @@ STOP = set("""و در از به با برای که این آن یا تا را ه
 PERSIAN = re.compile(r"[\u0600-\u06FF]")
 
 
+def real_german(rows, docs):
+    """German words found on the site whose Persian spelling is no Persian word, neither one
+    of the site nor a common one (LEXICON)."""
+    site = set(site_words(docs))
+    return [row for row in rows if plain(row[2]) not in site and plain(row[2]) not in LEXICON]
+
+
 def guesses(docs, config):
     pages = {}
     for doc in docs:
@@ -261,25 +283,34 @@ def guesses(docs, config):
     def typed(word):
         return plain(word) if PERSIAN.search(word) else word.lower()
 
+    # How likely a reader means a word: how common it is in Persian (LEXICON) and how much the
+    # site has on it. «فیل» is on the way to «فیلم» (40 times more common), not the other way.
+
+    def common(word):
+        parts = [LEXICON.get(plain(w), 0) for w in word.split()] if PERSIAN.search(word) else [0]
+        return math.log10(min(parts) + 10)
+
+    def site(n):
+        return 1.5 * math.log10(n + 1)
+
     out = []
     docs_dir = Path(config["docs_dir"]) / "assets"
     intents = json.loads((docs_dir / "search-intents.json").read_text(encoding="utf-8"))["intents"]
     for need in intents:
         search = need.get("search")
-        # how often the site uses a word is its weight; words of a need count double
         for word in need["words"]:
             used = pages_with(word, whole=" " not in word)
             if used and not PERSIAN.search(word):
                 continue                      # German on the site: the search finds it as it is
             if used or not search:
-                out.append([key(word), word, word, 2 * used, "w", typed(word)])
+                out.append([key(word), word, word, round(common(word) + site(used) + 0.5, 2), "w", typed(word)])
             else:
-                out.append([key(word), search, search, pages_with(search), "c", typed(word)])
+                out.append([key(word), word, search, round(common(word) + site(pages_with(search)), 2), "c", typed(word)])
     german = json.loads((docs_dir / "search-german.json").read_text(encoding="utf-8"))
     for word, spellings in german.items():
         if word.startswith("_"):
             continue
-        weight = 2 * pages_with(word)         # «Krank» counts Krankenkasse, Krankschreibung...
+        weight = round(5 + site(pages_with(word)), 2)   # «Krank» counts Krankenkasse, Krankschreibung...
         for spelling in spellings:
             out.append([key(spelling), spelling, word, weight, "g", typed(spelling)])
     seen = set()
@@ -289,13 +320,11 @@ def guesses(docs, config):
         for word in re.split(r"[^\u0600-\u06FF]+", htmllib.unescape(page["title"])):
             if len(word) >= 3 and word not in STOP and word not in seen:
                 seen.add(word)
-                out.append([key(word), word, word, pages_with(word, whole=True), "w", typed(word)])
-    # German words found on the site (kind a) never stand for a Persian word of the site:
-    # «Iran» is written «ایران», which is the Persian word itself.
-    persian_words = set().union(*tokens)
-    for word, times, spelling in german_words(docs):
-        if fold(spelling) not in persian_words:
-            out.append([key(spelling), word, word, pages_with(word), "a", typed(spelling)])
+                out.append([key(word), word, word, round(common(word) + site(pages_with(word, whole=True)), 2), "w", typed(word)])
+    # German words found on the site (kind a) never stand for a real Persian word: «Iran» is
+    # written «ایران», «file» would be «فیله».
+    for word, times, spelling in real_german(german_words(docs), docs):
+        out.append([key(spelling), word, word, round(3 + math.log10(pages_with(word) + 1), 2), "a", typed(spelling)])
     out.sort(key=lambda row: -row[3])
     keep, keys = [], set()
     for row in out:
@@ -325,6 +354,13 @@ def on_post_build(config, **kwargs):
     (Path(config["site_dir"]) / "assets" / "search-guess.json").write_text(
         json.dumps(guesses(data["docs"], config), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     (Path(config["site_dir"]) / "assets" / "search-german-auto.json").write_text(
-        json.dumps(german_words(data["docs"]), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        json.dumps(real_german(german_words(data["docs"]), data["docs"]), ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8")
+    # Common Persian words that are not on the site: typed, they stay Persian (never read as
+    # German) and are matched by meaning (assets/search-fa.js).
+    on_site = set(site_words(data["docs"]))
+    (Path(config["site_dir"]) / "assets" / "search-persian.json").write_text(
+        json.dumps(sorted(w for w in LEXICON if w not in on_site), ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8")
     # ASCII-escaped like the search plugin writes it: servers that omit the charset still decode it.
     index.write_text(json.dumps(data, ensure_ascii=True, separators=(",", ":")), encoding="utf-8")
