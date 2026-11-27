@@ -124,15 +124,25 @@ def fold(word):
     return re.sub(r"[\u064b-\u0652\u0670\u200c\s]", "", word).translate(FOLD)
 
 
+PLAIN = str.maketrans({"آ": "ا", "أ": "ا", "إ": "ا", "ٱ": "ا", "ؤ": "و", "ئ": "ی", "ي": "ی", "ك": "ک", "ة": "ه"})
+
+
+def plain(word):
+    """Same as plain() in assets/search-fa.js: the word as written, without diacritics,
+    spaces or the zero-width non-joiner, and with «آ» as «ا». Unlike fold(), letters that
+    only sound alike stay apart: «مهل» (the start of «مهلت») is not «محل»."""
+    return re.sub(r"[\u064b-\u0652\u0670\u0640\u200c\s]", "", word).translate(PLAIN)
+
+
 def site_words(docs):
-    """Every Persian word on the site (folded): a word the reader types that is on the
-    site is searched as it is, never read as a German word in Persian letters."""
+    """Every Persian word on the site, as written (plain): a word the reader types that is
+    on the site is searched as it is, never read as a German word in Persian letters."""
     words = set()
     for doc in docs:
         for token in re.split(r"[\s\-\u200c]+", TAGS.sub(" ", doc["title"] + " " + doc["text"])):
             token = re.sub(r"[^\u0600-\u06FF]", "", token)
             if len(token) >= 2:
-                words.add(fold(token))
+                words.add(plain(token))
     return sorted(words)
 
 
@@ -219,7 +229,8 @@ def german_words(docs):
 # reader may be on the way to, with what to search for it and how much the site has on it.
 # Sources: the needs in assets/search-intents.json (with their English and colloquial
 # words), the hand-written German list, the words of page titles and the German words of
-# the site. Written to assets/search-guess.json as [key, shown, search, weight, kind]:
+# the site. Written to assets/search-guess.json as [key, shown, search, weight, kind, as typed]
+# (key: letters that sound alike folded together; as typed: the letters themselves):
 # kind w = search the word itself, g = a German word from the hand-written list, a = a German
 # word found on the site, c = the need's own search.
 STOP = set("""و در از به با برای که این آن یا تا را های ها هم بر پس قبل بعد اول دوم سوم کردن شدن کنید کند شود
@@ -247,27 +258,30 @@ def guesses(docs, config):
     def key(word):
         return fold(word) if PERSIAN.search(word) else word.lower()
 
+    def typed(word):
+        return plain(word) if PERSIAN.search(word) else word.lower()
+
     out = []
     docs_dir = Path(config["docs_dir"]) / "assets"
     intents = json.loads((docs_dir / "search-intents.json").read_text(encoding="utf-8"))["intents"]
     for need in intents:
         search = need.get("search")
-        weight = 1000 + pages_with(search) if search else 1000
+        # how often the site uses a word is its weight; words of a need count double
         for word in need["words"]:
-            on_site = pages_with(word, whole=" " not in word) > 0
-            if on_site and not PERSIAN.search(word):
+            used = pages_with(word, whole=" " not in word)
+            if used and not PERSIAN.search(word):
                 continue                      # German on the site: the search finds it as it is
-            if on_site or not search:
-                out.append([key(word), word, word, weight, "w"])
+            if used or not search:
+                out.append([key(word), word, word, 2 * used, "w", typed(word)])
             else:
-                out.append([key(word), search, search, weight, "c"])
+                out.append([key(word), search, search, pages_with(search), "c", typed(word)])
     german = json.loads((docs_dir / "search-german.json").read_text(encoding="utf-8"))
     for word, spellings in german.items():
         if word.startswith("_"):
             continue
-        weight = 1000 + pages_with(word)      # «Krank» counts Krankenkasse, Krankschreibung...
+        weight = 2 * pages_with(word)         # «Krank» counts Krankenkasse, Krankschreibung...
         for spelling in spellings:
-            out.append([key(spelling), spelling, word, weight, "g"])
+            out.append([key(spelling), spelling, word, weight, "g", typed(spelling)])
     seen = set()
     for page in docs:
         if "#" in page["location"]:
@@ -275,13 +289,13 @@ def guesses(docs, config):
         for word in re.split(r"[^\u0600-\u06FF]+", htmllib.unescape(page["title"])):
             if len(word) >= 3 and word not in STOP and word not in seen:
                 seen.add(word)
-                out.append([key(word), word, word, pages_with(word, whole=True), "w"])
+                out.append([key(word), word, word, pages_with(word, whole=True), "w", typed(word)])
     # German words found on the site (kind a) never stand for a Persian word of the site:
     # «Iran» is written «ایران», which is the Persian word itself.
     persian_words = set().union(*tokens)
     for word, times, spelling in german_words(docs):
         if fold(spelling) not in persian_words:
-            out.append([key(spelling), word, word, pages_with(word), "a"])
+            out.append([key(spelling), word, word, pages_with(word), "a", typed(spelling)])
     out.sort(key=lambda row: -row[3])
     keep, keys = [], set()
     for row in out:

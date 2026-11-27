@@ -79,19 +79,44 @@
   fetchJSON("search-guess.json").then(function (data) {
     if (!data) return;
     guessList = data;
-    data.forEach(function (row) { if (!guessByKey[row[0]]) guessByKey[row[0]] = row; });
+    data.forEach(function (row) {
+      if (!guessByKey[row[0]]) guessByKey[row[0]] = row;
+      if (!guessByTyped[row[5]]) guessByTyped[row[5]] = row;
+    });
   });
   function guessKey(word) { return /[\u0600-\u06FF]/.test(word) ? fold(word) : word.toLowerCase(); }
+  /* The letters themselves (as in tools/search_hooks.py plain()): a Persian word is matched by
+     its own letters, «مهل» is the start of «مهلت», never «محل». Folding sound-alike letters is
+     only for German and colloquial spellings. */
+  var PLAIN = { "آ": "ا", "أ": "ا", "إ": "ا", "ٱ": "ا", "ؤ": "و", "ئ": "ی", "ي": "ی", "ك": "ک", "ة": "ه" };
+  function plain(word) {
+    return word.replace(/[\u064b-\u0652\u0670\u0640\u200c\s]/g, "").replace(/./g, function (c) { return PLAIN[c] || c; });
+  }
+  function typedKey(word) { return /[\u0600-\u06FF]/.test(word) ? plain(word) : word.toLowerCase(); }
+  var guessByTyped = {};
+  /* a word known by its own letters (any kind), else a German or colloquial spelling by its sound */
+  function knownWord(word) {
+    var row = guessByTyped[typedKey(word)];
+    if (row) return row;
+    row = guessByKey[guessKey(word)];
+    return row && row[4] !== "w" ? row : null;
+  }
   /* «کر» → کرانک, «بی» → بیمه, «پارتن» → پارتنر: words of the site and the hand-written
      German words first; then German words found on the site; a colloquial word only from
      the third letter on, when nothing else fits. */
   function guessFor(word, strict) {
-    var k = guessKey(word), persian = /[\u0600-\u06FF]/.test(k), found = null, colloquial = null;
-    if (k.length < (persian ? 2 : 3)) return null;
+    var t = typedKey(word), persian = /[\u0600-\u06FF]/.test(t);
+    if (t.length < (persian ? 2 : 3)) return null;
+    /* first by the letters typed; only if nothing starts with them, a German or colloquial
+       spelling that sounds the same («حاوس» for «هاوس») */
+    return pick(5, t, strict, false) || (persian ? pick(0, guessKey(word), strict, true) : null);
+  }
+  function pick(col, k, strict, soundOnly) {
+    var found = null, colloquial = null;
     for (var i = 0; i < guessList.length; i++) {
       var row = guessList[i];
-      if (row[0].indexOf(k) !== 0 || row[0] === k) continue;
-      if (row[4] === "w" || row[4] === "g") return row;
+      if (row[col].indexOf(k) !== 0 || row[col] === k) continue;
+      if (row[4] === "g" || (row[4] === "w" && !soundOnly)) return row;
       if (strict) continue;   /* a short word that is on the site: only a longer Persian word */
       if (row[4] === "a" && !found) found = row;
       if (row[4] === "c" && !colloquial && k.length >= 3) colloquial = row;
@@ -99,10 +124,10 @@
     return found || colloquial;
   }
 
-  function onSite(word) { return siteWords && !chosen[fold(word)] ? siteWords.has(fold(word)) : false; }
+  function onSite(word) { return siteWords && !chosen[fold(word)] ? siteWords.has(plain(word)) : false; }
   /* The reader is still typing: «بیم» is no word on the site, but the start of «بیمه». */
   function startOfSiteWord(word) {
-    var f = fold(word);
+    var f = plain(word);
     if (f.length < 2 || !/^[؀-ۿ]+$/.test(f) || onSite(word)) return false;
     var lo = 0, hi = siteSorted.length;
     while (lo < hi) { var mid = (lo + hi) >> 1; if (siteSorted[mid] < f) lo = mid + 1; else hi = mid; }
@@ -137,7 +162,7 @@
     var words = query.trim().split(/\s+/).filter(Boolean);
     if (!words.length) return { query: query, changed: false };
     /* a phrase people say, in Persian or English: «دوست دختر», «health insurance» */
-    var phrase = words.length > 1 && guessByKey[guessKey(words.join(" "))];
+    var phrase = words.length > 1 && knownWord(words.join(" "));
     if (phrase && phrase[4] !== "w") return { query: phrase[2], changed: true, shown: phrase[1] };
     if (words.length > 1) {
       var allOnSite = words.every(onSite);
@@ -149,7 +174,14 @@
       var f = fold(w), last = i === words.length - 1;
       if (chosen[f]) { changed = true; return chosen[f]; }
       /* a known word: German, or an English or colloquial one («پارتنر» → همسر) */
-      var known = guessByKey[guessKey(w)];
+      var known = knownWord(w);
+      /* «بان» is spelled like Bahn, but the reader is on the way to «بانک» */
+      var longer = known && known[4] === "a" && last && guessFor(w, true);
+      if (longer) {
+        changed = changed || longer[2] !== w;
+        shown = longer[1];
+        return longer[2];
+      }
       if (known && known[4] !== "w") {
         changed = true;
         if (known[4] === "c") shown = known[1];
