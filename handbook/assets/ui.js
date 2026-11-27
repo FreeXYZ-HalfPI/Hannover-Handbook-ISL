@@ -94,7 +94,6 @@
     var key = new URL(page.getAttribute("href"), location.href).pathname.slice(siteRoot().pathname.length);
     if (summaries[key]) text.appendChild(el("span", "isl-hit__summary", summaries[key]));
     link.appendChild(text);
-    link.appendChild(el("span", "isl-hit__go", "←"));
     item.textContent = "";
     item.appendChild(link);
   }
