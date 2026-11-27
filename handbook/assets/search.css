@@ -99,20 +99,21 @@
   /* Open: the header box itself grows, and the results drop down right under it */
   [data-md-toggle="search"]:checked ~ .md-header .md-search__inner { width: min(36rem, 52vw); }
   [data-md-toggle="search"]:checked ~ .md-header .md-search__overlay { background-color: rgba(10, 20, 35, 0.35); }
+  /* Box and results read as one piece: one surface, one shadow that falls only below it */
   [data-md-toggle="search"]:checked ~ .md-header .md-search__form {
-    border-radius: 0.5rem 0.5rem 0 0; background: var(--md-default-bg-color);
-    box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem 0.5rem 0 0; background: var(--md-default-bg-color); box-shadow: none;
   }
   [data-md-toggle="search"]:checked ~ .md-header .md-search__input { font-size: 0.8rem; }
   [data-md-toggle="search"]:checked ~ .md-header .md-search__input::placeholder { color: var(--md-default-fg-color--lighter); }
   .md-search__output { top: 1.9rem; }
   [data-md-toggle="search"]:checked ~ .md-header .md-search__output {
-    border-radius: 0 0 0.7rem 0.7rem; background: var(--md-default-bg-color);
-    box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, 0.3), 0 0 0 1px var(--md-default-fg-color--lightest);
+    top: 1.9rem; margin-top: -0.1rem; border-radius: 0 0 0.7rem 0.7rem; background: var(--md-default-bg-color);
+    box-shadow: 0 1.1rem 1.8rem -0.6rem rgba(0, 0, 0, 0.35);
   }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__scrollwrap { box-shadow: none; }
   [data-md-toggle="search"]:checked ~ .md-header .md-search__scrollwrap { width: auto; max-height: min(65vh, 36rem); }
 
-  .md-search-result__meta { padding-inline: 1rem; background: none; border-bottom: 1px solid var(--md-default-fg-color--lightest); font-size: 0.62rem; }
+  .md-search-result__meta { padding-inline: 1rem; background: none; box-shadow: none; border-bottom: 1px solid color-mix(in srgb, var(--md-default-fg-color) 7%, transparent); font-size: 0.62rem; }
 
   /* The header box is always visible here, so no floating button */
   .isl-fab { display: none; }
