@@ -39,11 +39,22 @@
   /* Results are a short, plain list of titles to click:
      - at most MAX_RESULTS; a page that matches far less well than the best one is
        dropped (but at least MIN_RESULTS stay when there are any);
-     - each result is just a title (no page number, excerpt or «more on this page»);
-       it links to the part of the page that matches best;
+     - each result is a title and a one-line description of the page (written by hand
+       in search-summaries.json, not the page's first sentence); it links to the part
+       of the page that matches best;
      - a Persian search shows Persian titles only: «ثبت محل سکونت — Anmeldung /
        Bürgeramt» becomes «ثبت محل سکونت». */
   var MAX_RESULTS = 5, MIN_RESULTS = 3;
+  var summaries = {};  /* page → one-line description, written by hand in search-summaries.json */
+
+  function siteRoot() { return new URL(window.__md_scope || ".", location.href); }
+
+  function loadSummaries() {
+    fetch(new URL("assets/search-summaries.json", siteRoot()).href)
+      .then(function (r) { return r.ok ? r.json() : {}; })
+      .then(function (data) { summaries = data; })
+      .catch(function () {});
+  }
   var PERSIAN = /[\u0600-\u06FF]/;
 
   function score(item) {
@@ -63,15 +74,6 @@
     return text;
   }
 
-  function highlight(node, text, words) {
-    var re = words.length && new RegExp("(" + words.map(function (w) {
-      return w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    }).join("|") + ")", "gi");
-    (re ? text.split(re) : [text]).forEach(function (piece, i) {
-      node.appendChild(i % 2 ? el("mark", null, piece) : document.createTextNode(piece));
-    });
-  }
-
   function tidyItem(item, query) {
     if (item.dataset.islTidy) return;
     item.dataset.islTidy = "1";
@@ -87,9 +89,11 @@
     var link = el("a", "md-search-result__link isl-hit");
     link.href = best.getAttribute("href");
     link.tabIndex = -1;
-    var title = el("span", "isl-hit__title");
-    highlight(title, cleanTitle(h1.textContent, PERSIAN.test(query)), query.split(/\s+/).filter(Boolean));
-    link.appendChild(title);
+    var text = el("span", "isl-hit__text");
+    text.appendChild(el("span", "isl-hit__title", cleanTitle(h1.textContent, PERSIAN.test(query))));
+    var key = new URL(page.getAttribute("href"), location.href).pathname.slice(siteRoot().pathname.length);
+    if (summaries[key]) text.appendChild(el("span", "isl-hit__summary", summaries[key]));
+    link.appendChild(text);
     link.appendChild(el("span", "isl-hit__go", "←"));
     item.textContent = "";
     item.appendChild(link);
@@ -135,7 +139,7 @@
     box.appendChild(chips);
     var more = el("p", "isl-suggest__more");
     var a = el("a", null, "جست‌وجوی هم‌زمان در کتابچه فارسی و انگلیسی ←");
-    a.href = new URL("searcher/", new URL(window.__md_scope || ".", location.href)).href;
+    a.href = new URL("searcher/", siteRoot()).href;
     more.appendChild(a);
     box.appendChild(more);
     /* Outside .md-search-result: the theme's arrow keys move through every link in there. */
@@ -157,6 +161,7 @@
       b.addEventListener("click", openSearch);
     });
     buildPanel();
+    loadSummaries();
     document.addEventListener("keydown", function (e) {
       if ((e.ctrlKey || e.metaKey) && !e.altKey && (e.code === "KeyK" || e.key === "k" || e.key === "K")) {
         e.preventDefault();

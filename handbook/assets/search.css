@@ -11,8 +11,9 @@
   display: flex; align-items: center; gap: 0.8rem; padding: 0.7rem 0.9rem; border-radius: 0.6rem;
   color: var(--md-default-fg-color); text-decoration: none; box-shadow: none;
 }
-.isl-hit__title { flex: 1; font-size: 0.8rem; font-weight: 600; line-height: 1.6; }
-.isl-hit__title mark { background: none; color: var(--md-accent-fg-color); }
+.isl-hit__text { flex: 1; display: flex; flex-direction: column; gap: 0.1rem; }
+.isl-hit__title { font-size: 0.8rem; font-weight: 600; line-height: 1.6; }
+.isl-hit__summary { color: var(--md-default-fg-color--light); font-size: 0.68rem; line-height: 1.7; }
 .isl-hit__go { color: var(--md-default-fg-color--lighter); font-size: 0.8rem; transition: transform 0.15s, color 0.15s; }
 .md-search-result .isl-hit:is(:hover, :focus) { background: color-mix(in srgb, var(--md-accent-fg-color) 9%, transparent); outline: 0; }
 .md-search-result .isl-hit:is(:hover, :focus) .isl-hit__go { color: var(--md-accent-fg-color); transform: translateX(-0.2rem); }
