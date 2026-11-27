@@ -36,14 +36,18 @@
     return node;
   }
 
-  /* Only the most relevant results, and each one short:
-     - at most MAX_RESULTS pages; a page that matches far less well than the best one
-       is dropped (but at least MIN_RESULTS stay when there are any);
-     - per page: its title (without the page number) and the one part of the page that
-       matches best, with a short excerpt — no folded «more on this page» list. */
+  /* Results are a short, plain list of titles to click:
+     - at most MAX_RESULTS; a page that matches far less well than the best one is
+       dropped (but at least MIN_RESULTS stay when there are any);
+     - each result is just a title (no page number, excerpt or «more on this page»);
+       it links to the part of the page that matches best;
+     - a Persian search shows Persian titles only: «ثبت محل سکونت — Anmeldung /
+       Bürgeramt» becomes «ثبت محل سکونت». */
   var MAX_RESULTS = 5, MIN_RESULTS = 3;
+  var PERSIAN = /[\u0600-\u06FF]/;
 
   function score(item) {
+    if (item.dataset.islScore) return parseFloat(item.dataset.islScore);
     var best = 0;
     item.querySelectorAll(".md-search-result__article").forEach(function (a) {
       best = Math.max(best, parseFloat(a.getAttribute("data-md-score")) || 0);
@@ -51,35 +55,55 @@
     return best;
   }
 
-  function stripNumber(heading) {
-    if (!heading) return;
-    var node = heading.firstChild;
-    while (node && node.nodeType !== 3) node = node.firstChild;
-    if (node) node.nodeValue = node.nodeValue.replace(/^\s*(?:[\d۰-۹]+\.|[آ-ی]{1,3}\))\s*/, "");
+  function cleanTitle(text, persianOnly) {
+    text = text.replace(/\s+/g, " ").trim().replace(/^(?:[\d۰-۹]+\.|[آ-ی]{1,3}\))\s*/, "");
+    if (!persianOnly) return text;
+    var parts = text.replace(/\([^)]*\)/g, "").split(/\s+[—–\/]\s+|\s*:\s+/);
+    for (var i = 0; i < parts.length; i++) if (PERSIAN.test(parts[i])) return parts[i].trim();
+    return text;
   }
 
-  function tidyItem(item) {
+  function highlight(node, text, words) {
+    var re = words.length && new RegExp("(" + words.map(function (w) {
+      return w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    }).join("|") + ")", "gi");
+    (re ? text.split(re) : [text]).forEach(function (piece, i) {
+      node.appendChild(i % 2 ? el("mark", null, piece) : document.createTextNode(piece));
+    });
+  }
+
+  function tidyItem(item, query) {
     if (item.dataset.islTidy) return;
     item.dataset.islTidy = "1";
-    var links = item.querySelectorAll(":scope > .md-search-result__link");
-    var article = links[0] && links[0].querySelector(".md-search-result__article");
-    if (!article) return;
-    var more = item.querySelector(".md-search-result__more");
-    var hasText = article.querySelector(":scope > p:not(.md-search-result__terms), :scope > ul, :scope > ol, :scope > table");
-    var part = links[1] || (!hasText && more && more.querySelector(".md-search-result__link"));
-    Array.prototype.slice.call(links, 1).forEach(function (a) { if (a !== part) a.remove(); });
-    if (part) item.insertBefore(part, more || null);
-    if (more) more.remove();
-    item.querySelectorAll("h1, h2").forEach(stripNumber);
+    item.dataset.islScore = String(score(item));
+    var page = item.querySelector(".md-search-result__link");
+    var h1 = page && page.querySelector("h1");
+    if (!h1) return;
+    var pageHit = parseFloat(page.querySelector("article").getAttribute("data-md-score")) || 0, best = page, bestHit = pageHit;
+    item.querySelectorAll(".md-search-result__link").forEach(function (a) {
+      var hit = parseFloat(a.querySelector("article").getAttribute("data-md-score")) || 0;
+      if (hit > bestHit) { best = a; bestHit = hit; }
+    });
+    var link = el("a", "md-search-result__link isl-hit");
+    link.href = best.getAttribute("href");
+    link.tabIndex = -1;
+    var title = el("span", "isl-hit__title");
+    highlight(title, cleanTitle(h1.textContent, PERSIAN.test(query)), query.split(/\s+/).filter(Boolean));
+    link.appendChild(title);
+    link.appendChild(el("span", "isl-hit__go", "←"));
+    item.textContent = "";
+    item.appendChild(link);
   }
 
   function tidyResults(list) {
     var items = list.querySelectorAll(":scope > .md-search-result__item");
     if (!items.length) return;
+    var query = (input().value || "").trim();
     var top = score(items[0]), floor = top >= 100 ? top * 0.1 : top * 0.5, shown = 0;
     items.forEach(function (item) {
+      if (item.dataset.islTidy) { shown++; return; }
       if (shown >= MAX_RESULTS || (shown >= MIN_RESULTS && score(item) < floor)) { item.remove(); return; }
-      tidyItem(item);
+      tidyItem(item, query);
       shown++;
     });
     var meta = document.querySelector(".md-search-result__meta");

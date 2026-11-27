@@ -1,19 +1,22 @@
 /* SPDX-License-Identifier: GPL-3.0-or-later */
 /* Copyleft 🄯 2026 ISL and contributors — loaded after site.css */
-/* ===== Search (2026-11): one search box in the header that opens a panel in the
-   middle of the page on wide screens. Phones keep the theme's full-screen search.
-   Extra pieces (shortcut hint, suggestions, key help) come from ui.js. */
+/* ===== Search (2026-11): one search box in the header; on wide screens it grows in
+   place and the results drop down under it. Phones keep the theme's full-screen search.
+   Extra pieces (shortcut hint, suggestions, title list, key help) come from ui.js. */
 .isl-kbd, .isl-keys { display: none; }
-/* Results: title, then a short, faded excerpt (the full text is on the page) */
-.md-search-result__icon, .md-search-result__terms { display: none; }
-.md-search-result .md-search-result__article > :not(h1, h2, .md-search-result__icon, .md-search-result__terms) {
-  margin: 0; color: var(--md-default-fg-color--light); font-size: 0.68rem; line-height: 1.75;
-  max-height: 3.6rem; overflow: hidden;
-  -webkit-mask-image: linear-gradient(to bottom, #000 60%, transparent);
-  mask-image: linear-gradient(to bottom, #000 60%, transparent);
+/* Results: a plain list of titles (ui.js) */
+.md-search-result__list { padding: 0.35rem 0.5rem 0.5rem; }
+.md-search-result .md-search-result__item { margin: 0; padding: 0; border: 0; box-shadow: none; }
+.md-search-result .isl-hit {
+  display: flex; align-items: center; gap: 0.8rem; padding: 0.7rem 0.9rem; border-radius: 0.6rem;
+  color: var(--md-default-fg-color); text-decoration: none; box-shadow: none;
 }
-.md-search-result .md-search-result__article > :not(h1, h2, .md-search-result__icon, .md-search-result__terms) ~ :not(h1, h2, .md-search-result__icon, .md-search-result__terms) { display: none; }
-.md-search-result .md-search-result__article li { margin-block: 0; }
+.isl-hit__title { flex: 1; font-size: 0.8rem; font-weight: 600; line-height: 1.6; }
+.isl-hit__title mark { background: none; color: var(--md-accent-fg-color); }
+.isl-hit__go { color: var(--md-default-fg-color--lighter); font-size: 0.8rem; transition: transform 0.15s, color 0.15s; }
+.md-search-result .isl-hit:is(:hover, :focus) { background: color-mix(in srgb, var(--md-accent-fg-color) 9%, transparent); outline: 0; }
+.md-search-result .isl-hit:is(:hover, :focus) .isl-hit__go { color: var(--md-accent-fg-color); transform: translateX(-0.2rem); }
+[dir="ltr"] .md-search-result .isl-hit:is(:hover, :focus) .isl-hit__go { transform: translateX(0.2rem); }
 .isl-suggest { display: none; padding: 0.9rem 1rem 1rem; }
 .md-search__inner:has(.md-search__input:placeholder-shown) .isl-suggest { display: block; }
 .md-search__inner:has(.md-search__input:placeholder-shown) .md-search-result__meta { display: none; }
@@ -62,22 +65,6 @@
   [data-md-toggle="search"]:checked ~ .md-header .md-search__scrollwrap { width: auto; max-height: min(65vh, 36rem); }
 
   .md-search-result__meta { padding-inline: 1rem; background: none; border-bottom: 1px solid var(--md-default-fg-color--lightest); font-size: 0.62rem; }
-  .md-search-result__item { margin: 0 0.5rem; padding: 0.35rem 0; border: 0; border-radius: 0; }
-  .md-search-result__item + .md-search-result__item { border-top: 1px solid var(--md-default-fg-color--lightest); }
-  .md-search-result__item:first-child { padding-top: 0.5rem; }
-  .md-search-result__link { border-radius: 0.6rem; }
-  .md-search-result__link:is(:focus, :hover) { background: color-mix(in srgb, var(--md-accent-fg-color) 8%, transparent); }
-  .md-search-result__article { padding: 0.5rem 1rem 0.6rem; }
-  .md-search-result__article h1 { margin: 0.2rem 0 0.35rem; font-size: 0.82rem; font-weight: 700; line-height: 1.6; }
-  .md-search-result__article h2 { margin: 0 0 0.25rem; font-size: 0.72rem; font-weight: 700; line-height: 1.6; color: var(--md-default-fg-color--light); }
-  .md-search-result__more > summary > div { padding: 0.3rem 1rem; font-size: 0.64rem; }
-  .md-search-result__more > summary > div::before { content: "▸ "; }
-  .md-search-result__more[open] > summary > div::before { content: "▾ "; }
-  .md-search-result__more .md-search-result__article { padding-inline-start: 1.8rem; }
-  .md-search-result__item > .md-search-result__link + .md-search-result__link .md-search-result__article { padding-top: 0.1rem; }
-  .md-search-result__item > .md-search-result__link:has(h1) .md-search-result__article { padding-bottom: 0.2rem; }
-  .md-search-result__link, .md-search-result__more > summary { box-shadow: none; }
-  .md-search-result__article h2 { border: 0; padding: 0; }
 
   .isl-keys {
     display: flex; gap: 1.2rem; padding: 0.55rem 1rem; border-top: 1px solid var(--md-default-fg-color--lightest);
