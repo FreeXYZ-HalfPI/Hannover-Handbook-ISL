@@ -4,7 +4,8 @@
    (2) a floating «جست‌وجو» button on phones and tablets,
    (3) on wide screens the search opens as a panel in the middle of the page (see
        site.css): Ctrl+K / ⌘K opens it, suggestions show before anything is typed,
-       and every result says which part of the handbook it comes from. */
+       and every result is one short row: part of the handbook, page title and a
+       few links to the matching parts of the page. */
 (function () {
   var SUGGESTIONS = ["بیمه درمانی", "Anmeldung", "حساب بانکی", "سیم‌کارت", "اجازه اقامت",
                      "خوابگاه", "کار دانشجویی", "Rundfunkbeitrag"];
@@ -49,18 +50,40 @@
     return { root: root, names: names };
   }
 
-  function labelResults(list, sections) {
-    list.querySelectorAll(".md-search-result__item").forEach(function (item) {
-      if (item.querySelector(".isl-crumb")) return;
-      var link = item.querySelector(".md-search-result__link");
-      var article = item.querySelector(".md-search-result__article");
-      if (!link || !article) return;
-      var path = new URL(link.getAttribute("href"), location.href).pathname.slice(sections.root.pathname.length);
-      var name = sections.names[path.split("/")[0]];
-      if (!name) return;
-      var crumb = el("span", "isl-crumb", name);
-      article.insertBefore(crumb, article.querySelector("h1") || article.firstChild);
+  /* A calm result: section label, page title and at most three chips for the parts of
+     the page that match. The theme's long text excerpts are hidden (site.css), and the
+     folded «N more on this page» list becomes the chips. */
+  function tidyResult(item, sections) {
+    if (item.dataset.islTidy) return;
+    item.dataset.islTidy = "1";
+    var link = item.querySelector(".md-search-result__link");
+    var article = link && link.querySelector(".md-search-result__article");
+    if (!article) return;
+    var path = new URL(link.getAttribute("href"), location.href).pathname.slice(sections.root.pathname.length);
+    var name = sections.names[path.split("/")[0]];
+    if (name) article.insertBefore(el("span", "isl-crumb", name), article.querySelector("h1, h2") || article.firstChild);
+
+    var parts = [];
+    item.querySelectorAll(".md-search-result__link").forEach(function (a, i) {
+      var h = a.querySelector("h2");
+      if (i > 0 && h) parts.push({ href: a.getAttribute("href"), text: h.textContent.replace(/^\s*[\d۰-۹]+[.)]\s*/, "").trim() });
     });
+    /* Remove the theme's extra links rather than hide them: its arrow keys would stop on hidden ones. */
+    item.querySelectorAll(".md-search-result__more").forEach(function (d) { d.remove(); });
+    Array.prototype.slice.call(item.querySelectorAll(":scope > .md-search-result__link"), 1).forEach(function (a) { a.remove(); });
+    if (!parts.length) return;
+    var row = el("div", "isl-parts");
+    parts.slice(0, 3).forEach(function (part) {
+      var a = el("a", "isl-part", part.text);
+      a.href = part.href;
+      row.appendChild(a);
+    });
+    if (parts.length > 3) row.appendChild(el("span", "isl-parts__more", "+" + (parts.length - 3)));
+    item.appendChild(row);
+  }
+
+  function tidyResults(list, sections) {
+    list.querySelectorAll(".md-search-result__item").forEach(function (item) { tidyResult(item, sections); });
   }
 
   function buildPanel() {
@@ -102,7 +125,7 @@
 
     var list = document.querySelector(".md-search-result__list");
     var sections = sectionNames();
-    if (list) new MutationObserver(function () { labelResults(list, sections); }).observe(list, { childList: true });
+    if (list) new MutationObserver(function () { tidyResults(list, sections); }).observe(list, { childList: true });
   }
 
   function init() {
