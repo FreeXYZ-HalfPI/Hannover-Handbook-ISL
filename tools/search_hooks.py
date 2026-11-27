@@ -50,10 +50,13 @@ def _text(fragment):
     return re.sub(r"\s+", " ", htmllib.unescape(TAGS.sub(" ", fragment))).strip()
 
 
+ADDRESS = re.compile(r"[A-ZÄÖÜ][^،·,;()\d]*?\s\d+[a-zA-Z]?(?:[–/-]\d+[a-z]?)?,\s*\d{5}\s+[A-ZÄÖÜ][\wäöüß]+(?:\s(?:am\s|an der\s|im\s)?[A-ZÄÖÜ][\wäöüß]+)*")
+
+
 def _person(html, pos, latin):
-    """Role and phone of the person named at `pos`: from their table row, or from the
-    list item or paragraph that names them."""
-    role = phone = ""
+    """Role, phone and street address of the person named at `pos`: from their table row,
+    or from the list item or paragraph that names them."""
+    role = phone = address = ""
     row_start = html.rfind("<tr>", 0, pos)
     if row_start > html.rfind("</tr>", 0, pos):
         cells = re.findall(r"<td[^>]*>(.*?)</td>", html[row_start:html.find("</tr>", pos)], re.S)
@@ -65,6 +68,8 @@ def _person(html, pos, latin):
         phones = [p.strip() for p in col.get("تلفن", "").split("·")]
         phone = phones[min(nth, len(phones) - 1)] if phones else ""
         role = col.get("تخصص", "")
+        addresses = ADDRESS.findall(col.get("نشانی", ""))
+        address = addresses[min(nth, len(addresses) - 1)] if addresses else ""
         if not role:
             before = html[max(html.rfind("</h", 0, table), 0):table]
             bold = re.findall(r"<strong>(.*?)</strong>", before, re.S)
@@ -77,7 +82,9 @@ def _person(html, pos, latin):
         role = _text(bold[0]).rstrip(":：") if bold else ""
         found = re.search(r"\+?\d[\d ]{6,}\d", _text(piece[piece.find(latin):]) if latin in piece else "")
         phone = found.group(0) if found else ""
-    return role, phone
+        place = ADDRESS.search(_text(piece))
+        address = place.group(0) if place else ""
+    return role, phone, address
 
 
 def on_page_content(html, page, **kwargs):
@@ -86,12 +93,12 @@ def on_page_content(html, page, **kwargs):
         if pos < 0 or latin in _people:
             continue
         doctor = html[max(0, pos - 4):pos] == "Dr. "
-        role, phone = _person(html, pos, latin)
+        role, phone, address = _person(html, pos, latin)
         anchors = HEADING.findall(html, 0, pos)
         _people[latin] = {
             "latin": ("Dr. " if doctor else "") + latin,
             "fa": ("دکتر " if doctor else "") + fa,
-            "role": role, "phone": phone,
+            "role": role, "phone": phone, "address": address,
             "url": page.url + ("#" + anchors[-1] if anchors else ""),
         }
     return html

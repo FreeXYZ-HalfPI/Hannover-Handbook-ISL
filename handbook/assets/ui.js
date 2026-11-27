@@ -46,6 +46,8 @@
   var MAX_RESULTS = 5, MIN_RESULTS = 3;
   var summaries = {};  /* page → one-line description, written by hand in search-summaries.json */
 
+  function faDigits(text) { return String(text).replace(/\d/g, function (d) { return "۰۱۲۳۴۵۶۷۸۹"[d]; }); }
+
   function siteRoot() { return new URL(window.__md_scope || ".", location.href); }
 
   var people = [];     /* everyone named on the site, with Persian name, role and phone (built by tools/search_hooks.py) */
@@ -74,20 +76,48 @@
     });
   }
 
+  var ICON_PHONE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1z"/></svg>';
+  var ICON_PIN = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5"/></svg>';
+
+  /* A person: name and role link to their entry in the handbook; the phone number calls
+     them, and «نقشه» opens their address in Google Maps. */
   function personItem(person, persian) {
     var item = el("li", "md-search-result__item");
     item.dataset.islTidy = "1";
     item.dataset.islPerson = "1";
     item.dataset.islScore = "1e9";
-    var link = el("a", "md-search-result__link isl-hit");
+    var box = el("div", "isl-hit isl-person");
+    var link = el("a", "md-search-result__link isl-person__main");
     link.href = new URL(person.url, siteRoot()).href;
     link.tabIndex = -1;
     var text = el("span", "isl-hit__text");
     text.appendChild(el("span", "isl-hit__title", persian ? person.fa : person.latin));
-    var line = [person.role, person.phone && "تلفن \u2066" + person.phone + "\u2069"].filter(Boolean).join(" · ");
-    if (line) text.appendChild(el("span", "isl-hit__summary", line));
+    if (person.role) text.appendChild(el("span", "isl-hit__summary", faDigits(person.role)));
     link.appendChild(text);
-    item.appendChild(link);
+    box.appendChild(link);
+    var actions = el("span", "isl-person__actions");
+    if (person.phone) {
+      var call = el("a", "isl-action");
+      call.href = "tel:" + person.phone.replace(/[^\d+]/g, "").replace(/^0/, "+49");
+      call.tabIndex = -1;
+      call.setAttribute("aria-label", "تماس با " + person.fa);
+      call.innerHTML = ICON_PHONE;
+      call.appendChild(el("bdi", null, faDigits(person.phone)));
+      actions.appendChild(call);
+    }
+    if (person.address) {
+      var map = el("a", "isl-action");
+      map.href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(person.address);
+      map.target = "_blank";
+      map.rel = "noopener";
+      map.tabIndex = -1;
+      map.setAttribute("aria-label", "نشانی " + person.fa + " روی نقشه");
+      map.innerHTML = ICON_PIN;
+      map.appendChild(el("span", null, "نشانی روی نقشه"));
+      actions.appendChild(map);
+    }
+    if (actions.childNodes.length) box.appendChild(actions);
+    item.appendChild(box);
     return item;
   }
 
@@ -193,16 +223,16 @@
     link.tabIndex = -1;
     var persian = PERSIAN.test(query), title = cleanTitle(h1.textContent, persian);
     var text = el("span", "isl-hit__text");
-    text.appendChild(el("span", "isl-hit__title", title));
+    text.appendChild(el("span", "isl-hit__title", faDigits(title)));
     /* The line under the title: the hand-written description when the title itself shows
        what was searched; otherwise the sentence from the page that contains the word, so
        every result visibly answers the search. */
     var key = new URL(page.getAttribute("href"), location.href).pathname.slice(siteRoot().pathname.length);
     var context = containsQuery(title, query) ? null : sentenceWith(item, best, query, persian);
     if (context === "covers" && summaries[key]) {
-      text.appendChild(el("span", "isl-hit__summary", summaries[key].replace(/[.。]\s*$/, "") +
+      text.appendChild(el("span", "isl-hit__summary", faDigits(summaries[key]).replace(/[.。]\s*$/, "") +
         (persian ? "؛ از جمله درباره «" + query.trim() + "»." : " — «" + query.trim() + "»")));
-    } else if (context && context !== "covers") text.appendChild(context);
+    } else if (context && context !== "covers") { context.textContent = faDigits(context.textContent); text.appendChild(context); }
     else if (summaries[key]) text.appendChild(el("span", "isl-hit__summary", summaries[key]));
     link.appendChild(text);
     item.textContent = "";
@@ -252,7 +282,7 @@
       shown++;
     });
     var meta = document.querySelector(".md-search-result__meta");
-    if (meta) meta.textContent = shown === 1 ? "مرتبط‌ترین نتیجه" : shown + " نتیجه مرتبط";
+    if (meta) meta.textContent = shown === 1 ? "مرتبط‌ترین نتیجه" : faDigits(shown) + " نتیجه مرتبط";
   }
 
   function buildPanel() {
