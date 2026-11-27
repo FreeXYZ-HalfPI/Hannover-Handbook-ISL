@@ -82,18 +82,21 @@
     data.forEach(function (row) { if (!guessByKey[row[0]]) guessByKey[row[0]] = row; });
   });
   function guessKey(word) { return /[\u0600-\u06FF]/.test(word) ? fold(word) : word.toLowerCase(); }
-  /* «کر» → کرانک, «بی» → بیمه, «پارتن» → پارتنر: words of the site and German words first;
-     a colloquial word only from the third letter on, when nothing else fits. */
-  function guessFor(word) {
-    var k = guessKey(word), persian = /[\u0600-\u06FF]/.test(k), colloquial = null;
+  /* «کر» → کرانک, «بی» → بیمه, «پارتن» → پارتنر: words of the site and the hand-written
+     German words first; then German words found on the site; a colloquial word only from
+     the third letter on, when nothing else fits. */
+  function guessFor(word, strict) {
+    var k = guessKey(word), persian = /[\u0600-\u06FF]/.test(k), found = null, colloquial = null;
     if (k.length < (persian ? 2 : 3)) return null;
     for (var i = 0; i < guessList.length; i++) {
       var row = guessList[i];
       if (row[0].indexOf(k) !== 0 || row[0] === k) continue;
-      if (row[4] !== "c") return row;
-      if (!colloquial && k.length >= 3) colloquial = row;
+      if (row[4] === "w" || row[4] === "g") return row;
+      if (strict) continue;   /* a short word that is on the site: only a longer Persian word */
+      if (row[4] === "a" && !found) found = row;
+      if (row[4] === "c" && !colloquial && k.length >= 3) colloquial = row;
     }
-    return colloquial;
+    return found || colloquial;
   }
 
   function onSite(word) { return siteWords && !chosen[fold(word)] ? siteWords.has(fold(word)) : false; }
@@ -154,7 +157,7 @@
       }
       if (known || (onSite(w) && (f.length > 3 || !last))) return w;
       /* still typing: the most likely word it is the start of */
-      var guess = last && guessFor(w);
+      var guess = last && guessFor(w, onSite(w));
       if (guess) {
         changed = changed || guess[2] !== w;
         shown = guess[1];

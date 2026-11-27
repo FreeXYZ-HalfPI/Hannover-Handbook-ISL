@@ -344,6 +344,13 @@
       var path = new URL(link.getAttribute("href"), location.href).pathname;
       if (taken.indexOf(path) >= 0) item.remove();
     });
+    /* The home page is only a table of contents: it is no answer when there are others. */
+    items = list.querySelectorAll(":scope > .md-search-result__item");
+    if (items.length > 1) items.forEach(function (item) {
+      var link = item.querySelector(".md-search-result__link");
+      if (link && !item.dataset.islPerson && !item.dataset.islIntent &&
+          new URL(link.getAttribute("href"), location.href).pathname === new URL(".", siteRoot()).pathname) item.remove();
+    });
     items = list.querySelectorAll(":scope > .md-search-result__item");
     items = phraseFirst(Array.prototype.slice.call(items), query);
     var first = items.filter(function (item) { return !item.dataset.islPerson && !item.dataset.islIntent; })[0];

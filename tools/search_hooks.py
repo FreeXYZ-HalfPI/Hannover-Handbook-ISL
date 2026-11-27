@@ -220,7 +220,8 @@ def german_words(docs):
 # Sources: the needs in assets/search-intents.json (with their English and colloquial
 # words), the hand-written German list, the words of page titles and the German words of
 # the site. Written to assets/search-guess.json as [key, shown, search, weight, kind]:
-# kind w = search the word itself, g = a German word, c = the need's own search.
+# kind w = search the word itself, g = a German word from the hand-written list, a = a German
+# word found on the site, c = the need's own search.
 STOP = set("""و در از به با برای که این آن یا تا را های ها هم بر پس قبل بعد اول دوم سوم کردن شدن کنید کند شود
 بخش صفحه نکات نکته چطور چه کجا کی آیا همه هر یک دو سه چند بین روی زیر درباره""".split())
 PERSIAN = re.compile(r"[\u0600-\u06FF]")
@@ -275,8 +276,12 @@ def guesses(docs, config):
             if len(word) >= 3 and word not in STOP and word not in seen:
                 seen.add(word)
                 out.append([key(word), word, word, pages_with(word, whole=True), "w"])
+    # German words found on the site (kind a) never stand for a Persian word of the site:
+    # «Iran» is written «ایران», which is the Persian word itself.
+    persian_words = set().union(*tokens)
     for word, times, spelling in german_words(docs):
-        out.append([key(spelling), word, word, pages_with(word), "g"])
+        if fold(spelling) not in persian_words:
+            out.append([key(spelling), word, word, pages_with(word), "a"])
     out.sort(key=lambda row: -row[3])
     keep, keys = [], set()
     for row in out:
