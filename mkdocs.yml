@@ -49,7 +49,6 @@ theme:
     - navigation.tracking
     - search.suggest
     - search.highlight
-    - search.share
     - toc.follow
     - content.action.edit
 

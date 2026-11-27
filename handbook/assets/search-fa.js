@@ -26,7 +26,10 @@
   function skeleton(folded) {
     return (folded.charAt(0) + folded.slice(1).replace(/[اوی]/g, "")).replace(/ه$/, "").replace(/(.)\1+/g, "$1");
   }
-  var exact = {}, loose = {}, siteWords = null;
+  /* Germans drop the final r: «Ausländer» is said, and often written, «اوسلندا». The
+     loosest key leaves out r as well, so «اوسلندا بهورده» meets «اوسلندر بهورده». */
+  function looser(skel) { return skel.charAt(0) + skel.slice(1).replace(/ر/g, ""); }
+  var exact = {}, loose = {}, loosest = {}, siteWords = null;
   function load(name, done) {
     var root = new URL(window.__md_scope || ".", location.href);
     fetch(new URL("assets/" + name, root).href).then(function (r) { return r.ok ? r.json() : null; })
@@ -40,6 +43,8 @@
         if (!exact[f]) exact[f] = german;
         var k = skeleton(f);
         if (k.length >= 3 && !loose[k]) loose[k] = german;
+        var kk = looser(k);
+        if (kk.length >= 3 && !loosest[kk]) loosest[kk] = german;
       });
     });
   });
@@ -49,7 +54,17 @@
   function lookup(word, allowLoose) {
     var f = fold(word);
     if (f.length < 3 || !/[\u0600-\u06FF]/.test(f)) return null;
-    return exact[f] || (allowLoose && loose[skeleton(f)]) || null;
+    if (exact[f]) return exact[f];
+    if (!allowLoose) return null;
+    var k = skeleton(f), kk = looser(k);
+    if (loose[k] || loosest[kk]) return loose[k] || loosest[kk];
+    /* the start of a long word: «اوسلندا» → Ausländerbehörde (the shortest such word) */
+    if (kk.length < 4) return null;
+    var best = null, bestLength = Infinity;
+    Object.keys(loosest).forEach(function (key) {
+      if (key.indexOf(kk) === 0 && key.length < bestLength) { best = loosest[key]; bestLength = key.length; }
+    });
+    return best;
   }
   /* {query, changed}: the search as the site understands it. */
   function germanize(query) {

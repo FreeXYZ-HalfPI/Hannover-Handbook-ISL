@@ -1,5 +1,5 @@
 {
-  "_comment": "German words that readers type in Persian letters. Key: the German word as it appears on the site; value: common Persian spellings. The search also forgives small differences (ا/آ، ت/ط، س/ص/ث، ز/ذ/ض/ظ، ق/غ، ه/ح and missing vowels), so one or two spellings per word are enough. assets/search-fa.js uses this file; a Persian word that appears on the site itself is never replaced.",
+  "_comment": "German words that readers type in Persian letters. Key: the German word as it appears on the site; value: common Persian spellings. The search also forgives small differences (ا/آ، ت/ط، س/ص/ث، ز/ذ/ض/ظ، ق/غ، ه/ح and missing vowels), the r/a at the end of a German word (Ausländer → «اوسلندا») and the start of a long word, so one or two spellings per word are enough. assets/search-fa.js uses this file; a Persian word that appears on the site itself is never replaced.",
   "Anmeldung": [
     "آنملدونگ",
     "انملدونگ",
@@ -39,7 +39,16 @@
     "آوسلندربهورده",
     "اوسلندر بهورده",
     "اوسلندربهرده",
-    "آوسلندر بهورده"
+    "آوسلندر بهورده",
+    "اوسلندا بهورده",
+    "اوسلنده",
+    "آوسلندا",
+    "اوسلندر امت",
+    "اوسلندرامت",
+    "آوسلندر",
+    "اوسلندر",
+    "اداره اوسلندا",
+    "اوسلندا"
   ],
   "Aufenthaltserlaubnis": [
     "آوفنتهالتس ارلاوبنیس",

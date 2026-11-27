@@ -378,6 +378,32 @@
     /* Outside .md-search-result: the theme's arrow keys move through every link in there. */
     result.parentNode.insertBefore(box, result);
 
+    /* A sense of the search at work: while the reader types, a thin moving bar and three
+       shimmering placeholder rows with «در حال جست‌وجو…»; shortly after the last key the
+       results come in one after another (search.css). */
+    var loading = el("div", "isl-loading");
+    loading.setAttribute("role", "status");
+    loading.appendChild(el("p", "isl-loading__label", "در حال جست‌وجو"));
+    for (var r = 0; r < 3; r++) {
+      var row = el("div", "isl-loading__row");
+      row.appendChild(el("span", "isl-loading__line"));
+      row.appendChild(el("span", "isl-loading__line isl-loading__line--short"));
+      loading.appendChild(row);
+    }
+    result.parentNode.insertBefore(loading, result);
+    var wrap = result.closest(".md-search__inner") || document.body, timer = null;
+    input().addEventListener("input", function () {
+      clearTimeout(timer);
+      wrap.classList.remove("isl-reveal");
+      if (!input().value.trim()) { wrap.classList.remove("isl-searching"); return; }
+      wrap.classList.add("isl-searching");
+      timer = setTimeout(function () {
+        wrap.classList.remove("isl-searching");
+        void wrap.offsetWidth;  /* restart the reveal animation */
+        wrap.classList.add("isl-reveal");
+      }, 1100);
+    });
+
     var list = document.querySelector(".md-search-result__list");
     if (list) new MutationObserver(function () { tidyResults(list); }).observe(list, { childList: true });
     /* When the search itself finds nothing, the list does not change, but the line above it does. */
