@@ -111,6 +111,27 @@ def add_persian_names(docs):
                 doc["text"] = doc["text"].replace(latin, latin + " (" + person["fa"] + ")")
 
 
+FOLD = str.maketrans({"آ": "ا", "أ": "ا", "إ": "ا", "ٱ": "ا", "ؤ": "و", "ئ": "ی", "ي": "ی", "ك": "ک", "ة": "ه",
+                      "ث": "س", "ص": "س", "ذ": "ز", "ض": "ز", "ظ": "ز", "ط": "ت", "ق": "غ", "ح": "ه"})
+
+
+def fold(word):
+    """Same as fold() in assets/search-fa.js: letters that sound alike become one."""
+    return re.sub(r"[\u064b-\u0652\u0670\u200c\s]", "", word).translate(FOLD)
+
+
+def site_words(docs):
+    """Every Persian word on the site (folded): a word the reader types that is on the
+    site is searched as it is, never read as a German word in Persian letters."""
+    words = set()
+    for doc in docs:
+        for token in re.split(r"[\s\-\u200c]+", TAGS.sub(" ", doc["title"] + " " + doc["text"])):
+            token = re.sub(r"[^\u0600-\u06FF]", "", token)
+            if len(token) >= 2:
+                words.add(fold(token))
+    return sorted(words)
+
+
 def on_post_build(config, **kwargs):
     missing = [latin for latin in PEOPLE_FA if latin not in _people]
     if missing:
@@ -123,5 +144,7 @@ def on_post_build(config, **kwargs):
     data = json.loads(index.read_text(encoding="utf-8"))
     strip_boilerplate(data["docs"])
     add_persian_names(data["docs"])
+    vocab = Path(config["site_dir"]) / "assets" / "search-words.json"
+    vocab.write_text(json.dumps(site_words(data["docs"]), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     # ASCII-escaped like the search plugin writes it: servers that omit the charset still decode it.
     index.write_text(json.dumps(data, ensure_ascii=True, separators=(",", ":")), encoding="utf-8")

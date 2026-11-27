@@ -67,12 +67,17 @@
      «دکتر» or «Dr.» in the search are ignored. */
   var TITLES = /^(?:دکتر|دکتر|آقای|خانم|dr\.?|prof\.?|frau|herr)$/i;
 
+  /* The search matches a name when it is the start of the name or of one of its parts,
+     with or without spaces: «حیدری», «پگاه حیدری», «برمکی پور» and «برمکیپور» do;
+     «ترمین» does not match «دکتر مینا». */
   function matchPeople(query) {
-    var words = queryWords(query).filter(function (w) { return !TITLES.test(w); }).map(squash);
-    if (!words.length || words.join("").length < 3) return [];
+    var wanted = squash(queryWords(query).filter(function (w) { return !TITLES.test(w); }).join(""));
+    if (wanted.length < 3) return [];
     return people.filter(function (p) {
-      var name = squash(p.fa) + " " + squash(p.latin);
-      return words.every(function (w) { return name.indexOf(w) >= 0; });
+      return [p.fa, p.latin].some(function (name) {
+        var parts = name.replace(/\u200c/g, " ").split(/[\s\-]+/).filter(function (w) { return w && !TITLES.test(w); }).map(squash);
+        return parts.some(function (_, i) { return parts.slice(i).join("").indexOf(wanted) === 0; });
+      });
     });
   }
 
@@ -206,7 +211,7 @@
     return null;
   }
 
-  function tidyItem(item, query) {
+  function tidyItem(item, query, typed, changed) {
     if (item.dataset.islTidy) return;
     item.dataset.islTidy = "1";
     item.dataset.islScore = String(score(item));
@@ -221,17 +226,18 @@
     var link = el("a", "md-search-result__link isl-hit");
     link.href = best.getAttribute("href");
     link.tabIndex = -1;
-    var persian = PERSIAN.test(query), title = cleanTitle(h1.textContent, persian);
+    var persian = PERSIAN.test(typed), title = cleanTitle(h1.textContent, persian);
     var text = el("span", "isl-hit__text");
     text.appendChild(el("span", "isl-hit__title", faDigits(title)));
     /* The line under the title: the hand-written description when the title itself shows
        what was searched; otherwise the sentence from the page that contains the word, so
        every result visibly answers the search. */
     var key = new URL(page.getAttribute("href"), location.href).pathname.slice(siteRoot().pathname.length);
-    var context = containsQuery(title, query) ? null : sentenceWith(item, best, query, persian);
+    /* A German word typed in Persian letters stays visible in Latin letters in the sentence. */
+    var context = containsQuery(title, query) ? null : sentenceWith(item, best, query, persian && !changed);
     if (context === "covers" && summaries[key]) {
       text.appendChild(el("span", "isl-hit__summary", faDigits(summaries[key]).replace(/[.。]\s*$/, "") +
-        (persian ? "؛ از جمله درباره «" + query.trim() + "»." : " — «" + query.trim() + "»")));
+        (persian ? "؛ از جمله درباره «" + typed + (changed ? " (" + query + ")" : "") + "»." : " — «" + query.trim() + "»")));
     } else if (context && context !== "covers") { context.textContent = faDigits(context.textContent); text.appendChild(context); }
     else if (summaries[key]) text.appendChild(el("span", "isl-hit__summary", summaries[key]));
     link.appendChild(text);
@@ -261,8 +267,10 @@
   }
 
   function tidyResults(list) {
-    var query = (input().value || "").trim();
-    var found = addPeople(list, query);
+    var typed = (input().value || "").trim();
+    var german = window.islGermanize ? window.islGermanize(typed) : { query: typed, changed: false };
+    var query = german.query;
+    var found = addPeople(list, typed);
     var items = list.querySelectorAll(":scope > .md-search-result__item");
     if (!items.length) return;
     /* When people match, the page that only lists them adds nothing. */
@@ -278,7 +286,7 @@
     items.forEach(function (item) {
       if (item.dataset.islTidy) { shown++; return; }
       if (shown >= MAX_RESULTS || (shown >= MIN_RESULTS && score(item) < floor)) { item.remove(); return; }
-      tidyItem(item, query);
+      tidyItem(item, query, typed, german.changed);
       shown++;
     });
     var meta = document.querySelector(".md-search-result__meta");
