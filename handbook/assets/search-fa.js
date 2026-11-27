@@ -21,8 +21,10 @@
      whole phrase first). One word is searched as before. */
   function requireAll(query) {
     var words = query.replace(/\u200c/g, " ").trim().split(/\s+/).filter(function (w) {
-      return /[\w\u0600-\u06FF]/.test(w);
+      /* titles before a name («دکتر حیدری») are not needed to find it */
+      return /[\w\u0600-\u06FF]/.test(w) && !/^(?:دکتر|آقای|خانم|dr\.?|prof\.?|frau|herr)$/i.test(w);
     });
+    if (words.length === 1) return words[0];
     if (words.length < 2 || /["+\-~^:*]/.test(query)) return query;
     return words.map(function (w) { return "+" + w + "*"; }).join(" ");
   }

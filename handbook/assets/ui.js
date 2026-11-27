@@ -48,11 +48,56 @@
 
   function siteRoot() { return new URL(window.__md_scope || ".", location.href); }
 
+  var people = [];     /* everyone named on the site, with Persian name, role and phone (built by tools/search_hooks.py) */
+
   function loadSummaries() {
     fetch(new URL("assets/search-summaries.json", siteRoot()).href)
       .then(function (r) { return r.ok ? r.json() : {}; })
       .then(function (data) { summaries = data; })
       .catch(function () {});
+    fetch(new URL("assets/search-people.json", siteRoot()).href)
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (data) { people = data; })
+      .catch(function () {});
+  }
+
+  /* People whose name (Persian or Latin) contains every searched word; titles such as
+     «دکتر» or «Dr.» in the search are ignored. */
+  var TITLES = /^(?:دکتر|دکتر|آقای|خانم|dr\.?|prof\.?|frau|herr)$/i;
+
+  function matchPeople(query) {
+    var words = queryWords(query).filter(function (w) { return !TITLES.test(w); }).map(squash);
+    if (!words.length || words.join("").length < 3) return [];
+    return people.filter(function (p) {
+      var name = squash(p.fa) + " " + squash(p.latin);
+      return words.every(function (w) { return name.indexOf(w) >= 0; });
+    });
+  }
+
+  function personItem(person, persian) {
+    var item = el("li", "md-search-result__item");
+    item.dataset.islTidy = "1";
+    item.dataset.islPerson = "1";
+    item.dataset.islScore = "1e9";
+    var link = el("a", "md-search-result__link isl-hit");
+    link.href = new URL(person.url, siteRoot()).href;
+    link.tabIndex = -1;
+    var text = el("span", "isl-hit__text");
+    text.appendChild(el("span", "isl-hit__title", persian ? person.fa : person.latin));
+    var line = [person.role, person.phone && "تلفن \u2066" + person.phone + "\u2069"].filter(Boolean).join(" · ");
+    if (line) text.appendChild(el("span", "isl-hit__summary", line));
+    link.appendChild(text);
+    item.appendChild(link);
+    return item;
+  }
+
+  /* Matching people go first in the list, once per search. */
+  function addPeople(list, query) {
+    if (list.dataset.islPeople === query && list.querySelector("[data-isl-person]")) return [];
+    list.dataset.islPeople = query;
+    var found = matchPeople(query).slice(0, 3), persian = PERSIAN.test(query);
+    found.slice().reverse().forEach(function (person) { list.insertBefore(personItem(person, persian), list.firstChild); });
+    return found;
   }
   var PERSIAN = /[\u0600-\u06FF]/;
 
@@ -83,11 +128,13 @@
     return queryWords(query).every(function (w) { return t.indexOf(squash(w)) >= 0; });
   }
 
-  /* «شماره مالیاتی — Steuer-ID و عوارض» → «شماره مالیاتی و عوارض» (for Persian searches) */
+  /* For Persian searches: «شماره مالیاتی — Steuer-ID و عوارض (Rundfunkbeitrag)» →
+     «شماره مالیاتی و عوارض». Latin words inside a sentence (M10) stay: without them
+     the sentence would not read. */
   function withoutLatin(text) {
     return text
       .replace(/\s*\([^)]*[A-Za-z][^)]*\)/g, "")
-      .replace(/\s*[—–:]?\s*[A-Za-z][\w\-.'’&\/]*(?:[\s,–—-]+[A-Za-z0-9][\w\-.'’&\/]*)*/g, "")
+      .replace(/\s*[—–:]\s*[A-Za-z][\w\-.'’&\/]*(?:[\s,–—-]+[A-Za-z0-9][\w\-.'’&\/]*)*(?=\s*(?:[—–:،؛.]|$| و ))/g, "")
       .replace(/\s+([،؛:.!؟])/g, "$1").replace(/^[\s—–:،]+|[\s—–:،]+$/g, "").replace(/\s{2,}/g, " ");
   }
 
@@ -107,7 +154,7 @@
     var articles = [best.querySelector("article")];
     item.querySelectorAll("article").forEach(function (a) { if (articles.indexOf(a) < 0) articles.push(a); });
     for (var i = 0; i < articles.length; i++) {
-      var pieces = articles[i].querySelectorAll("p, li, td, h2");
+      var pieces = articles[i].querySelectorAll("p, li, td");
       for (var j = 0; j < pieces.length; j++) {
         if (pieces[j].classList.contains("md-search-result__terms") || pieces[j].querySelector("li, p")) continue;
         var raw = pieces[j].textContent.replace(/\s+/g, " ").trim();
@@ -116,7 +163,7 @@
         var sentences = raw.split(/(?<=[.!?؟؛])\s+/);
         var hit = sentences.filter(function (x) { return containsQuery(x, query); })[0] || raw;
         hit = hit.replace(/^\s*(?:\[\s?\]|[\d۰-۹]+[.)]|[آ-ی]{1,3}\))\s*/, "").replace(/\s*←.*$/, "").trim();
-        if (!hit) continue;
+        if (squash(hit).length < squash(query).length + 8) continue;  /* just the word itself says nothing */
         if (hit.length > 150) hit = around(hit, hit.toLowerCase().indexOf(words[0]));
         return el("span", "isl-hit__summary isl-hit__context", hit);
       }
@@ -184,9 +231,18 @@
   }
 
   function tidyResults(list) {
+    var query = (input().value || "").trim();
+    var found = addPeople(list, query);
     var items = list.querySelectorAll(":scope > .md-search-result__item");
     if (!items.length) return;
-    var query = (input().value || "").trim();
+    /* When people match, the page that only lists them adds nothing. */
+    if (found.length) items.forEach(function (item) {
+      var link = item.querySelector(".md-search-result__link");
+      if (item.dataset.islPerson || !link) return;
+      var path = new URL(link.getAttribute("href"), location.href).pathname;
+      if (found.some(function (p) { return new URL(p.url, siteRoot()).pathname === path; })) item.remove();
+    });
+    items = list.querySelectorAll(":scope > .md-search-result__item");
     items = phraseFirst(Array.prototype.slice.call(items), query);
     var top = score(items[0]), floor = top >= 100 ? top * 0.1 : top * 0.5, shown = 0;
     items.forEach(function (item) {
