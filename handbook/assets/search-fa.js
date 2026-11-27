@@ -18,14 +18,17 @@
     var field = event.target;
     if (!field || !field.classList || !field.classList.contains("md-search__input")) return;
     var before = field.value, after = normalise(before);
-    if (after === before) return;
-    var caret = field.selectionStart;
-    field.value = after;
-    if (caret !== null && caret !== undefined) {
-      var pos = Math.max(0, caret - (before.length - after.length));
-      field.setSelectionRange(pos, pos);
+    if (after !== before) {
+      var caret = field.selectionStart;
+      field.value = after;
+      if (caret !== null && caret !== undefined) {
+        var pos = Math.max(0, caret - (before.length - after.length));
+        field.setSelectionRange(pos, pos);
+      }
     }
-    /* The theme reads the box on keyup; tell it the text changed. */
+    /* The theme only reads the box on keyup. Persian keyboards (IME), pasting and
+       autocomplete can change the text without a keyup, so the search would not
+       start; tell the theme every time the text changes. */
     field.dispatchEvent(new KeyboardEvent("keyup", { bubbles: true }));
   }, true);
 })();

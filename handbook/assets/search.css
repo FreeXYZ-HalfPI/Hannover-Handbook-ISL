@@ -1,0 +1,89 @@
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+/* Copyleft 🄯 2026 ISL and contributors — loaded after site.css */
+/* ===== Search (2026-11): one search box in the header that opens a panel in the
+   middle of the page on wide screens. Phones keep the theme's full-screen search.
+   Extra pieces (shortcut hint, suggestions, part labels, key help) come from ui.js. */
+.isl-kbd, .isl-keys { display: none; }
+.md-typeset .isl-crumb {
+  display: inline-block; max-width: 100%; margin: 0 0 0.15rem; padding: 0.05rem 0.5rem;
+  border-radius: 1rem; background: color-mix(in srgb, var(--md-primary-fg-color) 10%, transparent);
+  color: var(--md-default-fg-color--light); font-size: 0.6rem; line-height: 1.6;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.isl-suggest { display: none; padding: 0.9rem 1rem 1rem; }
+.md-search__inner:has(.md-search__input:placeholder-shown) .isl-suggest { display: block; }
+.md-search__inner:has(.md-search__input:placeholder-shown) .md-search-result__meta { display: none; }
+.isl-suggest__title { margin: 0 0 0.6rem; color: var(--md-default-fg-color--light); font-size: 0.68rem; font-weight: 700; }
+.isl-suggest__chips { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.isl-suggest__chip {
+  min-height: 2.2rem; padding: 0.3rem 0.85rem; border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 2rem; background: var(--md-default-bg-color); color: var(--md-default-fg-color);
+  font: inherit; font-size: 0.72rem; cursor: pointer;
+}
+.isl-suggest__chip:hover, .isl-suggest__chip:focus-visible {
+  border-color: var(--md-accent-fg-color); outline: 0;
+  background: color-mix(in srgb, var(--md-accent-fg-color) 10%, transparent);
+}
+.isl-suggest__more { margin: 0.9rem 0 0; font-size: 0.68rem; }
+.isl-suggest__more a { color: var(--md-typeset-a-color); }
+
+@media screen and (min-width: 60em) {
+  /* Closed: a calm search button with its keyboard shortcut */
+  .md-search__inner { width: 15rem; }
+  .md-search__form { position: relative; height: 1.8rem; border-radius: 0.5rem; background: rgba(255, 255, 255, 0.16); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25); }
+  .md-search__form:hover { background: rgba(255, 255, 255, 0.24); }
+  .md-search__input { font-size: 0.75rem; }
+  .isl-kbd {
+    display: block; position: absolute; left: 0.45rem; top: 50%; transform: translateY(-50%);
+    z-index: 2; padding: 0.05rem 0.4rem; border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 0.3rem;
+    color: rgba(255, 255, 255, 0.85); font: 600 0.55rem/1.5 system-ui, sans-serif; direction: ltr; pointer-events: none;
+  }
+  [dir="ltr"] .isl-kbd { left: auto; right: 0.45rem; }
+
+  /* Open: a panel in the middle of the page */
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__inner {
+    position: fixed; z-index: 5; top: 12vh; left: 0; right: 0; float: none;
+    width: min(42rem, calc(100vw - 4rem)); margin: 0 auto; padding: 0;
+    border-radius: 0.9rem; background: var(--md-default-bg-color);
+    box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.35), 0 0 0 1px var(--md-default-fg-color--lightest);
+    overflow: hidden;
+  }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__overlay { background-color: rgba(10, 20, 35, 0.55); backdrop-filter: blur(2px); }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__form {
+    height: 3.4rem; border-radius: 0; background: var(--md-default-bg-color); box-shadow: none;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__input { font-size: 0.95rem; padding-inline-start: 3rem; }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__icon[for="__search"] { top: 1.1rem; inset-inline-start: 1rem; }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__options { top: 1.1rem; }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__suggest { padding-inline-start: 3rem; font-size: 0.95rem; line-height: 3.4rem; }
+  [data-md-toggle="search"]:checked ~ .md-header .isl-kbd { display: none; }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__input::placeholder { color: var(--md-default-fg-color--lighter); }
+  .md-search__output { top: auto; }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__output { position: static; box-shadow: none; border-radius: 0; }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__scrollwrap { width: auto; max-height: min(60vh, 34rem); }
+
+  .md-search-result__meta { padding-inline: 1rem; background: none; border-bottom: 1px solid var(--md-default-fg-color--lightest); font-size: 0.62rem; }
+  .md-search-result__item { margin: 0.25rem 0.5rem; border: 0; border-radius: 0.6rem; overflow: hidden; }
+  .md-search-result__item:first-child { margin-top: 0.5rem; }
+  .md-search-result__link:is(:focus, :hover) { background: color-mix(in srgb, var(--md-accent-fg-color) 9%, transparent); }
+  .md-search-result__article { padding-inline: 2.6rem 1rem; }
+  .md-search-result__icon { inset-inline-start: 0.6rem; }
+  .md-search-result__article h1 { font-size: 0.82rem; font-weight: 700; }
+  .md-search-result__article h2 { font-size: 0.72rem; }
+  .md-search-result__teaser { -webkit-line-clamp: 2; line-clamp: 2; max-height: 2.6rem; }
+  .md-search-result__more > summary > div { padding-inline: 2.6rem 1rem; }
+
+  .isl-keys {
+    display: flex; gap: 1.2rem; padding: 0.55rem 1rem; border-top: 1px solid var(--md-default-fg-color--lightest);
+    background: var(--md-default-fg-color--lightest); color: var(--md-default-fg-color--light); font-size: 0.6rem;
+  }
+  .isl-keys kbd {
+    display: inline-block; min-width: 1.2rem; margin-inline-end: 0.2rem; padding: 0 0.3rem; text-align: center;
+    border: 1px solid var(--md-default-fg-color--lighter); border-radius: 0.25rem; background: var(--md-default-bg-color);
+    font: 0.6rem/1.5 system-ui, sans-serif;
+  }
+
+  /* The header box is always visible here, so no floating button */
+  .isl-fab { display: none; }
+}
