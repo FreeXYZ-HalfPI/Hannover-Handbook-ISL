@@ -2,23 +2,17 @@
 /* Copyleft 🄯 2026 ISL and contributors — loaded after site.css */
 /* ===== Search (2026-11): one search box in the header that opens a panel in the
    middle of the page on wide screens. Phones keep the theme's full-screen search.
-   Extra pieces (shortcut hint, suggestions, part labels, key help) come from ui.js. */
+   Extra pieces (shortcut hint, suggestions, key help) come from ui.js. */
 .isl-kbd, .isl-keys { display: none; }
-.md-typeset .isl-crumb {
-  display: inline-block; max-width: 100%; margin: 0 0 0.15rem; padding: 0.05rem 0.5rem;
-  border-radius: 1rem; background: color-mix(in srgb, var(--md-primary-fg-color) 10%, transparent);
-  color: var(--md-default-fg-color--light); font-size: 0.6rem; line-height: 1.6;
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-}
 /* Results: title, then a short, faded excerpt (the full text is on the page) */
 .md-search-result__icon, .md-search-result__terms { display: none; }
-.md-search-result .md-search-result__article > :not(h1, h2, .isl-crumb, .md-search-result__icon, .md-search-result__terms) {
+.md-search-result .md-search-result__article > :not(h1, h2, .md-search-result__icon, .md-search-result__terms) {
   margin: 0; color: var(--md-default-fg-color--light); font-size: 0.68rem; line-height: 1.75;
   max-height: 3.6rem; overflow: hidden;
   -webkit-mask-image: linear-gradient(to bottom, #000 60%, transparent);
   mask-image: linear-gradient(to bottom, #000 60%, transparent);
 }
-.md-search-result .md-search-result__article > :not(h1, h2, .isl-crumb, .md-search-result__icon, .md-search-result__terms) ~ :not(h1, h2, .isl-crumb, .md-search-result__icon, .md-search-result__terms) { display: none; }
+.md-search-result .md-search-result__article > :not(h1, h2, .md-search-result__icon, .md-search-result__terms) ~ :not(h1, h2, .md-search-result__icon, .md-search-result__terms) { display: none; }
 .md-search-result .md-search-result__article li { margin-block: 0; }
 .isl-suggest { display: none; padding: 0.9rem 1rem 1rem; }
 .md-search__inner:has(.md-search__input:placeholder-shown) .isl-suggest { display: block; }

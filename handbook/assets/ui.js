@@ -2,9 +2,9 @@
 /* Copyleft 🄯 2026 ISL and contributors — the search, easy to find and easy to read:
    (1) every [data-isl-search] button (home page) opens the theme's search,
    (2) a floating «جست‌وجو» button on phones and tablets,
-   (3) on wide screens the search opens as a panel in the middle of the page (see
-       site.css): Ctrl+K / ⌘K opens it, suggestions show before anything is typed,
-       and every result says which part of the handbook it comes from. */
+   (3) on wide screens the header box grows in place and the results drop down
+       under it (see search.css): Ctrl+K / ⌘K opens it, suggestions show before anything is typed,
+       and only the few most relevant results are shown, each kept short. */
 (function () {
   var SUGGESTIONS = ["بیمه درمانی", "Anmeldung", "حساب بانکی", "سیم‌کارت", "اجازه اقامت",
                      "خوابگاه", "کار دانشجویی", "Rundfunkbeitrag"];
@@ -36,47 +36,54 @@
     return node;
   }
 
-  /* Folder of a page («01-arriving-in-hannover») → the part's title in the side navigation. */
-  function sectionNames() {
-    var names = {}, root = new URL(window.__md_scope || ".", location.href);
-    document.querySelectorAll(".md-nav--primary a.md-nav__link[href]").forEach(function (a) {
-      var path = new URL(a.getAttribute("href"), location.href).pathname;
-      if (path.indexOf(root.pathname) !== 0) return;
-      var m = /^(\d\d-[^/]+)\/$/.exec(path.slice(root.pathname.length));
-      var label = a.textContent.replace(/\s+/g, " ").trim();
-      if (m && label && !names[m[1]]) names[m[1]] = label.replace(/^بخش\s*\S+\s*[—–-]\s*/, "");
+  /* Only the most relevant results, and each one short:
+     - at most MAX_RESULTS pages; a page that matches far less well than the best one
+       is dropped (but at least MIN_RESULTS stay when there are any);
+     - per page: its title (without the page number) and the one part of the page that
+       matches best, with a short excerpt — no folded «more on this page» list. */
+  var MAX_RESULTS = 5, MIN_RESULTS = 3;
+
+  function score(item) {
+    var best = 0;
+    item.querySelectorAll(".md-search-result__article").forEach(function (a) {
+      best = Math.max(best, parseFloat(a.getAttribute("data-md-score")) || 0);
     });
-    return { root: root, names: names };
+    return best;
   }
 
-  function labelResults(list, sections) {
-    list.querySelectorAll(".md-search-result__item").forEach(function (item) {
-      if (item.querySelector(".isl-crumb")) return;
-      var link = item.querySelector(".md-search-result__link");
-      var article = item.querySelector(".md-search-result__article");
-      if (!link || !article) return;
-      var path = new URL(link.getAttribute("href"), location.href).pathname.slice(sections.root.pathname.length);
-      var name = sections.names[path.split("/")[0]];
-      if (!name) return;
-      var crumb = el("span", "isl-crumb", name);
-      article.insertBefore(crumb, article.querySelector("h1") || article.firstChild);
-      showBestPart(item, article);
-    });
+  function stripNumber(heading) {
+    if (!heading) return;
+    var node = heading.firstChild;
+    while (node && node.nodeType !== 3) node = node.firstChild;
+    if (node) node.nodeValue = node.nodeValue.replace(/^\s*(?:[\d۰-۹]+\.|[آ-ی]{1,3}\))\s*/, "");
   }
 
-  /* A page whose own summary says nothing about the search: show its best-matching part
-     (the first one the theme folded away) right under the title, so there is always
-     something to read; the folded list keeps the rest. */
-  function showBestPart(item, article) {
-    if (article.querySelector(":scope > p:not(.md-search-result__terms), :scope > ul, :scope > ol, :scope > table")) return;
+  function tidyItem(item) {
+    if (item.dataset.islTidy) return;
+    item.dataset.islTidy = "1";
+    var links = item.querySelectorAll(":scope > .md-search-result__link");
+    var article = links[0] && links[0].querySelector(".md-search-result__article");
+    if (!article) return;
     var more = item.querySelector(".md-search-result__more");
-    var best = more && more.querySelector(".md-search-result__link");
-    if (!best) return;
-    item.insertBefore(best, more);
-    var rest = more.querySelectorAll(".md-search-result__link").length;
-    var label = more.querySelector("summary > div");
-    if (!rest) more.remove();
-    else if (label) label.textContent = label.textContent.replace(/^\s*\d+/, String(rest));
+    var hasText = article.querySelector(":scope > p:not(.md-search-result__terms), :scope > ul, :scope > ol, :scope > table");
+    var part = links[1] || (!hasText && more && more.querySelector(".md-search-result__link"));
+    Array.prototype.slice.call(links, 1).forEach(function (a) { if (a !== part) a.remove(); });
+    if (part) item.insertBefore(part, more || null);
+    if (more) more.remove();
+    item.querySelectorAll("h1, h2").forEach(stripNumber);
+  }
+
+  function tidyResults(list) {
+    var items = list.querySelectorAll(":scope > .md-search-result__item");
+    if (!items.length) return;
+    var top = score(items[0]), floor = top >= 100 ? top * 0.1 : top * 0.5, shown = 0;
+    items.forEach(function (item) {
+      if (shown >= MAX_RESULTS || (shown >= MIN_RESULTS && score(item) < floor)) { item.remove(); return; }
+      tidyItem(item);
+      shown++;
+    });
+    var meta = document.querySelector(".md-search-result__meta");
+    if (meta) meta.textContent = shown === 1 ? "مرتبط‌ترین نتیجه" : shown + " نتیجه مرتبط";
   }
 
   function buildPanel() {
@@ -117,8 +124,7 @@
     output.appendChild(keys);
 
     var list = document.querySelector(".md-search-result__list");
-    var sections = sectionNames();
-    if (list) new MutationObserver(function () { labelResults(list, sections); }).observe(list, { childList: true });
+    if (list) new MutationObserver(function () { tidyResults(list); }).observe(list, { childList: true });
   }
 
   function init() {
