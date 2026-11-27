@@ -74,6 +74,61 @@
     return text;
   }
 
+  function queryWords(query) {
+    return query.replace(/\u200c/g, " ").trim().split(/\s+/).filter(Boolean);
+  }
+
+  function containsQuery(text, query) {
+    var t = squash(text);
+    return queryWords(query).every(function (w) { return t.indexOf(squash(w)) >= 0; });
+  }
+
+  /* «شماره مالیاتی — Steuer-ID و عوارض» → «شماره مالیاتی و عوارض» (for Persian searches) */
+  function withoutLatin(text) {
+    return text
+      .replace(/\s*\([^)]*[A-Za-z][^)]*\)/g, "")
+      .replace(/\s*[—–:]?\s*[A-Za-z][\w\-.'’&\/]*(?:[\s,–—-]+[A-Za-z0-9][\w\-.'’&\/]*)*/g, "")
+      .replace(/\s+([،؛:.!؟])/g, "$1").replace(/^[\s—–:،]+|[\s—–:،]+$/g, "").replace(/\s{2,}/g, " ");
+  }
+
+  /* About 140 characters around position `at`, cut at word boundaries. */
+  function around(text, at) {
+    var start = Math.max(0, at - 60), end = Math.min(text.length, start + 140);
+    if (start > 0) start = text.indexOf(" ", start) + 1;
+    if (end < text.length) end = text.lastIndexOf(" ", end);
+    return (start > 0 ? "… " : "") + text.slice(start, end).trim() + (end < text.length ? " …" : "");
+  }
+
+  /* The shortest piece of the page (a paragraph, list item or table cell) that contains
+     the searched words, cut down to the sentence around them. */
+  function sentenceWith(item, best, query, persian) {
+    var words = queryWords(query).map(function (w) { return w.toLowerCase(); });
+    var phrase = query.replace(/\s+/g, " ").trim().toLowerCase();
+    var articles = [best.querySelector("article")];
+    item.querySelectorAll("article").forEach(function (a) { if (articles.indexOf(a) < 0) articles.push(a); });
+    for (var i = 0; i < articles.length; i++) {
+      var pieces = articles[i].querySelectorAll("p, li, td, h2");
+      for (var j = 0; j < pieces.length; j++) {
+        if (pieces[j].classList.contains("md-search-result__terms") || pieces[j].querySelector("li, p")) continue;
+        var raw = pieces[j].textContent.replace(/\s+/g, " ").trim();
+        if (!containsQuery(raw, query)) continue;
+        if (persian) raw = withoutLatin(raw);
+        var sentences = raw.split(/(?<=[.!?؟؛])\s+/);
+        var hit = sentences.filter(function (x) { return containsQuery(x, query); })[0] || raw;
+        hit = hit.replace(/^\s*(?:\[\s?\]|[\d۰-۹]+[.)]|[آ-ی]{1,3}\))\s*/, "").replace(/\s*←.*$/, "").trim();
+        if (!hit) continue;
+        if (hit.length > 150) hit = around(hit, hit.toLowerCase().indexOf(words[0]));
+        return el("span", "isl-hit__summary isl-hit__context", hit);
+      }
+    }
+    /* Tables reach the search as plain text without cells, too messy to quote: say that
+       the page covers the word, after its own description. */
+    for (var k = 0; k < articles.length; k++) {
+      if (containsQuery(articles[k].textContent, query)) return "covers";
+    }
+    return null;
+  }
+
   function tidyItem(item, query) {
     if (item.dataset.islTidy) return;
     item.dataset.islTidy = "1";
@@ -89,10 +144,19 @@
     var link = el("a", "md-search-result__link isl-hit");
     link.href = best.getAttribute("href");
     link.tabIndex = -1;
+    var persian = PERSIAN.test(query), title = cleanTitle(h1.textContent, persian);
     var text = el("span", "isl-hit__text");
-    text.appendChild(el("span", "isl-hit__title", cleanTitle(h1.textContent, PERSIAN.test(query))));
+    text.appendChild(el("span", "isl-hit__title", title));
+    /* The line under the title: the hand-written description when the title itself shows
+       what was searched; otherwise the sentence from the page that contains the word, so
+       every result visibly answers the search. */
     var key = new URL(page.getAttribute("href"), location.href).pathname.slice(siteRoot().pathname.length);
-    if (summaries[key]) text.appendChild(el("span", "isl-hit__summary", summaries[key]));
+    var context = containsQuery(title, query) ? null : sentenceWith(item, best, query, persian);
+    if (context === "covers" && summaries[key]) {
+      text.appendChild(el("span", "isl-hit__summary", summaries[key].replace(/[.。]\s*$/, "") +
+        (persian ? "؛ از جمله درباره «" + query.trim() + "»." : " — «" + query.trim() + "»")));
+    } else if (context && context !== "covers") text.appendChild(context);
+    else if (summaries[key]) text.appendChild(el("span", "isl-hit__summary", summaries[key]));
     link.appendChild(text);
     item.textContent = "";
     item.appendChild(link);
