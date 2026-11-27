@@ -113,7 +113,19 @@
   [data-md-toggle="search"]:checked ~ .md-header .md-search__scrollwrap { box-shadow: none; }
   /* Box and results open at the same moment: the theme fades them in with different
      delays, which shows a light strip between them for a split second. */
-  .md-search__form, .md-search__output, .md-search__scrollwrap, .md-search__input::placeholder { transition: none; }
+  .md-search__output, .md-search__scrollwrap, .md-search__input::placeholder { transition: none; }
+  /* A soft opening: the box turns white at once and widens smoothly, and the results
+     area unfolds downward from its bottom edge (no fade, so no strip between them). */
+  .md-search__inner { transition: width 0.35s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .md-search__form { transition: none; }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__output { animation: isl-unfold 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__scrollwrap > * { animation: isl-fade 0.3s 0.12s ease-out both; }
+  @keyframes isl-unfold { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 -3rem 0); } }
+  @media (prefers-reduced-motion: reduce) {
+    .md-search__inner, .md-search__form { transition: none; }
+    [data-md-toggle="search"]:checked ~ .md-header .md-search__output,
+    [data-md-toggle="search"]:checked ~ .md-header .md-search__scrollwrap > * { animation: none; }
+  }
   [data-md-toggle="search"]:checked ~ .md-header .md-search__scrollwrap { width: auto; max-height: min(65vh, 36rem); }
 
   .md-search-result__meta { padding-inline: 1rem; background: none; box-shadow: none; border-bottom: 1px solid color-mix(in srgb, var(--md-default-fg-color) 7%, transparent); font-size: 0.62rem; }
