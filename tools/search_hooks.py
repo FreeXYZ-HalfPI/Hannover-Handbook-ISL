@@ -14,7 +14,8 @@ PAGE_NOISE = [
     re.compile(r"<p>تاریخ آخرین بررسی:.*?</p>", re.S),               # per-page dates
     re.compile(r"در این صفحه\s*<ol>.*?</ol>", re.S),                  # the page's own table of contents
 ]
-COMMON = 8  # a paragraph found on this many pages or more is boilerplate
+COMMON = 8       # a paragraph or list found on this many pages or more is boilerplate
+COMMON_NOTE = 5  # a paragraph repeated this often is a standard note (e.g. the medical disclaimer)
 
 
 def strip_boilerplate(docs):
@@ -22,7 +23,8 @@ def strip_boilerplate(docs):
     for doc in docs:
         for chunk in {m.group(0) for m in CHUNK.finditer(doc["text"])}:
             pages.setdefault(chunk, set()).add(doc["location"].split("#")[0])
-    common = {chunk for chunk, where in pages.items() if len(where) >= COMMON}
+    common = {chunk for chunk, where in pages.items()
+              if len(where) >= COMMON or (len(where) >= COMMON_NOTE and chunk.startswith("<p>"))}
     for doc in docs:
         text = doc["text"]
         for pattern in PAGE_NOISE:
