@@ -47,7 +47,6 @@ theme:
     - navigation.top
     - navigation.footer
     - navigation.tracking
-    - search.suggest
     - search.highlight
     - toc.follow
     - content.action.edit

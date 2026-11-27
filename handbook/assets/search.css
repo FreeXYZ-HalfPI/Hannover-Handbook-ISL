@@ -133,3 +133,7 @@
   /* The header box is always visible here, so no floating button */
   .isl-fab { display: none; }
 }
+
+/* No faded completion under the typed word: in Persian (joined letters, and a different
+   font size on phones) it never lines up with the text and makes it unreadable. */
+.md-search__suggest { display: none !important; }
