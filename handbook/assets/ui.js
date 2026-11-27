@@ -392,15 +392,28 @@
     }
     result.parentNode.insertBefore(loading, result);
     var wrap = result.closest(".md-search__inner") || document.body, timer = null;
+    /* Words already searched in this visit (across pages) show their results at once: no
+       loading and no one-by-one reveal the second time. */
+    var SEEN_KEY = "isl-search-seen", seen = {};
+    try { seen = JSON.parse(sessionStorage.getItem(SEEN_KEY) || "{}") || {}; } catch (e) { seen = {}; }
+    function seenKey(q) { return q.trim().replace(/\s+/g, " ").replace(/\u200c/g, ""); }
+    function remember(q) {
+      seen[q] = 1;
+      try { sessionStorage.setItem(SEEN_KEY, JSON.stringify(seen)); } catch (e) { /* storage blocked: memory only */ }
+    }
     input().addEventListener("input", function () {
       clearTimeout(timer);
       wrap.classList.remove("isl-reveal");
-      if (!input().value.trim()) { wrap.classList.remove("isl-searching"); return; }
+      var q = seenKey(input().value);
+      /* the first letters of a word searched before count too, so retyping it never flashes */
+      var known = !q || Object.keys(seen).some(function (w) { return w.indexOf(q) === 0; });
+      if (known) { wrap.classList.remove("isl-searching"); return; }
       wrap.classList.add("isl-searching");
       timer = setTimeout(function () {
         wrap.classList.remove("isl-searching");
         void wrap.offsetWidth;  /* restart the reveal animation */
         wrap.classList.add("isl-reveal");
+        remember(q);
       }, 1100);
     });
 
