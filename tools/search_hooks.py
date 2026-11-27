@@ -6,7 +6,10 @@
 - makes people findable by name in Persian too: names on the site are written in Latin
   letters (Dr. Pegah Heidari), so the Persian spelling from tools/people-fa.json is added
   next to each one in the index, and assets/search-people.json lists every person with
-  role, phone and link, for the results list (assets/ui.js)."""
+  role, phone and link, for the results list (assets/ui.js);
+- writes assets/search-words.json (every Persian word on the site) and
+  assets/search-german-auto.json (every German word on the site, how often it appears,
+  and its spelling in Persian letters), for assets/search-fa.js."""
 import html as htmllib
 import json
 import re
@@ -132,6 +135,83 @@ def site_words(docs):
     return sorted(words)
 
 
+
+# -- German words in Persian letters, found on the site by themselves ------------------
+# assets/search-german.json is the hand-written list (colloquial forms such as «ملده»).
+# Every other German word in the handbook gets a Persian spelling here, so a reader who
+# types «کوندیگونگ» or «اشپرکونتو» finds Kündigung or Sperrkonto without anyone listing it.
+# German letters → Persian, longest first. Vowels inside a word are mostly left out in
+# Persian writing; the search folds vowels away anyway (skeleton() in search-fa.js).
+RULES = [
+    ("tsch", "چ"), ("sch", "ش"), ("chs", "کس"), ("ch", "ش"), ("ck", "ک"), ("ph", "ف"), ("th", "ت"),
+    ("qu", "کو"), ("tz", "تس"), ("ng", "نگ"), ("nk", "نک"),
+    ("ei", "ای"), ("ai", "ای"), ("ey", "ای"), ("eu", "وی"), ("äu", "وی"), ("ie", "ی"), ("au", "او"),
+    ("ä", ""), ("ö", "و"), ("ü", "و"), ("ß", "س"),
+    ("a", "ا"), ("e", ""), ("i", "ی"), ("o", "و"), ("u", "و"), ("y", "ی"),
+    ("b", "ب"), ("c", "ک"), ("d", "د"), ("f", "ف"), ("g", "گ"), ("h", "ه"), ("j", "ی"), ("k", "ک"),
+    ("l", "ل"), ("m", "م"), ("n", "ن"), ("p", "پ"), ("r", "ر"), ("s", "س"), ("t", "ت"), ("v", "ف"),
+    ("w", "و"), ("x", "کس"), ("z", "تس"),
+]
+VOWELS = "aeiouäöüy"
+START = {"a": "آ", "e": "ا", "i": "ای", "o": "او", "u": "او", "ä": "ا", "ö": "او", "ü": "او",
+         "ei": "ای", "ai": "آی", "eu": "اوی", "au": "آو", "ie": "ای"}
+
+
+def to_persian(word):
+    """«Meldebescheinigung» → «ملدبشاینیگونگ», «Krankenkasse» → «کرانکنکاسه»: how a
+    German word is usually written in Persian letters (one likely spelling)."""
+    w = word.lower()
+    w = re.sub(r"(.)\1+", r"\1", w)                    # doubled letters are said once
+    out, i = "", 0
+    if w.startswith(("st", "sp")):                    # «Steuer» → «اشتویر»
+        out, i = "اش", 1
+    elif w[0] in VOWELS:
+        for v in sorted(START, key=len, reverse=True):
+            if w.startswith(v):
+                out, i = START[v], len(v)
+                break
+    while i < len(w):
+        rest = w[i:]
+        if rest[0] == "h" and i and w[i - 1] in VOWELS:   # «Bahn»: the h only lengthens the vowel
+            i += 1
+            continue
+        if rest.startswith("ch") and i and w[i - 1] in "aou":
+            out += "خ"; i += 2; continue                   # «Verbraucher», «Buch»: ch after a, o, u
+        if rest[0] == "s" and len(rest) > 1 and rest[1] in VOWELS and (i == 0 or w[i - 1] in VOWELS + "lnr"):
+            out += "ز"; i += 1; continue                   # «Sonne», «Versicherung»: s before a vowel sounds like z
+        if rest == "e":
+            out += "ه"; break                               # final e
+        for g, p in RULES:
+            if rest.startswith(g):
+                out += p; i += len(g)
+                break
+        else:
+            i += 1                                          # anything else (digits, -) is dropped
+    return out
+
+
+
+LATIN_WORD = re.compile(r"[A-Za-zÄÖÜäöüß]{4,}")
+
+
+def german_words(docs):
+    """[[word, times on the site, Persian spelling], ...], most frequent first."""
+    counts, forms = {}, {}
+    for doc in docs:
+        text = re.sub(r"https?://\S+|\S+@\S+", " ", TAGS.sub(" ", doc["title"] + " " + doc["text"]))
+        for word in LATIN_WORD.findall(text):
+            key = word.lower()
+            counts[key] = counts.get(key, 0) + 1
+            forms.setdefault(key, {}).setdefault(word, 0)
+            forms[key][word] += 1
+    out = []
+    for key, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])):
+        spelling = to_persian(key)
+        if len(spelling) >= 3:
+            out.append([max(forms[key], key=forms[key].get), n, spelling])
+    return out
+
+
 def on_post_build(config, **kwargs):
     missing = [latin for latin in PEOPLE_FA if latin not in _people]
     if missing:
@@ -149,5 +229,7 @@ def on_post_build(config, **kwargs):
         json.dumps(titles, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     vocab = Path(config["site_dir"]) / "assets" / "search-words.json"
     vocab.write_text(json.dumps(site_words(data["docs"]), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    (Path(config["site_dir"]) / "assets" / "search-german-auto.json").write_text(
+        json.dumps(german_words(data["docs"]), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     # ASCII-escaped like the search plugin writes it: servers that omit the charset still decode it.
     index.write_text(json.dumps(data, ensure_ascii=True, separators=(",", ":")), encoding="utf-8")

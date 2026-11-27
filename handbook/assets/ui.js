@@ -284,6 +284,11 @@
     for (var i = 0; i < intents.length; i++) {
       if (intents[i].words.some(function (w) { var k = squash(w); return k === a || k === b; })) return intents[i];
     }
+    /* still typing: «مری» is on its way to «مریض» */
+    if (a.length < 3 || !window.islStartOfSiteWord || !window.islStartOfSiteWord(typed.trim())) return null;
+    for (var j = 0; j < intents.length; j++) {
+      if (intents[j].words.some(function (w) { return squash(w).indexOf(a) === 0; })) return intents[j];
+    }
     return null;
   }
 
@@ -401,19 +406,35 @@
       seen[q] = 1;
       try { sessionStorage.setItem(SEEN_KEY, JSON.stringify(seen)); } catch (e) { /* storage blocked: memory only */ }
     }
+    /* The wait is shown once, when results first come: after that they follow every
+       letter at once, so the reader sees where the word is going before it is finished. */
+    var shown = false;
     input().addEventListener("input", function () {
-      clearTimeout(timer);
-      wrap.classList.remove("isl-reveal");
       var q = seenKey(input().value);
+      if (!q) {
+        clearTimeout(timer); timer = null; shown = false;
+        wrap.classList.remove("isl-searching", "isl-reveal");
+        return;
+      }
       /* the first letters of a word searched before count too, so retyping it never flashes */
-      var known = !q || Object.keys(seen).some(function (w) { return w.indexOf(q) === 0; });
-      if (known) { wrap.classList.remove("isl-searching"); return; }
+      var known = Object.keys(seen).some(function (w) { return w.indexOf(q) === 0; });
+      if (shown || known) {
+        clearTimeout(timer); timer = null;
+        wrap.classList.remove("isl-searching");
+        if (!shown) wrap.classList.remove("isl-reveal");
+        shown = true;
+        remember(q);
+        return;
+      }
+      if (timer) return;   /* already waiting: the results come 1.1 s after the first letter */
+      wrap.classList.remove("isl-reveal");
       wrap.classList.add("isl-searching");
       timer = setTimeout(function () {
+        timer = null; shown = true;
         wrap.classList.remove("isl-searching");
         void wrap.offsetWidth;  /* restart the reveal animation */
         wrap.classList.add("isl-reveal");
-        remember(q);
+        remember(seenKey(input().value));
       }, 1100);
     });
 

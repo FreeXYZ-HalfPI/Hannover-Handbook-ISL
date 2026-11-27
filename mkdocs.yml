@@ -75,8 +75,9 @@ extra:
 
 plugins:
   - search:
-      # Split on spaces, hyphens and the zero-width non-joiner used in Persian words.
-      separator: '[\s\-‌]+'
+      # Split on spaces, hyphens, the zero-width non-joiner used in Persian words, and
+      # punctuation (Persian and Latin), so «ملده» or «بانک،» is found as the word itself.
+      separator: '[\s\-‌«»"“”،؛:!؟?(),;/….\[\]]+'
 
 markdown_extensions:
   - admonition
