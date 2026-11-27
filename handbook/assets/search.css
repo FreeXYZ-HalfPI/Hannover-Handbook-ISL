@@ -111,6 +111,9 @@
     box-shadow: 0 1.1rem 1.8rem -0.6rem rgba(0, 0, 0, 0.35);
   }
   [data-md-toggle="search"]:checked ~ .md-header .md-search__scrollwrap { box-shadow: none; }
+  /* Box and results open at the same moment: the theme fades them in with different
+     delays, which shows a light strip between them for a split second. */
+  .md-search__form, .md-search__output, .md-search__scrollwrap, .md-search__input::placeholder { transition: none; }
   [data-md-toggle="search"]:checked ~ .md-header .md-search__scrollwrap { width: auto; max-height: min(65vh, 36rem); }
 
   .md-search-result__meta { padding-inline: 1rem; background: none; box-shadow: none; border-bottom: 1px solid color-mix(in srgb, var(--md-default-fg-color) 7%, transparent); font-size: 0.62rem; }
