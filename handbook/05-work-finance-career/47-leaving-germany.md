@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۵ — کار، امور مالی و آینده شغلی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۵ — کار، امور مالی و آینده شغلی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -56,11 +56,11 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [§ 17 BMG](https://www.gesetze-im-internet.de/bmg/__17.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
-| ۲ | [Abmeldung einer Wohnung: Wegzug aus Hannover](https://hannover.gov.de/buergerservice/dienstleistungen/abmeldung-einer-wohnung-wegzug-aus-hannover-900000020-0.html?myMedium=1) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
-| ۳ | [Rundfunkbeitrag – Abmelden](https://www.rundfunkbeitrag.de/buergerinnen-und-buerger/formulare/abmelden) | Beitragsservice | 2026-11-10 | ✅ باز شد |
-| ۴ | [Verbraucherzentrale](https://www.verbraucherzentrale.de/wissen/digitale-welt/mobilfunk-und-festnetz/wichtige-kundenrechte-fuer-telefon-handy-und-internetvertraege-65879) | Verbraucherzentrale | 2026-11-10 | ✅ باز شد |
-| ۵ | [rundfunkbeitrag.de](https://www.rundfunkbeitrag.de/) | Beitragsservice | 2026-11-10 | ✅ باز شد |
+| ۱ | [§ 17 BMG](https://www.gesetze-im-internet.de/bmg/__17.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
+| ۲ | [Abmeldung einer Wohnung: Wegzug aus Hannover](https://hannover.gov.de/buergerservice/dienstleistungen/abmeldung-einer-wohnung-wegzug-aus-hannover-900000020-0.html?myMedium=1) | شهر هانوفر | 2026-11-23 | ✅ باز شد |
+| ۳ | [Rundfunkbeitrag – Abmelden](https://www.rundfunkbeitrag.de/buergerinnen-und-buerger/formulare/abmelden) | Beitragsservice | 2026-11-23 | ✅ باز شد |
+| ۴ | [Verbraucherzentrale](https://www.verbraucherzentrale.de/wissen/digitale-welt/mobilfunk-und-festnetz/wichtige-kundenrechte-fuer-telefon-handy-und-internetvertraege-65879) | Verbraucherzentrale | 2026-11-23 | ✅ باز شد |
+| ۵ | [rundfunkbeitrag.de](https://www.rundfunkbeitrag.de/) | Beitragsservice | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

@@ -19,7 +19,7 @@
 > راه‌اندازی کسب‌وکار و خوداشتغالی برای دانشجویان غیراروپایی ممکن است به تغییر یا بررسی اجازه اقامت نیاز داشته باشد؛ پیش از هر اقدام با Ausländerbehörde مشورت کنید.
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۵ — کار، امور مالی و آینده شغلی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۵ — کار، امور مالی و آینده شغلی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -56,13 +56,13 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [starting-business.de](https://starting-business.de/) | starting-business.de | 2026-11-10 | ✅ باز شد |
-| ۲ | [starting-business.de – Beratung](https://starting-business.de/beratung) | starting-business.de | 2026-11-10 | ✅ باز شد |
-| ۳ | [LUH – Existenzgründung](https://www.uni-hannover.de/forschung/transfer/existenzgruendung) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۴ | [LUH – SG 44](https://www.uni-hannover.de/universitaet/organisation/dezernate/dezernat-4/sg-44-geistiges-eigentum-schutzrechte-gruendung) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۵ | [Self-employment / Starting a business – Graduiertenakademie](https://www.graduiertenakademie.uni-hannover.de/en/career/career-areas/self-employment-starting-a-business) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۶ | [Gründerplattform](https://gruenderplattform.de/) | gruenderplattform.de | 2026-11-10 | ✅ باز شد |
-| ۷ | [hannoverimpuls](https://www.wirtschaftsfoerderung-hannover.de/) | wirtschaftsfoerderung-hannover.de | 2026-11-10 | ✅ باز شد |
+| ۱ | [starting-business.de](https://starting-business.de/) | starting-business.de | 2026-11-23 | ✅ باز شد |
+| ۲ | [starting-business.de – Beratung](https://starting-business.de/beratung) | starting-business.de | 2026-11-23 | ✅ باز شد |
+| ۳ | [LUH – Existenzgründung](https://www.uni-hannover.de/forschung/transfer/existenzgruendung) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۴ | [LUH – SG 44](https://www.uni-hannover.de/universitaet/organisation/dezernate/dezernat-4/sg-44-geistiges-eigentum-schutzrechte-gruendung) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۵ | [Self-employment / Starting a business – Graduiertenakademie](https://www.graduiertenakademie.uni-hannover.de/en/career/career-areas/self-employment-starting-a-business) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۶ | [Gründerplattform](https://gruenderplattform.de/) | gruenderplattform.de | 2026-11-23 | ✅ باز شد |
+| ۷ | [hannoverimpuls](https://www.wirtschaftsfoerderung-hannover.de/) | wirtschaftsfoerderung-hannover.de | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

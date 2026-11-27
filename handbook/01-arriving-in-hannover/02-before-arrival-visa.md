@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-15 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-15 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -68,18 +68,18 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [Entry and Residence Requirements](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۲ | [سفارت آلمان در تهران – ویزای ملی](https://teheran.diplo.de/ir-de/02-service/2403868-2403868) | وزارت امور خارجه آلمان | 2026-11-10 | ✅ باز شد |
-| ۳ | [سفارت آلمان در تهران – وضعیت کاری](https://teheran.diplo.de/ir-de/2752046-2752046) | وزارت امور خارجه آلمان | 2026-11-10 | ✅ باز شد |
-| ۴ | [Auswärtiges Amt – Managua](https://managua.diplo.de/ni-de/service/05-visaeinreise/sperrkonto-2163974) | وزارت امور خارجه آلمان | 2026-11-10 | ✅ باز شد |
-| ۵ | [EasyStartLUH](https://go.lu-h.de/EasyStartLUH) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۶ | [سفارت آلمان در ایتالیا](https://italien.diplo.de/it-de/service/visa-aktuell/2586756-2586756) | وزارت امور خارجه آلمان | 2026-11-10 | ✅ باز شد |
-| ۷ | [fintiba](https://www.fintiba.com/germany/visa/requirements-for-iranian-students) | fintiba.com | 2026-11-10 | ✅ باز شد |
-| ۸ | [فهرست نمایندگی‌های آلمان](https://www.auswaertiges-amt.de/de/ReiseUndSicherheit/deutsche-auslandsvertretungen/03-webseitenav) | وزارت امور خارجه آلمان | 2026-11-10 | ✅ باز شد |
-| ۹ | [LUH](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/internationale-erstsemesterstudierende) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۱۰ | [Merkblatt Studium – سفارت تهران](https://teheran.diplo.de/ir-de/02-service/merkblatt-studium-2492580) | وزارت امور خارجه آلمان | 2026-11-10 | ✅ باز شد |
-| ۱۱ | [Visa-Navigator](https://digital.diplo.de/navigator/de/visa) | وزارت امور خارجه آلمان | 2026-11-10 | ✅ باز شد |
-| ۱۲ | [Auswärtiges Amt – Sperrkonto (سفارت آلمان در لوکزامبورگ)](https://luxemburg.diplo.de/lu-de/service/2126802-2126802) | وزارت امور خارجه آلمان | 2026-11-15 | ✅ باز شد |
+| ۱ | [Entry and Residence Requirements](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۲ | [سفارت آلمان در تهران – ویزای ملی](https://teheran.diplo.de/ir-de/02-service/2403868-2403868) | وزارت امور خارجه آلمان | 2026-11-23 | ✅ باز شد |
+| ۳ | [سفارت آلمان در تهران – وضعیت کاری](https://teheran.diplo.de/ir-de/2752046-2752046) | وزارت امور خارجه آلمان | 2026-11-23 | ✅ باز شد |
+| ۴ | [Auswärtiges Amt – Managua](https://managua.diplo.de/ni-de/service/05-visaeinreise/sperrkonto-2163974) | وزارت امور خارجه آلمان | 2026-11-23 | ✅ باز شد |
+| ۵ | [EasyStartLUH](https://go.lu-h.de/EasyStartLUH) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۶ | [سفارت آلمان در ایتالیا](https://italien.diplo.de/it-de/service/visa-aktuell/2586756-2586756) | وزارت امور خارجه آلمان | 2026-11-23 | ✅ باز شد |
+| ۷ | [fintiba](https://www.fintiba.com/germany/visa/requirements-for-iranian-students) | fintiba.com | 2026-11-23 | ✅ باز شد |
+| ۸ | [فهرست نمایندگی‌های آلمان](https://www.auswaertiges-amt.de/de/ReiseUndSicherheit/deutsche-auslandsvertretungen/03-webseitenav) | وزارت امور خارجه آلمان | 2026-11-23 | ✅ باز شد |
+| ۹ | [LUH](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/internationale-erstsemesterstudierende) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۱۰ | [Merkblatt Studium – سفارت تهران](https://teheran.diplo.de/ir-de/02-service/merkblatt-studium-2492580) | وزارت امور خارجه آلمان | 2026-11-23 | ✅ باز شد |
+| ۱۱ | [Visa-Navigator](https://digital.diplo.de/navigator/de/visa) | وزارت امور خارجه آلمان | 2026-11-23 | ✅ باز شد |
+| ۱۲ | [Auswärtiges Amt – Sperrkonto (سفارت آلمان در لوکزامبورگ)](https://luxemburg.diplo.de/lu-de/service/2126802-2126802) | وزارت امور خارجه آلمان | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

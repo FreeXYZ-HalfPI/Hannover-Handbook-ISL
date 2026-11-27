@@ -19,7 +19,7 @@
 > این صفحه اطلاعات عمومی است و مشاوره حقوقی یا مالیاتی به شمار نمی‌آید. قواعد کار برای دانشجویان غیراروپایی به نوع اجازه اقامت بستگی دارد؛ پیش از شروع کار با Ausländerbehörde هماهنگ کنید.
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-15 · **بخش:** [بخش ۵ — کار، امور مالی و آینده شغلی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-15 · **بخش:** [بخش ۵ — کار، امور مالی و آینده شغلی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -68,16 +68,16 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [§ 16b Abs. 3 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
-| ۲ | [Arbeiten während des Studiums](https://www.make-it-in-germany.com/de/studium-ausbildung/studieren-in-deutschland/arbeit) | Make it in Germany – دولت فدرال | 2026-11-10 | ✅ باز شد |
-| ۳ | [BA – Fachliche Weisungen (PDF)](https://www.arbeitsagentur.de/datei/dok_ba033210.pdf) | اداره کار فدرال | 2026-11-10 | ✅ باز شد |
-| ۴ | [صفحه فرصت‌های شغلی دانشگاه](https://www.uni-hannover.de/en/universitaet/stellenangebote-arbeit-an-der-uni) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۵ | [Deutsche Rentenversicherung](https://www.deutsche-rentenversicherung.de/DRV/DE/Experten/Arbeitgeber-und-Steuerberater/summa-summarum/Lexikon/W/werkstudentenprivileg.html) | Deutsche Rentenversicherung | 2026-11-10 | ✅ باز شد |
-| ۶ | [Minijob-Zentrale – Minijob mit Verdienstgrenze](https://www.minijob-zentrale.de/DE/die-minijobs/minijob-mit-verdienstgrenze) | Minijob-Zentrale (Deutsche Rentenversicherung Knappschaft-Bahn-See) | 2026-11-15 | ✅ باز شد (۶۰۳ یورو در ماه و ۷٬۲۳۶ یورو در سال)
-| ۷ | [finanz.de](https://www.finanz.de/news/artikel-10559/) | finanz.de | 2026-11-10 | ✅ باز شد |
-| ۸ | [Deutsche Rentenversicherung](https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2024/240312-versicherungsnummernachweis) | Deutsche Rentenversicherung | 2026-11-10 | ✅ باز شد |
-| ۹ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-11-10 | ✅ باز شد |
-| ۱۰ | [Minijob-Zentrale](https://www.minijob-zentrale.de/) | minijob-zentrale.de | 2026-11-10 | ✅ باز شد |
+| ۱ | [§ 16b Abs. 3 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
+| ۲ | [Arbeiten während des Studiums](https://www.make-it-in-germany.com/de/studium-ausbildung/studieren-in-deutschland/arbeit) | Make it in Germany – دولت فدرال | 2026-11-23 | ✅ باز شد |
+| ۳ | [BA – Fachliche Weisungen (PDF)](https://www.arbeitsagentur.de/datei/dok_ba033210.pdf) | اداره کار فدرال | 2026-11-23 | ✅ باز شد |
+| ۴ | [صفحه فرصت‌های شغلی دانشگاه](https://www.uni-hannover.de/en/universitaet/stellenangebote-arbeit-an-der-uni) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۵ | [Deutsche Rentenversicherung](https://www.deutsche-rentenversicherung.de/DRV/DE/Experten/Arbeitgeber-und-Steuerberater/summa-summarum/Lexikon/W/werkstudentenprivileg.html) | Deutsche Rentenversicherung | 2026-11-23 | ✅ باز شد |
+| ۶ | [Minijob-Zentrale – Minijob mit Verdienstgrenze](https://www.minijob-zentrale.de/DE/die-minijobs/minijob-mit-verdienstgrenze) | Minijob-Zentrale (Deutsche Rentenversicherung Knappschaft-Bahn-See) | 2026-11-23 | ✅ باز شد (۶۰۳ یورو در ماه و ۷٬۲۳۶ یورو در سال)
+| ۷ | [finanz.de](https://www.finanz.de/news/artikel-10559/) | finanz.de | 2026-11-23 | ✅ باز شد |
+| ۸ | [Deutsche Rentenversicherung](https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2024/240312-versicherungsnummernachweis) | Deutsche Rentenversicherung | 2026-11-23 | ✅ باز شد |
+| ۹ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-11-23 | ✅ باز شد |
+| ۱۰ | [Minijob-Zentrale](https://www.minijob-zentrale.de/) | minijob-zentrale.de | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

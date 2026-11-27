@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۷ — منابع و پیوست‌ها](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۷ — منابع و پیوست‌ها](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -100,24 +100,24 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [پرتال آنلاین](https://hannover.gov.de/portal/seiten/erteilung-oder-verlaengerung-einer-aufenthaltserlaubnis-oder-blauen-karte-eu-1141-30810.html?rubrik=1001) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
-| ۲ | [uni-assist.de](https://www.uni-assist.de/) | uni-assist | 2026-11-10 | ✅ باز شد |
-| ۳ | [Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۴ | [International First Semester Students](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/internationale-erstsemesterstudierende) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۵ | [Entry and Residence](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۶ | [Semester dates](https://www.uni-hannover.de/en/studium/semestertermine) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۷ | [Rückmeldung](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۸ | [Online-Dienste](https://www.uni-hannover.de/en/studium/im-studium/online-dienste) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۹ | [Standortfinder](https://standortfinder.uni-hannover.de/) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۱۰ | [First Steps in Germany](https://www.studentenwerk-hannover.de/en/international-students/first-steps-in-germany) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
-| ۱۱ | [سامانه نوبت Bürgeramt](https://termin.hannover.gov.de/buergeramt) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
-| ۱۲ | [uestra.de (GVH)](https://www.uestra.de/) | ÜSTRA | 2026-11-10 | ✅ باز شد |
-| ۱۳ | [aha-region.de](https://www.aha-region.de/) | aha | 2026-11-10 | ✅ باز شد |
-| ۱۴ | [116117.de](https://www.116117.de/) | 116117 | 2026-11-10 | ✅ باز شد |
-| ۱۵ | [uni-hannover.de](https://www.uni-hannover.de/) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۱۶ | [hannover.de](https://www.hannover.de/) | شهر و منطقه هانوفر | 2026-11-10 | ✅ باز شد |
-| ۱۷ | [studentenwerk-hannover.de](https://www.studentenwerk-hannover.de/) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
-| ۱۸ | [asta-hannover.de](https://www.asta-hannover.de/) | AStA Hannover | 2026-11-10 | ✅ باز شد |
+| ۱ | [پرتال آنلاین](https://hannover.gov.de/portal/seiten/erteilung-oder-verlaengerung-einer-aufenthaltserlaubnis-oder-blauen-karte-eu-1141-30810.html?rubrik=1001) | شهر هانوفر | 2026-11-23 | ✅ باز شد |
+| ۲ | [uni-assist.de](https://www.uni-assist.de/) | uni-assist | 2026-11-23 | ✅ باز شد |
+| ۳ | [Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۴ | [International First Semester Students](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/internationale-erstsemesterstudierende) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۵ | [Entry and Residence](https://www.uni-hannover.de/en/universitaet/internationales/wege-nach-hannover/einreise-aufenthalt) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۶ | [Semester dates](https://www.uni-hannover.de/en/studium/semestertermine) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۷ | [Rückmeldung](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۸ | [Online-Dienste](https://www.uni-hannover.de/en/studium/im-studium/online-dienste) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۹ | [Standortfinder](https://standortfinder.uni-hannover.de/) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۱۰ | [First Steps in Germany](https://www.studentenwerk-hannover.de/en/international-students/first-steps-in-germany) | Studentenwerk Hannover | 2026-11-23 | ✅ باز شد |
+| ۱۱ | [سامانه نوبت Bürgeramt](https://termin.hannover.gov.de/buergeramt) | شهر هانوفر | 2026-11-23 | ✅ باز شد |
+| ۱۲ | [uestra.de (GVH)](https://www.uestra.de/) | ÜSTRA | 2026-11-23 | ✅ باز شد |
+| ۱۳ | [aha-region.de](https://www.aha-region.de/) | aha | 2026-11-23 | ✅ باز شد |
+| ۱۴ | [116117.de](https://www.116117.de/) | 116117 | 2026-11-23 | ✅ باز شد |
+| ۱۵ | [uni-hannover.de](https://www.uni-hannover.de/) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۱۶ | [hannover.de](https://www.hannover.de/) | شهر و منطقه هانوفر | 2026-11-23 | ✅ باز شد |
+| ۱۷ | [studentenwerk-hannover.de](https://www.studentenwerk-hannover.de/) | Studentenwerk Hannover | 2026-11-23 | ✅ باز شد |
+| ۱۸ | [asta-hannover.de](https://www.asta-hannover.de/) | AStA Hannover | 2026-11-23 | ✅ باز شد |
 
 ---
 

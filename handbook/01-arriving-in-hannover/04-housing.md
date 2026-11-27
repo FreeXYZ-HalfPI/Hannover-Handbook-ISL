@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-29 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-29 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -107,19 +107,19 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH – Housing](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/housing) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۲ | [Studentenwerk – Housing search](https://www.studentenwerk-hannover.de/en/wohnen/wohnungssuche) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
-| ۳ | [§ 551 BGB](https://www.gesetze-im-internet.de/bgb/__551.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
-| ۴ | [برگه اطلاعات پلیس / KIT](https://www.intl.kit.edu/download/INFOBLATT_Betrug%20bei%20der%20Wohnungssuche.pdf) | intl.kit.edu | 2026-11-10 | ✅ باز شد |
-| ۵ | [فرم رسمی شهر](https://hannover.gov.de/medien/dokumente/wohnungsgeberbestaetigung.pdf) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
-| ۶ | [Dormitories](https://www.studentenwerk-hannover.de/wohnen/wohnhaeuser/) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
-| ۷ | [§ 17 BMG](https://www.gesetze-im-internet.de/bmg/__17.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
-| ۸ | [§ 19 BMG](https://www.gesetze-im-internet.de/bmg/__19.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
-| ۹ | [§ 54 BMG](https://www.gesetze-im-internet.de/bmg/__54.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
-| ۱۰ | [§ 540 BGB](https://www.gesetze-im-internet.de/bgb/__540.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
-| ۱۱ | [MLP Studentenwohnreport 2026 (PDF)](https://www.iwkoeln.de/fileadmin/user_upload/Studien/Gutachten/PDF/2026/MLP_Studentenwohnreport_2026.pdf) | MLP SE و مؤسسه اقتصاد آلمان (IW Köln) | 2026-11-10 | ✅ باز شد |
-| ۱۲ | [Studentenwerk – Allgemeine Mietbedingungen (PDF)](https://www.studentenwerk-hannover.de/fileadmin/user_upload/Downloads/2_Wohnen/2024-10_AMB_alle_WH.pdf) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
-| ۱۳ | [LUH – Orientation Days](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/preparation-courses-and-introductory-sessions/orientation-days) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۱ | [LUH – Housing](https://www.uni-hannover.de/en/universitaet/campus-und-stadt/housing) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۲ | [Studentenwerk – Housing search](https://www.studentenwerk-hannover.de/en/wohnen/wohnungssuche) | Studentenwerk Hannover | 2026-11-23 | ✅ باز شد |
+| ۳ | [§ 551 BGB](https://www.gesetze-im-internet.de/bgb/__551.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
+| ۴ | [برگه اطلاعات پلیس / KIT](https://www.intl.kit.edu/download/INFOBLATT_Betrug%20bei%20der%20Wohnungssuche.pdf) | intl.kit.edu | 2026-11-23 | ✅ باز شد |
+| ۵ | [فرم رسمی شهر](https://hannover.gov.de/medien/dokumente/wohnungsgeberbestaetigung.pdf) | شهر هانوفر | 2026-11-23 | ✅ باز شد |
+| ۶ | [Dormitories](https://www.studentenwerk-hannover.de/wohnen/wohnhaeuser/) | Studentenwerk Hannover | 2026-11-23 | ✅ باز شد |
+| ۷ | [§ 17 BMG](https://www.gesetze-im-internet.de/bmg/__17.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
+| ۸ | [§ 19 BMG](https://www.gesetze-im-internet.de/bmg/__19.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
+| ۹ | [§ 54 BMG](https://www.gesetze-im-internet.de/bmg/__54.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
+| ۱۰ | [§ 540 BGB](https://www.gesetze-im-internet.de/bgb/__540.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
+| ۱۱ | [MLP Studentenwohnreport 2026 (PDF)](https://www.iwkoeln.de/fileadmin/user_upload/Studien/Gutachten/PDF/2026/MLP_Studentenwohnreport_2026.pdf) | MLP SE و مؤسسه اقتصاد آلمان (IW Köln) | 2026-11-23 | ✅ باز شد |
+| ۱۲ | [Studentenwerk – Allgemeine Mietbedingungen (PDF)](https://www.studentenwerk-hannover.de/fileadmin/user_upload/Downloads/2_Wohnen/2024-10_AMB_alle_WH.pdf) | Studentenwerk Hannover | 2026-11-23 | ✅ باز شد |
+| ۱۳ | [LUH – Orientation Days](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/preparation-courses-and-introductory-sessions/orientation-days) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-29 · **بخش:** [بخش ۶ — جامعه دانشجویی و مشارکت اجتماعی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-29 · **بخش:** [بخش ۶ — جامعه دانشجویی و مشارکت اجتماعی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -54,17 +54,17 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [ptb](https://www.ptb.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۲ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۳ | [Erstival](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/erstival) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۴ | [Orientation Days](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/preparation-courses-and-introductory-sessions/orientation-days) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۵ | [Kontakte knüpfen](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/kontakte-knuepfen) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۶ | [Start Smart](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/start-smart) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۷ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-11-10 | ✅ باز شد |
-| ۸ | [LUH – ZQS](https://www.uni-hannover.de/en/universitaet/organisation/einrichtungen/zentrale-einrichtungen/zqs) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۹ | [Instagram @uni_hannover](https://www.instagram.com/uni_hannover/) | instagram.com | 2026-11-10 | ✅ باز شد |
+| ۱ | [ptb](https://www.ptb.uni-hannover.de/en/) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۲ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۳ | [Erstival](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/erstival) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۴ | [Orientation Days](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/preparation-courses-and-introductory-sessions/orientation-days) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۵ | [Kontakte knüpfen](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/kontakte-knuepfen) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۶ | [Start Smart](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/start-smart) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۷ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-11-23 | ✅ باز شد |
+| ۸ | [LUH – ZQS](https://www.uni-hannover.de/en/universitaet/organisation/einrichtungen/zentrale-einrichtungen/zqs) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۹ | [Instagram @uni_hannover](https://www.instagram.com/uni_hannover/) | instagram.com | 2026-11-23 | ✅ باز شد |
 | ۱۰ | [LinkedIn](https://www.linkedin.com/school/leibniz-universit-t-hannover-germany) | linkedin.com | 2026-10-23 | ✅ باز شد |
-| ۱۱ | [Veranstaltungskalender](https://www.hannover.de/Veranstaltungskalender) | شهر و منطقه هانوفر | 2026-11-10 | ✅ باز شد |
+| ۱۱ | [Veranstaltungskalender](https://www.hannover.de/Veranstaltungskalender) | شهر و منطقه هانوفر | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

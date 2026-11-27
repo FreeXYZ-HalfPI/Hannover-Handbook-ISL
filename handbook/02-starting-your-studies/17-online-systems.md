@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۲ — شروع تحصیل در دانشگاه لایبنیتس](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۲ — شروع تحصیل در دانشگاه لایبنیتس](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -57,16 +57,16 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۲ | [آموزش فعال‌سازی](https://www.uni-hannover.de/en/studium/im-studium/online-dienste/idm#c60368) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۳ | [luis.uni-hannover.de](https://www.luis.uni-hannover.de/) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۴ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۵ | [AStA – Semesterticket](https://www.asta-hannover.de/semesterticket) | AStA Hannover | 2026-11-10 | ✅ باز شد |
-| ۶ | [LUH – Mobile App](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/mobile-app-zum-studienstart) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۷ | [Online-Dienste](https://www.uni-hannover.de/en/studium/im-studium/online-dienste) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۸ | [LUH – ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۹ | [IdM](https://www.uni-hannover.de/en/studium/im-studium/online-dienste/idm) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۱۰ | [بروشور «Noch Fragen?» (PDF)](http://go.lu-h.de/start__ins_studium_noch_fragen_pdf) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
+| ۱ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۲ | [آموزش فعال‌سازی](https://www.uni-hannover.de/en/studium/im-studium/online-dienste/idm#c60368) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۳ | [luis.uni-hannover.de](https://www.luis.uni-hannover.de/) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۴ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۵ | [AStA – Semesterticket](https://www.asta-hannover.de/semesterticket) | AStA Hannover | 2026-11-23 | ✅ باز شد |
+| ۶ | [LUH – Mobile App](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/mobile-app-zum-studienstart) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۷ | [Online-Dienste](https://www.uni-hannover.de/en/studium/im-studium/online-dienste) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۸ | [LUH – ServiceCenter](https://www.uni-hannover.de/en/studium/beratung-hilfe/servicecenter) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۹ | [IdM](https://www.uni-hannover.de/en/studium/im-studium/online-dienste/idm) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۱۰ | [بروشور «Noch Fragen?» (PDF)](https://go.lu-h.de/start__ins_studium_noch_fragen_pdf) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

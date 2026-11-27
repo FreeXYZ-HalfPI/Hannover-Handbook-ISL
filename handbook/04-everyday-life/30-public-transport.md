@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-11-10 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -62,13 +62,13 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [AStA – Semesterticket](https://www.asta-hannover.de/semesterticket) | AStA Hannover | 2026-11-10 | ✅ باز شد |
-| ۲ | [AStA – Ordnung Semesterticketausfallfonds](https://staff.asta-hannover.de/beta/assets/SemTicketAusfall_Ordnung.pdf) | AStA Hannover | 2026-11-10 | ✅ باز شد |
-| ۳ | [AStA – Semester ticket](https://www.asta-hannover.de/en/semester-ticket) | AStA Hannover | 2026-11-10 | ✅ باز شد (نشانی قبلی ۴۰۴ می‌داد) |
-| ۴ | [AStA – پرتال درخواست صندوق سختی](https://staff.asta-hannover.de/) | AStA Hannover | 2026-11-10 | ✅ باز شد |
-| ۵ | [uestra.de (GVH)](https://www.uestra.de/) | ÜSTRA | 2026-11-10 | ✅ باز شد |
-| ۶ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۷ | [AStA – Fahrradwerkstatt](https://www.asta-hannover.de/angebote-beratung/fahrradwerkstaette) | AStA Hannover | 2026-11-10 | ✅ باز شد |
+| ۱ | [AStA – Semesterticket](https://www.asta-hannover.de/semesterticket) | AStA Hannover | 2026-11-23 | ✅ باز شد |
+| ۲ | [AStA – Ordnung Semesterticketausfallfonds](https://staff.asta-hannover.de/beta/assets/SemTicketAusfall_Ordnung.pdf) | AStA Hannover | 2026-11-23 | ✅ باز شد |
+| ۳ | [AStA – Semester ticket](https://www.asta-hannover.de/en/semester-ticket) | AStA Hannover | 2026-11-23 | ✅ باز شد (نشانی قبلی ۴۰۴ می‌داد) |
+| ۴ | [AStA – پرتال درخواست صندوق سختی](https://staff.asta-hannover.de/) | AStA Hannover | 2026-11-23 | ✅ باز شد |
+| ۵ | [uestra.de (GVH)](https://www.uestra.de/) | ÜSTRA | 2026-11-23 | ✅ باز شد |
+| ۶ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۷ | [AStA – Fahrradwerkstatt](https://www.asta-hannover.de/angebote-beratung/fahrradwerkstaette) | AStA Hannover | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

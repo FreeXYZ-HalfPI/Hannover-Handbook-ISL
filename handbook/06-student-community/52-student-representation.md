@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۶ — جامعه دانشجویی و مشارکت اجتماعی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۶ — جامعه دانشجویی و مشارکت اجتماعی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -57,12 +57,12 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [Organe & Gremien der studentischen Selbstverwaltung](https://www.uni-hannover.de/studium/im-studium/campusleben-und-engagement/gruppen-selbstverwaltung/organe-gremien) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۲ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۳ | [Wahlordnung der Studierendenschaft (PDF)](https://www.uni-hannover.de/fileadmin/luh/content/wahlamt/dokumente/Wahl-_und_andere_Ordnungen/VKBl_Nr._08_2025_-_Wahlordnung_der_Studierendenschaft.pdf) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۴ | [Fachschaften](https://www.uni-hannover.de/en/studium/im-studium/campusleben-und-engagement/gruppen-selbstverwaltung/organe-gremien/fachschaften) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۵ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-11-10 | ✅ باز شد |
-| ۶ | [AStA – Satzungen und Ordnungen](https://www.asta-hannover.de/hochschulpolitik/satzungen-und-ordnungen/) | AStA Hannover | 2026-11-10 | ✅ باز شد |
+| ۱ | [Organe & Gremien der studentischen Selbstverwaltung](https://www.uni-hannover.de/studium/im-studium/campusleben-und-engagement/gruppen-selbstverwaltung/organe-gremien) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۲ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۳ | [Wahlordnung der Studierendenschaft (PDF)](https://www.uni-hannover.de/fileadmin/luh/content/wahlamt/dokumente/Wahl-_und_andere_Ordnungen/VKBl_Nr._08_2025_-_Wahlordnung_der_Studierendenschaft.pdf) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۴ | [Fachschaften](https://www.uni-hannover.de/en/studium/im-studium/campusleben-und-engagement/gruppen-selbstverwaltung/organe-gremien/fachschaften) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۵ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-11-23 | ✅ باز شد |
+| ۶ | [AStA – Satzungen und Ordnungen](https://www.asta-hannover.de/hochschulpolitik/satzungen-und-ordnungen/) | AStA Hannover | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

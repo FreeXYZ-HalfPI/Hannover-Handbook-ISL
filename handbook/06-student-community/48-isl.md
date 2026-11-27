@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۶ — جامعه دانشجویی و مشارکت اجتماعی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۶ — جامعه دانشجویی و مشارکت اجتماعی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -61,10 +61,10 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [Studentische Vereinigungen](https://www.uni-hannover.de/en/studium/im-studium/campusleben-und-engagement/gruppen-selbstverwaltung/studentische-vereinigungen) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۲ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-11-10 | ✅ باز شد |
-| ۳ | [کانال تلگرام ISL](https://t.me/hannover_iranian_students) | ISL | 2026-11-10 | ✅ باز شد |
-| ۴ | [اینستاگرام](https://www.instagram.com/hannover_iranian_students/) | ISL | 2026-11-10 | ✅ باز شد |
+| ۱ | [Studentische Vereinigungen](https://www.uni-hannover.de/en/studium/im-studium/campusleben-und-engagement/gruppen-selbstverwaltung/studentische-vereinigungen) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۲ | [AStA](https://www.asta-hannover.de/angebote-beratung/internationale-studierende) | AStA Hannover | 2026-11-23 | ✅ باز شد |
+| ۳ | [کانال تلگرام ISL](https://t.me/hannover_iranian_students) | ISL | 2026-11-23 | ✅ باز شد |
+| ۴ | [اینستاگرام](https://www.instagram.com/hannover_iranian_students/) | ISL | 2026-11-23 | ✅ باز شد |
 | ۵ | اساسنامه ISL (فارسی، آلمانی و انگلیسی؛ اکتبر ۲۰۲۶) | ISL | 2026-10-25 | 📄 سند PDF؛ در کانال ISL منتشر شده |
 
 ## ۷. تجربه دانشجویان (غیررسمی)

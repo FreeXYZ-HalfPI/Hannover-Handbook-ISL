@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۷ — منابع و پیوست‌ها](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۷ — منابع و پیوست‌ها](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -115,10 +115,10 @@ git push origin fix-residence-fee
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [Creating an account on GitHub](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github) | GitHub Docs | 2026-11-10 | ✅ باز شد |
-| ۲ | [Creating an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue) | GitHub Docs | 2026-11-10 | ✅ باز شد |
-| ۳ | [Editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files) | GitHub Docs | 2026-11-10 | ✅ باز شد |
-| ۴ | [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) | GitHub Docs | 2026-11-10 | ✅ باز شد |
+| ۱ | [Creating an account on GitHub](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github) | GitHub Docs | 2026-11-23 | ✅ باز شد |
+| ۲ | [Creating an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue) | GitHub Docs | 2026-11-23 | ✅ باز شد |
+| ۳ | [Editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files) | GitHub Docs | 2026-11-23 | ✅ باز شد |
+| ۴ | [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) | GitHub Docs | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 
