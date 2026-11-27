@@ -144,6 +144,9 @@ def on_post_build(config, **kwargs):
     data = json.loads(index.read_text(encoding="utf-8"))
     strip_boilerplate(data["docs"])
     add_persian_names(data["docs"])
+    titles = {doc["location"]: doc["title"] for doc in data["docs"] if "#" not in doc["location"]}
+    (Path(config["site_dir"]) / "assets" / "search-pages.json").write_text(
+        json.dumps(titles, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     vocab = Path(config["site_dir"]) / "assets" / "search-words.json"
     vocab.write_text(json.dumps(site_words(data["docs"]), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     # ASCII-escaped like the search plugin writes it: servers that omit the charset still decode it.

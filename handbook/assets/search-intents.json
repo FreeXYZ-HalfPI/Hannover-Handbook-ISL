@@ -1,0 +1,239 @@
+{
+  "_comment": "What people are usually looking for when they search a word. «words»: what they type (German, or Persian; German typed in Persian letters is read as German first). «results»: the pages that answer that need, best first, each with one line written for that need. These come first in the results; the search fills up the rest. assets/ui.js reads this file.",
+  "intents": [
+    {
+      "words": ["Krank", "Krankheit", "krankgeschrieben", "Krankschreibung", "Krankmeldung", "Arbeitsunfähigkeitsbescheinigung", "مریض", "مریضی", "بیمار", "بیماری", "سرماخوردگی", "تب", "حالم بد است"],
+      "results": [
+        ["04-everyday-life/33-doctor-pharmacy/", "مریض شده‌اید؟ پیدا کردن پزشک خانواده، گرفتن نوبت و گواهی بیماری برای کار یا دانشگاه."],
+        ["04-everyday-life/37-emergency/", "اگر حالتان خیلی بد است: ۱۱۲ برای اورژانس، و ۱۱۶۱۱۷ برای پزشک کشیک در شب و آخر هفته."],
+        ["07-resources/63-persian-speaking-doctors/", "پزشکانی در هانوفر که می‌توانید دردتان را به فارسی توضیح دهید."],
+        ["01-arriving-in-hannover/07-health-insurance/", "کارت بیمه‌ای که در مطب لازم است و هزینه‌هایی که بیمه می‌پردازد."]
+      ]
+    },
+    {
+      "words": ["Arzt", "Hausarzt", "Facharzt", "Praxis", "Ärztin", "دکتر", "پزشک", "مطب", "دکتر ایرانی", "دکتر فارسی زبان", "پزشک ایرانی"],
+      "results": [
+        ["07-resources/63-persian-speaking-doctors/", "فهرست پزشکان فارسی‌زبان هانوفر با نشانی و تلفن."],
+        ["04-everyday-life/33-doctor-pharmacy/", "پزشک خانواده را چطور پیدا کنید، نوبت بگیرید و کی به متخصص بروید."],
+        ["04-everyday-life/37-emergency/", "شب‌ها و آخر هفته که مطب‌ها بسته‌اند، به کجا زنگ بزنید."]
+      ]
+    },
+    {
+      "words": ["Zahnarzt", "Zahn", "دندان", "دندانپزشک", "دندان پزشک", "دندون", "دندونپزشک"],
+      "results": [
+        ["07-resources/63-persian-speaking-doctors/", "دندان‌پزشک پیدا کردن و قواعدی که بیمه دولتی برای دندان دارد."],
+        ["01-arriving-in-hannover/07-health-insurance/", "بیمه درمانی چه سهمی از هزینه دندان را می‌پردازد."],
+        ["04-everyday-life/33-doctor-pharmacy/", "اگر درد شدید دارید: درمان فوری در شب و آخر هفته."]
+      ]
+    },
+    {
+      "words": ["Notfall", "Notaufnahme", "Notdienst", "Polizei", "Feuerwehr", "Notruf", "اورژانس", "آمبولانس", "پلیس", "آتش نشانی", "فوری", "اضطراری", "کمک فوری"],
+      "results": [
+        ["04-everyday-life/37-emergency/", "شماره‌های اضطراری آلمان و این‌که در هر خطر به کجا زنگ بزنید."],
+        ["04-everyday-life/33-doctor-pharmacy/", "پزشک کشیک و اورژانس بیمارستان برای بیماری‌های فوری."]
+      ]
+    },
+    {
+      "words": ["Apotheke", "Rezept", "Medikament", "داروخانه", "دارو", "نسخه", "قرص"],
+      "results": [
+        ["04-everyday-life/33-doctor-pharmacy/", "داروخانه چطور کار می‌کند، نسخه پزشک و داروخانه‌های شبانه‌روزی."],
+        ["01-arriving-in-hannover/07-health-insurance/", "سهمی از هزینه دارو که خودتان باید بپردازید."]
+      ]
+    },
+    {
+      "words": ["Psychologe", "Psychotherapie", "Beratung", "روانشناس", "روانپزشک", "روان درمانی", "افسردگی", "استرس", "اضطراب", "مشاوره", "تنهایی", "تنها"],
+      "results": [
+        ["03-university-services/29-counselling/", "مشاوره رایگان دانشگاه برای فشار روحی، درس و مشکلات زندگی."],
+        ["07-resources/63-persian-speaking-doctors/", "روان‌پزشک و روان‌درمانگر فارسی‌زبان در هانوفر."],
+        ["06-student-community/51-events-networking/", "راه‌هایی برای کم کردن تنهایی و پیدا کردن دوست."]
+      ]
+    },
+    {
+      "words": ["Termin", "نوبت", "وقت گرفتن", "وقت"],
+      "results": [
+        ["01-arriving-in-hannover/05-anmeldung/", "نوبت گرفتن برای ثبت محل سکونت، که بیشترین نوبت اداری سال اول است."],
+        ["01-arriving-in-hannover/10-residence-permit/", "نوبت اداره اتباع برای کارت اقامت و تمدید آن."],
+        ["04-everyday-life/33-doctor-pharmacy/", "نوبت گرفتن از پزشک، تلفنی یا آنلاین."]
+      ]
+    },
+    {
+      "words": ["Wohnung", "Zimmer", "WG", "Miete", "Mietvertrag", "Vermieter", "Kaution", "Nebenkosten", "Wohnheim", "Zwischenmiete", "خانه", "خونه", "اتاق", "اجاره", "خوابگاه", "صاحبخانه", "صاحب خانه", "ودیعه", "مسکن"],
+      "results": [
+        ["01-arriving-in-hannover/04-housing/", "کجا اتاق پیدا کنید، چقدر هزینه دارد و پیش از امضای قرارداد به چه دقت کنید."],
+        ["03-university-services/23-studentenwerk/", "خوابگاه‌های دانشجویی و درخواست آنلاین برای اتاق."],
+        ["01-arriving-in-hannover/05-anmeldung/", "پس از گرفتن خانه، ثبت محل سکونت در دو هفته اول."],
+        ["07-resources/62-consumer-rights-legal-help/", "ودیعه را پس نمی‌دهند یا با صاحبخانه مشکل دارید؟ کمک حقوقی رایگان."]
+      ]
+    },
+    {
+      "words": ["Geld", "Kosten", "پول", "هزینه", "هزینه زندگی", "خرج", "مخارج", "پول کم"],
+      "results": [
+        ["01-arriving-in-hannover/02-before-arrival-visa/", "هزینه زندگی ماهانه و مبلغی که باید در حساب مسدودی بگذارید."],
+        ["05-work-finance-career/43-scholarships/", "کمک‌هزینه‌ها و کمک مالی اضطراری برای دانشجویان."],
+        ["05-work-finance-career/40-student-jobs/", "درآمد از کار دانشجویی و سقف مجاز آن."],
+        ["04-everyday-life/31-shopping/", "خرید ارزان و صرفه‌جویی در خرج روزانه."]
+      ]
+    },
+    {
+      "words": ["Arbeit", "Job", "Nebenjob", "Werkstudent", "Minijob", "HiWi", "کار", "شغل", "کار پیدا کردن", "استخدام"],
+      "results": [
+        ["05-work-finance-career/40-student-jobs/", "چه کاری و چند ساعت در هفته اجازه دارید کار کنید."],
+        ["05-work-finance-career/41-job-search-cv/", "کجا دنبال کار بگردید و رزومه آلمانی بنویسید."],
+        ["05-work-finance-career/42-tax-payslip/", "مالیات و بیمه‌ای که از حقوقتان کم می‌شود."],
+        ["05-work-finance-career/45-career-service/", "کارآموزی و کمک دانشگاه برای ورود به بازار کار."]
+      ]
+    },
+    {
+      "words": ["Visum", "Aufenthaltserlaubnis", "Aufenthaltstitel", "Ausländerbehörde", "Fiktionsbescheinigung", "ویزا", "اقامت", "کارت اقامت", "تمدید اقامت", "اداره اتباع", "اداره خارجی ها"],
+      "results": [
+        ["01-arriving-in-hannover/10-residence-permit/", "گرفتن و تمدید کارت اقامت تحصیلی؛ نوبت، مدارک و هزینه."],
+        ["01-arriving-in-hannover/02-before-arrival-visa/", "ویزای تحصیلی و مدارکی که پیش از سفر لازم است."],
+        ["05-work-finance-career/46-after-graduation/", "اقامت پس از پایان تحصیل و کارت آبی."]
+      ]
+    },
+    {
+      "words": ["Bank", "Girokonto", "Sparkasse", "Konto", "بانک", "حساب", "حساب بانکی", "کارت بانکی"],
+      "results": [
+        ["01-arriving-in-hannover/06-bank-account/", "باز کردن حساب بانکی؛ کدام بانک و با چه مدارکی."],
+        ["01-arriving-in-hannover/02-before-arrival-visa/", "حساب مسدودی و پولی که هر ماه از آن آزاد می‌شود."],
+        ["07-resources/62-consumer-rights-legal-help/", "کارمزد ناخواسته یا کلاه‌برداری بانکی؛ حقوق شما."]
+      ]
+    },
+    {
+      "words": ["Sperrkonto", "Blocked account", "حساب مسدودی", "حساب بلوکه", "بلاک اکانت"],
+      "results": [
+        ["01-arriving-in-hannover/02-before-arrival-visa/", "مبلغ حساب مسدودی و راه باز کردن آن پیش از ویزا."],
+        ["01-arriving-in-hannover/06-bank-account/", "پول ماهانه حساب مسدودی چطور به حساب آلمانی‌تان می‌رسد."],
+        ["01-arriving-in-hannover/10-residence-permit/", "اثبات تمکن مالی برای تمدید اقامت."]
+      ]
+    },
+    {
+      "words": ["Steuer", "Steuer-ID", "Steuererklärung", "Finanzamt", "Lohnsteuer", "مالیات", "شماره مالیاتی", "اظهارنامه"],
+      "results": [
+        ["01-arriving-in-hannover/09-tax-id-broadcasting-fee/", "شماره مالیاتی که برای هر کاری لازم است و از کجا می‌رسد."],
+        ["05-work-finance-career/42-tax-payslip/", "مالیات حقوق و پس گرفتن مالیات با اظهارنامه."]
+      ]
+    },
+    {
+      "words": ["Rundfunkbeitrag", "GEZ", "تلویزیون", "رادیو", "عوارض تلویزیون"],
+      "results": [
+        ["01-arriving-in-hannover/09-tax-id-broadcasting-fee/", "نامه عوارض رادیو و تلویزیون؛ چه کسی باید بپردازد و چقدر."],
+        ["05-work-finance-career/47-leaving-germany/", "لغو عوارض رادیو و تلویزیون پیش از رفتن یا جابه‌جایی."]
+      ]
+    },
+    {
+      "words": ["Deutsch", "Deutschkurs", "Sprachkurs", "Sprache", "آلمانی", "زبان", "کلاس زبان", "زبان آلمانی", "یادگیری زبان"],
+      "results": [
+        ["04-everyday-life/35-learning-german/", "کلاس‌ها و فرصت‌های رایگان و ارزان برای یاد گرفتن آلمانی."],
+        ["03-university-services/26-language-centre/", "کلاس‌های زبان مرکز زبان دانشگاه و آزمون تعیین سطح."],
+        ["07-resources/53-glossary/", "معنی کلمه‌های آلمانی نامه‌ها و فرم‌های اداری."]
+      ]
+    },
+    {
+      "words": ["Prüfung", "Klausur", "Prüfungsamt", "امتحان", "آزمون", "امتحانات"],
+      "results": [
+        ["02-starting-your-studies/18-exams/", "ثبت‌نام امتحان، مهلت‌ها و اگر امتحانی را رد شدید."],
+        ["02-starting-your-studies/16-study-structure/", "کدام درس‌ها اجباری‌اند و امتحانشان کی است."],
+        ["03-university-services/29-counselling/", "استرس امتحان و مشاوره رایگان."]
+      ]
+    },
+    {
+      "words": ["Stipendium", "BAföG", "Förderung", "بورسیه", "کمک هزینه", "کمک مالی", "وام"],
+      "results": [
+        ["05-work-finance-career/43-scholarships/", "بورسیه‌ها و کمک‌هزینه‌هایی که دانشجوی خارجی هم می‌تواند بگیرد."],
+        ["03-university-services/29-counselling/", "مشاوره مالی و کمک اضطراری وقتی پول کم آورده‌اید."]
+      ]
+    },
+    {
+      "words": ["Bahn", "Bus", "Ticket", "Semesterticket", "Deutschlandticket", "Fahrrad", "بلیت", "بلیط", "اتوبوس", "قطار", "مترو", "دوچرخه", "رفت و آمد"],
+      "results": [
+        ["04-everyday-life/30-public-transport/", "بلیت ترم شما کجا معتبر است و دوچرخه در شهر."],
+        ["01-arriving-in-hannover/03-arrival-transport/", "از فرودگاه و ایستگاه چطور به شهر بیایید."]
+      ]
+    },
+    {
+      "words": ["Handy", "Internet", "WLAN", "SIM", "سیم کارت", "اینترنت", "گوشی", "موبایل", "وای فای"],
+      "results": [
+        ["01-arriving-in-hannover/08-sim-internet/", "سیم‌کارت و اینترنت روزهای اول، بدون قرارداد طولانی."],
+        ["04-everyday-life/32-contracts/", "قرارداد اینترنت خانه و تلفن؛ پیش از امضا چه بدانید."]
+      ]
+    },
+    {
+      "words": ["Kündigung", "Vertrag", "kündigen", "فسخ", "قرارداد", "لغو قرارداد", "کنسل", "لغو"],
+      "results": [
+        ["04-everyday-life/32-contracts/", "مدت قرارداد و راه درست فسخ آن."],
+        ["07-resources/62-consumer-rights-legal-help/", "قرارداد ناخواسته یا تمدید خودکار؛ حقوق شما و کمک رایگان."],
+        ["05-work-finance-career/47-leaving-germany/", "قراردادهایی که پیش از ترک آلمان باید لغو کنید."]
+      ]
+    },
+    {
+      "words": ["Betrug", "Anwalt", "Rechtsberatung", "Abzocke", "کلاهبرداری", "وکیل", "شکایت", "مشاوره حقوقی", "دزدی"],
+      "results": [
+        ["07-resources/62-consumer-rights-legal-help/", "کلاه‌برداری‌های رایج، حقوق شما و جاهایی که رایگان کمک حقوقی می‌دهند."],
+        ["04-everyday-life/37-emergency/", "پلیس و شماره‌های اضطراری."]
+      ]
+    },
+    {
+      "words": ["Pass", "Reisepass", "Übersetzung", "Beglaubigung", "Botschaft", "Konsulat", "پاسپورت", "گذرنامه", "ترجمه", "ترجمه رسمی", "کپی برابر اصل", "سفارت", "کنسولگری"],
+      "results": [
+        ["07-resources/61-consular-documents/", "پاسپورت، ترجمه رسمی و کپی برابر اصل؛ کدام کار در آلمان و کدام در ایران."],
+        ["01-arriving-in-hannover/10-residence-permit/", "مدارکی که اداره اتباع برای اقامت می‌خواهد."]
+      ]
+    },
+    {
+      "words": ["Familiennachzug", "Familie", "Kind", "Kindergeld", "Kita", "Ehepartner", "همسر", "خانواده", "بچه", "فرزند", "مهدکودک"],
+      "results": [
+        ["01-arriving-in-hannover/11-family-reunification/", "آوردن همسر و فرزند به آلمان؛ شرایط و مراحل."],
+        ["03-university-services/27-chancenvielfalt/", "تحصیل با فرزند و کمک‌هایی که دانشگاه می‌دهد."]
+      ]
+    },
+    {
+      "words": ["Führerschein", "Umschreibung", "Auto", "گواهینامه", "رانندگی", "ماشین"],
+      "results": [
+        ["04-everyday-life/38-driving-licence/", "گواهینامه ایرانی تا کی معتبر است و چطور آلمانی‌اش کنید."]
+      ]
+    },
+    {
+      "words": ["Schengen", "Reise", "Reisen", "سفر", "مسافرت", "شنگن", "سفر به ایران"],
+      "results": [
+        ["04-everyday-life/39-travel-schengen/", "با کارت اقامت به کدام کشورها و چه مدت می‌توانید سفر کنید."],
+        ["01-arriving-in-hannover/10-residence-permit/", "پیش از سفر: اعتبار کارت اقامت را بررسی کنید."]
+      ]
+    },
+    {
+      "words": ["Abschluss", "Blaue Karte", "Niederlassungserlaubnis", "فارغ التحصیلی", "پایان تحصیل", "کارت آبی", "اقامت دائم", "بعد از تحصیل"],
+      "results": [
+        ["05-work-finance-career/46-after-graduation/", "ماندن و کار در آلمان پس از فارغ‌التحصیلی، تا اقامت دائم."],
+        ["05-work-finance-career/45-career-service/", "کمک دانشگاه برای پیدا کردن اولین کار."],
+        ["05-work-finance-career/47-leaving-germany/", "اگر می‌خواهید آلمان را ترک کنید: کارهای پایانی."]
+      ]
+    },
+    {
+      "words": ["Immatrikulation", "Einschreibung", "Zulassung", "Bewerbung", "ثبت نام", "ثبت نام دانشگاه", "پذیرش", "اپلای", "درخواست پذیرش"],
+      "results": [
+        ["01-arriving-in-hannover/01-application-uni-assist/", "درخواست پذیرش، مهلت‌ها و بررسی مدارک ایرانی."],
+        ["02-starting-your-studies/12-admission-enrolment/", "ثبت‌نام نهایی پس از گرفتن پذیرش."],
+        ["02-starting-your-studies/13-semester-fee-leibnizcard/", "پرداخت هزینه ترم تا ثبت‌نامتان کامل شود."]
+      ]
+    },
+    {
+      "words": ["Mensa", "Essen", "غذا", "ناهار", "رستوران", "غذاخوری", "سلف"],
+      "results": [
+        ["03-university-services/28-mensa/", "غذای گرم و ارزان در دانشگاه؛ کجا و چطور پول بدهید."],
+        ["04-everyday-life/31-shopping/", "خرید ارزان مواد غذایی برای آشپزی در خانه."]
+      ]
+    },
+    {
+      "words": ["Einkaufen", "Supermarkt", "Pfand", "خرید", "سوپرمارکت", "فروشگاه", "ارزان"],
+      "results": [
+        ["04-everyday-life/31-shopping/", "ارزان‌ترین فروشگاه‌ها، پس گرفتن پول بطری و ساعت کار مغازه‌ها."]
+      ]
+    },
+    {
+      "words": ["Müll", "Mülltrennung", "Sperrmüll", "زباله", "آشغال", "بازیافت"],
+      "results": [
+        ["04-everyday-life/36-waste-house-rules/", "تفکیک زباله و قواعد ساختمان."]
+      ]
+    }
+  ]
+}

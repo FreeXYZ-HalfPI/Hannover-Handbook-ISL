@@ -50,12 +50,22 @@
 
   function siteRoot() { return new URL(window.__md_scope || ".", location.href); }
 
+  var intents = [];    /* what people usually look for with a word, and the pages that answer it (search-intents.json) */
+  var pageTitles = {}; /* page → title (built by tools/search_hooks.py) */
   var people = [];     /* everyone named on the site, with Persian name, role and phone (built by tools/search_hooks.py) */
 
   function loadSummaries() {
     fetch(new URL("assets/search-summaries.json", siteRoot()).href)
       .then(function (r) { return r.ok ? r.json() : {}; })
       .then(function (data) { summaries = data; })
+      .catch(function () {});
+    fetch(new URL("assets/search-intents.json", siteRoot()).href)
+      .then(function (r) { return r.ok ? r.json() : {}; })
+      .then(function (data) { intents = data.intents || []; })
+      .catch(function () {});
+    fetch(new URL("assets/search-pages.json", siteRoot()).href)
+      .then(function (r) { return r.ok ? r.json() : {}; })
+      .then(function (data) { pageTitles = data; })
       .catch(function () {});
     fetch(new URL("assets/search-people.json", siteRoot()).href)
       .then(function (r) { return r.ok ? r.json() : []; })
@@ -266,31 +276,79 @@
     return keep;
   }
 
+  /* The need behind a search: «کرانک» (Krank) or «مریض» → the pages a sick person needs,
+     in the order they need them, each with a line written for that need. */
+  function matchIntent(typed, query) {
+    var a = squash(typed), b = squash(query);
+    if (!a) return null;
+    for (var i = 0; i < intents.length; i++) {
+      if (intents[i].words.some(function (w) { var k = squash(w); return k === a || k === b; })) return intents[i];
+    }
+    return null;
+  }
+
+  function intentItem(result, persian, rank) {
+    var item = el("li", "md-search-result__item");
+    item.dataset.islTidy = "1";
+    item.dataset.islIntent = "1";
+    item.dataset.islScore = String(1e9 - rank);
+    var link = el("a", "md-search-result__link isl-hit");
+    link.href = new URL(result[0], siteRoot()).href;
+    link.tabIndex = -1;
+    var text = el("span", "isl-hit__text");
+    text.appendChild(el("span", "isl-hit__title", faDigits(cleanTitle(pageTitles[result[0]] || "", persian))));
+    text.appendChild(el("span", "isl-hit__summary", faDigits(result[1])));
+    link.appendChild(text);
+    item.appendChild(link);
+    return item;
+  }
+
+  function addIntent(list, typed, query) {
+    if (list.dataset.islIntentFor === typed && list.querySelector(":scope > [data-isl-intent]")) return null;
+    list.dataset.islIntentFor = typed;
+    var intent = matchIntent(typed, query);
+    if (!intent) return null;
+    var after = list.querySelectorAll(":scope > [data-isl-person]");
+    var anchor = after.length ? after[after.length - 1].nextSibling : list.firstChild;
+    intent.results.forEach(function (result, i) {
+      list.insertBefore(intentItem(result, PERSIAN.test(typed), i), anchor);
+    });
+    return intent;
+  }
+
   function tidyResults(list) {
     var typed = (input().value || "").trim();
     var german = window.islGermanize ? window.islGermanize(typed) : { query: typed, changed: false };
     var query = german.query;
     var found = addPeople(list, typed);
+    addIntent(list, typed, query);
     var items = list.querySelectorAll(":scope > .md-search-result__item");
     if (!items.length) return;
-    /* When people match, the page that only lists them adds nothing. */
-    if (found.length) items.forEach(function (item) {
+    /* Pages already shown for a person or for the need behind the search are not repeated. */
+    var taken = found.map(function (p) { return new URL(p.url, siteRoot()).pathname; });
+    list.querySelectorAll(":scope > [data-isl-intent] .md-search-result__link").forEach(function (a) {
+      taken.push(new URL(a.getAttribute("href"), location.href).pathname);
+    });
+    if (taken.length) items.forEach(function (item) {
       var link = item.querySelector(".md-search-result__link");
-      if (item.dataset.islPerson || !link) return;
+      if (item.dataset.islPerson || item.dataset.islIntent || !link) return;
       var path = new URL(link.getAttribute("href"), location.href).pathname;
-      if (found.some(function (p) { return new URL(p.url, siteRoot()).pathname === path; })) item.remove();
+      if (taken.indexOf(path) >= 0) item.remove();
     });
     items = list.querySelectorAll(":scope > .md-search-result__item");
     items = phraseFirst(Array.prototype.slice.call(items), query);
-    var top = score(items[0]), floor = top >= 100 ? top * 0.1 : top * 0.5, shown = 0;
+    var first = items.filter(function (item) { return !item.dataset.islPerson && !item.dataset.islIntent; })[0];
+    var top = first ? score(first) : 0, floor = top >= 100 ? top * 0.1 : top * 0.5, shown = 0;
     items.forEach(function (item) {
       if (item.dataset.islTidy) { shown++; return; }
-      if (shown >= MAX_RESULTS || (shown >= MIN_RESULTS && score(item) < floor)) { item.remove(); return; }
+      var chosen = item.dataset.islPerson || item.dataset.islIntent;
+      if (shown >= MAX_RESULTS || (!chosen && shown >= MIN_RESULTS && score(item) < floor)) { item.remove(); return; }
       tidyItem(item, query, typed, german.changed);
       shown++;
     });
     var meta = document.querySelector(".md-search-result__meta");
-    if (meta) meta.textContent = shown === 1 ? "مرتبط‌ترین نتیجه" : faDigits(shown) + " نتیجه مرتبط";
+    var label = shown === 1 ? "مرتبط‌ترین نتیجه" : faDigits(shown) + " نتیجه مرتبط";
+    if (meta && meta.textContent !== label) meta.textContent = label;
   }
 
   function buildPanel() {
@@ -322,6 +380,9 @@
 
     var list = document.querySelector(".md-search-result__list");
     if (list) new MutationObserver(function () { tidyResults(list); }).observe(list, { childList: true });
+    /* When the search itself finds nothing, the list does not change, but the line above it does. */
+    var meta = document.querySelector(".md-search-result__meta");
+    if (list && meta) new MutationObserver(function () { tidyResults(list); }).observe(meta, { childList: true, characterData: true, subtree: true });
   }
 
   function init() {
