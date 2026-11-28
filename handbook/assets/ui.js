@@ -46,7 +46,13 @@
   var MAX_RESULTS = 5, MIN_RESULTS = 3;
   var summaries = {};  /* page → one-line description, written by hand in search-summaries.json */
 
-  function faDigits(text) { return String(text).replace(/\d/g, function (d) { return "۰۱۲۳۴۵۶۷۸۹"[d]; }); }
+  /* Persian digits, except inside a Latin name or code («S5», «B1», «AufenthG §16b»: the
+     number belongs to the name) */
+  function faDigits(text) {
+    return String(text).replace(/[A-Za-zÄÖÜäöüß]*\d+[A-Za-zÄÖÜäöüß]*/g, function (run) {
+      return /[A-Za-zÄÖÜäöüß]/.test(run) ? run : run.replace(/\d/g, function (d) { return "۰۱۲۳۴۵۶۷۸۹"[d]; });
+    });
+  }
 
   function siteRoot() { return new URL(window.__md_scope || ".", location.href); }
 
@@ -303,6 +309,8 @@
     var phrase = query.replace(/\s+/g, " ").trim().toLowerCase();
     var articles = [best.querySelector("article")];
     item.querySelectorAll("article").forEach(function (a) { if (articles.indexOf(a) < 0) articles.push(a); });
+    /* first a sentence with the whole word, then one with a longer word that starts with it */
+    for (var pass = 0; pass < (wholeWord ? 2 : 1); pass++)
     for (var i = 0; i < articles.length; i++) {
       var pieces = articles[i].querySelectorAll("p, li, td");
       for (var j = 0; j < pieces.length; j++) {
@@ -320,7 +328,7 @@
            mostly German or English does not help, whatever the reader typed in (the handbook
            is read in Persian), nor one that gives the page's name or repeats its title. */
         if (!mostlyPersian(hit) || /^(?:…\s*)?نام رسمی/.test(hit) || !startsWords(hit, query) || repeatsTitle(hit, title || "", query)) continue;
-        if (wholeWord && !hasWhole(hit, wholeWord)) continue;
+        if (wholeWord && pass === 0 && !hasWhole(hit, wholeWord)) continue;
         return el("span", "isl-hit__summary isl-hit__context", hit);
       }
     }
@@ -329,7 +337,7 @@
     var rows = (tables && tables[page]) || [];
     for (var t = 0; t < rows.length; t++) {
       var row = readable(withoutAddresses(rows[t]));
-      if (!containsQuery(row, query) || !startsWords(row, query) || (wholeWord && !hasWhole(row, wholeWord))) continue;
+      if (!containsQuery(row, query) || !startsWords(row, query)) continue;
       if (row.length > 150) row = around(row, row.toLowerCase().indexOf(words[0]));
       if (!mostlyPersian(row) || repeatsTitle(row, title || "", query)) continue;
       return el("span", "isl-hit__summary isl-hit__context", row);
@@ -379,6 +387,27 @@
   /* For a query of several words, pages that contain the words together as one phrase
      («سیم‌کارت», «سیم کارت» or «سیمکارت») come before pages that only contain them apart. */
   function squash(text) { return text.replace(/[\s\u200c]+/g, "").toLowerCase(); }
+
+  /* «سلام» typed: pages with the word itself come first, pages with only longer words that
+     start with it («سلامت», or «هواپیما» for «هوا») after them. Nothing is dropped: the reader
+     may still be typing the longer word. */
+  function wholeFirst(items, word) {
+    if (!word || items.length < 2) return items;
+    var whole = [], longer = [];
+    items.forEach(function (item) {
+      if (item.dataset.islTidy) { whole.push(item); return; }
+      var key = new URL(item.querySelector("a").getAttribute("href"), location.href).pathname.slice(siteRoot().pathname.length);
+      var text = Array.prototype.map.call(item.querySelectorAll("article"), function (a) { return a.textContent; }).join(" ") +
+        " " + ((tables && tables[key]) || []).join(" ");
+      (hasWhole(text, word) ? whole : longer).push(item);
+    });
+    if (!whole.length || !longer.length) return items;
+    var order = whole.concat(longer), list = items[0].parentNode;
+    order.forEach(function (item, i) {
+      if (list.children[i] !== item) list.insertBefore(item, list.children[i] || null);
+    });
+    return order;
+  }
 
   function phraseFirst(items, query) {
     var words = query.replace(/\u200c/g, " ").trim().split(/\s+/);
@@ -503,15 +532,12 @@
       window.islIsWord && window.islIsWord(typed)) ? typed.trim() : null;
     items = list.querySelectorAll(":scope > .md-search-result__item");
     if (items.length > 1) items.forEach(function (item) {
-      if (item.dataset.islTidy) return;
-      if (onlyInLinks(item, query)) { item.remove(); return; }
-      if (wholeWord && !hasWhole(Array.prototype.map.call(item.querySelectorAll("article"), function (a) { return a.textContent; }).join(" "), wholeWord) &&
-          !hasWhole(((tables && tables[new URL(item.querySelector("a").getAttribute("href"), location.href).pathname.slice(siteRoot().pathname.length)]) || []).join(" "), wholeWord))
-        item.remove();
+      if (!item.dataset.islTidy && onlyInLinks(item, query)) item.remove();
     });
     loadTables();
     items = list.querySelectorAll(":scope > .md-search-result__item");
     items = phraseFirst(Array.prototype.slice.call(items), query);
+    items = wholeFirst(items, wholeWord);
     var first = items.filter(function (item) { return !item.dataset.islPerson && !item.dataset.islIntent; })[0];
     var top = first ? score(first) : 0, floor = top >= 100 ? top * 0.1 : top * 0.5, shown = 0;
     items.forEach(function (item) {
@@ -522,6 +548,7 @@
       shown++;
     });
     var meta = document.querySelector(".md-search-result__meta");
+    if (!shown) return;
     var label = shown === 1 ? "مرتبط‌ترین نتیجه" : faDigits(shown) + " نتیجه مرتبط";
     /* the word the search took the letters for: «کر» → «۵ نتیجه مرتبط برای «کرانک»» */
     /* (not a Latin word for a reader who typed in Persian: «کالج» needs no «Studienkolleg») */

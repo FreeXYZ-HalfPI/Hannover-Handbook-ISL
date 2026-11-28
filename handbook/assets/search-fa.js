@@ -120,7 +120,7 @@
       if (row[col].indexOf(k) !== 0 || row[col] === k) continue;
       if (row[4] === "g" || (row[4] === "w" && !soundOnly)) return row;
       if (strict) continue;   /* a short word that is on the site: only a longer Persian word */
-      if (row[4] === "a" && !found) found = row;
+      if (row[4] === "a" && !found && k.length >= 4) found = row;   /* «هو» is no Hochschulbüro */
       if (row[4] === "c" && !colloquial && k.length >= 3) colloquial = row;
     }
     return colloquial || found;
@@ -147,6 +147,15 @@
     if (f.length < 2 || !/^[؀-ۿ]+$/.test(f) || onSite(word)) return false;
     var lo = 0, hi = siteSorted.length;
     while (lo < hi) { var mid = (lo + hi) >> 1; if (siteSorted[mid] < f) lo = mid + 1; else hi = mid; }
+    return lo < siteSorted.length && siteSorted[lo].indexOf(f) === 0;
+  }
+  /* «هوا» and «رو» are words, but also the start of «هواپیما» and «روان»: the last word
+     typed may still be growing. */
+  function hasLonger(word) {
+    var f = plain(word);
+    if (!/^[\u0600-\u06FF]+$/.test(f)) return false;
+    var lo = 0, hi = siteSorted.length;
+    while (lo < hi) { var mid = (lo + hi) >> 1; if (siteSorted[mid] <= f) lo = mid + 1; else hi = mid; }
     return lo < siteSorted.length && siteSorted[lo].indexOf(f) === 0;
   }
   function lookup(word, allowLoose) {
@@ -247,11 +256,11 @@
     var term = function (w, last) {
       /* ...unless it is the unfinished end of what the reader is typing: «بیم» → «بیمه»,
          and «سلامت ر» → «سلامت ر…» (one letter after a word is the start of the next one) */
-      if (last && startOfSiteWord(w)) return w + "*";
-      if (last && words.length > 1 && /^[\u0600-\u06FF]{1,3}$/.test(w) && !onSite(w)) return w + "*";
+      if (last && (startOfSiteWord(w) || hasLonger(w))) return w + "*";
+      if (last && words.length > 1 && /^[\u0600-\u06FF]{1,3}$/.test(w)) return w + "*";
       return /^[\u0600-\u06FF]{1,3}$/.test(w) ? w : w + "*";
     };
-    if (words.length === 1) return term(words[0], true) === words[0] ? "+" + words[0] : words[0];
+    if (words.length === 1) { var one = term(words[0], true); return one === words[0] ? "+" + one : one; }
     if (!words.length) return query;
     return words.map(function (w, i) { return "+" + term(w, i === words.length - 1); }).join(" ");
   }
