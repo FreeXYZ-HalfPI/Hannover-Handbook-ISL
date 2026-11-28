@@ -240,6 +240,13 @@
     return fa > 0 && fa >= 0.6 * (fa + latin);
   }
 
+  /* A line to read: no emoji or check marks (✅, ⚠️ are the page's own markers), and a
+     sentence cut at «؛» or «:» ends with a full stop, not with a sign that says more follows. */
+  function readable(text) {
+    return text.replace(/[\u2600-\u27BF\u2B00-\u2BFF\uFE0F\u200D]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|\uD83E[\uDC00-\uDFFF]/g, "")
+      .replace(/\s{2,}/g, " ").trim().replace(/\s*[؛;:،,]$/, ".");
+  }
+
   function sentenceWith(item, best, query, persian, reader) {
     var words = queryWords(query).map(function (w) { return w.toLowerCase(); });
     var phrase = query.replace(/\s+/g, " ").trim().toLowerCase();
@@ -255,6 +262,7 @@
         var sentences = raw.split(/(?<=[.!?؟؛])\s+/);
         var hit = sentences.filter(function (x) { return containsQuery(x, query); })[0] || raw;
         hit = hit.replace(/^\s*(?:\[\s?\]|[\d۰-۹]+[.)]|[آ-ی]{1,3}\))\s*/, "").replace(/\s*←.*$/, "").trim();
+        hit = readable(hit);
         if (squash(hit).length < squash(query).length + 8) continue;  /* just the word itself says nothing */
         /* the reader typed in Persian: a line that is mostly German or English does not help */
         if (reader && !mostlyPersian(hit)) continue;

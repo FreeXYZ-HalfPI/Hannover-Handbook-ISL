@@ -97,7 +97,7 @@
       "words": ["Visum", "Aufenthaltserlaubnis", "Aufenthaltstitel", "Ausländerbehörde", "Fiktionsbescheinigung", "ویزا", "اقامت", "کارت اقامت", "تمدید اقامت", "اداره اتباع", "اداره خارجی ها", "visa", "residence permit", "permit", "extension", "immigration", "foreigners office", "رزیدنس پرمیت", "رزیدنس", "پرمیت", "تمدید ویزا", "اکستنشن", "ایمیگریشن", "اقامتم", "تمدید"],
       "search": "اجازه اقامت",
       "results": [
-        ["01-arriving-in-hannover/10-residence-permit/", "گرفتن و تمدید کارت اقامت تحصیلی؛ نوبت، مدارک و هزینه."],
+        ["01-arriving-in-hannover/10-residence-permit/", "نوبت، مدارک و هزینه گرفتن و تمدید کارت اقامت تحصیلی."],
         ["01-arriving-in-hannover/02-before-arrival-visa/", "ویزای تحصیلی و مدارکی که پیش از سفر لازم است."],
         ["05-work-finance-career/46-after-graduation/", "اقامت پس از پایان تحصیل و کارت آبی."]
       ]
@@ -106,9 +106,9 @@
       "words": ["Bank", "Girokonto", "Sparkasse", "Konto", "بانک", "حساب", "حساب بانکی", "کارت بانکی", "bank", "account", "bank account", "iban", "debit card", "credit card", "بنک", "اکانت", "بانک اکانت", "آیبن", "ایبان", "شبا", "کارت اعتباری", "کردیت کارت", "دبیت کارت", "مسترکارت", "ویزا کارت"],
       "search": "حساب بانکی",
       "results": [
-        ["01-arriving-in-hannover/06-bank-account/", "باز کردن حساب بانکی؛ کدام بانک و با چه مدارکی."],
+        ["01-arriving-in-hannover/06-bank-account/", "در کدام بانک و با چه مدارکی حساب بانکی باز کنید."],
         ["01-arriving-in-hannover/02-before-arrival-visa/", "حساب مسدودی و پولی که هر ماه از آن آزاد می‌شود."],
-        ["07-resources/62-consumer-rights-legal-help/", "کارمزد ناخواسته یا کلاه‌برداری بانکی؛ حقوق شما."]
+        ["07-resources/62-consumer-rights-legal-help/", "حقوق شما در برابر کارمزد ناخواسته یا کلاه‌برداری بانکی."]
       ]
     },
     {
@@ -132,7 +132,7 @@
       "words": ["Rundfunkbeitrag", "GEZ", "تلویزیون", "رادیو", "عوارض تلویزیون", "tv fee", "broadcasting fee", "license fee", "gez", "گز", "جی ای زد", "پول تلویزیون", "۱۸ یورو"],
       "search": "Rundfunkbeitrag",
       "results": [
-        ["01-arriving-in-hannover/09-tax-id-broadcasting-fee/", "نامه عوارض رادیو و تلویزیون؛ چه کسی باید بپردازد و چقدر."],
+        ["01-arriving-in-hannover/09-tax-id-broadcasting-fee/", "چه کسی عوارض رادیو و تلویزیون را می‌پردازد و چقدر."],
         ["05-work-finance-career/47-leaving-germany/", "لغو عوارض رادیو و تلویزیون پیش از رفتن یا جابه‌جایی."]
       ]
     },
@@ -175,7 +175,7 @@
       "search": "سیم‌کارت",
       "results": [
         ["01-arriving-in-hannover/08-sim-internet/", "سیم‌کارت و اینترنت روزهای اول، بدون قرارداد طولانی."],
-        ["04-everyday-life/32-contracts/", "قرارداد اینترنت خانه و تلفن؛ پیش از امضا چه بدانید."]
+        ["04-everyday-life/32-contracts/", "پیش از امضای قرارداد اینترنت خانه و تلفن چه بدانید."]
       ]
     },
     {
@@ -183,7 +183,7 @@
       "search": "قرارداد",
       "results": [
         ["04-everyday-life/32-contracts/", "مدت قرارداد و راه درست فسخ آن."],
-        ["07-resources/62-consumer-rights-legal-help/", "قرارداد ناخواسته یا تمدید خودکار؛ حقوق شما و کمک رایگان."],
+        ["07-resources/62-consumer-rights-legal-help/", "حقوق شما و کمک رایگان در برابر قرارداد ناخواسته یا تمدید خودکار."],
         ["05-work-finance-career/47-leaving-germany/", "قراردادهایی که پیش از ترک آلمان باید لغو کنید."]
       ]
     },
@@ -199,7 +199,7 @@
       "words": ["Pass", "Reisepass", "Übersetzung", "Beglaubigung", "Botschaft", "Konsulat", "پاسپورت", "گذرنامه", "ترجمه", "ترجمه رسمی", "کپی برابر اصل", "سفارت", "کنسولگری", "passport", "translation", "embassy", "consulate", "apostille", "ترنسلیشن", "امبسی", "اپوستیل", "آپوستیل", "دارالترجمه", "سفارت ایران", "کنسولگری ایران"],
       "search": "ترجمه",
       "results": [
-        ["07-resources/61-consular-documents/", "پاسپورت، ترجمه رسمی و کپی برابر اصل؛ کدام کار در آلمان و کدام در ایران."],
+        ["07-resources/61-consular-documents/", "پاسپورت، ترجمه رسمی و کپی برابر اصل، و این‌که کدام کار در آلمان و کدام در ایران انجام می‌شود."],
         ["01-arriving-in-hannover/10-residence-permit/", "مدارکی که اداره اتباع برای اقامت می‌خواهد."]
       ]
     },
@@ -207,7 +207,7 @@
       "words": ["Familiennachzug", "Familie", "Kind", "Kindergeld", "Kita", "Ehepartner", "همسر", "خانواده", "بچه", "فرزند", "مهدکودک", "family", "wife", "husband", "spouse", "children", "child", "kids", "baby", "kindergarten", "marriage", "فمیلی", "فامیلی", "زن", "شوهر", "زنم", "شوهرم", "همسرم", "بچه ها", "بچه‌ام", "نوزاد", "بیبی", "ازدواج", "عروسی", "آوردن همسر", "پیوستن خانواده"],
       "search": "همسر",
       "results": [
-        ["01-arriving-in-hannover/11-family-reunification/", "آوردن همسر و فرزند به آلمان؛ شرایط و مراحل."],
+        ["01-arriving-in-hannover/11-family-reunification/", "شرایط و مراحل آوردن همسر و فرزند به آلمان."],
         ["03-university-services/27-chancenvielfalt/", "تحصیل با فرزند و کمک‌هایی که دانشگاه می‌دهد."]
       ]
     },
@@ -248,7 +248,7 @@
       "words": ["Mensa", "Essen", "غذا", "ناهار", "رستوران", "غذاخوری", "سلف", "food", "lunch", "cafeteria", "canteen", "فود", "ناهار دانشگاه", "کافه", "کافه تریا", "سلف دانشگاه", "غذای ارزان"],
       "search": "Mensa",
       "results": [
-        ["03-university-services/28-mensa/", "غذای گرم و ارزان در دانشگاه؛ کجا و چطور پول بدهید."],
+        ["03-university-services/28-mensa/", "در دانشگاه کجا غذای گرم و ارزان بخورید و چطور پول بدهید."],
         ["04-everyday-life/31-shopping/", "خرید ارزان مواد غذایی برای آشپزی در خانه."]
       ]
     },
@@ -279,7 +279,7 @@
       "words": ["Partner", "Partnerin", "Freund", "Freundin", "partner", "girlfriend", "boyfriend", "پارتنر", "پارتنرم", "دوست دختر", "دوست پسر", "دوست‌دختر", "دوست‌پسر", "دوستدختر", "دوستپسر", "گرل فرند", "گرلفرند", "بوی فرند", "بویفرند", "نامزد", "نامزدم", "شریک زندگی", "عشق", "رابطه", "ریلیشن شیپ", "relationship", "dating", "دیت", "دیتینگ", "آوردن پارتنر", "آوردن دوست دختر", "آوردن دوست پسر", "ویزای پارتنر"],
       "search": "همسر",
       "results": [
-        ["01-arriving-in-hannover/11-family-reunification/", "آمدن همسر به آلمان؛ این راه برای همسر با سند ازدواج است، نه برای دوست یا نامزد."],
+        ["01-arriving-in-hannover/11-family-reunification/", "آمدن همسر به آلمان. این راه برای همسر با سند ازدواج است، نه برای دوست یا نامزد."],
         ["04-everyday-life/39-travel-schengen/", "سفرهای کوتاه در اروپا با اجازه اقامت و ویزای شنگن."],
         ["06-student-community/51-events-networking/", "رویدادها و جاهایی برای آشنایی با آدم‌های تازه در هانوفر."]
       ]
@@ -308,7 +308,7 @@
       "search": "ایران",
       "searchInPersian": true,
       "results": [
-        ["07-resources/61-consular-documents/", "امور کنسولی ایران: پاسپورت، ترجمه رسمی و کپی برابر اصل؛ کدام کار در آلمان و کدام در ایران."],
+        ["07-resources/61-consular-documents/", "پاسپورت، ترجمه رسمی و کپی برابر اصل، و این‌که کدام کار در آلمان و کدام در ایران انجام می‌شود."],
         ["06-student-community/48-isl/", "انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر و برنامه‌هایش."],
         ["07-resources/58-telegram-insights/", "مسائلی که دانشجویان ایرانی هانوفر در عمل بیشتر با آن روبه‌رو شده‌اند."],
         ["07-resources/63-persian-speaking-doctors/", "پزشکان فارسی‌زبان در هانوفر."]
