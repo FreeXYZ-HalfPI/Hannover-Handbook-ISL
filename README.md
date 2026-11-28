@@ -8,7 +8,7 @@ A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz 
 
 📖 **Start reading on GitHub:** [handbook/README.md](handbook/README.md) 
 
-🏷️ **Latest release (PDF):** [v1.0.0](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/releases/latest) 
+🏷️ **Latest release (PDF):** [v1.2.0](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/releases/latest) 
 
 📥 **Download the whole handbook as one PDF:** [ISL-Handbook-Living-in-Hannover.pdf](https://github.com/FreeXYZ-HalfPI/Hannover-Handbook-ISL/releases/latest/download/ISL-Handbook-Living-in-Hannover.pdf) 
 
@@ -81,7 +81,9 @@ A practical, step-by-step handbook in Persian for (Iranian) students of Leibniz 
 | `tools/confluence_to_markdown.py` | One-off importer used to move the handbook from Confluence |
 | `search/index.html` | **Handbook Searcher** — searches both handbooks (English and Persian) in your browser, offline; open the file or serve the folder |
 | `tools/build_search.py` | Rebuilds `search/search-index.js` from both handbooks (the sibling repository is included when it is checked out next to this one) |
+| `tools/search_hooks.py`, `tools/persian-words.tsv`, `tools/people-fa.json` | Search helpers: guesses while typing, German words in Persian letters, people's names (edit the TSV/JSON files to change them) |
 | `tools/search.py` | The same search in the terminal: `python3 tools/search.py residence permit` |
+| `CONTRIBUTORS.md` | Who has contributed (see below) |
 | `TEMPLATE.md` | Template for new pages |
 | `mkdocs.yml`, `requirements-site.txt` | The website (MkDocs Material), built from `handbook/` |
 | `tools/mkdocs_hooks.py` | Adapts the GitHub Markdown for the website: alerts, collapsed disclaimer, links outside `handbook/` |
@@ -97,6 +99,10 @@ pip install -r requirements-site.txt && mkdocs serve   # preview the website at 
 ```
 
 ## License — Copyleft 🄯
+
+## Contributors
+
+Thank you to everyone who has written, fixed and reviewed pages — see [CONTRIBUTORS.md](CONTRIBUTORS.md). Versions follow [Semantic Versioning](https://semver.org) (`vMAJOR.MINOR.PATCH`); every change is listed in [CHANGELOG.md](CHANGELOG.md).
 
 **Copyleft 🄯 2026 Iranian Student Association of Leibniz University Hannover (ISL) — Iranische Studierendenvereinigung der Leibniz Universität Hannover (ISL) — and contributors.**
 
