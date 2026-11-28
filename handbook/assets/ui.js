@@ -67,6 +67,7 @@
       .then(function (r) { return r.ok ? r.json() : {}; })
       .then(function (data) { pageTitles = data; })
       .catch(function () {});
+    loadTables();
     fetch(new URL("assets/search-specialties.json", siteRoot()).href)
       .then(function (r) { return r.ok ? r.json() : {}; })
       .then(function (data) { specialties = data.specialties || []; })
@@ -107,6 +108,16 @@
   /* Doctors for an illness or a part of the body (search-specialties.json): «کمردرد» →
      orthopaedists, «بارداری» → gynaecologists. Up to three, in the order the handbook lists them. */
   var specialties = [];
+  /* Table rows as lines (search-tables.json). */
+  var tables = null, tablesAsked = false;
+  function loadTables() {
+    if (tablesAsked) return;
+    tablesAsked = true;
+    fetch(new URL("assets/search-tables.json", siteRoot()).href)
+      .then(function (r) { return r.ok ? r.json() : {}; })
+      .then(function (data) { tables = data; })
+      .catch(function () {});
+  }
   function matchDoctors(typed, query) {
     /* «پا» on the way to «پاسپورت» is no foot: a short word counts only when nothing longer was guessed */
     var wanted = [squash(query)], roles = [];
@@ -255,7 +266,8 @@
      sentence cut at «؛» or «:» ends with a full stop, not with a sign that says more follows. */
   function readable(text) {
     return text.replace(/[\u2600-\u27BF\u2B00-\u2BFF\uFE0F\u200D]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|\uD83E[\uDC00-\uDFFF]/g, "")
-      .replace(/\s{2,}/g, " ").trim().replace(/\s*[؛;:،,]$/, ".");
+      .replace(/\(\s*\)|\[\s*\]|«\s*»/g, "")   /* «مهلت‌های قرمز (🔴)» leaves «()» */
+      .replace(/\s{2,}/g, " ").replace(/\s+([.،؛:!؟])/g, "$1").trim().replace(/\s*[؛;:،,]$/, ".");
   }
 
   /* Most of the line's own words are already in the title: «معرفی Iranian Student Association
@@ -299,8 +311,17 @@
         return el("span", "isl-hit__summary isl-hit__context", hit);
       }
     }
-    /* Tables reach the search as plain text without cells, too messy to quote: say that
-       the page covers the word, after its own description. */
+    /* A row of a table on the page: «کارگاه دوچرخه — مبلغ (یورو): ۱٫۱۱» */
+    var page = new URL(best.getAttribute("href"), location.href).pathname.slice(siteRoot().pathname.length);
+    var rows = (tables && tables[page]) || [];
+    for (var t = 0; t < rows.length; t++) {
+      var row = readable(withoutAddresses(rows[t]));
+      if (!containsQuery(row, query) || !startsWords(row, query)) continue;
+      if (row.length > 150) row = around(row, row.toLowerCase().indexOf(words[0]));
+      if (!mostlyPersian(row) || repeatsTitle(row, title || "", query)) continue;
+      return el("span", "isl-hit__summary isl-hit__context", row);
+    }
+    /* Nothing to quote: the page's own description. */
     for (var k = 0; k < articles.length; k++) {
       if (containsQuery(articles[k].textContent, query)) return "covers";
     }
@@ -332,10 +353,9 @@
     /* A German word typed in Persian letters stays visible in Latin letters in the sentence. */
     var context = containsQuery(title, query) ? null : sentenceWith(item, best, query, persian && !changed, persian, h1.textContent);
     if (context === "covers" && summaries[key]) {
-      /* A sentence of its own: «از جمله درباره «کنسرت»» after «…با چه مشکلاتی روبه‌رو شده‌اند»
-         read as if a concert were one of the problems. */
-      text.appendChild(el("span", "isl-hit__summary", faDigits(summaries[key]).replace(/[.。]\s*$/, "") + "." +
-        (squash(typed).length >= 3 ? " «" + typed + (changed ? " (" + query + ")" : "") + "» هم در این صفحه آمده است." : "")));
+      /* No note about the search itself («… هم در این صفحه آمده است»): the reader wants to
+         know what the page says, not how it was found. */
+      text.appendChild(el("span", "isl-hit__summary", faDigits(summaries[key])));
     } else if (context && context !== "covers") { context.textContent = faDigits(context.textContent); text.appendChild(context); }
     else if (summaries[key]) text.appendChild(el("span", "isl-hit__summary", summaries[key]));
     link.appendChild(text);
@@ -413,6 +433,21 @@
     return intent;
   }
 
+  /* The word is on the page only in a link to another page («← ۳۰. حمل‌ونقل عمومی،
+     Deutschlandticket و دوچرخه» on the AStA page): the page itself says nothing about it. */
+  function onlyInLinks(item, query) {
+    var all = "", own = "";
+    item.querySelectorAll("article").forEach(function (a) {
+      all += " " + a.textContent;
+      var copy = a.cloneNode(true);
+      copy.querySelectorAll("p, li, td").forEach(function (e) {
+        if (!e.querySelector("p, li") && e.textContent.indexOf("←") >= 0) e.textContent = e.textContent.split("←")[0];
+      });
+      own += " " + copy.textContent.replace(/←[^←]*$/, "");
+    });
+    return containsQuery(all, query) && !containsQuery(own, query);
+  }
+
   function tidyResults(list) {
     var typed = (input().value || "").trim();
     var german = window.islGermanize ? window.islGermanize(typed) : { query: typed, changed: false };
@@ -451,6 +486,11 @@
           new URL(link.getAttribute("href"), location.href).pathname === new URL(".", siteRoot()).pathname) item.remove();
     });
     items = list.querySelectorAll(":scope > .md-search-result__item");
+    if (items.length > 1) items.forEach(function (item) {
+      if (!item.dataset.islTidy && onlyInLinks(item, query)) item.remove();
+    });
+    loadTables();
+    items = list.querySelectorAll(":scope > .md-search-result__item");
     items = phraseFirst(Array.prototype.slice.call(items), query);
     var first = items.filter(function (item) { return !item.dataset.islPerson && !item.dataset.islIntent; })[0];
     var top = first ? score(first) : 0, floor = top >= 100 ? top * 0.1 : top * 0.5, shown = 0;
@@ -464,7 +504,9 @@
     var meta = document.querySelector(".md-search-result__meta");
     var label = shown === 1 ? "مرتبط‌ترین نتیجه" : faDigits(shown) + " نتیجه مرتبط";
     /* the word the search took the letters for: «کر» → «۵ نتیجه مرتبط برای «کرانک»» */
-    if (german.shown && squash(german.shown) !== squash(typed)) label += " برای «" + german.shown + "»";
+    /* (not a Latin word for a reader who typed in Persian: «کالج» needs no «Studienkolleg») */
+    if (german.shown && squash(german.shown) !== squash(typed) && (PERSIAN.test(german.shown) || !PERSIAN.test(typed)))
+      label += " برای «" + german.shown + "»";
     if (meta && meta.textContent !== label) meta.textContent = label;
   }
 

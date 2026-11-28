@@ -13,6 +13,7 @@
   may be on the way to while typing) and assets/search-persian.json (common Persian words
   that are not on the site, from tools/persian-words.tsv), for assets/search-fa.js."""
 import html as htmllib
+import html.parser as htmllib_parser
 import json
 import math
 import re
@@ -335,6 +336,61 @@ def guesses(docs, config):
     return keep
 
 
+
+# -- Table rows as lines to read -----------------------------------------------------------
+# The search index keeps a table only as running text without cells, so a sentence can not
+# be cut from it. assets/search-tables.json keeps every row of every table on the site as a
+# line: «کارگاه دوچرخه — مبلغ (یورو): 1٫11», for the line under a result (assets/ui.js).
+class _Tables(htmllib_parser.HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.rows, self.row, self.cell, self.head, self.in_cell = [], None, [], [], False
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "table":
+            self.head = []
+        elif tag == "tr":
+            self.row = []
+        elif tag in ("td", "th"):
+            self.in_cell, self.cell = True, []
+
+    def handle_endtag(self, tag):
+        if tag in ("td", "th") and self.row is not None:
+            self.in_cell = False
+            self.row.append((tag, re.sub(r"\s+", " ", "".join(self.cell)).strip()))
+        elif tag == "tr" and self.row:
+            if all(t == "th" for t, _ in self.row):
+                self.head = [c for _, c in self.row]
+            elif not any(h in ("ناشر", "تاریخ دسترسی", "نتیجه بررسی") for h in self.head):
+                self.rows.append(self.line([c for _, c in self.row]))   # (a table of sources says nothing)
+            self.row = None
+
+    def handle_data(self, data):
+        if self.in_cell:
+            self.cell.append(data)
+
+    def line(self, cells):
+        parts = [cells[0]] if cells else []
+        for i, cell in enumerate(cells[1:], 1):
+            head = self.head[i] if i < len(self.head) else ""
+            if not cell or cell in ("—", "-") or head in ("منبع", "Source", "Quelle"):
+                continue
+            parts.append((head + ": " if head else "") + cell)
+        return " — ".join(p for p in parts if p)
+
+
+def table_rows(site_dir):
+    rows = {}
+    for page in Path(site_dir).rglob("index.html"):
+        parser = _Tables()
+        html = page.read_text(encoding="utf-8")
+        body = re.search(r'<article[^>]*>(.*)</article>', html, re.S)
+        parser.feed(body.group(1) if body else "")
+        if parser.rows:
+            key = page.parent.relative_to(site_dir).as_posix()
+            rows[(key + "/") if key != "." else ""] = [r for r in parser.rows if r]
+    return rows
+
 def on_post_build(config, **kwargs):
     missing = [latin for latin in PEOPLE_FA if latin not in _people]
     if missing:
@@ -389,5 +445,7 @@ def on_post_build(config, **kwargs):
     (Path(config["site_dir"]) / "assets" / "search-persian.json").write_text(
         json.dumps(sorted(w for w in LEXICON if w not in on_site), ensure_ascii=False, separators=(",", ":")),
         encoding="utf-8")
+    (Path(config["site_dir"]) / "assets" / "search-tables.json").write_text(
+        json.dumps(table_rows(config["site_dir"]), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     # ASCII-escaped like the search plugin writes it: servers that omit the charset still decode it.
     index.write_text(json.dumps(data, ensure_ascii=True, separators=(",", ":")), encoding="utf-8")
