@@ -623,8 +623,24 @@
     if (list && meta) new MutationObserver(function () { tidyResults(list); }).observe(meta, { childList: true, characterData: true, subtree: true });
   }
 
+  /* Closing: mark the moment for half a second, so search.css can fold the results up and
+     turn the box back softly (the closed state alone can not tell "just closed" from "closed
+     when the page loaded"). */
+  function softClose() {
+    var toggle = document.querySelector("[data-md-toggle=search]");
+    if (!toggle) return;
+    var timer = null;
+    toggle.addEventListener("change", function () {
+      clearTimeout(timer);
+      if (toggle.checked) { document.body.classList.remove("isl-closing"); return; }
+      document.body.classList.add("isl-closing");
+      timer = setTimeout(function () { document.body.classList.remove("isl-closing"); }, 520);
+    });
+  }
+
   function init() {
     if (!input()) return;
+    softClose();
     document.querySelectorAll("[data-isl-search]").forEach(function (b) {
       b.addEventListener("click", openSearch);
     });
