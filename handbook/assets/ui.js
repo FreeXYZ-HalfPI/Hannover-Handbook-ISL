@@ -108,7 +108,9 @@
      orthopaedists, «بارداری» → gynaecologists. Up to three, in the order the handbook lists them. */
   var specialties = [];
   function matchDoctors(typed, query) {
-    var wanted = [squash(typed), squash(query)], roles = [];
+    /* «پا» on the way to «پاسپورت» is no foot: a short word counts only when nothing longer was guessed */
+    var wanted = [squash(query)], roles = [];
+    if (squash(typed).length >= 3 || squash(typed) === squash(query)) wanted.push(squash(typed));
     specialties.forEach(function (sp) {
       if (sp.words.some(function (w) { return wanted.indexOf(squash(w)) >= 0; })) roles.push(squash(sp.role));
     });
@@ -208,6 +210,15 @@
     return queryWords(query).every(function (w) { return t.indexOf(squash(w)) >= 0; });
   }
 
+  /* Every searched word at the start of a word of the text: «ir» is not found inside
+     «Universität», «کارت» is found in «سیم‌کارت». */
+  function startsWords(text, query) {
+    return queryWords(query).every(function (w) {
+      var esc = w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return new RegExp("(?:^|[^A-Za-zÄÖÜäöüß\\u0600-\\u06FF])" + esc, "i").test(text);
+    });
+  }
+
   /* For Persian searches: «شماره مالیاتی — Steuer-ID و عوارض (Rundfunkbeitrag)» →
      «شماره مالیاتی و عوارض». Latin words inside a sentence (M10) stay: without them
      the sentence would not read. */
@@ -247,7 +258,23 @@
       .replace(/\s{2,}/g, " ").trim().replace(/\s*[؛;:،,]$/, ".");
   }
 
-  function sentenceWith(item, best, query, persian, reader) {
+  /* Most of the line's own words are already in the title: «معرفی Iranian Student Association
+     …، انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر، و این‌که چطور با آن …» under the title
+     «انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر» says nothing new. */
+  var SMALL = /^(?:و|با|از|به|در|که|را|این|آن|اینکه|چطور|چه|برای|یا|تا|هم|می|است|هست|شما|ها|های|یک)$/;
+  function repeatsTitle(line, title, query) {
+    var own = function (text) {
+      return text.replace(/[A-Za-zÄÖÜäöüß0-9]+/g, " ").replace(/\u200c/g, "").split(/[^\u0600-\u06FF]+/)
+        .filter(function (w) { return w && !SMALL.test(w); });
+    };
+    var titleWords = own(title), searched = own(query);
+    var words = own(line).filter(function (w) { return searched.indexOf(w) < 0; });
+    if (words.length < 3) return false;
+    var same = words.filter(function (w) { return titleWords.indexOf(w) >= 0; }).length;
+    return same >= 0.6 * words.length;
+  }
+
+  function sentenceWith(item, best, query, persian, reader, title) {
     var words = queryWords(query).map(function (w) { return w.toLowerCase(); });
     var phrase = query.replace(/\s+/g, " ").trim().toLowerCase();
     var articles = [best.querySelector("article")];
@@ -264,9 +291,11 @@
         hit = hit.replace(/^\s*(?:\[\s?\]|[\d۰-۹]+[.)]|[آ-ی]{1,3}\))\s*/, "").replace(/\s*←.*$/, "").trim();
         hit = readable(hit);
         if (squash(hit).length < squash(query).length + 8) continue;  /* just the word itself says nothing */
-        /* the reader typed in Persian: a line that is mostly German or English does not help */
-        if (reader && !mostlyPersian(hit)) continue;
         if (hit.length > 150) hit = around(hit, hit.toLowerCase().indexOf(words[0]));
+        /* Checked on what is shown (the cut piece, not the whole sentence): a line that is
+           mostly German or English does not help, whatever the reader typed in (the handbook
+           is read in Persian), nor one that gives the page's name or repeats its title. */
+        if (!mostlyPersian(hit) || /^(?:…\s*)?نام رسمی/.test(hit) || !startsWords(hit, query) || repeatsTitle(hit, title || "", query)) continue;
         return el("span", "isl-hit__summary isl-hit__context", hit);
       }
     }
@@ -301,12 +330,12 @@
        every result visibly answers the search. */
     var key = new URL(page.getAttribute("href"), location.href).pathname.slice(siteRoot().pathname.length);
     /* A German word typed in Persian letters stays visible in Latin letters in the sentence. */
-    var context = containsQuery(title, query) ? null : sentenceWith(item, best, query, persian && !changed, persian);
+    var context = containsQuery(title, query) ? null : sentenceWith(item, best, query, persian && !changed, persian, h1.textContent);
     if (context === "covers" && summaries[key]) {
       /* A sentence of its own: «از جمله درباره «کنسرت»» after «…با چه مشکلاتی روبه‌رو شده‌اند»
          read as if a concert were one of the problems. */
       text.appendChild(el("span", "isl-hit__summary", faDigits(summaries[key]).replace(/[.。]\s*$/, "") + "." +
-        (persian ? " «" + typed + (changed ? " (" + query + ")" : "") + "» هم در این صفحه آمده است." : " Also mentions «" + query.trim() + "».")));
+        (squash(typed).length >= 3 ? " «" + typed + (changed ? " (" + query + ")" : "") + "» هم در این صفحه آمده است." : "")));
     } else if (context && context !== "covers") { context.textContent = faDigits(context.textContent); text.appendChild(context); }
     else if (summaries[key]) text.appendChild(el("span", "isl-hit__summary", summaries[key]));
     link.appendChild(text);
