@@ -420,6 +420,35 @@
         ["01-arriving-in-hannover/03-arrival-transport/", "از فرودگاه هانوفر با قطار شهری S5 چطور به شهر و محل اقامت برسید."],
         ["04-everyday-life/39-travel-schengen/", "سفر به کشورهای اروپایی با کارت اقامت، و این‌که چه مدت می‌توانید بمانید."]
       ]
+    },
+    {
+      "words": ["International Office", "Hochschulbüro für Internationales", "Welcome Centre", "Welcome Center", "Auslandsamt", "Akademisches Auslandsamt", "international", "international office", "international students", "internationals", "اینترنشنال", "اینترنشنال آفیس", "اینترنشنال افیس", "اینترنشنال اوفیس", "انترنشنال آفیس", "اینترنشنال آفیس دانشگاه", "دفتر بین الملل", "دفتر بین‌الملل", "دفتر امور بین الملل", "دفتر امور بین‌الملل", "امور بین الملل", "امور بین‌الملل", "بین الملل", "دانشجوی بین المللی", "دانشجویان بین المللی", "دانشجوی خارجی", "دانشجویان خارجی", "ولکام سنتر", "ولکام سنتر دانشگاه", "آوسلاندزامت"],
+      "search": "بین‌الملل",
+      "searchInPersian": true,
+      "results": [
+        ["03-university-services/22-international-office/", "دفتر امور بین‌الملل و Welcome Centre: مشاوره رایگان برای ورود، اقامت، مسکن و برنامه‌های معارفه دانشجویان بین‌المللی."],
+        ["06-student-community/49-international-groups/", "گروه‌ها و برنامه‌هایی مثل Study Buddy که دانشجویان بین‌المللی را با هم و با دانشجویان آلمانی آشنا می‌کنند."],
+        ["05-work-finance-career/43-scholarships/", "کمک مالی اضطراری دفتر امور بین‌الملل برای دانشجویان غیراروپایی در بحران."]
+      ]
+    },
+    {
+      "words": ["office", "offices", "Büro", "آفیس", "افیس", "اوفیس", "آفیس دانشگاه", "دفتر دانشگاه", "دفترهای دانشگاه", "بورو"],
+      "search": "ServiceCenter",
+      "searchInPersian": true,
+      "results": [
+        ["03-university-services/22-international-office/", "دفتر امور بین‌الملل، برای ورود، اقامت و برنامه‌های معارفه دانشجویان بین‌المللی."],
+        ["03-university-services/21-servicecenter/", "اگر نمی‌دانید برای کار دانشگاهی‌تان کجا بروید، از این دفتر شروع کنید."],
+        ["07-resources/55-contacts/", "نشانی، تلفن و سایت همه اداره‌ها و دفترهای این کتابچه در یک جا."]
+      ]
+    },
+    {
+      "words": ["Verein", "Vereine", "club", "clubs", "sports club", "کلاب", "کلاب‌ها", "کلابها", "کلوب", "فراین", "فرآین", "باشگاه ورزشی", "انجمن محلی", "گروه کر", "کوهنوردی", "گروه کوهنوردی", "باغ اشتراکی"],
+      "search": "باشگاه",
+      "results": [
+        ["06-student-community/67-belonging-in-hannover/", "باشگاه‌ها و انجمن‌های محلی (Verein)، مثل باشگاه ورزشی، گروه کر یا گروه کوهنوردی، که آدم‌ها هر هفته همدیگر را می‌بینند."],
+        ["04-everyday-life/34-sports-culture/", "ورزش دانشگاه، استخر و برنامه‌های فرهنگی و تفریحی هانوفر."],
+        ["06-student-community/51-events-networking/", "رویدادها و جاهایی برای آشنایی با دانشجویان دیگر."]
+      ]
     }
   ]
 }
