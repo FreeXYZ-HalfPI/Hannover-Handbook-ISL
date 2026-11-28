@@ -634,7 +634,7 @@
       clearTimeout(timer);
       if (toggle.checked) { document.body.classList.remove("isl-closing"); return; }
       document.body.classList.add("isl-closing");
-      timer = setTimeout(function () { document.body.classList.remove("isl-closing"); }, 520);
+      timer = setTimeout(function () { document.body.classList.remove("isl-closing"); }, 420);
     });
   }
 
