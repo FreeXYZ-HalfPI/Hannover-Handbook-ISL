@@ -369,14 +369,18 @@ class _Tables(htmllib_parser.HTMLParser):
         if self.in_cell:
             self.cell.append(data)
 
+    # Columns that say nothing about the matter: a row number, the source, a link to a page
+    # of the handbook («۲۴ — موضوع: … — صفحه کتابچه: ۲۹. مشاوره»).
+    SKIP = ("#", "\\#", "ردیف", "شماره", "منبع", "Source", "Quelle", "صفحه کتابچه", "صفحه", "پیوند")
+
     def line(self, cells):
-        parts = [cells[0]] if cells else []
-        for i, cell in enumerate(cells[1:], 1):
+        parts = []
+        for i, cell in enumerate(cells):
             head = self.head[i] if i < len(self.head) else ""
-            if not cell or cell in ("—", "-") or head in ("منبع", "Source", "Quelle"):
+            if not cell or cell in ("—", "-") or head in self.SKIP or re.fullmatch(r"[\d۰-۹.\s]+", cell):
                 continue
-            parts.append((head + ": " if head else "") + cell)
-        return " — ".join(p for p in parts if p)
+            parts.append((head + ": " if head and parts else "") + cell)
+        return " — ".join(parts)
 
 
 def table_rows(site_dir):

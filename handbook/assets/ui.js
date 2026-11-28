@@ -221,6 +221,16 @@
     return queryWords(query).every(function (w) { return t.indexOf(squash(w)) >= 0; });
   }
 
+  /* The searched word as a whole word of the text, not the start of a longer one: «سلام»
+     is not in «سلامت». (A suffix after a zero-width non-joiner, «سلام‌ها», still counts.) */
+  function hasWhole(text, word) {
+    var esc = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    /* plural endings keep the word («همکاران», «سلام‌ها»); «ی» or «ت» make another one («همکاری», «سلامت») */
+    return new RegExp("(?:^|[^A-Za-zÄÖÜäöüß\\u0600-\\u06FF])" + esc + "(?:ان|ها|های|هایی)?(?![A-Za-zÄÖÜäöüß\\u0600-\\u06FF])", "i").test(text);
+  }
+  /* The reader typed one complete word: results must have that word itself. */
+  var wholeWord = null;
+
   /* Every searched word at the start of a word of the text: «ir» is not found inside
      «Universität», «کارت» is found in «سیم‌کارت». */
   function startsWords(text, query) {
@@ -264,8 +274,10 @@
 
   /* A line to read: no emoji or check marks (✅, ⚠️ are the page's own markers), and a
      sentence cut at «؛» or «:» ends with a full stop, not with a sign that says more follows. */
+  var PICTURES = /[\u2139\u2190-\u21FF\u2300-\u23FF\u2460-\u24FF\u25A0-\u27BF\u2900-\u297F\u2B00-\u2BFF\u3030\u303D\u3297\u3299\uFE0F\u200D\u20E3]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|\uD83E[\uDC00-\uDFFF]/g;
+  try { PICTURES = new RegExp("\\p{Extended_Pictographic}|[\\uFE0F\\u200D\\u20E3]", "gu"); } catch (e) { /* older browsers: the ranges above */ }
   function readable(text) {
-    return text.replace(/[\u2600-\u27BF\u2B00-\u2BFF\uFE0F\u200D]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|\uD83E[\uDC00-\uDFFF]/g, "")
+    return text.replace(PICTURES, "")
       .replace(/\(\s*\)|\[\s*\]|«\s*»/g, "")   /* «مهلت‌های قرمز (🔴)» leaves «()» */
       .replace(/\s{2,}/g, " ").replace(/\s+([.،؛:!؟])/g, "$1").trim().replace(/\s*[؛;:،,]$/, ".");
   }
@@ -308,6 +320,7 @@
            mostly German or English does not help, whatever the reader typed in (the handbook
            is read in Persian), nor one that gives the page's name or repeats its title. */
         if (!mostlyPersian(hit) || /^(?:…\s*)?نام رسمی/.test(hit) || !startsWords(hit, query) || repeatsTitle(hit, title || "", query)) continue;
+        if (wholeWord && !hasWhole(hit, wholeWord)) continue;
         return el("span", "isl-hit__summary isl-hit__context", hit);
       }
     }
@@ -316,7 +329,7 @@
     var rows = (tables && tables[page]) || [];
     for (var t = 0; t < rows.length; t++) {
       var row = readable(withoutAddresses(rows[t]));
-      if (!containsQuery(row, query) || !startsWords(row, query)) continue;
+      if (!containsQuery(row, query) || !startsWords(row, query) || (wholeWord && !hasWhole(row, wholeWord))) continue;
       if (row.length > 150) row = around(row, row.toLowerCase().indexOf(words[0]));
       if (!mostlyPersian(row) || repeatsTitle(row, title || "", query)) continue;
       return el("span", "isl-hit__summary isl-hit__context", row);
@@ -485,9 +498,16 @@
       if (link && !item.dataset.islPerson && !item.dataset.islIntent &&
           new URL(link.getAttribute("href"), location.href).pathname === new URL(".", siteRoot()).pathname) item.remove();
     });
+    /* «سلام» typed in full: a page that only has «سلامت» is no answer */
+    wholeWord = (!german.changed && queryWords(typed).length === 1 && PERSIAN.test(typed) && squash(typed).length >= 3 &&
+      window.islIsWord && window.islIsWord(typed)) ? typed.trim() : null;
     items = list.querySelectorAll(":scope > .md-search-result__item");
     if (items.length > 1) items.forEach(function (item) {
-      if (!item.dataset.islTidy && onlyInLinks(item, query)) item.remove();
+      if (item.dataset.islTidy) return;
+      if (onlyInLinks(item, query)) { item.remove(); return; }
+      if (wholeWord && !hasWhole(Array.prototype.map.call(item.querySelectorAll("article"), function (a) { return a.textContent; }).join(" "), wholeWord) &&
+          !hasWhole(((tables && tables[new URL(item.querySelector("a").getAttribute("href"), location.href).pathname.slice(siteRoot().pathname.length)]) || []).join(" "), wholeWord))
+        item.remove();
     });
     loadTables();
     items = list.querySelectorAll(":scope > .md-search-result__item");

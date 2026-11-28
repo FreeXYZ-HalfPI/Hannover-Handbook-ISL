@@ -227,6 +227,8 @@
   }
   window.islGermanize = germanize;
   window.islStartOfSiteWord = startOfSiteWord;
+  /* a complete Persian word (on the site or a common one): «سلام» is a word, not the start of «سلامت» */
+  window.islIsWord = function (word) { return onSite(word) || isPersianWord(word); };
 
   /* Compound words and phrases. The index splits words on spaces and on the
      zero-width non-joiner, so «سیم‌کارت» is two words, «سیم» and «کارت», and the theme
