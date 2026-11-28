@@ -288,8 +288,28 @@
      sentence cut at «؛» or «:» ends with a full stop, not with a sign that says more follows. */
   var PICTURES = /[\u2139\u2190-\u21FF\u2300-\u23FF\u2460-\u24FF\u25A0-\u27BF\u2900-\u297F\u2B00-\u2BFF\u3030\u303D\u3297\u3299\uFE0F\u200D\u20E3]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|\uD83E[\uDC00-\uDFFF]/g;
   try { PICTURES = new RegExp("\\p{Extended_Pictographic}|[\\uFE0F\\u200D\\u20E3]", "gu"); } catch (e) { /* older browsers: the ranges above */ }
+  /* Brackets and quotes in pairs: a line cut in the middle of «( … )» (the theme shortens long
+     text, an address inside is dropped) loses the unclosed part instead of showing a lone «(». */
+  var PAIRS = { "(": ")", "[": "]", "«": "»", "\u201C": "\u201D" };
+  function balance(text) {
+    var open = [], drop = {}, closers = {};
+    Object.keys(PAIRS).forEach(function (o) { closers[PAIRS[o]] = o; });
+    for (var i = 0; i < text.length; i++) {
+      var c = text.charAt(i);
+      if (PAIRS[c]) open.push(i);
+      else if (closers[c]) {
+        if (open.length && text.charAt(open[open.length - 1]) === closers[c]) open.pop();
+        else drop[i] = true;
+      }
+    }
+    var cut = open.length ? open[0] : text.length, out = "";
+    for (var j = 0; j < cut; j++) if (!drop[j]) out += text.charAt(j);
+    out = out.replace(/[\s:،,؛;—–-]+$/, "");
+    return cut < text.length ? out + " …" : out;
+  }
+
   function readable(text) {
-    return text.replace(PICTURES, "")
+    return balance(text.replace(PICTURES, ""))
       .replace(/\(\s*\)|\[\s*\]|«\s*»/g, "")   /* «مهلت‌های قرمز (🔴)» leaves «()» */
       .replace(/\s{2,}/g, " ").replace(/\s+([.،؛:!؟])/g, "$1").trim().replace(/\s*[؛;:،,]$/, ".");
   }
@@ -329,8 +349,10 @@
         hit = hit.replace(/^\s*(?:\[\s?\]|[\d۰-۹]+[.)]|[آ-ی]{1,3}\))\s*/, "").replace(/\s*←.*$/, "").trim();
         hit = readable(hit);
         if (hit.indexOf(GAP) >= 0) continue;
+        /* a phone number makes it a contact line, not what the page says about the matter */
+        if (/(?:\+49|\b0\d{2,4})[\s\u200e\-\/]*\d{2,}[\s\-]?\d{2,}|[۰-۹]{3,}[\s\-][۰-۹]{3,}/.test(hit)) continue;
         if (squash(hit).length < squash(query).length + 8) continue;  /* just the word itself says nothing */
-        if (hit.length > 150) hit = around(hit, hit.toLowerCase().indexOf(words[0]));
+        if (hit.length > 150) hit = balance(around(hit, hit.toLowerCase().indexOf(words[0])));
         /* Checked on what is shown (the cut piece, not the whole sentence): a line that is
            mostly German or English does not help, whatever the reader typed in (the handbook
            is read in Persian), nor one that gives the page's name or repeats its title. */
@@ -346,7 +368,7 @@
       var row = readable(withoutAddresses(rows[t]));
       if (row.indexOf(GAP) >= 0) continue;
       if (!containsQuery(row, query) || !startsWords(row, query)) continue;
-      if (row.length > 150) row = around(row, row.toLowerCase().indexOf(words[0]));
+      if (row.length > 150) row = balance(around(row, row.toLowerCase().indexOf(words[0])));
       if (!mostlyPersian(row) || repeatsTitle(row, title || "", query)) continue;
       return el("span", "isl-hit__summary isl-hit__context", row);
     }
