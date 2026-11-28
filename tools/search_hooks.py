@@ -374,6 +374,29 @@ class _Tables(htmllib_parser.HTMLParser):
     SKIP = ("#", "\\#", "ردیف", "شماره", "منبع", "Source", "Quelle", "صفحه کتابچه", "صفحه", "پیوند")
 
     def line(self, cells):
+        # The «documents and costs» table of every page (مورد | الزامی / احتمالی | توضیح):
+        # a sentence, not the column names («کارت بیمه درمانی — الزامی / احتمالی: الزامی»).
+        head = [h.strip() for h in self.head]
+        if head[:3] == ["مورد", "الزامی / احتمالی", "توضیح"] and len(cells) >= 3:
+            item, need, note = (c.strip() for c in cells[:3])
+            note = "" if note in ("—", "-") else re.sub(r"\s*؛\s*", ". ", note).rstrip(".") + "."
+            if item in ("—", "-", ""):
+                return ""                   # «این صفحه معرفی است و مدرکی ندارد» says nothing
+            if re.match(r"(هزینه|شهریه|سهم|کارمزد|ودیعه|مبلغ|تعرفه)", item):
+                return (item + ": " + note).strip() if note else ""   # a cost: «هزینه صدور: ۱۰۰ یورو»
+            # a short note joins the sentence («عکس برای کارت لازم است، پیش از ثبت‌نام.»);
+            # a longer one, with sentences of its own, follows it
+            def join(head):
+                if not note:
+                    return head + "."
+                if "." not in note[:-1] and len(note) < 70:
+                    return head + "، " + note
+                return head + ". " + note
+            if need == "الزامی":
+                return join(item + " لازم است")
+            if need == "احتمالی":
+                return join(item + " ممکن است لازم باشد")
+            return (item + ": " + note).strip() if note else ""
         parts = []
         for i, cell in enumerate(cells):
             head = self.head[i] if i < len(self.head) else ""

@@ -268,8 +268,14 @@
      the searched words, cut down to the sentence around them. */
   /* Links and e-mail addresses are no text to read: «Termin» inside
      «Terminvergabe@hannover-stadt.de» says nothing about Termin. */
+  /* An address in brackets or at the end is dropped; one that is part of the sentence
+     («… در photo.idm.uni-hannover.de بارگذاری کنید») leaves a mark (GAP), and a sentence
+     with a gap is not quoted: without the address it no longer reads. */
+  var ADDRESS = /\S+@\S+|https?:\/\/\S+|www\.\S+|\b[\w.-]+\.(?:de|com|org|net|eu|info)\b\S*/gi, GAP = "\u2063";
   function withoutAddresses(text) {
-    return text.replace(/\S+@\S+|https?:\/\/\S+|www\.\S+|\b[\w.-]+\.(?:de|com|org|net|eu|info)\b\S*/gi, " ")
+    return text.replace(/\(\s*(?:\S+@\S+|https?:\/\/\S+|www\.\S+|[\w.-]+\.(?:de|com|org|net|eu|info)\b\S*)\s*\)/gi, " ")
+      .replace(ADDRESS, GAP)
+      .replace(new RegExp("\\s*" + GAP + "\\s*(?=[.!؟]?\\s*$)", "g"), "")
       .replace(/\(\s*\)|\s+(?=[،؛.:)])/g, "").replace(/\s{2,}/g, " ").trim();
   }
   /* Mostly Persian: at least 60 % of the letters (for a reader who typed in Persian). */
@@ -322,6 +328,7 @@
         var hit = sentences.filter(function (x) { return containsQuery(x, query); })[0] || raw;
         hit = hit.replace(/^\s*(?:\[\s?\]|[\d۰-۹]+[.)]|[آ-ی]{1,3}\))\s*/, "").replace(/\s*←.*$/, "").trim();
         hit = readable(hit);
+        if (hit.indexOf(GAP) >= 0) continue;
         if (squash(hit).length < squash(query).length + 8) continue;  /* just the word itself says nothing */
         if (hit.length > 150) hit = around(hit, hit.toLowerCase().indexOf(words[0]));
         /* Checked on what is shown (the cut piece, not the whole sentence): a line that is
@@ -337,6 +344,7 @@
     var rows = (tables && tables[page]) || [];
     for (var t = 0; t < rows.length; t++) {
       var row = readable(withoutAddresses(rows[t]));
+      if (row.indexOf(GAP) >= 0) continue;
       if (!containsQuery(row, query) || !startsWords(row, query)) continue;
       if (row.length > 150) row = around(row, row.toLowerCase().indexOf(words[0]));
       if (!mostlyPersian(row) || repeatsTitle(row, title || "", query)) continue;
