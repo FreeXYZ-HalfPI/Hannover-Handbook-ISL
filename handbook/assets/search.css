@@ -130,23 +130,28 @@
   .isl-closing .md-search__output {
     opacity: 1; visibility: visible; top: 1.9rem; margin-top: -0.1rem; border-radius: 0 0 0.7rem 0.7rem;
     background: var(--md-default-bg-color); box-shadow: 0 1.1rem 1.8rem -0.6rem rgba(0, 0, 0, 0.35);
-    animation: isl-fold 0.32s cubic-bezier(0.4, 0, 0.2, 1) both;
+    animation: isl-fold 0.24s cubic-bezier(0.45, 0, 0.55, 1) both;
   }
   /* the theme collapses the results to nothing at once: keep them while they fold */
   .isl-closing .md-search__scrollwrap { width: auto; max-height: min(65vh, 36rem); box-shadow: none; }
   .isl-closing .md-search-result__list[hidden] { display: block; }   /* the theme hides the list on closing */
   /* the content fades first, as it faded in last on opening, so its lines are not seen
      re-wrapping while the box narrows */
-  .isl-closing .md-search__scrollwrap > * { animation: isl-fade-out 0.14s ease-in both; }
+  .isl-closing .md-search__scrollwrap > * { animation: isl-fade-out 0.1s ease-in both; }
   @keyframes isl-fade-out { from { opacity: 1; } to { opacity: 0; } }
-  /* folding and narrowing together, like the opening; the box keeps its white a moment
-     longer so the folding results never hang under a blue box */
+  /* folding and narrowing together, like the opening; the box turns back to the header
+     colour only when the panel under it is (almost) gone, so no white hangs under a blue box */
   .isl-closing .md-search__form {
-    transition: background-color 0.2s ease 0.12s, box-shadow 0.2s ease 0.12s, border-radius 0.2s ease 0.12s;
+    transition: background-color 0.16s ease 0.18s, box-shadow 0.16s ease 0.18s, border-radius 0.12s ease 0.16s;
   }
-  .isl-closing .md-search__input { transition: color 0.2s ease 0.12s; }
+  .isl-closing .md-search__input { transition: color 0.16s ease 0.18s; }
   .isl-closing .md-search__inner { transition: width 0.32s cubic-bezier(0.4, 0, 0.2, 1); }
-  @keyframes isl-fold { from { clip-path: inset(0 0 -3rem 0); } to { clip-path: inset(0 0 100% 0); } }
+  /* no slow tail: the last of the empty panel fades too, so no white strip stays under the box */
+  @keyframes isl-fold {
+    from { clip-path: inset(0 0 -3rem 0); opacity: 1; }
+    65% { opacity: 1; }
+    to { clip-path: inset(0 0 100% 0); opacity: 0; }
+  }
   @media (prefers-reduced-motion: reduce) {
     .md-search__inner, .md-search__form { transition: none; }
     .isl-closing .md-search__output { animation: none; visibility: hidden; }
