@@ -245,10 +245,10 @@
       ]
     },
     {
-      "words": ["Mensa", "Essen", "غذا", "ناهار", "رستوران", "غذاخوری", "سلف", "food", "lunch", "cafeteria", "canteen", "فود", "ناهار دانشگاه", "کافه", "کافه تریا", "سلف دانشگاه", "غذای ارزان"],
+      "words": ["Mensa", "Essen", "غذا", "ناهار", "رستوران", "غذاخوری", "سلف", "food", "lunch", "cafeteria", "canteen", "فود", "ناهار دانشگاه", "کافه", "کافه تریا", "سلف دانشگاه", "غذای ارزان", "Hauptmensa", "Contine", "Mensa Garbsen", "Mensa Campus Linden", "Mensa Linden", "Mensa Herrenhausen", "Mensa Blumhardtstraße", "Blumhardtstraße", "Mensa Große Pause", "Große Pause", "Moccabar", "Sprengelstube", "Café Leibniz", "منزا", "منسا", "مِنزا", "هاپت منزا", "هاوپت منزا", "هاپتمنزا", "هاوپتمنزا", "منزای اصلی", "کانتین", "کونتینه", "کنتینه", "کونتین", "کانتینه", "منزا گاربسن", "منزای گاربسن", "منزا لیندن", "منزای لیندن", "منزا هرن هاوزن", "منزا هرنهاوزن", "منزای هرن هاوزن", "منزا بلومهارت", "بلومهارت اشتراسه", "گروسه پاوزه", "گروسه پاوزه منزا", "موکابار", "موکا بار", "اشپرنگل اشتوبه", "کافه لایبنیتس"],
       "search": "Mensa",
       "results": [
-        ["03-university-services/28-mensa/", "در دانشگاه کجا غذای گرم و ارزان بخورید و چطور پول بدهید."],
+        ["03-university-services/28-mensa/", "فهرست همه غذاخوری‌ها و کافه‌های دانشجویی در پردیس‌های مختلف، و این‌که چطور پول بدهید."],
         ["04-everyday-life/31-shopping/", "خرید ارزان مواد غذایی برای آشپزی در خانه."]
       ]
     },
@@ -321,6 +321,96 @@
         ["01-arriving-in-hannover/02-before-arrival-visa/", "اگر پیش از دانشگاه باید کالج یا دوره زبان بگذرانید، ویزای متقاضی تحصیل تا ۹ ماه اعتبار دارد."],
         ["01-arriving-in-hannover/10-residence-permit/", "اجازه اقامت برای دوره‌های پیش‌دانشگاهی، یعنی کالج یا دوره زبان با دست‌کم ۱۸ ساعت در هفته."],
         ["06-student-community/48-isl/", "دانشجویان کالج هانوفر هم می‌توانند عضو انجمن دانشجویان ایرانی شوند."]
+      ]
+    },
+    {
+      "words": ["Architektur", "Landschaftsarchitektur", "Fakultät für Architektur und Landschaft", "architecture", "landscape architecture", "معماری", "رشته معماری", "معماری منظر", "منظر", "آرشیتکت", "آرشیتکتور", "آرشیتکچر", "آرکیتکتور"],
+      "search": "Architektur",
+      "results": [
+        ["02-starting-your-studies/15-faculties/", "رشته‌های معماری و منظر زیر دانشکده Architektur und Landschaft هستند. مشاور رشته را در سایت دانشکده پیدا کنید."],
+        ["02-starting-your-studies/16-study-structure/", "ساختار رشته، انتخاب واحد و برنامه درسی."],
+        ["02-starting-your-studies/20-fachschaft/", "دانشجویان سال‌بالایی رشته‌تان، که دوستانه‌ترین جا برای پرسیدن درباره درس‌ها هستند."]
+      ]
+    },
+    {
+      "words": ["Bauingenieurwesen", "Geodäsie", "Fakultät für Bauingenieurwesen und Geodäsie", "civil engineering", "geodesy", "عمران", "مهندسی عمران", "رشته عمران", "ژئودزی", "نقشه برداری", "باواینژنیور", "باو اینژنیور"],
+      "search": "Bauingenieurwesen",
+      "results": [
+        ["02-starting-your-studies/15-faculties/", "رشته‌های مهندسی عمران و ژئودزی زیر دانشکده Bauingenieurwesen und Geodäsie هستند. مشاور رشته را در سایت دانشکده پیدا کنید."],
+        ["02-starting-your-studies/16-study-structure/", "ساختار رشته، انتخاب واحد و برنامه درسی."],
+        ["02-starting-your-studies/20-fachschaft/", "دانشجویان سال‌بالایی رشته‌تان، که دوستانه‌ترین جا برای پرسیدن درباره درس‌ها هستند."]
+      ]
+    },
+    {
+      "words": ["Elektrotechnik", "Informatik", "Fakultät für Elektrotechnik und Informatik", "electrical engineering", "computer science", "informatics", "مهندسی برق", "رشته برق", "برق و کامپیوتر", "کامپیوتر", "مهندسی کامپیوتر", "رشته کامپیوتر", "علوم کامپیوتر", "انفورماتیک", "اینفورماتیک", "الکتروتکنیک", "الکترو تکنیک"],
+      "search": "Informatik",
+      "results": [
+        ["02-starting-your-studies/15-faculties/", "رشته‌های مهندسی برق و علوم کامپیوتر زیر دانشکده Elektrotechnik und Informatik هستند. مشاور رشته را در سایت دانشکده پیدا کنید."],
+        ["02-starting-your-studies/16-study-structure/", "ساختار رشته، انتخاب واحد و برنامه درسی."],
+        ["02-starting-your-studies/20-fachschaft/", "دانشجویان سال‌بالایی رشته‌تان، که دوستانه‌ترین جا برای پرسیدن درباره درس‌ها هستند."]
+      ]
+    },
+    {
+      "words": ["Maschinenbau", "Fakultät für Maschinenbau", "mechanical engineering", "مکانیک", "مهندسی مکانیک", "رشته مکانیک", "ماشین باو", "ماشینن باو", "ماشینباو"],
+      "search": "Maschinenbau",
+      "results": [
+        ["02-starting-your-studies/15-faculties/", "رشته مهندسی مکانیک زیر دانشکده Maschinenbau است. مشاور رشته را در سایت دانشکده پیدا کنید."],
+        ["02-starting-your-studies/16-study-structure/", "ساختار رشته، انتخاب واحد و برنامه درسی."],
+        ["02-starting-your-studies/20-fachschaft/", "دانشجویان سال‌بالایی رشته‌تان، که دوستانه‌ترین جا برای پرسیدن درباره درس‌ها هستند."]
+      ]
+    },
+    {
+      "words": ["Mathematik", "Physik", "Fakultät für Mathematik und Physik", "mathematics", "math", "maths", "physics", "ریاضی", "رشته ریاضی", "ریاضیات", "فیزیک", "رشته فیزیک", "ماتماتیک", "فیزیک خواندن"],
+      "search": "Mathematik",
+      "results": [
+        ["02-starting-your-studies/15-faculties/", "رشته‌های ریاضی و فیزیک زیر دانشکده Mathematik und Physik هستند. مشاور رشته را در سایت دانشکده پیدا کنید."],
+        ["02-starting-your-studies/16-study-structure/", "ساختار رشته، انتخاب واحد و برنامه درسی."],
+        ["02-starting-your-studies/20-fachschaft/", "دانشجویان سال‌بالایی رشته‌تان، که دوستانه‌ترین جا برای پرسیدن درباره درس‌ها هستند."]
+      ]
+    },
+    {
+      "words": ["Naturwissenschaftliche Fakultät", "Naturwissenschaften", "natural sciences", "علوم طبیعی", "رشته علوم طبیعی", "علوم پایه"],
+      "search": "Naturwissenschaftliche",
+      "results": [
+        ["02-starting-your-studies/15-faculties/", "رشته‌های علوم طبیعی زیر دانشکده Naturwissenschaftliche Fakultät هستند. مشاور رشته را در سایت دانشکده پیدا کنید."],
+        ["02-starting-your-studies/16-study-structure/", "ساختار رشته، انتخاب واحد و برنامه درسی."],
+        ["02-starting-your-studies/20-fachschaft/", "دانشجویان سال‌بالایی رشته‌تان، که دوستانه‌ترین جا برای پرسیدن درباره درس‌ها هستند."]
+      ]
+    },
+    {
+      "words": ["Juristische Fakultät", "Jura", "Rechtswissenschaften", "law", "law school", "رشته حقوق", "حقوق خواندن", "دانشکده حقوق", "یورا"],
+      "search": "Juristische",
+      "results": [
+        ["02-starting-your-studies/15-faculties/", "رشته حقوق زیر دانشکده Juristische Fakultät است. مشاور رشته را در سایت دانشکده پیدا کنید."],
+        ["02-starting-your-studies/16-study-structure/", "ساختار رشته، انتخاب واحد و برنامه درسی."],
+        ["02-starting-your-studies/20-fachschaft/", "دانشجویان سال‌بالایی رشته‌تان، که دوستانه‌ترین جا برای پرسیدن درباره درس‌ها هستند."]
+      ]
+    },
+    {
+      "words": ["Philosophische Fakultät", "humanities", "علوم انسانی", "رشته علوم انسانی", "دانشکده علوم انسانی"],
+      "search": "Philosophische",
+      "results": [
+        ["02-starting-your-studies/15-faculties/", "رشته‌های علوم انسانی زیر دانشکده Philosophische Fakultät هستند. مشاور رشته را در سایت دانشکده پیدا کنید."],
+        ["02-starting-your-studies/16-study-structure/", "ساختار رشته، انتخاب واحد و برنامه درسی."],
+        ["02-starting-your-studies/20-fachschaft/", "دانشجویان سال‌بالایی رشته‌تان، که دوستانه‌ترین جا برای پرسیدن درباره درس‌ها هستند."]
+      ]
+    },
+    {
+      "words": ["Wirtschaftswissenschaftliche Fakultät", "Wirtschaftswissenschaften", "BWL", "VWL", "economics", "business", "management", "اقتصاد", "رشته اقتصاد", "مدیریت", "رشته مدیریت", "اقتصاد و مدیریت", "مدیریت بازرگانی", "بی و ل", "وی و ل"],
+      "search": "Wirtschaftswissenschaftliche",
+      "results": [
+        ["02-starting-your-studies/15-faculties/", "رشته‌های اقتصاد و مدیریت زیر دانشکده Wirtschaftswissenschaftliche Fakultät هستند. مشاور رشته را در سایت دانشکده پیدا کنید."],
+        ["02-starting-your-studies/16-study-structure/", "ساختار رشته، انتخاب واحد و برنامه درسی."],
+        ["02-starting-your-studies/20-fachschaft/", "دانشجویان سال‌بالایی رشته‌تان، که دوستانه‌ترین جا برای پرسیدن درباره درس‌ها هستند."]
+      ]
+    },
+    {
+      "words": ["Leibniz School of Optics and Photonics", "Optics", "Photonics", "اپتیک", "فوتونیک", "اپتیک و فوتونیک"],
+      "search": "Photonics",
+      "results": [
+        ["02-starting-your-studies/15-faculties/", "Leibniz School of Optics and Photonics یکی از سه مدرسه دانشگاه در کنار دانشکده‌هاست. مشاور رشته را در سایت دانشکده پیدا کنید."],
+        ["02-starting-your-studies/16-study-structure/", "ساختار رشته، انتخاب واحد و برنامه درسی."],
+        ["02-starting-your-studies/20-fachschaft/", "دانشجویان سال‌بالایی رشته‌تان، که دوستانه‌ترین جا برای پرسیدن درباره درس‌ها هستند."]
       ]
     }
   ]
