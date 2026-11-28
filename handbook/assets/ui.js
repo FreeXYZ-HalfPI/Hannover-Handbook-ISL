@@ -84,13 +84,22 @@
   /* The search matches a name when it is the start of the name or of one of its parts,
      with or without spaces: «حیدری», «پگاه حیدری», «برمکی پور» and «برمکیپور» do;
      «ترمین» does not match «دکتر مینا». */
+  /* A name is matched from the start of one of its words, never from inside one: «دوست» is
+     not «پورایران‌دوست». One word that is also an ordinary word of the site («دوست», «Iran»)
+     is that word, not a person: with a title («دکتر دوست») or more of the name it matches. */
   function matchPeople(query) {
-    var wanted = squash(queryWords(query).filter(function (w) { return !TITLES.test(w); }).join(""));
+    var typed = queryWords(query), names = typed.filter(function (w) { return !TITLES.test(w); });
+    var wanted = squash(names.join("")), alone = names.length === 1 && typed.length === 1;
     if (wanted.length < 3) return [];
     return people.filter(function (p) {
+      var common = p.common || [];
       return [p.fa, p.latin].some(function (name) {
-        var parts = name.replace(/\u200c/g, " ").split(/[\s\-]+/).filter(function (w) { return w && !TITLES.test(w); }).map(squash);
-        return parts.some(function (_, i) { return parts.slice(i).join("").indexOf(wanted) === 0; });
+        /* inside a word («دوست» of «پورایران‌دوست») only with a title or more of the name */
+        var parts = name.split(alone ? /[\s\-]+/ : /[\s\-\u200c]+/).filter(function (w) { return w && !TITLES.test(w); }).map(squash);
+        return parts.some(function (part, i) {
+          if (alone && common.some(function (c) { return squash(c).indexOf(wanted) === 0 && part.indexOf(squash(c)) === 0; })) return false;
+          return parts.slice(i).join("").indexOf(wanted) === 0;
+        });
       });
     });
   }

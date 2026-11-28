@@ -1,5 +1,5 @@
 {
-  "_comment": "What people are usually looking for when they search a word. «words»: what they type (German, English, Persian, colloquial; German typed in Persian letters is read as German first). «search»: what the main results search for when the typed words are not on the site themselves («پارتنر» → همسر). «results»: the pages that answer that need, best first, each with one line written for that need. These come first in the results; the search fills up the rest. assets/ui.js reads this file; tools/search_hooks.py builds the guesses for unfinished words from it.",
+  "_comment": "What people are usually looking for when they search a word. «words»: what they type (German, English, Persian, colloquial; German typed in Persian letters is read as German first). «search»: what the main results search for when the typed words are not on the site themselves («پارتنر» → همسر); with «searchInPersian», Latin words of the need are searched that way too, even when they are on the site («Iran» → ایران, not the German name of the association). «results»: the pages that answer that need, best first, each with one line written for that need. These come first in the results; the search fills up the rest. assets/ui.js reads this file; tools/search_hooks.py builds the guesses for unfinished words from it.",
   "intents": [
     {
       "words": ["Krank", "Krankheit", "krankgeschrieben", "Krankschreibung", "Krankmeldung", "Arbeitsunfähigkeitsbescheinigung", "مریض", "مریضی", "بیمار", "بیماری", "سرماخوردگی", "تب", "حالم بد است", "sick", "ill", "illness", "flu", "fever", "cold", "سیک", "فلو", "آنفولانزا", "سرما خوردگی", "سرما خوردم", "مریضم", "حالم خوب نیست", "سردرد", "دل درد", "درد"],
@@ -301,6 +301,17 @@
         ["04-everyday-life/34-sports-culture/", "سینمای دانشجویی (UniKino)، تخفیف دانشجویی سینما و موزه، و کنسرت‌های رایگان تابستان."],
         ["04-everyday-life/31-shopping/", "تخفیف دانشجویی برای سینما، تئاتر، اپرا و موزه با گواهی اشتغال به تحصیل."],
         ["07-resources/58-telegram-insights/", "پرسش‌های پرتکرار دانشجویان درباره کنسرت، تئاتر، سینما و فستیوال."]
+      ]
+    },
+    {
+      "words": ["Iran", "Iranian", "Iranians", "iranisch", "Iraner", "Persian", "persisch", "Farsi", "ایرانی", "ایرانیان", "ایرانی ها", "ایرانی‌ها", "فارسی زبان", "هموطن", "هم وطن", "هموطنان"],
+      "search": "ایران",
+      "searchInPersian": true,
+      "results": [
+        ["07-resources/61-consular-documents/", "امور کنسولی ایران: پاسپورت، ترجمه رسمی و کپی برابر اصل؛ کدام کار در آلمان و کدام در ایران."],
+        ["06-student-community/48-isl/", "انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر و برنامه‌هایش."],
+        ["07-resources/58-telegram-insights/", "مسائلی که دانشجویان ایرانی هانوفر در عمل بیشتر با آن روبه‌رو شده‌اند."],
+        ["07-resources/63-persian-speaking-doctors/", "پزشکان فارسی‌زبان در هانوفر."]
       ]
     }
   ]

@@ -300,9 +300,10 @@ def guesses(docs, config):
         search = need.get("search")
         for word in need["words"]:
             used = pages_with(word, whole=" " not in word)
-            if used and not PERSIAN.search(word):
+            is_latin = not PERSIAN.search(word)
+            if used and is_latin and not need.get("searchInPersian"):
                 continue                      # German on the site: the search finds it as it is
-            if used or not search:
+            if (used and not is_latin) or not search:
                 out.append([key(word), word, word, round(common(word) + site(used) + 0.5, 2), "w", typed(word)])
             else:
                 out.append([key(word), word, search, round(common(word) + site(pages_with(search)), 2), "c", typed(word)])
@@ -338,13 +339,39 @@ def on_post_build(config, **kwargs):
     missing = [latin for latin in PEOPLE_FA if latin not in _people]
     if missing:
         print("INFO    -  search: names in tools/people-fa.json not found on the site: " + ", ".join(missing))
+    index = Path(config["site_dir"]) / "search" / "search_index.json"
+    data = json.loads(index.read_text(encoding="utf-8")) if index.exists() else {"docs": []}
+    strip_boilerplate(data["docs"])
+    # Parts of a name that are also ordinary words of the site («دوست» in «پورایران‌دوست»,
+    # «Iran» in «Pour Iran Doust»): searched alone, they are the word, not the person
+    # (assets/ui.js matchPeople).
+    # A Persian part counts when it is a common Persian word (LEXICON) found on the site
+    # outside the names; a Latin part when it is on two pages or more outside the names, or
+    # stands for a very common Persian word («Iran» → «ایران»).
+    pages_of = {}
+    for doc in data["docs"]:
+        text = TAGS.sub(" ", doc["title"] + " " + doc["text"])
+        for person in _people.values():
+            text = text.replace(person["latin"], " ").replace(person["fa"], " ")
+        for w in re.split(r"[^\w\u0600-\u06FF\u200c]+", text):
+            if w:
+                pages_of.setdefault(plain(w).lower(), set()).add(doc["location"].split("#")[0])
+
+    def ordinary(word):
+        if word.rstrip(".") in ("dr", "prof", "دکتر"):
+            return False
+        if PERSIAN.search(word):
+            return word in pages_of and LEXICON.get(word, 0) >= 100000
+        fa = plain(to_persian(word))
+        return len(pages_of.get(word, ())) >= 2 or (fa in pages_of and LEXICON.get(fa, 0) >= 1000000)
+
+    for person in _people.values():
+        parts = re.split(r"[\s\-]+", person["latin"] + " " + person["fa"].replace("\u200c", " "))
+        person["common"] = sorted({plain(w).lower() for w in parts if w and ordinary(plain(w).lower())})
     people = Path(config["site_dir"]) / "assets" / "search-people.json"
     people.write_text(json.dumps(list(_people.values()), ensure_ascii=False, indent=1), encoding="utf-8")
-    index = Path(config["site_dir"]) / "search" / "search_index.json"
     if not index.exists():
         return
-    data = json.loads(index.read_text(encoding="utf-8"))
-    strip_boilerplate(data["docs"])
     add_persian_names(data["docs"])
     titles = {doc["location"]: doc["title"] for doc in data["docs"] if "#" not in doc["location"]}
     (Path(config["site_dir"]) / "assets" / "search-pages.json").write_text(
