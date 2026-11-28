@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -56,16 +56,16 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۲ | [Hochschulsport – Sports programs](https://www.hochschulsport-hannover.de/en/sports-programs/) | hochschulsport-hannover.de | 2026-11-10 | ✅ باز شد |
-| ۳ | [Hochschulsport](https://www.hochschulsport-hannover.de/en/university-sports-department/about-us) | hochschulsport-hannover.de | 2026-11-10 | ✅ باز شد |
-| ۴ | [Studentenwerk – Save money](https://www.studentenwerk-hannover.de/en/money/save-money) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
-| ۵ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۶ | [staatstheater-hannover.de](https://www.staatstheater-hannover.de/) | staatstheater-hannover.de | 2026-11-10 | ✅ باز شد |
-| ۷ | [Campus und Stadt](https://www.uni-hannover.de/en/universitaet/campus-und-stadt) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۸ | [تقویم رویدادهای hannover.de](https://www.hannover.de/Veranstaltungskalender) | شهر و منطقه هانوفر | 2026-11-10 | ✅ باز شد |
-| ۹ | [visit-hannover.com](https://www.visit-hannover.com/) | visit-hannover.com | 2026-11-10 | ✅ باز شد |
-| ۱۰ | [Staatstheater – Kartenservice](https://staatstheater-hannover.de/de_DE/kartenservice) | Staatstheater Hannover | 2026-11-10 | ✅ باز شد |
+| ۱ | [LUH Study Checklist](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/study-checklist) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۲ | [Hochschulsport – Sports programs](https://www.hochschulsport-hannover.de/en/sports-programs/) | hochschulsport-hannover.de | 2026-11-23 | ✅ باز شد |
+| ۳ | [Hochschulsport](https://www.hochschulsport-hannover.de/en/university-sports-department/about-us) | hochschulsport-hannover.de | 2026-11-23 | ✅ باز شد |
+| ۴ | [Studentenwerk – Save money](https://www.studentenwerk-hannover.de/en/money/save-money) | Studentenwerk Hannover | 2026-11-23 | ✅ باز شد |
+| ۵ | [LUH – Re-registration](https://www.uni-hannover.de/en/studium/im-studium/organising-your-studies/rueckmeldung) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۶ | [staatstheater-hannover.de](https://www.staatstheater-hannover.de/) | staatstheater-hannover.de | 2026-11-23 | ✅ باز شد |
+| ۷ | [Campus und Stadt](https://www.uni-hannover.de/en/universitaet/campus-und-stadt) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۸ | [تقویم رویدادهای hannover.de](https://www.hannover.de/Veranstaltungskalender) | شهر و منطقه هانوفر | 2026-11-23 | ✅ باز شد |
+| ۹ | [visit-hannover.com](https://www.visit-hannover.com/) | visit-hannover.com | 2026-11-23 | ✅ باز شد |
+| ۱۰ | [Staatstheater – Kartenservice](https://staatstheater-hannover.de/de_DE/kartenservice) | Staatstheater Hannover | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

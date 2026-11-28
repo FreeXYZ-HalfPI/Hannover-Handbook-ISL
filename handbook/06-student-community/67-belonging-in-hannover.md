@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-29 · **بخش:** [بخش ۶ — جامعه دانشجویی و مشارکت اجتماعی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-29 · **بخش:** [بخش ۶ — جامعه دانشجویی و مشارکت اجتماعی](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -91,11 +91,11 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH – Kontakte knüpfen](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/kontakte-knuepfen) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۲ | [LUH – Orientation Days](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/preparation-courses-and-introductory-sessions/orientation-days) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۳ | [Hochschulsport Hannover](https://www.hochschulsport-hannover.de/) | ورزش دانشگاه هانوفر | 2026-11-10 | ✅ باز شد |
-| ۴ | [hannover.de – Freizeitheime und Stadtteilzentren](https://www.hannover.de/Kultur-Freizeit/Freizeit-Sport/Freizeiteinrichtungen/Freizeitheime-Stadtteilzentren) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
-| ۵ | [Veranstaltungskalender](https://www.hannover.de/Veranstaltungskalender) | شهر هانوفر | 2026-11-10 | ✅ باز شد |
+| ۱ | [LUH – Kontakte knüpfen](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/kontakte-knuepfen) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۲ | [LUH – Orientation Days](https://www.uni-hannover.de/en/studium/im-studium/start-ins-studium/preparation-courses-and-introductory-sessions/orientation-days) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۳ | [Hochschulsport Hannover](https://www.hochschulsport-hannover.de/) | ورزش دانشگاه هانوفر | 2026-11-23 | ✅ باز شد |
+| ۴ | [hannover.de – Freizeitheime und Stadtteilzentren](https://www.hannover.de/Kultur-Freizeit/Freizeit-Sport/Freizeiteinrichtungen/Freizeitheime-Stadtteilzentren) | شهر هانوفر | 2026-11-23 | ✅ باز شد |
+| ۵ | [Veranstaltungskalender](https://www.hannover.de/Veranstaltungskalender) | شهر هانوفر | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

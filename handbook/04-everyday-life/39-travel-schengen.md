@@ -19,7 +19,7 @@
 > این صفحه اطلاعات عمومی است و مشاوره حقوقی به شمار نمی‌آید. پیش از سفر، اعتبار پاسپورت و کارت اقامت خود را بررسی کنید.
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۴ — زندگی روزمره در هانوفر](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -57,11 +57,11 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [Auswärtiges Amt – Schengener Übereinkommen](https://www.auswaertiges-amt.de/de/service/visa-und-aufenthalt/schengen-207786) | وزارت امور خارجه آلمان | 2026-11-10 | ✅ باز شد |
-| ۲ | [Auswärtiges Amt – Berechnung der Aufenthaltsdauer](https://www.auswaertiges-amt.de/de/service/fragenkatalog-node/39-berechnung-aufenthaltsdauer/606614) | وزارت امور خارجه آلمان | 2026-11-10 | ✅ باز شد |
-| ۳ | [Auswärtiges Amt – Visum für Deutschland](https://www.auswaertiges-amt.de/de/service/fragenkatalog-node/606772-606772) | وزارت امور خارجه آلمان | 2026-11-10 | ✅ باز شد |
-| ۴ | [شهر ویسبادن](https://www.wiesbaden.de/vv/produkte/33/Verlust-Aufenthaltstitel-Reiseausweis) | wiesbaden.de | 2026-11-10 | ✅ باز شد |
-| ۵ | [auswaertiges-amt.de](https://www.auswaertiges-amt.de/) | وزارت امور خارجه آلمان | 2026-11-10 | ✅ باز شد |
+| ۱ | [Auswärtiges Amt – Schengener Übereinkommen](https://www.auswaertiges-amt.de/de/service/visa-und-aufenthalt/schengen-207786) | وزارت امور خارجه آلمان | 2026-11-23 | ✅ باز شد |
+| ۲ | [Auswärtiges Amt – Berechnung der Aufenthaltsdauer](https://www.auswaertiges-amt.de/de/service/fragenkatalog-node/39-berechnung-aufenthaltsdauer/606614) | وزارت امور خارجه آلمان | 2026-11-23 | ✅ باز شد |
+| ۳ | [Auswärtiges Amt – Visum für Deutschland](https://www.auswaertiges-amt.de/de/service/fragenkatalog-node/606772-606772) | وزارت امور خارجه آلمان | 2026-11-23 | ✅ باز شد |
+| ۴ | [شهر ویسبادن](https://www.wiesbaden.de/vv/produkte/33/Verlust-Aufenthaltstitel-Reiseausweis) | wiesbaden.de | 2026-11-23 | ✅ باز شد |
+| ۵ | [auswaertiges-amt.de](https://www.auswaertiges-amt.de/) | وزارت امور خارجه آلمان | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

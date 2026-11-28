@@ -16,7 +16,7 @@
 <!-- disclaimer:end -->
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-23 · **بخش:** [بخش ۱ — ورود به هانوفر و کارهای اولیه](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -60,17 +60,17 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [LUH – Sprachnachweise](https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/sprachnachweise) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۲ | [LUH – Overview of application deadlines (PDF)](https://www.uni-hannover.de/fileadmin/Studienberatung/Neu_ab_Relaunch/02_Studium_Vor_dem_Studium/02_Bewerbung_und_Zulassung/02_Studienplatzbewerbung/03_MA-Bewerbung_D_EU/Master_Bewerbungsfriste-alleSem-engl.pdf) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۳ | [LUH – Bewerbung & Zulassung](https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung) | دانشگاه لایبنیتس هانوفر | 2026-11-10 | ✅ باز شد |
-| ۴ | [uni-assist – VPD](https://www.uni-assist.de/en/how-to-apply/plan-your-application/vpd/) | uni-assist | 2026-11-10 | ✅ باز شد |
-| ۵ | [uni-assist – FAQs](https://www.uni-assist.de/en/faqs/plan-your-application/) | uni-assist | 2026-11-10 | ✅ باز شد |
-| ۶ | [Assessment of higher education qualifications](https://www.anerkennung-in-deutschland.de/html/en/pro/assessment-higher-education-qualifications.php) | Anerkennung in Deutschland – دولت فدرال | 2026-11-10 | ✅ باز شد |
+| ۱ | [LUH – Sprachnachweise](https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung/voraussetzungen-zum-studium/sprachnachweise) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۲ | [LUH – Overview of application deadlines (PDF)](https://www.uni-hannover.de/fileadmin/Studienberatung/Neu_ab_Relaunch/02_Studium_Vor_dem_Studium/02_Bewerbung_und_Zulassung/02_Studienplatzbewerbung/03_MA-Bewerbung_D_EU/Master_Bewerbungsfriste-alleSem-engl.pdf) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۳ | [LUH – Bewerbung & Zulassung](https://www.uni-hannover.de/studium/vor-dem-studium/bewerbung-zulassung) | دانشگاه لایبنیتس هانوفر | 2026-11-23 | ✅ باز شد |
+| ۴ | [uni-assist – VPD](https://www.uni-assist.de/en/how-to-apply/plan-your-application/vpd/) | uni-assist | 2026-11-23 | ✅ باز شد |
+| ۵ | [uni-assist – FAQs](https://www.uni-assist.de/en/faqs/plan-your-application/) | uni-assist | 2026-11-23 | ✅ باز شد |
+| ۶ | [Assessment of higher education qualifications](https://www.anerkennung-in-deutschland.de/html/en/pro/assessment-higher-education-qualifications.php) | Anerkennung in Deutschland – دولت فدرال | 2026-11-23 | ✅ باز شد |
 | ۷ | [ZAB – Fees](https://zab.kmk.org/en/statement-comparability/fees) | KMK / ZAB | 2026-10-23 | ❌ سایت در روز دسترسی پاسخ نداد (چند بار بررسی شد) |
-| ۸ | [uni-assist – Handling fees](https://www.uni-assist.de/en/how-to-apply/pay-all-fees/handling-fees/) | uni-assist | 2026-11-10 | ✅ باز شد |
-| ۹ | [uni-assist.de](https://www.uni-assist.de/) | uni-assist | 2026-11-10 | ✅ باز شد |
+| ۸ | [uni-assist – Handling fees](https://www.uni-assist.de/en/how-to-apply/pay-all-fees/handling-fees/) | uni-assist | 2026-11-23 | ✅ باز شد |
+| ۹ | [uni-assist.de](https://www.uni-assist.de/) | uni-assist | 2026-11-23 | ✅ باز شد |
 | ۱۰ | [zab.kmk.org](https://zab.kmk.org/) | KMK / ZAB | 2026-10-23 | ❌ سایت در روز دسترسی پاسخ نداد (چند بار بررسی شد) |
-| ۱۱ | [anabin](https://anabin.kmk.org/) | KMK | 2026-11-10 | ✅ باز شد |
+| ۱۱ | [anabin](https://anabin.kmk.org/) | KMK | 2026-11-23 | ✅ باز شد |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
 

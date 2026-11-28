@@ -19,7 +19,7 @@
 > این صفحه اطلاعات عمومی است و مشاوره حقوقی به شمار نمی‌آید. در هر اختلاف جدی، پیش از پرداخت پول یا امضای چیزی، از یکی از مراکز مشاوره رایگان پایین کمک بگیرید.
 
 > [!TIP]
-> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۷ — منابع و پیوست‌ها](README.md) · **تاریخ دسترسی به منابع:** 2026-11-10 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
+> **تاریخ آخرین بررسی:** 2026-10-25 · **بخش:** [بخش ۷ — منابع و پیوست‌ها](README.md) · **تاریخ دسترسی به منابع:** 2026-11-23 · **راهنما:** ⚠️ = نیازمند تأیید یا تکمیل؛ ℹ️ = نکته
 
 ## ۱. هدف
 
@@ -86,15 +86,15 @@
 
 | \# | منبع | ناشر | تاریخ دسترسی | نتیجه بررسی |
 |----|----|----|----|----|
-| ۱ | [§ 312g BGB](https://www.gesetze-im-internet.de/bgb/__312g.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
-| ۲ | [§ 355 BGB](https://www.gesetze-im-internet.de/bgb/__355.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
-| ۳ | [§ 540 BGB](https://www.gesetze-im-internet.de/bgb/__540.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
-| ۴ | [§ 692 ZPO](https://www.gesetze-im-internet.de/zpo/__692.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
-| ۵ | [§ 31 ZKG](https://www.gesetze-im-internet.de/zkg/__31.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-10 | ✅ باز شد |
-| ۶ | [Verbraucherzentrale – Beratungsstelle Hannover](https://www.verbraucherzentrale-niedersachsen.de/beratungsstellen/beratungsstelle-hannover-121455?page=1) | Verbraucherzentrale Niedersachsen | 2026-11-10 | ✅ باز شد |
-| ۷ | [Legal Clinic Hannover](https://www.jura.uni-hannover.de/de/legalclinic) | دانشکده حقوق LUH | 2026-11-10 | ✅ باز شد |
-| ۸ | [Service für ausländische Studierende](https://www.hannover.de/Wirtschaft-Wissenschaft/Wissenschaft/Studieren-in-Hannover/Internationales/Service-f%C3%BCr-ausl%C3%A4ndische-Studierende) | شهر و منطقه هانوفر | 2026-11-10 | ✅ باز شد |
-| ۹ | [Studentenwerk – Beratung](https://www.studentenwerk-hannover.de/beratung/uebersicht) | Studentenwerk Hannover | 2026-11-10 | ✅ باز شد |
+| ۱ | [§ 312g BGB](https://www.gesetze-im-internet.de/bgb/__312g.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
+| ۲ | [§ 355 BGB](https://www.gesetze-im-internet.de/bgb/__355.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
+| ۳ | [§ 540 BGB](https://www.gesetze-im-internet.de/bgb/__540.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
+| ۴ | [§ 692 ZPO](https://www.gesetze-im-internet.de/zpo/__692.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
+| ۵ | [§ 31 ZKG](https://www.gesetze-im-internet.de/zkg/__31.html) | متن قانون – وزارت دادگستری فدرال | 2026-11-23 | ✅ باز شد |
+| ۶ | [Verbraucherzentrale – Beratungsstelle Hannover](https://www.verbraucherzentrale-niedersachsen.de/beratungsstellen/beratungsstelle-hannover-121455?page=1) | Verbraucherzentrale Niedersachsen | 2026-11-23 | ✅ باز شد |
+| ۷ | [Legal Clinic Hannover](https://www.jura.uni-hannover.de/de/legalclinic) | دانشکده حقوق LUH | 2026-11-23 | ✅ باز شد |
+| ۸ | [Service für ausländische Studierende](https://www.hannover.de/Wirtschaft-Wissenschaft/Wissenschaft/Studieren-in-Hannover/Internationales/Service-f%C3%BCr-ausl%C3%A4ndische-Studierende) | شهر و منطقه هانوفر | 2026-11-23 | ✅ باز شد |
+| ۹ | [Studentenwerk – Beratung](https://www.studentenwerk-hannover.de/beratung/uebersicht) | Studentenwerk Hannover | 2026-11-23 | ✅ باز شد |
 | ۱۰ | [Onlinewache Polizei Niedersachsen](https://www.onlinewache.polizei.niedersachsen.de/) | پلیس نیدرزاکسن | 2026-10-25 | ❌ در زمان بررسی در حال تعمیر بود |
 
 ## ۷. تجربه دانشجویان (غیررسمی)
