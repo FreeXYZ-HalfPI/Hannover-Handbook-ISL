@@ -180,6 +180,13 @@
     /* a phrase people say, in Persian or English: «دوست دختر», «health insurance» */
     var phrase = words.length > 1 && knownWord(words.join(" "));
     if (phrase && phrase[4] !== "w") return { query: phrase[2], changed: true, shown: phrase[4] === "c" ? phrase[2] : phrase[1] };
+    /* a phrase whose last word is still being typed: «سلامت ر» → «سلامت روان» */
+    var tail = words[words.length - 1];
+    if (words.length > 1 && !phrase && (plain(tail).length <= 3 || !onSite(tail))) {
+      var more = guessFor(words.join(" "), false);
+      if (more && typedKey(more[1]).indexOf(typedKey(words.slice(0, -1).join(" "))) === 0)
+        return { query: more[2], changed: true, shown: more[1] };
+    }
     if (words.length > 1) {
       var allOnSite = words.every(onSite);
       var whole = !onSite(words.join("")) && !words.every(isPersianWord) && lookup(words.join(""), !allOnSite);
@@ -236,8 +243,10 @@
     if (/["+\-~^:*]/.test(query)) return query;
     /* A short Persian word is searched as a whole word: «کار» should not find «کارت». */
     var term = function (w, last) {
-      /* ...unless it is the unfinished end of what the reader is typing: «بیم» → «بیمه» */
+      /* ...unless it is the unfinished end of what the reader is typing: «بیم» → «بیمه»,
+         and «سلامت ر» → «سلامت ر…» (one letter after a word is the start of the next one) */
       if (last && startOfSiteWord(w)) return w + "*";
+      if (last && words.length > 1 && /^[\u0600-\u06FF]{1,3}$/.test(w) && !onSite(w)) return w + "*";
       return /^[\u0600-\u06FF]{1,3}$/.test(w) ? w : w + "*";
     };
     if (words.length === 1) return term(words[0], true) === words[0] ? "+" + words[0] : words[0];

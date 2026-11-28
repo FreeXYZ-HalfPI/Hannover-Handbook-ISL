@@ -67,6 +67,10 @@
       .then(function (r) { return r.ok ? r.json() : {}; })
       .then(function (data) { pageTitles = data; })
       .catch(function () {});
+    fetch(new URL("assets/search-specialties.json", siteRoot()).href)
+      .then(function (r) { return r.ok ? r.json() : {}; })
+      .then(function (data) { specialties = data.specialties || []; })
+      .catch(function () {});
     fetch(new URL("assets/search-people.json", siteRoot()).href)
       .then(function (r) { return r.ok ? r.json() : []; })
       .then(function (data) { people = data; })
@@ -89,6 +93,21 @@
         return parts.some(function (_, i) { return parts.slice(i).join("").indexOf(wanted) === 0; });
       });
     });
+  }
+
+  /* Doctors for an illness or a part of the body (search-specialties.json): «کمردرد» →
+     orthopaedists, «بارداری» → gynaecologists. Up to three, in the order the handbook lists them. */
+  var specialties = [];
+  function matchDoctors(typed, query) {
+    var wanted = [squash(typed), squash(query)], roles = [];
+    specialties.forEach(function (sp) {
+      if (sp.words.some(function (w) { return wanted.indexOf(squash(w)) >= 0; })) roles.push(squash(sp.role));
+    });
+    if (!roles.length) return [];
+    return people.filter(function (p) {
+      var role = squash(p.role || "");
+      return roles.some(function (r) { return role.indexOf(r) === 0; });
+    }).slice(0, 3);
   }
 
   var ICON_PHONE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1z"/></svg>';
@@ -136,12 +155,19 @@
     return item;
   }
 
-  /* Matching people go first in the list, once per search. */
-  function addPeople(list, query) {
+  /* Matching people go first in the list, once per search: people by name, else the
+     doctors for the illness searched. */
+  function addPeople(list, query, searched) {
     if (list.dataset.islPeople === query && list.querySelector("[data-isl-person]")) return [];
     list.dataset.islPeople = query;
     var found = matchPeople(query).slice(0, 3), persian = PERSIAN.test(query);
-    found.slice().reverse().forEach(function (person) { list.insertBefore(personItem(person, persian), list.firstChild); });
+    var doctors = !found.length;
+    if (doctors) found = matchDoctors(query, searched || query);
+    found.slice().reverse().forEach(function (person) {
+      var item = personItem(person, persian);
+      if (doctors) item.dataset.islDoctor = "1";
+      list.insertBefore(item, list.firstChild);
+    });
     return found;
   }
   var PERSIAN = /[\u0600-\u06FF]/;
@@ -260,8 +286,10 @@
     /* A German word typed in Persian letters stays visible in Latin letters in the sentence. */
     var context = containsQuery(title, query) ? null : sentenceWith(item, best, query, persian && !changed, persian);
     if (context === "covers" && summaries[key]) {
-      text.appendChild(el("span", "isl-hit__summary", faDigits(summaries[key]).replace(/[.。]\s*$/, "") +
-        (persian ? "؛ از جمله درباره «" + typed + (changed ? " (" + query + ")" : "") + "»." : " — «" + query.trim() + "»")));
+      /* A sentence of its own: «از جمله درباره «کنسرت»» after «…با چه مشکلاتی روبه‌رو شده‌اند»
+         read as if a concert were one of the problems. */
+      text.appendChild(el("span", "isl-hit__summary", faDigits(summaries[key]).replace(/[.。]\s*$/, "") + "." +
+        (persian ? " «" + typed + (changed ? " (" + query + ")" : "") + "» هم در این صفحه آمده است." : " Also mentions «" + query.trim() + "».")));
     } else if (context && context !== "covers") { context.textContent = faDigits(context.textContent); text.appendChild(context); }
     else if (summaries[key]) text.appendChild(el("span", "isl-hit__summary", summaries[key]));
     link.appendChild(text);
@@ -343,8 +371,19 @@
     var typed = (input().value || "").trim();
     var german = window.islGermanize ? window.islGermanize(typed) : { query: typed, changed: false };
     var query = german.query;
-    var found = addPeople(list, typed);
+    var found = addPeople(list, typed, query);
     addIntent(list, typed, query);
+    /* doctors for an illness come after the best answer for the need (e.g. the free
+       counselling of the university for «سلامت روان») */
+    var firstNeed = list.querySelector(":scope > [data-isl-intent]");
+    if (firstNeed && firstNeed.previousElementSibling && firstNeed.previousElementSibling.dataset.islDoctor) {
+      var after = firstNeed.nextSibling;
+      list.querySelectorAll(":scope > [data-isl-doctor]").forEach(function (d) { list.insertBefore(d, after); });
+    }
+    /* doctors and the rows for the need together stay within the five results */
+    var chosenRows = list.querySelectorAll(":scope > [data-isl-person], :scope > [data-isl-intent]");
+    var needRows = list.querySelectorAll(":scope > [data-isl-intent]");
+    for (var extra = chosenRows.length - MAX_RESULTS, r = needRows.length - 1; extra > 0 && r >= 2; extra--, r--) needRows[r].remove();
     var items = list.querySelectorAll(":scope > .md-search-result__item");
     if (!items.length) return;
     /* Pages already shown for a person or for the need behind the search are not repeated. */
