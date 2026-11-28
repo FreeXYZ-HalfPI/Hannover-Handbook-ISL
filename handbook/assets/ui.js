@@ -46,7 +46,13 @@
   var MAX_RESULTS = 5, MIN_RESULTS = 3;
   var summaries = {};  /* page → one-line description, written by hand in search-summaries.json */
 
-  function faDigits(text) { return String(text).replace(/\d/g, function (d) { return "۰۱۲۳۴۵۶۷۸۹"[d]; }); }
+  /* Persian digits, except inside a Latin name or code («S5», «B1», «AufenthG §16b»: the
+     number belongs to the name) */
+  function faDigits(text) {
+    return String(text).replace(/[A-Za-zÄÖÜäöüß]*\d+[A-Za-zÄÖÜäöüß]*/g, function (run) {
+      return /[A-Za-zÄÖÜäöüß]/.test(run) ? run : run.replace(/\d/g, function (d) { return "۰۱۲۳۴۵۶۷۸۹"[d]; });
+    });
+  }
 
   function siteRoot() { return new URL(window.__md_scope || ".", location.href); }
 
@@ -67,6 +73,11 @@
       .then(function (r) { return r.ok ? r.json() : {}; })
       .then(function (data) { pageTitles = data; })
       .catch(function () {});
+    loadTables();
+    fetch(new URL("assets/search-specialties.json", siteRoot()).href)
+      .then(function (r) { return r.ok ? r.json() : {}; })
+      .then(function (data) { specialties = data.specialties || []; })
+      .catch(function () {});
     fetch(new URL("assets/search-people.json", siteRoot()).href)
       .then(function (r) { return r.ok ? r.json() : []; })
       .then(function (data) { people = data; })
@@ -80,15 +91,51 @@
   /* The search matches a name when it is the start of the name or of one of its parts,
      with or without spaces: «حیدری», «پگاه حیدری», «برمکی پور» and «برمکیپور» do;
      «ترمین» does not match «دکتر مینا». */
+  /* A name is matched from the start of one of its words, never from inside one: «دوست» is
+     not «پورایران‌دوست». One word that is also an ordinary word of the site («دوست», «Iran»)
+     is that word, not a person: with a title («دکتر دوست») or more of the name it matches. */
   function matchPeople(query) {
-    var wanted = squash(queryWords(query).filter(function (w) { return !TITLES.test(w); }).join(""));
+    var typed = queryWords(query), names = typed.filter(function (w) { return !TITLES.test(w); });
+    var wanted = squash(names.join("")), alone = names.length === 1 && typed.length === 1;
     if (wanted.length < 3) return [];
     return people.filter(function (p) {
+      var common = p.common || [];
       return [p.fa, p.latin].some(function (name) {
-        var parts = name.replace(/\u200c/g, " ").split(/[\s\-]+/).filter(function (w) { return w && !TITLES.test(w); }).map(squash);
-        return parts.some(function (_, i) { return parts.slice(i).join("").indexOf(wanted) === 0; });
+        /* inside a word («دوست» of «پورایران‌دوست») only with a title or more of the name */
+        var parts = name.split(alone ? /[\s\-]+/ : /[\s\-\u200c]+/).filter(function (w) { return w && !TITLES.test(w); }).map(squash);
+        return parts.some(function (part, i) {
+          if (alone && common.some(function (c) { return squash(c).indexOf(wanted) === 0 && part.indexOf(squash(c)) === 0; })) return false;
+          return parts.slice(i).join("").indexOf(wanted) === 0;
+        });
       });
     });
+  }
+
+  /* Doctors for an illness or a part of the body (search-specialties.json): «کمردرد» →
+     orthopaedists, «بارداری» → gynaecologists. Up to three, in the order the handbook lists them. */
+  var specialties = [];
+  /* Table rows as lines (search-tables.json). */
+  var tables = null, tablesAsked = false;
+  function loadTables() {
+    if (tablesAsked) return;
+    tablesAsked = true;
+    fetch(new URL("assets/search-tables.json", siteRoot()).href)
+      .then(function (r) { return r.ok ? r.json() : {}; })
+      .then(function (data) { tables = data; })
+      .catch(function () {});
+  }
+  function matchDoctors(typed, query) {
+    /* «پا» on the way to «پاسپورت» is no foot: a short word counts only when nothing longer was guessed */
+    var wanted = [squash(query)], roles = [];
+    if (squash(typed).length >= 3 || squash(typed) === squash(query)) wanted.push(squash(typed));
+    specialties.forEach(function (sp) {
+      if (sp.words.some(function (w) { return wanted.indexOf(squash(w)) >= 0; })) roles.push(squash(sp.role));
+    });
+    if (!roles.length) return [];
+    return people.filter(function (p) {
+      var role = squash(p.role || "");
+      return roles.some(function (r) { return role.indexOf(r) === 0; });
+    }).slice(0, 3);
   }
 
   var ICON_PHONE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1z"/></svg>';
@@ -136,12 +183,19 @@
     return item;
   }
 
-  /* Matching people go first in the list, once per search. */
-  function addPeople(list, query) {
+  /* Matching people go first in the list, once per search: people by name, else the
+     doctors for the illness searched. */
+  function addPeople(list, query, searched) {
     if (list.dataset.islPeople === query && list.querySelector("[data-isl-person]")) return [];
     list.dataset.islPeople = query;
     var found = matchPeople(query).slice(0, 3), persian = PERSIAN.test(query);
-    found.slice().reverse().forEach(function (person) { list.insertBefore(personItem(person, persian), list.firstChild); });
+    var doctors = !found.length;
+    if (doctors) found = matchDoctors(query, searched || query);
+    found.slice().reverse().forEach(function (person) {
+      var item = personItem(person, persian);
+      if (doctors) item.dataset.islDoctor = "1";
+      list.insertBefore(item, list.firstChild);
+    });
     return found;
   }
   var PERSIAN = /[\u0600-\u06FF]/;
@@ -173,6 +227,25 @@
     return queryWords(query).every(function (w) { return t.indexOf(squash(w)) >= 0; });
   }
 
+  /* The searched word as a whole word of the text, not the start of a longer one: «سلام»
+     is not in «سلامت». (A suffix after a zero-width non-joiner, «سلام‌ها», still counts.) */
+  function hasWhole(text, word) {
+    var esc = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    /* plural endings keep the word («همکاران», «سلام‌ها»); «ی» or «ت» make another one («همکاری», «سلامت») */
+    return new RegExp("(?:^|[^A-Za-zÄÖÜäöüß\\u0600-\\u06FF])" + esc + "(?:ان|ها|های|هایی)?(?![A-Za-zÄÖÜäöüß\\u0600-\\u06FF])", "i").test(text);
+  }
+  /* The reader typed one complete word: results must have that word itself. */
+  var wholeWord = null;
+
+  /* Every searched word at the start of a word of the text: «ir» is not found inside
+     «Universität», «کارت» is found in «سیم‌کارت». */
+  function startsWords(text, query) {
+    return queryWords(query).every(function (w) {
+      var esc = w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return new RegExp("(?:^|[^A-Za-zÄÖÜäöüß\\u0600-\\u06FF])" + esc, "i").test(text);
+    });
+  }
+
   /* For Persian searches: «شماره مالیاتی — Steuer-ID و عوارض (Rundfunkbeitrag)» →
      «شماره مالیاتی و عوارض». Latin words inside a sentence (M10) stay: without them
      the sentence would not read. */
@@ -193,28 +266,113 @@
 
   /* The shortest piece of the page (a paragraph, list item or table cell) that contains
      the searched words, cut down to the sentence around them. */
-  function sentenceWith(item, best, query, persian) {
+  /* Links and e-mail addresses are no text to read: «Termin» inside
+     «Terminvergabe@hannover-stadt.de» says nothing about Termin. */
+  /* An address in brackets or at the end is dropped; one that is part of the sentence
+     («… در photo.idm.uni-hannover.de بارگذاری کنید») leaves a mark (GAP), and a sentence
+     with a gap is not quoted: without the address it no longer reads. */
+  var ADDRESS = /\S+@\S+|https?:\/\/\S+|www\.\S+|\b[\w.-]+\.(?:de|com|org|net|eu|info)\b\S*/gi, GAP = "\u2063";
+  function withoutAddresses(text) {
+    return text.replace(/\(\s*(?:\S+@\S+|https?:\/\/\S+|www\.\S+|[\w.-]+\.(?:de|com|org|net|eu|info)\b\S*)\s*\)/gi, " ")
+      .replace(ADDRESS, GAP)
+      .replace(new RegExp("\\s*" + GAP + "\\s*(?=[.!؟]?\\s*$)", "g"), "")
+      .replace(/\(\s*\)|\s+(?=[،؛.:)])/g, "").replace(/\s{2,}/g, " ").trim();
+  }
+  /* Mostly Persian: at least 60 % of the letters (for a reader who typed in Persian). */
+  function mostlyPersian(text) {
+    var fa = (text.match(/[\u0600-\u06FF]/g) || []).length, latin = (text.match(/[A-Za-zÄÖÜäöüß]/g) || []).length;
+    return fa > 0 && fa >= 0.6 * (fa + latin);
+  }
+
+  /* A line to read: no emoji or check marks (✅, ⚠️ are the page's own markers), and a
+     sentence cut at «؛» or «:» ends with a full stop, not with a sign that says more follows. */
+  var PICTURES = /[\u2139\u2190-\u21FF\u2300-\u23FF\u2460-\u24FF\u25A0-\u27BF\u2900-\u297F\u2B00-\u2BFF\u3030\u303D\u3297\u3299\uFE0F\u200D\u20E3]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|\uD83E[\uDC00-\uDFFF]/g;
+  try { PICTURES = new RegExp("\\p{Extended_Pictographic}|[\\uFE0F\\u200D\\u20E3]", "gu"); } catch (e) { /* older browsers: the ranges above */ }
+  /* Brackets and quotes in pairs: a line cut in the middle of «( … )» (the theme shortens long
+     text, an address inside is dropped) loses the unclosed part instead of showing a lone «(». */
+  var PAIRS = { "(": ")", "[": "]", "«": "»", "\u201C": "\u201D" };
+  function balance(text) {
+    var open = [], drop = {}, closers = {};
+    Object.keys(PAIRS).forEach(function (o) { closers[PAIRS[o]] = o; });
+    for (var i = 0; i < text.length; i++) {
+      var c = text.charAt(i);
+      if (PAIRS[c]) open.push(i);
+      else if (closers[c]) {
+        if (open.length && text.charAt(open[open.length - 1]) === closers[c]) open.pop();
+        else drop[i] = true;
+      }
+    }
+    var cut = open.length ? open[0] : text.length, out = "";
+    for (var j = 0; j < cut; j++) if (!drop[j]) out += text.charAt(j);
+    out = out.replace(/[\s:،,؛;—–-]+$/, "");
+    return cut < text.length ? out + " …" : out;
+  }
+
+  function readable(text) {
+    return balance(text.replace(PICTURES, ""))
+      .replace(/\(\s*\)|\[\s*\]|«\s*»/g, "")   /* «مهلت‌های قرمز (🔴)» leaves «()» */
+      .replace(/\s{2,}/g, " ").replace(/\s+([.،؛:!؟])/g, "$1").trim().replace(/\s*[؛;:،,]$/, ".");
+  }
+
+  /* Most of the line's own words are already in the title: «معرفی Iranian Student Association
+     …، انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر، و این‌که چطور با آن …» under the title
+     «انجمن دانشجویان ایرانی دانشگاه لایبنیتس هانوفر» says nothing new. */
+  var SMALL = /^(?:و|با|از|به|در|که|را|این|آن|اینکه|چطور|چه|برای|یا|تا|هم|می|است|هست|شما|ها|های|یک)$/;
+  function repeatsTitle(line, title, query) {
+    var own = function (text) {
+      return text.replace(/[A-Za-zÄÖÜäöüß0-9]+/g, " ").replace(/\u200c/g, "").split(/[^\u0600-\u06FF]+/)
+        .filter(function (w) { return w && !SMALL.test(w); });
+    };
+    var titleWords = own(title), searched = own(query);
+    var words = own(line).filter(function (w) { return searched.indexOf(w) < 0; });
+    if (words.length < 3) return false;
+    var same = words.filter(function (w) { return titleWords.indexOf(w) >= 0; }).length;
+    return same >= 0.6 * words.length;
+  }
+
+  function sentenceWith(item, best, query, persian, reader, title) {
     var words = queryWords(query).map(function (w) { return w.toLowerCase(); });
     var phrase = query.replace(/\s+/g, " ").trim().toLowerCase();
     var articles = [best.querySelector("article")];
     item.querySelectorAll("article").forEach(function (a) { if (articles.indexOf(a) < 0) articles.push(a); });
+    /* first a sentence with the whole word, then one with a longer word that starts with it */
+    for (var pass = 0; pass < (wholeWord ? 2 : 1); pass++)
     for (var i = 0; i < articles.length; i++) {
       var pieces = articles[i].querySelectorAll("p, li, td");
       for (var j = 0; j < pieces.length; j++) {
         if (pieces[j].classList.contains("md-search-result__terms") || pieces[j].querySelector("li, p")) continue;
-        var raw = pieces[j].textContent.replace(/\s+/g, " ").trim();
+        var raw = withoutAddresses(pieces[j].textContent.replace(/\s+/g, " ").trim());
         if (!containsQuery(raw, query)) continue;
         if (persian) raw = withoutLatin(raw);
         var sentences = raw.split(/(?<=[.!?؟؛])\s+/);
         var hit = sentences.filter(function (x) { return containsQuery(x, query); })[0] || raw;
         hit = hit.replace(/^\s*(?:\[\s?\]|[\d۰-۹]+[.)]|[آ-ی]{1,3}\))\s*/, "").replace(/\s*←.*$/, "").trim();
+        hit = readable(hit);
+        if (hit.indexOf(GAP) >= 0) continue;
+        /* a phone number makes it a contact line, not what the page says about the matter */
+        if (/(?:\+49|\b0\d{2,4})[\s\u200e\-\/]*\d{2,}[\s\-]?\d{2,}|[۰-۹]{3,}[\s\-][۰-۹]{3,}/.test(hit)) continue;
         if (squash(hit).length < squash(query).length + 8) continue;  /* just the word itself says nothing */
-        if (hit.length > 150) hit = around(hit, hit.toLowerCase().indexOf(words[0]));
+        if (hit.length > 150) hit = balance(around(hit, hit.toLowerCase().indexOf(words[0])));
+        /* Checked on what is shown (the cut piece, not the whole sentence): a line that is
+           mostly German or English does not help, whatever the reader typed in (the handbook
+           is read in Persian), nor one that gives the page's name or repeats its title. */
+        if (!mostlyPersian(hit) || /^(?:…\s*)?نام رسمی/.test(hit) || !startsWords(hit, query) || repeatsTitle(hit, title || "", query)) continue;
+        if (wholeWord && pass === 0 && !hasWhole(hit, wholeWord)) continue;
         return el("span", "isl-hit__summary isl-hit__context", hit);
       }
     }
-    /* Tables reach the search as plain text without cells, too messy to quote: say that
-       the page covers the word, after its own description. */
+    /* A row of a table on the page: «کارگاه دوچرخه — مبلغ (یورو): ۱٫۱۱» */
+    var page = new URL(best.getAttribute("href"), location.href).pathname.slice(siteRoot().pathname.length);
+    var rows = (tables && tables[page]) || [];
+    for (var t = 0; t < rows.length; t++) {
+      var row = readable(withoutAddresses(rows[t]));
+      if (row.indexOf(GAP) >= 0) continue;
+      if (!containsQuery(row, query) || !startsWords(row, query)) continue;
+      if (row.length > 150) row = balance(around(row, row.toLowerCase().indexOf(words[0])));
+      if (!mostlyPersian(row) || repeatsTitle(row, title || "", query)) continue;
+      return el("span", "isl-hit__summary isl-hit__context", row);
+    }
+    /* Nothing to quote: the page's own description. */
     for (var k = 0; k < articles.length; k++) {
       if (containsQuery(articles[k].textContent, query)) return "covers";
     }
@@ -244,10 +402,11 @@
        every result visibly answers the search. */
     var key = new URL(page.getAttribute("href"), location.href).pathname.slice(siteRoot().pathname.length);
     /* A German word typed in Persian letters stays visible in Latin letters in the sentence. */
-    var context = containsQuery(title, query) ? null : sentenceWith(item, best, query, persian && !changed);
+    var context = containsQuery(title, query) ? null : sentenceWith(item, best, query, persian && !changed, persian, h1.textContent);
     if (context === "covers" && summaries[key]) {
-      text.appendChild(el("span", "isl-hit__summary", faDigits(summaries[key]).replace(/[.。]\s*$/, "") +
-        (persian ? "؛ از جمله درباره «" + typed + (changed ? " (" + query + ")" : "") + "»." : " — «" + query.trim() + "»")));
+      /* No note about the search itself («… هم در این صفحه آمده است»): the reader wants to
+         know what the page says, not how it was found. */
+      text.appendChild(el("span", "isl-hit__summary", faDigits(summaries[key])));
     } else if (context && context !== "covers") { context.textContent = faDigits(context.textContent); text.appendChild(context); }
     else if (summaries[key]) text.appendChild(el("span", "isl-hit__summary", summaries[key]));
     link.appendChild(text);
@@ -258,6 +417,27 @@
   /* For a query of several words, pages that contain the words together as one phrase
      («سیم‌کارت», «سیم کارت» or «سیمکارت») come before pages that only contain them apart. */
   function squash(text) { return text.replace(/[\s\u200c]+/g, "").toLowerCase(); }
+
+  /* «سلام» typed: pages with the word itself come first, pages with only longer words that
+     start with it («سلامت», or «هواپیما» for «هوا») after them. Nothing is dropped: the reader
+     may still be typing the longer word. */
+  function wholeFirst(items, word) {
+    if (!word || items.length < 2) return items;
+    var whole = [], longer = [];
+    items.forEach(function (item) {
+      if (item.dataset.islTidy) { whole.push(item); return; }
+      var key = new URL(item.querySelector("a").getAttribute("href"), location.href).pathname.slice(siteRoot().pathname.length);
+      var text = Array.prototype.map.call(item.querySelectorAll("article"), function (a) { return a.textContent; }).join(" ") +
+        " " + ((tables && tables[key]) || []).join(" ");
+      (hasWhole(text, word) ? whole : longer).push(item);
+    });
+    if (!whole.length || !longer.length) return items;
+    var order = whole.concat(longer), list = items[0].parentNode;
+    order.forEach(function (item, i) {
+      if (list.children[i] !== item) list.insertBefore(item, list.children[i] || null);
+    });
+    return order;
+  }
 
   function phraseFirst(items, query) {
     var words = query.replace(/\u200c/g, " ").trim().split(/\s+/);
@@ -281,8 +461,17 @@
   function matchIntent(typed, query) {
     var a = squash(typed), b = squash(query);
     if (!a) return null;
+    /* what was typed first («پارتنر» is a need of its own), then what is searched for it («همسر») */
     for (var i = 0; i < intents.length; i++) {
-      if (intents[i].words.some(function (w) { var k = squash(w); return k === a || k === b; })) return intents[i];
+      if (intents[i].words.some(function (w) { return squash(w) === a; })) return intents[i];
+    }
+    for (var n = 0; n < intents.length; n++) {
+      if (intents[n].words.some(function (w) { return squash(w) === b; })) return intents[n];
+    }
+    /* still typing: «مری» is on its way to «مریض» */
+    if (a.length < 3 || !window.islStartOfSiteWord || !window.islStartOfSiteWord(typed.trim())) return null;
+    for (var j = 0; j < intents.length; j++) {
+      if (intents[j].words.some(function (w) { return squash(w).indexOf(a) === 0; })) return intents[j];
     }
     return null;
   }
@@ -316,12 +505,38 @@
     return intent;
   }
 
+  /* The word is on the page only in a link to another page («← ۳۰. حمل‌ونقل عمومی،
+     Deutschlandticket و دوچرخه» on the AStA page): the page itself says nothing about it. */
+  function onlyInLinks(item, query) {
+    var all = "", own = "";
+    item.querySelectorAll("article").forEach(function (a) {
+      all += " " + a.textContent;
+      var copy = a.cloneNode(true);
+      copy.querySelectorAll("p, li, td").forEach(function (e) {
+        if (!e.querySelector("p, li") && e.textContent.indexOf("←") >= 0) e.textContent = e.textContent.split("←")[0];
+      });
+      own += " " + copy.textContent.replace(/←[^←]*$/, "");
+    });
+    return containsQuery(all, query) && !containsQuery(own, query);
+  }
+
   function tidyResults(list) {
     var typed = (input().value || "").trim();
     var german = window.islGermanize ? window.islGermanize(typed) : { query: typed, changed: false };
     var query = german.query;
-    var found = addPeople(list, typed);
+    var found = addPeople(list, typed, query);
     addIntent(list, typed, query);
+    /* doctors for an illness come after the best answer for the need (e.g. the free
+       counselling of the university for «سلامت روان») */
+    var firstNeed = list.querySelector(":scope > [data-isl-intent]");
+    if (firstNeed && firstNeed.previousElementSibling && firstNeed.previousElementSibling.dataset.islDoctor) {
+      var after = firstNeed.nextSibling;
+      list.querySelectorAll(":scope > [data-isl-doctor]").forEach(function (d) { list.insertBefore(d, after); });
+    }
+    /* doctors and the rows for the need together stay within the five results */
+    var chosenRows = list.querySelectorAll(":scope > [data-isl-person], :scope > [data-isl-intent]");
+    var needRows = list.querySelectorAll(":scope > [data-isl-intent]");
+    for (var extra = chosenRows.length - MAX_RESULTS, r = needRows.length - 1; extra > 0 && r >= 2; extra--, r--) needRows[r].remove();
     var items = list.querySelectorAll(":scope > .md-search-result__item");
     if (!items.length) return;
     /* Pages already shown for a person or for the need behind the search are not repeated. */
@@ -335,8 +550,24 @@
       var path = new URL(link.getAttribute("href"), location.href).pathname;
       if (taken.indexOf(path) >= 0) item.remove();
     });
+    /* The home page is only a table of contents: it is no answer when there are others. */
+    items = list.querySelectorAll(":scope > .md-search-result__item");
+    if (items.length > 1) items.forEach(function (item) {
+      var link = item.querySelector(".md-search-result__link");
+      if (link && !item.dataset.islPerson && !item.dataset.islIntent &&
+          new URL(link.getAttribute("href"), location.href).pathname === new URL(".", siteRoot()).pathname) item.remove();
+    });
+    /* «سلام» typed in full: a page that only has «سلامت» is no answer */
+    wholeWord = (!german.changed && queryWords(typed).length === 1 && PERSIAN.test(typed) && squash(typed).length >= 3 &&
+      window.islIsWord && window.islIsWord(typed)) ? typed.trim() : null;
+    items = list.querySelectorAll(":scope > .md-search-result__item");
+    if (items.length > 1) items.forEach(function (item) {
+      if (!item.dataset.islTidy && onlyInLinks(item, query)) item.remove();
+    });
+    loadTables();
     items = list.querySelectorAll(":scope > .md-search-result__item");
     items = phraseFirst(Array.prototype.slice.call(items), query);
+    items = wholeFirst(items, wholeWord);
     var first = items.filter(function (item) { return !item.dataset.islPerson && !item.dataset.islIntent; })[0];
     var top = first ? score(first) : 0, floor = top >= 100 ? top * 0.1 : top * 0.5, shown = 0;
     items.forEach(function (item) {
@@ -347,7 +578,12 @@
       shown++;
     });
     var meta = document.querySelector(".md-search-result__meta");
+    if (!shown) return;
     var label = shown === 1 ? "مرتبط‌ترین نتیجه" : faDigits(shown) + " نتیجه مرتبط";
+    /* the word the search took the letters for: «کر» → «۵ نتیجه مرتبط برای «کرانک»» */
+    /* (not a Latin word for a reader who typed in Persian: «کالج» needs no «Studienkolleg») */
+    if (german.shown && squash(german.shown) !== squash(typed) && (PERSIAN.test(german.shown) || !PERSIAN.test(typed)))
+      label += " برای «" + german.shown + "»";
     if (meta && meta.textContent !== label) meta.textContent = label;
   }
 
@@ -392,12 +628,18 @@
     }
     result.parentNode.insertBefore(loading, result);
     var wrap = result.closest(".md-search__inner") || document.body, timer = null;
-    input().addEventListener("input", function () {
-      clearTimeout(timer);
-      wrap.classList.remove("isl-reveal");
-      if (!input().value.trim()) { wrap.classList.remove("isl-searching"); return; }
+    /* Typing: the results follow every letter at once, so the reader sees where the word is
+       going before it is finished (no wait, nothing that flickers). A whole phrase put in at
+       once (a suggestion clicked, text pasted, a word filled in by the keyboard) gets the
+       short wait and the results come in one by one. */
+    input().addEventListener("input", function (event) {
+      clearTimeout(timer); timer = null;
+      wrap.classList.remove("isl-searching", "isl-reveal");
+      var whole = !event.inputType || /FromPaste|FromDrop|Replacement|FromYank/.test(event.inputType);
+      if (!input().value.trim() || !whole) return;
       wrap.classList.add("isl-searching");
       timer = setTimeout(function () {
+        timer = null;
         wrap.classList.remove("isl-searching");
         void wrap.offsetWidth;  /* restart the reveal animation */
         wrap.classList.add("isl-reveal");
@@ -411,8 +653,24 @@
     if (list && meta) new MutationObserver(function () { tidyResults(list); }).observe(meta, { childList: true, characterData: true, subtree: true });
   }
 
+  /* Closing: mark the moment for half a second, so search.css can fold the results up and
+     turn the box back softly (the closed state alone can not tell "just closed" from "closed
+     when the page loaded"). */
+  function softClose() {
+    var toggle = document.querySelector("[data-md-toggle=search]");
+    if (!toggle) return;
+    var timer = null;
+    toggle.addEventListener("change", function () {
+      clearTimeout(timer);
+      if (toggle.checked) { document.body.classList.remove("isl-closing"); return; }
+      document.body.classList.add("isl-closing");
+      timer = setTimeout(function () { document.body.classList.remove("isl-closing"); }, 420);
+    });
+  }
+
   function init() {
     if (!input()) return;
+    softClose();
     document.querySelectorAll("[data-isl-search]").forEach(function (b) {
       b.addEventListener("click", openSearch);
     });

@@ -98,7 +98,10 @@
 
   /* Open: the header box itself grows, and the results drop down right under it */
   [data-md-toggle="search"]:checked ~ .md-header .md-search__inner { width: min(36rem, 52vw); }
-  [data-md-toggle="search"]:checked ~ .md-header .md-search__overlay { background-color: rgba(10, 20, 35, 0.35); }
+  /* The same shade open and closed: the theme's own (darker) one came back for a frame on
+     closing, before it faded, so the page flashed darker. Only the opacity changes. */
+  .md-search__overlay { background-color: rgba(10, 20, 35, 0.35); }
+  .isl-closing .md-search__overlay { transition: width 0ms 0.32s, height 0ms 0.32s, opacity 0.32s cubic-bezier(0.4, 0, 0.2, 1); }
   /* Box and results read as one piece: one surface, one shadow that falls only below it */
   [data-md-toggle="search"]:checked ~ .md-header .md-search__form {
     border-radius: 0.5rem 0.5rem 0 0; background: var(--md-default-bg-color); box-shadow: none;
@@ -121,8 +124,39 @@
   [data-md-toggle="search"]:checked ~ .md-header .md-search__output { animation: isl-unfold 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
   [data-md-toggle="search"]:checked ~ .md-header .md-search__scrollwrap > * { animation: isl-fade 0.3s 0.12s ease-out both; }
   @keyframes isl-unfold { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 -3rem 0); } }
+  /* A soft closing, the opening backwards (ui.js sets .isl-closing for half a second): the
+     results fold up into the box, then the box turns back to the header colour and narrows.
+     Without it the white box turned blue at full width in one frame (a flash), then jumped. */
+  .isl-closing .md-search__output {
+    opacity: 1; visibility: visible; top: 1.9rem; margin-top: -0.1rem; border-radius: 0 0 0.7rem 0.7rem;
+    background: var(--md-default-bg-color); box-shadow: 0 1.1rem 1.8rem -0.6rem rgba(0, 0, 0, 0.35);
+    animation: isl-fold 0.24s cubic-bezier(0.45, 0, 0.55, 1) both;
+  }
+  /* the theme collapses the results to nothing at once: keep them while they fold */
+  .isl-closing .md-search__scrollwrap { width: auto; max-height: min(65vh, 36rem); box-shadow: none; }
+  .isl-closing .md-search-result__list[hidden] { display: block; }   /* the theme hides the list on closing */
+  /* the content fades first, as it faded in last on opening, so its lines are not seen
+     re-wrapping while the box narrows */
+  .isl-closing .md-search__scrollwrap > * { animation: isl-fade-out 0.1s ease-in both; }
+  @keyframes isl-fade-out { from { opacity: 1; } to { opacity: 0; } }
+  /* folding and narrowing together, like the opening; the box turns back to the header
+     colour only when the panel under it is (almost) gone, so no white hangs under a blue box */
+  .isl-closing .md-search__form {
+    transition: background-color 0.16s ease 0.18s, box-shadow 0.16s ease 0.18s, border-radius 0.12s ease 0.16s;
+  }
+  .isl-closing .md-search__input { transition: color 0.16s ease 0.18s; }
+  .isl-closing .md-search__inner { transition: width 0.32s cubic-bezier(0.4, 0, 0.2, 1); }
+  /* no slow tail: the last of the empty panel fades too, so no white strip stays under the box */
+  @keyframes isl-fold {
+    from { clip-path: inset(0 0 -3rem 0); opacity: 1; }
+    65% { opacity: 1; }
+    to { clip-path: inset(0 0 100% 0); opacity: 0; }
+  }
   @media (prefers-reduced-motion: reduce) {
     .md-search__inner, .md-search__form { transition: none; }
+    .isl-closing .md-search__output { animation: none; visibility: hidden; }
+    .isl-closing .md-search__scrollwrap > * { animation: none; }
+    .isl-closing .md-search__form, .isl-closing .md-search__input, .isl-closing .md-search__inner { transition: none; }
     [data-md-toggle="search"]:checked ~ .md-header .md-search__output,
     [data-md-toggle="search"]:checked ~ .md-header .md-search__scrollwrap > * { animation: none; }
   }
@@ -133,3 +167,7 @@
   /* The header box is always visible here, so no floating button */
   .isl-fab { display: none; }
 }
+
+/* No faded completion under the typed word: in Persian (joined letters, and a different
+   font size on phones) it never lines up with the text and makes it unreadable. */
+.md-search__suggest { display: none !important; }

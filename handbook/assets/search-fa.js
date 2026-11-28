@@ -14,74 +14,230 @@
       .replace(/[ً-ْ]/g, "");
   }
   /* German words in Persian letters: «کرانک» → «Krank», «آنملدونگ» → «Anmeldung».
-     The spellings are in search-german.json; letters that sound alike are folded
-     together (fold) and missing vowels are forgiven (skeleton), so «کرنک» works too.
-     A word that is on the site itself (search-words.json, built from the index) is
+     Two lists: search-german.json is written by hand (colloquial forms such as «ملده»);
+     search-german-auto.json is made at build time (tools/search_hooks.py) from every
+     German word on the site, with how often it appears. Letters that sound alike are
+     folded together (fold) and missing vowels are forgiven (skeleton), so «کرنک» works
+     too. A word that is on the site itself (search-words.json, built from the index) is
      never replaced: «بانک» stays «بانک». */
   var FOLD = { "آ": "ا", "أ": "ا", "إ": "ا", "ٱ": "ا", "ؤ": "و", "ئ": "ی", "ي": "ی", "ك": "ک", "ة": "ه",
                "ث": "س", "ص": "س", "ذ": "ز", "ض": "ز", "ظ": "ز", "ط": "ت", "ق": "غ", "ح": "ه" };
   function fold(word) {
-    return word.replace(/[\u064b-\u0652\u0670\u200c\s]/g, "").replace(/./g, function (c) { return FOLD[c] || c; });
+    return word.replace(/[ً-ْٰ‌\s]/g, "").replace(/./g, function (c) { return FOLD[c] || c; });
   }
+  /* Vowels after the first letter are left out, and so is ه: Persian writes the German e
+     as ه at the end of a part of a compound («ملده‌بشاینیگونگ») or not at all. */
   function skeleton(folded) {
-    return (folded.charAt(0) + folded.slice(1).replace(/[اوی]/g, "")).replace(/ه$/, "").replace(/(.)\1+/g, "$1");
+    return (folded.charAt(0) + folded.slice(1).replace(/[اویه]/g, "")).replace(/(.)\1+/g, "$1");
   }
   /* Germans drop the final r: «Ausländer» is said, and often written, «اوسلندا». The
      loosest key leaves out r as well, so «اوسلندا بهورده» meets «اوسلندر بهورده». */
   function looser(skel) { return skel.charAt(0) + skel.slice(1).replace(/ر/g, ""); }
-  var exact = {}, loose = {}, loosest = {}, siteWords = null;
-  function load(name, done) {
+  var exact = {}, loose = {}, loosest = {}, entries = [], siteWords = null, siteSorted = [], chosen = {};
+  function fetchJSON(name) {
     var root = new URL(window.__md_scope || ".", location.href);
-    fetch(new URL("assets/" + name, root).href).then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (data) { if (data) done(data); }).catch(function () {});
+    return fetch(new URL("assets/" + name, root).href).then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; });
   }
-  load("search-german.json", function (data) {
-    Object.keys(data).forEach(function (german) {
-      if (german.charAt(0) === "_") return;
-      data[german].forEach(function (spelling) {
-        var f = fold(spelling);
-        if (!exact[f]) exact[f] = german;
-        var k = skeleton(f);
-        if (k.length >= 3 && !loose[k]) loose[k] = german;
-        var kk = looser(k);
-        if (kk.length >= 3 && !loosest[kk]) loosest[kk] = german;
+  /* The first spelling added for a key wins: the hand-written list first, then the
+     words found on the site, most frequent first. */
+  function add(german, spelling, weight) {
+    var f = fold(spelling), k = skeleton(f), kk = looser(k);
+    if (!exact[f]) exact[f] = german;
+    /* a found word needs a longer key to be matched loosely: «کوندی» is the start of
+       Kündigung (hand-written), not a loose spelling of Kind */
+    var min = weight >= 1e6 ? 3 : 4;
+    if (k.length >= min && !loose[k]) loose[k] = german;
+    if (kk.length >= min && !loosest[kk]) loosest[kk] = german;
+    entries.push({ german: german, weight: weight, f: f, kk: kk });
+  }
+  fetchJSON("search-german.json").then(function (data) {
+    if (data) Object.keys(data).forEach(function (german) {
+      if (german.charAt(0) !== "_") data[german].forEach(function (spelling) {
+        add(german, spelling, 1e6);
+        chosen[fold(spelling)] = german;
       });
     });
+    return fetchJSON("search-german-auto.json");
+  }).then(function (data) {
+    if (!data) return;
+    /* how often the site uses a word also ranks the hand-written ones: «اشپر» → Sperrkonto */
+    var times = {};
+    data.forEach(function (row) { times[row[0].toLowerCase()] = row[1]; add(row[0], row[2], row[1]); });
+    entries.forEach(function (e) { if (e.weight >= 1e6) e.weight += times[e.german.toLowerCase()] || 0; });
   });
-  load("search-words.json", function (data) { siteWords = new Set(data); });
+  fetchJSON("search-words.json").then(function (data) {
+    if (data) { siteWords = new Set(data); siteSorted = data; }
+  });
 
-  function onSite(word) { return siteWords ? siteWords.has(fold(word)) : false; }
+  /* A spelling written into the hand-made list is meant as German even when the same
+     letters are on the site: «ملده» is said for Anmeldung (the site has «ملده ندارد»). */
+  /* Guesses for an unfinished word (tools/search_hooks.py → search-guess.json), most
+     likely first: [key, shown, search, weight, kind]; kind w = the word itself, g = a German
+     word, c = a colloquial or English word, searched as the need it belongs to. */
+  var guessList = [], guessByKey = {};
+  fetchJSON("search-guess.json").then(function (data) {
+    if (!data) return;
+    guessList = data;
+    data.forEach(function (row) {
+      if (!guessByKey[row[0]]) guessByKey[row[0]] = row;
+      if (!guessByTyped[row[5]]) guessByTyped[row[5]] = row;
+    });
+  });
+  function guessKey(word) { return /[\u0600-\u06FF]/.test(word) ? fold(word) : word.toLowerCase(); }
+  /* The letters themselves (as in tools/search_hooks.py plain()): a Persian word is matched by
+     its own letters, «مهل» is the start of «مهلت», never «محل». Folding sound-alike letters is
+     only for German and colloquial spellings. */
+  var PLAIN = { "آ": "ا", "أ": "ا", "إ": "ا", "ٱ": "ا", "ؤ": "و", "ئ": "ی", "ي": "ی", "ك": "ک", "ة": "ه" };
+  function plain(word) {
+    return word.replace(/[\u064b-\u0652\u0670\u0640\u200c\s]/g, "").replace(/./g, function (c) { return PLAIN[c] || c; });
+  }
+  function typedKey(word) { return /[\u0600-\u06FF]/.test(word) ? plain(word) : word.toLowerCase(); }
+  var guessByTyped = {};
+  /* a word known by its own letters (any kind), else a German or colloquial spelling by its sound */
+  function knownWord(word) {
+    var row = guessByTyped[typedKey(word)];
+    if (row) return row;
+    row = guessByKey[guessKey(word)];
+    return row && row[4] !== "w" ? row : null;
+  }
+  /* «کر» → کرانک, «بی» → بیمه, «پارتن» → پارتنر: words of the site and the hand-written
+     German words first; then German words found on the site; a colloquial word only from
+     the third letter on, when nothing else fits. */
+  function guessFor(word, strict) {
+    var t = typedKey(word), persian = /[\u0600-\u06FF]/.test(t);
+    if (t.length < (persian ? 2 : 3)) return null;
+    /* first by the letters typed; only if nothing starts with them, a German or colloquial
+       spelling that sounds the same («حاوس» for «هاوس») */
+    return pick(5, t, strict, false) || (persian ? pick(0, guessKey(word), strict, true) : null);
+  }
+  /* Order: words of the site and the hand-written German words; then the words of the
+     needs (colloquial, English: «فیل» → «فیلم»); German words found on the site last. */
+  function pick(col, k, strict, soundOnly) {
+    var found = null, colloquial = null;
+    for (var i = 0; i < guessList.length; i++) {
+      var row = guessList[i];
+      if (row[col].indexOf(k) !== 0 || row[col] === k) continue;
+      if (row[4] === "g" || (row[4] === "w" && !soundOnly)) return row;
+      if (strict) continue;   /* a short word that is on the site: only a longer Persian word */
+      if (row[4] === "a" && !found && k.length >= 4) found = row;   /* «هو» is no Hochschulbüro */
+      if (row[4] === "c" && !colloquial && k.length >= 3) colloquial = row;
+    }
+    return colloquial || found;
+  }
+
+  /* Common Persian words that are not on the site (search-persian.json, from the hazm word
+     list): «فیل» is Persian, never a German or English word in Persian letters. Loaded when
+     the search is first used. */
+  var persianWords = null;
+  document.addEventListener("input", function once(event) {
+    if (!event.target.classList || !event.target.classList.contains("md-search__input")) return;
+    document.removeEventListener("input", once, true);
+    fetchJSON("search-persian.json").then(function (data) {
+      if (data) persianWords = new Set(data);
+      event.target.dispatchEvent(new KeyboardEvent("keyup", { bubbles: true }));   /* search again with it */
+    });
+  }, true);
+  function isPersianWord(word) { return persianWords ? persianWords.has(plain(word)) : false; }
+
+  function onSite(word) { return siteWords && !chosen[fold(word)] ? siteWords.has(plain(word)) : false; }
+  /* The reader is still typing: «بیم» is no word on the site, but the start of «بیمه». */
+  function startOfSiteWord(word) {
+    var f = plain(word);
+    if (f.length < 2 || !/^[؀-ۿ]+$/.test(f) || onSite(word)) return false;
+    var lo = 0, hi = siteSorted.length;
+    while (lo < hi) { var mid = (lo + hi) >> 1; if (siteSorted[mid] < f) lo = mid + 1; else hi = mid; }
+    return lo < siteSorted.length && siteSorted[lo].indexOf(f) === 0;
+  }
+  /* «هوا» and «رو» are words, but also the start of «هواپیما» and «روان»: the last word
+     typed may still be growing. */
+  function hasLonger(word) {
+    var f = plain(word);
+    if (!/^[\u0600-\u06FF]+$/.test(f)) return false;
+    var lo = 0, hi = siteSorted.length;
+    while (lo < hi) { var mid = (lo + hi) >> 1; if (siteSorted[mid] <= f) lo = mid + 1; else hi = mid; }
+    return lo < siteSorted.length && siteSorted[lo].indexOf(f) === 0;
+  }
   function lookup(word, allowLoose) {
     var f = fold(word);
-    if (f.length < 3 || !/[\u0600-\u06FF]/.test(f)) return null;
+    if (f.length < 3 || !/[؀-ۿ]/.test(f)) return null;
     if (exact[f]) return exact[f];
     if (!allowLoose) return null;
     var k = skeleton(f), kk = looser(k);
     if (loose[k] || loosest[kk]) return loose[k] || loosest[kk];
-    /* the start of a long word: «اوسلندا» → Ausländerbehörde (the shortest such word) */
-    if (kk.length < 4) return null;
-    var best = null, bestLength = Infinity;
-    Object.keys(loosest).forEach(function (key) {
-      if (key.indexOf(kk) === 0 && key.length < bestLength) { best = loosest[key]; bestLength = key.length; }
+    /* the start of a longer word: «اوسلندا» → Ausländerbehörde, «ملده» → Meldebescheinigung;
+       of several, the one the site uses most (hand-written spellings first) */
+    if (kk.length < 3 || f.length < 4) return null;
+    /* a spelling that starts with exactly the letters typed comes first: «کوندی» →
+       Kündigung («کوندیگونگ»), not Kindergeld («کیندرگلد») */
+    var best = null, bestRank = null;
+    entries.forEach(function (e) {
+      if (e.kk.indexOf(kk) !== 0) return;
+      var rank = [e.f.indexOf(f) === 0 ? 1 : 0, e.weight, -e.kk.length];
+      if (!best || rank[0] > bestRank[0] || (rank[0] === bestRank[0] && (rank[1] > bestRank[1] || (rank[1] === bestRank[1] && rank[2] > bestRank[2])))) {
+        best = e; bestRank = rank;
+      }
     });
-    return best;
+    return best && best.german;
   }
-  /* {query, changed}: the search as the site understands it. */
+  /* {query, changed}: the search as the site understands it. The last word may be
+     unfinished: if it is the start of a Persian word on the site, it stays Persian and
+     is searched as a beginning (requireAll). */
   function germanize(query) {
     var words = query.trim().split(/\s+/).filter(Boolean);
     if (!words.length) return { query: query, changed: false };
-    var allOnSite = words.every(onSite);
-    var whole = !onSite(words.join("")) && lookup(words.join(""), !allOnSite);
-    if (whole) return { query: whole, changed: true };
-    var changed = false;
-    words = words.map(function (w) {
-      var g = !onSite(w) && lookup(w, true);
+    /* a phrase people say, in Persian or English: «دوست دختر», «health insurance» */
+    var phrase = words.length > 1 && knownWord(words.join(" "));
+    if (phrase && phrase[4] !== "w") return { query: phrase[2], changed: true, shown: phrase[4] === "c" ? phrase[2] : phrase[1] };
+    /* a phrase whose last word is still being typed: «سلامت ر» → «سلامت روان» */
+    var tail = words[words.length - 1];
+    if (words.length > 1 && !phrase && (plain(tail).length <= 3 || !onSite(tail))) {
+      var more = guessFor(words.join(" "), false);
+      if (more && typedKey(more[1]).indexOf(typedKey(words.slice(0, -1).join(" "))) === 0)
+        return { query: more[2], changed: true, shown: more[1] };
+    }
+    if (words.length > 1) {
+      var allOnSite = words.every(onSite);
+      var whole = !onSite(words.join("")) && !words.every(isPersianWord) && lookup(words.join(""), !allOnSite);
+      if (whole) return { query: whole, changed: true };
+    }
+    var changed = false, shown = null;
+    words = words.map(function (w, i) {
+      var f = fold(w), last = i === words.length - 1;
+      if (chosen[f]) { changed = true; return chosen[f]; }
+      /* a known word: German, or an English or colloquial one («پارتنر» → همسر) */
+      var known = knownWord(w);
+      /* «بان» is spelled like Bahn, but the reader is on the way to «بانک» */
+      var longer = known && known[4] === "a" && last && guessFor(w, true);
+      if (longer) {
+        changed = changed || longer[2] !== w;
+        shown = longer[1];
+        return longer[2];
+      }
+      if (known && known[4] !== "w") {
+        changed = true;
+        if (known[4] === "c") shown = known[2];   /* «پارتنر» → results for «همسر» */
+        return known[2];
+      }
+      if (known || (onSite(w) && (f.length > 3 || !last))) return w;
+      /* still typing: the most likely word it is the start of */
+      var guess = last && guessFor(w, onSite(w));
+      if (guess) {
+        changed = changed || guess[2] !== w;
+        shown = guess[1];
+        return guess[2];
+      }
+      if (onSite(w) || isPersianWord(w) || (last && startOfSiteWord(w))) return w;
+      var g = lookup(w, true);
       if (g) { changed = true; return g; }
       return w;
     });
-    return { query: changed ? words.join(" ") : query, changed: changed };
+    return { query: changed ? words.join(" ") : query, changed: changed, shown: shown };
   }
   window.islGermanize = germanize;
+  window.islStartOfSiteWord = startOfSiteWord;
+  /* a complete Persian word (on the site or a common one): «سلام» is a word, not the start of «سلامت» */
+  window.islIsWord = function (word) { return onSite(word) || isPersianWord(word); };
 
   /* Compound words and phrases. The index splits words on spaces and on the
      zero-width non-joiner, so «سیم‌کارت» is two words, «سیم» and «کارت», and the theme
@@ -97,17 +253,27 @@
     });
     if (/["+\-~^:*]/.test(query)) return query;
     /* A short Persian word is searched as a whole word: «کار» should not find «کارت». */
-    var term = function (w) { return /^[\u0600-\u06FF]{1,3}$/.test(w) ? w : w + "*"; };
-    if (words.length === 1) return term(words[0]) === words[0] ? "+" + words[0] : words[0];
+    var term = function (w, last) {
+      /* ...unless it is the unfinished end of what the reader is typing: «بیم» → «بیمه»,
+         and «سلامت ر» → «سلامت ر…» (one letter after a word is the start of the next one) */
+      if (last && (startOfSiteWord(w) || hasLonger(w))) return w + "*";
+      if (last && words.length > 1 && /^[\u0600-\u06FF]{1,3}$/.test(w)) return w + "*";
+      return /^[\u0600-\u06FF]{1,3}$/.test(w) ? w : w + "*";
+    };
+    if (words.length === 1) { var one = term(words[0], true); return one === words[0] ? "+" + one : one; }
     if (!words.length) return query;
-    return words.map(function (w) { return "+" + term(w); }).join(" ");
+    return words.map(function (w, i) { return "+" + term(w, i === words.length - 1); }).join(" ");
   }
   if (window.Worker && Worker.prototype.postMessage) {
     var post = Worker.prototype.postMessage;
     Worker.prototype.postMessage = function (message) {
       /* type 2 = a search query from the theme (mkdocs-material 9.6) */
       if (message && message.type === 2 && typeof message.data === "string") {
-        message = { type: 2, data: requireAll(germanize(message.data).query) };
+        var german = germanize(message.data), query = requireAll(german.query);
+        /* German words are often parts of longer ones: «فرزیش» → Versicherung should also
+           find Krankenversicherung and Haftpflichtversicherung */
+        if (german.changed) query = query.replace(/(^|[\s+])([A-Za-zÄÖÜäöüß]{5,})\*?(?=\s|$)/g, "$1*$2*");
+        message = { type: 2, data: query };
       }
       return post.apply(this, [message].concat(Array.prototype.slice.call(arguments, 1)));
     };
